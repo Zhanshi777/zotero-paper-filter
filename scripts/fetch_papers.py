@@ -29,7 +29,19 @@ def fetch_papers():
 
 def filter_papers(papers):
     """使用AI筛选相关文献"""
-    filtered = []
+    filtered = {
+    "Nature": "https://www.nature.com/nature.rss",
+    "Nature Communications": "https://www.nature.com/ncomms.rss",
+    "Science": "https://feeds.science.org/rss/science.xml",
+    "Joule": "https://www.cell.com/joule/inpress.rss",
+    "Nature Energy": "https://www.nature.com/nenergy.rss",
+    "Nature Synthesis": "https://www.nature.com/natsynth.rss",
+    "Energy & Environmental Science": "http://feeds.rsc.org/rss/ee",
+    "Angewandte Chemie": "https://onlinelibrary.wiley.com/feed/15213773/most-recent",
+    "Advanced Materials": "https://advanced.onlinelibrary.wiley.com/feed/15214095/most-recent",
+    "Advanced Energy Materials": "https://advanced.onlinelibrary.wiley.com/feed/16146840/most-recent",
+    "Advanced Functional Materials": "https://advanced.onlinelibrary.wiley.com/feed/16163028/most-recent"
+}
     
     for paper in papers:
         prompt = f"""
