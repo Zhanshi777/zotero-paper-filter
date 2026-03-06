@@ -6,9 +6,9 @@ on:
   workflow_dispatch:      # 允许手动触发
 
 permissions:
-  contents: write        # 允许写入仓库内容
-  pages: write          # 允许写入Pages
-  id-token: write       # 允许部署到Pages
+  contents: write
+  pages: write
+  id-token: write
 
 jobs:
   fetch-and-filter:
@@ -28,9 +28,9 @@ jobs:
     
     - name: Fetch and filter papers
       env:
-        OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-        OPENAI_BASE_URL: ${{ secrets.OPENAI_BASE_URL }}  # 添加这一行！
-        RESEARCH_TOPICS: ${{ secrets.RESEARCH_TOPICS }}
+        RESEARCH_KEYWORDS: ${{ secrets.RESEARCH_KEYWORDS }}
+        OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}        # AI解析需要
+        OPENAI_BASE_URL: ${{ secrets.OPENAI_BASE_URL }}      # DeepSeek需要
       run: python scripts/fetch_papers.py
     
     - name: Deploy to GitHub Pages
