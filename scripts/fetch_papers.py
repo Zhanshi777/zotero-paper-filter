@@ -49,6 +49,7 @@ def clean_html(text):
     return clean.strip()
 
 def fetch_papers():
+    """从所有RSS源获取最近文献"""
     all_papers = []
     cutoff_date = datetime.now() - timedelta(days=DAYS_BACK)
     
@@ -62,7 +63,9 @@ def fetch_papers():
         try:
             print(f"  📰 正在获取: {journal}")
             
-            headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'}
+            headers = {
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+            }
             response = requests.get(url, timeout=30, headers=headers)
             response.raise_for_status()
             
@@ -89,18 +92,63 @@ def fetch_papers():
                     elif hasattr(entry, 'author'):
                         authors = entry.author
                     
+                    # ===== 改进的摘要提取逻辑 =====
                     summary = ""
-                    if hasattr(entry, 'summary'):
-                        summary = clean_html(entry.summary)
-                    elif hasattr(entry, 'description'):
-                        summary = clean_html(entry.description)
+                    
+                    # 尝试从多个字段获取摘要，按优先级排序
+                    possible_fields = [
+                        ('content', lambda x: x[0].value if isinstance(x, list) else x.value if hasattr(x, 'value') else str(x)),
+                        ('summary', lambda x: str(x)),
+                        ('description', lambda x: str(x)),
+                        ('subtitle', lambda x: str(x))
+                    ]
+                    
+                    for field_name, extractor in possible_fields:
+                        if hasattr(entry, field_name) and getattr(entry, field_name):
+                            try:
+                                raw_content = getattr(entry, field_name)
+                                extracted = extractor(raw_content)
+                                if extracted and len(extracted) > 50:  # 至少50个字符才算有效摘要
+                                    summary = clean_html(extracted)
+                                    break
+                            except:
+                                continue
+                    
+                    # 过滤掉期刊元数据（如果摘要是期刊信息而非文章摘要）
+                    # 检查是否包含典型的期刊元数据关键词
+                    journal_metadata_patterns = [
+                        r'Volume\s+\d+,\s*Issue\s+\d+',
+                        r'©\s*\d{4}\s+[\w\s]+Ltd',
+                        r'Advanced\s+\w+\s+Materials',
+                        r'Angewandte\s+Chemie',
+                        r'https://doi\.org/',
+                        r'10\.\d{4}/\w+'  # DOI格式
+                    ]
+                    
+                    # 如果摘要太短或匹配期刊元数据模式，标记为无摘要
+                    if summary:
+                        is_metadata = False
+                        for pattern in journal_metadata_patterns:
+                            if re.search(pattern, summary, re.IGNORECASE):
+                                # 如果匹配到这些模式，且摘要长度小于300，认为是元数据
+                                if len(summary) < 500:
+                                    is_metadata = True
+                                    break
+                        
+                        if is_metadata:
+                            print(f"    ⚠️ {journal}: 检测到期刊元数据而非摘要，尝试其他来源...")
+                            summary = ""  # 清空，稍后尝试从链接抓取（可选）
+                    
+                    # 如果还是没摘要，尝试从DC命名空间获取（Dublin Core）
+                    if not summary and hasattr(entry, 'dc_description'):
+                        summary = clean_html(entry.dc_description)
                     
                     title = clean_html(entry.get('title', 'No Title'))
                     
                     paper = {
                         'title': title,
                         'link': entry.get('link', ''),
-                        'summary': summary,
+                        'summary': summary if summary else "（该期刊RSS未提供文章摘要，请点击查看原文）",
                         'published': pub_date.strftime('%Y-%m-%d') if pub_date else datetime.now().strftime('%Y-%m-%d'),
                         'authors': authors,
                         'journal': journal,
@@ -115,6 +163,7 @@ def fetch_papers():
                     all_papers.append(paper)
                     
                 except Exception as e:
+                    print(f"    ⚠️ 处理单篇文献出错: {e}")
                     continue
                     
         except Exception as e:
