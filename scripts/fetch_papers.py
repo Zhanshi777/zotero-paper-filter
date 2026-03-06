@@ -1,35 +1,16 @@
 import feedparser
 import os
 import json
-from datetime import datetime
+from datetime import datetime, timedelta
 import openai
 from urllib.parse import quote
+import re
+import html
 
-# 配置
-RSS_URL = os.environ.get('ZOTERO_RSS_URL')
-TOPICS = os.environ.get('RESEARCH_TOPICS', 'machine learning, AI').split(',')
-openai.api_key = os.environ.get('OPENAI_API_KEY')
+# ==================== 配置区域 ====================
 
-def fetch_papers():
-    """从Zotero RSS获取文献"""
-    feed = feedparser.parse(RSS_URL)
-    papers = []
-    
-    for entry in feed.entries[:20]:  # 最近20篇
-        paper = {
-            'title': entry.get('title', ''),
-            'link': entry.get('link', ''),
-            'summary': entry.get('summary', ''),
-            'published': entry.get('published', ''),
-            'authors': entry.get('author', 'Unknown')
-        }
-        papers.append(paper)
-    
-    return papers
-
-def filter_papers(papers):
-    """使用AI筛选相关文献"""
-    filtered = {
+# 期刊RSS源配置（直接硬编码，不依赖环境变量）
+FEEDS = {
     "Nature": "https://www.nature.com/nature.rss",
     "Nature Communications": "https://www.nature.com/ncomms.rss",
     "Science": "https://feeds.science.org/rss/science.xml",
@@ -42,189 +23,374 @@ def filter_papers(papers):
     "Advanced Energy Materials": "https://advanced.onlinelibrary.wiley.com/feed/16146840/most-recent",
     "Advanced Functional Materials": "https://advanced.onlinelibrary.wiley.com/feed/16163028/most-recent"
 }
+
+# 获取环境变量（带默认值，防止None）
+TOPICS_ENV = os.environ.get('RESEARCH_TOPICS', 'battery, energy storage, materials science, catalysis')
+TOPICS = [t.strip() for t in TOPICS_ENV.split(',') if t.strip()]
+
+# OpenAI配置
+openai.api_key = os.environ.get('OPENAI_API_KEY', '')
+
+# 只获取最近3天的文献
+DAYS_BACK = 3
+
+# ==================== 核心函数 ====================
+
+def clean_html(text):
+    """清理HTML标签"""
+    if not text:
+        return ""
+    clean = re.sub(r'<[^>]+>', '', text)
+    clean = html.unescape(clean)
+    return clean.strip()
+
+def fetch_papers():
+    """从所有RSS源获取最近文献"""
+    all_papers = []
+    cutoff_date = datetime.now() - timedelta(days=DAYS_BACK)
     
-    for paper in papers:
-        prompt = f"""
-        判断这篇论文是否与以下研究主题相关：{', '.join(TOPICS)}
+    print(f"正在抓取 {len(FEEDS)} 个期刊的RSS源...")
+    print(f"关注主题: {', '.join(TOPICS)}")
+    
+    for journal, url in FEEDS.items():
+        if not url:  # 防御性检查
+            print(f"  ⚠️ {journal} 的URL为空，跳过")
+            continue
+            
+        try:
+            print(f"  📰 正在获取: {journal}")
+            # 添加超时和agent防止被屏蔽
+            feed = feedparser.parse(
+                url, 
+                timeout=30,
+                agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+            )
+            
+            if feed.bozo:  # 解析出错
+                print(f"    ⚠️ 解析警告: {feed.bozo_exception}")
+            
+            for entry in feed.entries:
+                try:
+                    # 解析日期
+                    pub_date = None
+                    if hasattr(entry, 'published_parsed') and entry.published_parsed:
+                        pub_date = datetime(*entry.published_parsed[:6])
+                    elif hasattr(entry, 'updated_parsed') and entry.updated_parsed:
+                        pub_date = datetime(*entry.updated_parsed[:6])
+                    
+                    # 只保留最近3天的文献
+                    if pub_date and pub_date < cutoff_date:
+                        continue
+                    
+                    # 提取作者
+                    authors = "Unknown"
+                    if hasattr(entry, 'authors') and entry.authors:
+                        author_list = [a.get('name', '') for a in entry.authors if a.get('name')]
+                        if author_list:
+                            authors = ", ".join(author_list[:3])
+                            if len(entry.authors) > 3:
+                                authors += " et al."
+                    elif hasattr(entry, 'author'):
+                        authors = entry.author
+                    
+                    # 提取摘要
+                    summary = ""
+                    if hasattr(entry, 'summary'):
+                        summary = clean_html(entry.summary)
+                    elif hasattr(entry, 'description'):
+                        summary = clean_html(entry.description)
+                    
+                    paper = {
+                        'title': clean_html(entry.get('title', 'No Title')),
+                        'link': entry.get('link', ''),
+                        'summary': summary[:800] if summary else '',
+                        'published': pub_date.strftime('%Y-%m-%d') if pub_date else datetime.now().strftime('%Y-%m-%d'),
+                        'authors': authors,
+                        'journal': journal
+                    }
+                    
+                    all_papers.append(paper)
+                    
+                except Exception as e:
+                    print(f"    ⚠️ 处理单篇文献出错: {e}")
+                    continue
+                    
+        except Exception as e:
+            print(f"  ❌ 获取 {journal} 失败: {e}")
+            continue
+    
+    # 按日期降序排序
+    all_papers.sort(key=lambda x: x['published'], reverse=True)
+    print(f"\n✅ 总共获取到 {len(all_papers)} 篇最近{DAYS_BACK}天的文献")
+    return all_papers
+
+def filter_by_ai(papers):
+    """使用AI筛选相关文献"""
+    if not papers:
+        print("没有文献需要筛选")
+        return []
+    
+    if not openai.api_key:
+        print("⚠️ 未设置OpenAI API Key，跳过AI筛选，返回所有文献")
+        return papers
+    
+    print(f"\n🤖 AI正在筛选文献（关注主题: {', '.join(TOPICS)}）...")
+    filtered = []
+    
+    for i, paper in enumerate(papers, 1):
+        print(f"  [{i}/{len(papers)}] {paper['title'][:60]}...")
         
-        标题：{paper['title']}
-        摘要：{paper['summary'][:500]}
-        
-        如果相关，回复：RELEVANT|相关主题|简要理由（50字内）
-        如果不相关，回复：NOT_RELEVANT
-        """
-        
+        prompt = f"""判断这篇论文是否与以下研究主题相关：{', '.join(TOPICS)}
+
+期刊：{paper['journal']}
+标题：{paper['title']}
+摘要：{paper['summary'][:500]}
+
+如果相关，回复：RELEVANT|匹配主题|推荐理由（20字内）
+如果不相关，回复：NOT_RELEVANT"""
+
         try:
             response = openai.ChatCompletion.create(
                 model="gpt-3.5-turbo",
-                messages=[{"role": "user", "content": prompt}],
-                max_tokens=100
+                messages=[
+                    {"role": "system", "content": "你是专业的学术文献筛选助手"},
+                    {"role": "user", "content": prompt}
+                ],
+                max_tokens=100,
+                temperature=0.3
             )
             
             result = response.choices[0].message.content.strip()
             
             if result.startswith('RELEVANT'):
                 parts = result.split('|')
-                paper['topic'] = parts[1] if len(parts) > 1 else 'General'
-                paper['reason'] = parts[2] if len(parts) > 2 else ''
-                paper['relevance_score'] = 85
+                paper['matched_topic'] = parts[1].strip() if len(parts) > 1 else 'General'
+                paper['recommendation'] = parts[2].strip() if len(parts) > 2 else 'Related research'
+                paper['relevance_score'] = 90
                 filtered.append(paper)
+                print(f"      ✅ 相关: {paper['matched_topic']}")
+            else:
+                print(f"      ❌ 不相关")
                 
         except Exception as e:
-            print(f"Error filtering paper: {e}")
-            continue
+            print(f"      ⚠️ AI错误: {e}")
+            # AI出错时默认保留，避免漏掉重要文献
+            paper['matched_topic'] = 'AI Error - Manual Review'
+            paper['recommendation'] = 'Please check manually'
+            paper['relevance_score'] = 50
+            filtered.append(paper)
     
-    return sorted(filtered, key=lambda x: x['relevance_score'], reverse=True)
+    print(f"\n🎯 筛选完成：{len(filtered)}/{len(papers)} 篇相关")
+    return filtered
 
 def generate_html(papers):
-    """生成静态网页"""
-    html_content = f"""
-    <!DOCTYPE html>
-    <html lang="zh-CN">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>每日文献推送 - {datetime.now().strftime('%Y-%m-%d')}</title>
-        <style>
-            body {{
-                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-                max-width: 800px;
-                margin: 0 auto;
-                padding: 20px;
-                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-                min-height: 100vh;
-            }}
-            .container {{
-                background: white;
-                border-radius: 20px;
-                padding: 40px;
-                box-shadow: 0 20px 60px rgba(0,0,0,0.3);
-            }}
-            h1 {{
-                color: #333;
-                text-align: center;
-                margin-bottom: 10px;
-            }}
-            .date {{
-                text-align: center;
-                color: #666;
-                margin-bottom: 30px;
-            }}
-            .paper {{
-                border-left: 4px solid #667eea;
-                padding: 20px;
-                margin: 20px 0;
-                background: #f8f9fa;
-                border-radius: 0 10px 10px 0;
-                transition: transform 0.2s;
-            }}
-            .paper:hover {{
-                transform: translateX(5px);
-                box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            }}
-            .paper-title {{
-                font-size: 1.2em;
-                font-weight: bold;
-                color: #2d3748;
-                margin-bottom: 8px;
-            }}
-            .paper-title a {{
-                color: #667eea;
-                text-decoration: none;
-            }}
-            .paper-title a:hover {{
-                text-decoration: underline;
-            }}
-            .paper-meta {{
-                color: #718096;
-                font-size: 0.9em;
-                margin-bottom: 10px;
-            }}
-            .paper-topic {{
-                display: inline-block;
-                background: #667eea;
-                color: white;
-                padding: 4px 12px;
-                border-radius: 20px;
-                font-size: 0.85em;
-                margin-bottom: 10px;
-            }}
-            .paper-reason {{
-                color: #4a5568;
-                font-style: italic;
-                font-size: 0.95em;
-            }}
-            .empty {{
-                text-align: center;
-                color: #718096;
-                padding: 40px;
-            }}
-            .badge {{
-                display: inline-block;
-                background: #48bb78;
-                color: white;
-                padding: 2px 8px;
-                border-radius: 12px;
-                font-size: 0.75em;
-                margin-left: 10px;
-            }}
-        </style>
-    </head>
-    <body>
-        <div class="container">
-            <h1>📚 每日文献精选</h1>
-            <div class="date">{datetime.now().strftime('%Y年%m月%d日')}</div>
-            <div class="topics">
-                <strong>关注领域：</strong>{', '.join(TOPICS)}
-            </div>
-    """
+    """生成HTML网页"""
+    today = datetime.now().strftime('%Y-%m-%d')
+    
+    html = f"""<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文献日报 - {today}</title>
+    <style>
+        body {{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }}
+        .container {{
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }}
+        h1 {{
+            color: #333;
+            text-align: center;
+            margin-bottom: 10px;
+        }}
+        .subtitle {{
+            text-align: center;
+            color: #666;
+            margin-bottom: 20px;
+        }}
+        .stats {{
+            background: #f0f4f8;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            text-align: center;
+            font-size: 14px;
+        }}
+        .paper {{
+            border-left: 4px solid #667eea;
+            padding: 20px;
+            margin: 20px 0;
+            background: #f8f9fa;
+            border-radius: 0 10px 10px 0;
+            transition: transform 0.2s;
+        }}
+        .paper:hover {{
+            transform: translateX(5px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }}
+        .paper-title {{
+            font-size: 18px;
+            font-weight: bold;
+            color: #2d3748;
+            margin-bottom: 8px;
+            line-height: 1.4;
+        }}
+        .paper-title a {{
+            color: #667eea;
+            text-decoration: none;
+        }}
+        .paper-title a:hover {{
+            text-decoration: underline;
+        }}
+        .paper-meta {{
+            color: #718096;
+            font-size: 13px;
+            margin-bottom: 10px;
+        }}
+        .journal-tag {{
+            display: inline-block;
+            background: #e53e3e;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            margin-right: 8px;
+            margin-bottom: 8px;
+        }}
+        .topic-tag {{
+            display: inline-block;
+            background: #48bb78;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            margin-bottom: 8px;
+        }}
+        .abstract {{
+            color: #4a5568;
+            font-size: 14px;
+            line-height: 1.6;
+            margin-top: 10px;
+            max-height: 100px;
+            overflow: hidden;
+            position: relative;
+        }}
+        .recommendation {{
+            background: #fff;
+            border-left: 3px solid #48bb78;
+            padding: 10px;
+            margin-top: 10px;
+            font-size: 13px;
+            color: #2d3748;
+            font-style: italic;
+        }}
+        .add-btn {{
+            display: inline-block;
+            margin-top: 10px;
+            background: #3182ce;
+            color: white;
+            padding: 6px 16px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 13px;
+        }}
+        .add-btn:hover {{
+            background: #2c5282;
+        }}
+        .empty {{
+            text-align: center;
+            padding: 60px;
+            color: #718096;
+        }}
+        .footer {{
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #e2e8f0;
+            color: #a0aec0;
+            font-size: 12px;
+        }}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📚 今日文献精选</h1>
+        <div class="subtitle">{today}</div>
+        
+        <div class="stats">
+            <strong>关注领域：</strong>{', '.join(TOPICS)} | 
+            <strong>今日更新：</strong>{len(papers)}篇 | 
+            <strong>来源：</strong>{len(FEEDS)}个顶级期刊
+        </div>
+"""
     
     if not papers:
-        html_content += '<div class="empty">今日暂无相关文献更新</div>'
+        html += '<div class="empty">今日暂无相关文献更新</div>'
     else:
         for paper in papers:
-            html_content += f"""
-            <div class="paper">
-                <div class="paper-title">
-                    <a href="{paper['link']}" target="_blank">{paper['title']}</a>
-                    <span class="badge">相关度 {paper['relevance_score']}%</span>
-                </div>
-                <div class="paper-meta">
-                    👤 {paper['authors']} | 📅 {paper['published'][:10]}
-                </div>
-                <div class="paper-topic">🏷️ {paper['topic']}</div>
-                <div class="paper-reason">💡 {paper['reason']}</div>
+            zotero_link = f"https://www.zotero.org/save?url={quote(paper['link'])}&title={quote(paper['title'])}"
+            
+            html += f"""
+        <div class="paper">
+            <div class="paper-title">
+                <a href="{paper['link']}" target="_blank">{paper['title']}</a>
             </div>
-            """
-    
-    html_content += """
+            <div class="paper-meta">
+                👤 {paper['authors']} | 📅 {paper['published']} | 📰 {paper['journal']}
+            </div>
+            <div>
+                <span class="journal-tag">{paper['journal']}</span>
+                <span class="topic-tag">🏷️ {paper.get('matched_topic', 'General')}</span>
+            </div>
+            <div class="abstract">{paper['summary'][:300]}...</div>
+            <div class="recommendation">💡 {paper.get('recommendation', 'Related to your research')}</div>
+            <a href="{zotero_link}" class="add-btn" target="_blank">➕ 添加到Zotero</a>
         </div>
-    </body>
-    </html>
-    """
+"""
+    
+    html += f"""
+        <div class="footer">
+            自动生成于 {today} | GitHub Actions + OpenAI
+        </div>
+    </div>
+</body>
+</html>
+"""
     
     # 保存文件
     os.makedirs('docs', exist_ok=True)
     with open('docs/index.html', 'w', encoding='utf-8') as f:
-        f.write(html_content)
+        f.write(html)
     
-    # 同时保存JSON供历史记录
+    # 保存JSON备份
     with open('docs/papers.json', 'w', encoding='utf-8') as f:
         json.dump({
-            'date': datetime.now().isoformat(),
+            'date': today,
             'topics': TOPICS,
+            'count': len(papers),
             'papers': papers
         }, f, ensure_ascii=False, indent=2)
+    
+    print(f"\n✅ 网页已生成：docs/index.html（{len(papers)}篇文献）")
 
 if __name__ == '__main__':
-    print("正在获取文献...")
-    papers = fetch_papers()
-    print(f"获取到 {len(papers)} 篇文献")
-    
-    print("正在筛选相关文献...")
-    filtered = filter_papers(papers)
-    print(f"筛选出 {len(filtered)} 篇相关文献")
-    
-    print("生成网页...")
-    generate_html(filtered)
-    print("完成！")
+    try:
+        papers = fetch_papers()
+        filtered = filter_by_ai(papers)
+        generate_html(filtered)
+        print("\n🎉 全部完成！")
+    except Exception as e:
+        print(f"\n❌ 程序运行失败: {e}")
+        import traceback
+        traceback.print_exc()
+        exit(1)
