@@ -247,75 +247,76 @@ def filter_by_keywords(papers):
     return filtered
 
 def analyze_innovation(papers):
-    """AI深度解析：生成连贯的研究故事"""
+    """AI深度解析：生成专家级学术评述"""
     if not papers:
         return []
     
     if not ai_client:
         print("⚠️ 未配置AI API，跳过深度解析")
         for paper in papers:
-            paper['research_story'] = "（未配置AI，无法生成深度解析）"
+            paper['research_story'] = "（未配置AI）"
         return papers
     
     print(f"\n🤖 第二步：AI深度解析（共{len(papers)}篇）...")
-    print(f"   使用API: {'DeepSeek' if BASE_URL else 'OpenAI'}")
     
     for i, paper in enumerate(papers, 1):
         print(f"  [{i}/{len(papers)}] AI分析: {paper['title'][:50]}...")
         
-        prompt = f"""请用2-3段连贯的文字（总共250-350字），像撰写科学新闻一样讲述这篇论文的研究故事：
+        # 专家级Prompt：硬核学术风格，面向领域研究者
+        prompt = f"""请以领域专家视角，用严谨学术语言撰写该论文的核心评述（200-250字）。
 
 期刊：{paper['journal']}
 标题：{paper['title']}
 摘要：{paper['summary'][:1000]}
 
-要求按以下逻辑路线叙述：
-1. 开篇点明研究背景和要解决的关键科学问题（领域痛点）
-2. 阐述作者采用的核心策略/方法（"鉴于此，作者通过..."）
-3. 说明关键发现或作用机制（"研究表明/计算发现..."）
-4. 最后点明取得的具体成果和性能数据（带具体数值）
+写作要求：
+1. **科学问题**：明确指出该工作针对的具体技术瓶颈或科学难题（1句话）
+2. **策略/方法**：阐述核心解决思路，突出关键材料/方法/结构的创新性（1-2句话）
+3. **机理/发现**：说明关键科学发现或作用机制，避免泛泛而谈（1-2句话）  
+4. **性能/结果**：给出具体性能指标及与现有技术的对比基准（state-of-the-art）（1句话）
+5. **学术价值**：点明对领域的实质性推进（理论贡献或技术突破）（1句话）
 
-要求：
-- 语言流畅，逻辑清晰，使用连接词（鉴于此、结果表明、最终等）
-- 不要分点，不要小标题，像讲故事一样自然过渡
-- 必须包含具体性能数据（效率、稳定性数值等）
-- 突出文章的逻辑链条：问题→策略→机制→成果"""
+风格要求：
+- 使用专业术语，避免科普化表达
+- 客观陈述，不夸大，突出技术细节
+- 逻辑严密：问题→策略→机理→结果→价值
+- 禁止出现"值得一提的是"、"令人振奋的是"等主观感叹
+- 禁止出现"为未来...奠定了基础"等空话，必须给出具体机理或数据支撑"""
 
         try:
             response = ai_client.chat.completions.create(
                 model="gpt-3.5-turbo" if not BASE_URL else "deepseek-chat",
                 messages=[
-                    {"role": "system", "content": "你是资深的材料科学领域科学写作专家，擅长用流畅的中文撰写学术新闻-style的研究解读。"},
+                    {"role": "system", "content": "你是该领域的资深研究者，撰写的是面向同行的学术评述，不是科普文章。要求客观、精准、信息密度高。"},
                     {"role": "user", "content": prompt}
                 ],
-                max_tokens=600,
-                temperature=0.6
+                max_tokens=500,
+                temperature=0.3  # 降低温度，减少创造性发挥，更严谨
             )
             
             result = response.choices[0].message.content.strip()
             
-            # 清理格式：确保段落间有适当空行
-            paragraphs = [p.strip() for p in result.split('\n\n') if p.strip()]
-            if len(paragraphs) == 1:
-                # 如果只有一段，尝试按句号分段
-                sentences = re.split(r'([。！])', paragraphs[0])
-                new_paragraphs = []
-                current_para = ""
-                for j in range(0, len(sentences)-1, 2):
-                    current_para += sentences[j] + (sentences[j+1] if j+1 < len(sentences) else "")
-                    if len(current_para) > 80:  # 每段约80字后换段
-                        new_paragraphs.append(current_para)
-                        current_para = ""
-                if current_para:
-                    new_paragraphs.append(current_para)
-                paragraphs = new_paragraphs if new_paragraphs else paragraphs
+            # 后处理：清理主观感叹词
+            subjective_words = [
+                "值得一提的是", "令人振奋的是", "值得注意的是", "令人惊讶的是",
+                "首次实现了", "开创性地", "极大地", "显著地", "为未来奠定了基础",
+                "具有重要意义", "具有重要价值", "有望推动", "将改变"
+            ]
+            for word in subjective_words:
+                result = result.replace(word, "")
             
-            paper['research_story'] = '\n\n'.join(paragraphs)
-            print(f"      ✅ 解析完成（{len(result)}字）")
+            # 确保段落间有空行
+            result = result.replace("。", "。\n").replace(".\n", ".\n\n")
+            # 合并过短行
+            lines = [l.strip() for l in result.split('\n') if l.strip()]
+            result = '\n\n'.join(lines)
+            
+            paper['research_story'] = result
+            print(f"      ✅ 解析完成")
             
         except Exception as e:
             print(f"      ⚠️ AI解析失败: {e}")
-            paper['research_story'] = "（AI解析失败，请查看原文获取详细信息）"
+            paper['research_story'] = "（AI解析失败）"
     
     print(f"\n✅ AI深度解析完成")
     return papers
