@@ -30,7 +30,7 @@ KEYWORDS = [k.strip().lower() for k in KEYWORDS_ENV.split(',') if k.strip()]
 
 DAYS_BACK = 3
 
-# AI配置（用于第二步深度解析）
+# AI配置（用于第二步深度解析，只解析筛选后的文献）
 API_KEY = os.environ.get('OPENAI_API_KEY', '')
 BASE_URL = os.environ.get('OPENAI_BASE_URL', None)
 
@@ -130,7 +130,7 @@ def fetch_papers():
     return all_papers
 
 def filter_by_keywords(papers):
-    """第一步：关键词快速筛选"""
+    """第一步：关键词快速筛选（免费，秒级）"""
     if not papers:
         return []
     
@@ -156,8 +156,8 @@ def filter_by_keywords(papers):
     print(f"🎯 关键词筛选完成：{len(filtered)}/{len(papers)} 篇相关文献")
     return filtered
 
-def analyze_with_ai(papers):
-    """第二步：AI深度解析创新点（只处理筛选后的文献）"""
+def analyze_innovation(papers):
+    """第二步：AI深度解析创新点（**只处理筛选后的少量文献**）"""
     if not papers:
         return []
     
@@ -168,7 +168,7 @@ def analyze_with_ai(papers):
             paper['breakthrough'] = "请先配置OpenAI API Key"
         return papers
     
-    print(f"\n🤖 第二步：AI深度解析创新点（共{len(papers)}篇）...")
+    print(f"\n🤖 第二步：AI深度解析创新点（**仅{len(papers)}篇**，不是全部）...")
     print(f"   使用API: {'DeepSeek' if BASE_URL else 'OpenAI'}")
     
     for i, paper in enumerate(papers, 1):
@@ -207,9 +207,9 @@ def analyze_with_ai(papers):
             breakthrough = ""
             
             for line in result.split('\n'):
-                if line.startswith('创新点：') or line.startswith('创新点:'):
+                if '创新点' in line and ('：' in line or ':' in line):
                     innovation = line.split('：', 1)[1].strip() if '：' in line else line.split(':', 1)[1].strip()
-                elif line.startswith('突破性：') or line.startswith('突破性:'):
+                elif '突破性' in line and ('：' in line or ':' in line):
                     breakthrough = line.split('：', 1)[1].strip() if '：' in line else line.split(':', 1)[1].strip()
             
             # 如果没解析到格式，用整段话作为创新点
@@ -226,7 +226,7 @@ def analyze_with_ai(papers):
             paper['innovation'] = "（AI解析失败）"
             paper['breakthrough'] = "请查看原文获取详细信息"
     
-    print(f"\n✅ AI深度解析完成")
+    print(f"\n✅ AI深度解析完成：共处理{len(papers)}篇")
     return papers
 
 def generate_html(papers):
@@ -534,14 +534,14 @@ def generate_html(papers):
 
 if __name__ == '__main__':
     try:
-        # 第一步：获取文献
+        # 第一步：获取所有文献（436篇）
         papers = fetch_papers()
         
-        # 第二步：关键词快速筛选
+        # 第二步：关键词快速筛选（436→31篇，免费秒级）
         filtered = filter_by_keywords(papers)
         
-        # 第三步：AI深度解析（只对筛选后的少量文献）
-        analyzed = analyze_with_ai(filtered)
+        # 第三步：AI深度解析创新点（**只解析筛选后的31篇**）
+        analyzed = analyze_innovation(filtered)
         
         # 生成网页
         generate_html(analyzed)
