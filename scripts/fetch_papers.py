@@ -48,6 +48,69 @@ def clean_html(text):
     clean = html.unescape(clean)
     return clean.strip()
 
+def extract_doi(entry):
+    """从entry中提取DOI"""
+    doi = ""
+    if hasattr(entry, 'id'):
+        doi_match = re.search(r'10\.\d{4,}/[^\s<>"\']+', entry.id)
+        if doi_match:
+            doi = doi_match.group(0)
+    if not doi and hasattr(entry, 'link'):
+        doi_match = re.search(r'10\.\d{4,}/[^\s<>"\']+', entry.link)
+        if doi_match:
+            doi = doi_match.group(0)
+    if doi:
+        doi = doi.replace('https://doi.org/', '').replace('http://doi.org/', '')
+    return doi
+
+def get_download_links(paper):
+    """生成PDF和SI下载/查看链接"""
+    journal = paper['journal']
+    doi = paper.get('doi', '')
+    link = paper.get('link', '')
+    pdf_url = None
+    si_url = None
+    
+    if not doi and not link:
+        return pdf_url, si_url
+    
+    try:
+        if journal in ["Nature", "Nature Communications", "Nature Energy", "Nature Synthesis"]:
+            if '/articles/' in link:
+                article_id = link.split('/articles/')[-1].split('/')[0].split('?')[0]
+                pdf_url = f"https://www.nature.com/articles/{article_id}.pdf"
+                si_url = f"https://www.nature.com/articles/{article_id}#Sec20"
+        
+        elif journal == "Science":
+            if doi:
+                pdf_url = f"https://www.science.org/doi/pdf/{doi}"
+                si_url = f"https://www.science.org/doi/suppl/{doi}"
+        
+        elif journal == "Joule":
+            if '/article/pii/' in link:
+                pii = link.split('/article/pii/')[-1].split('/')[0]
+                pdf_url = f"https://www.cell.com/action/showPdf?pii={pii}"
+                si_url = f"{link}#supplementary-materials"
+            elif doi:
+                pdf_url = f"https://doi.org/{doi}"
+                si_url = f"https://doi.org/{doi}#supplementary-materials"
+        
+        elif journal == "Energy & Environmental Science":
+            if doi:
+                pdf_url = f"https://pubs.rsc.org/en/content/articlepdf/{doi}"
+                si_url = f"https://pubs.rsc.org/en/content/articlesuppl/{doi}"
+        
+        elif journal in ["Angewandte Chemie", "Advanced Materials", 
+                        "Advanced Energy Materials", "Advanced Functional Materials"]:
+            if doi:
+                pdf_url = f"https://onlinelibrary.wiley.com/doi/pdf/{doi}"
+                si_url = f"https://onlinelibrary.wiley.com/doi/abs/{doi}#support-information-section"
+    
+    except Exception as e:
+        print(f"构建下载链接出错: {e}")
+    
+    return pdf_url, si_url
+
 def fetch_papers():
     """从所有RSS源获取最近文献"""
     all_papers = []
@@ -92,15 +155,12 @@ def fetch_papers():
                     elif hasattr(entry, 'author'):
                         authors = entry.author
                     
-                    # ===== 改进的摘要提取逻辑 =====
+                    # 改进的摘要提取
                     summary = ""
-                    
-                    # 尝试从多个字段获取摘要，按优先级排序
                     possible_fields = [
                         ('content', lambda x: x[0].value if isinstance(x, list) else x.value if hasattr(x, 'value') else str(x)),
                         ('summary', lambda x: str(x)),
                         ('description', lambda x: str(x)),
-                        ('subtitle', lambda x: str(x))
                     ]
                     
                     for field_name, extractor in possible_fields:
@@ -108,62 +168,48 @@ def fetch_papers():
                             try:
                                 raw_content = getattr(entry, field_name)
                                 extracted = extractor(raw_content)
-                                if extracted and len(extracted) > 50:  # 至少50个字符才算有效摘要
+                                if extracted and len(extracted) > 50:
                                     summary = clean_html(extracted)
                                     break
                             except:
                                 continue
                     
-                    # 过滤掉期刊元数据（如果摘要是期刊信息而非文章摘要）
-                    # 检查是否包含典型的期刊元数据关键词
-                    journal_metadata_patterns = [
-                        r'Volume\s+\d+,\s*Issue\s+\d+',
-                        r'©\s*\d{4}\s+[\w\s]+Ltd',
-                        r'Advanced\s+\w+\s+Materials',
-                        r'Angewandte\s+Chemie',
-                        r'https://doi\.org/',
-                        r'10\.\d{4}/\w+'  # DOI格式
-                    ]
-                    
-                    # 如果摘要太短或匹配期刊元数据模式，标记为无摘要
+                    # 过滤期刊元数据
                     if summary:
+                        metadata_patterns = [
+                            r'Volume\s+\d+,\s*Issue\s+\d+',
+                            r'©\s*\d{4}\s+[\w\s]+Ltd',
+                            r'https://doi\.org/',
+                        ]
                         is_metadata = False
-                        for pattern in journal_metadata_patterns:
-                            if re.search(pattern, summary, re.IGNORECASE):
-                                # 如果匹配到这些模式，且摘要长度小于300，认为是元数据
-                                if len(summary) < 500:
-                                    is_metadata = True
-                                    break
-                        
+                        for pattern in metadata_patterns:
+                            if re.search(pattern, summary, re.IGNORECASE) and len(summary) < 500:
+                                is_metadata = True
+                                break
                         if is_metadata:
-                            print(f"    ⚠️ {journal}: 检测到期刊元数据而非摘要，尝试其他来源...")
-                            summary = ""  # 清空，稍后尝试从链接抓取（可选）
+                            summary = ""
                     
-                    # 如果还是没摘要，尝试从DC命名空间获取（Dublin Core）
                     if not summary and hasattr(entry, 'dc_description'):
                         summary = clean_html(entry.dc_description)
                     
                     title = clean_html(entry.get('title', 'No Title'))
+                    doi = extract_doi(entry)
                     
                     paper = {
                         'title': title,
                         'link': entry.get('link', ''),
+                        'doi': doi,
                         'summary': summary if summary else "（该期刊RSS未提供文章摘要，请点击查看原文）",
                         'published': pub_date.strftime('%Y-%m-%d') if pub_date else datetime.now().strftime('%Y-%m-%d'),
                         'authors': authors,
                         'journal': journal,
                         'matched_keywords': [],
-                        'research_background': '',
-                        'methodology': '',
-                        'key_findings': '',
-                        'theory_breakthrough': '',
-                        'performance_breakthrough': ''
+                        'research_story': ''  # AI连贯叙述
                     }
                     
                     all_papers.append(paper)
                     
                 except Exception as e:
-                    print(f"    ⚠️ 处理单篇文献出错: {e}")
                     continue
                     
         except Exception as e:
@@ -175,6 +221,7 @@ def fetch_papers():
     return all_papers
 
 def filter_by_keywords(papers):
+    """关键词快速筛选"""
     if not papers:
         return []
     
@@ -187,7 +234,6 @@ def filter_by_keywords(papers):
     
     for paper in papers:
         text_to_search = (paper['title'] + ' ' + paper['summary']).lower()
-        
         matched = []
         for keyword in KEYWORDS:
             if keyword in text_to_search:
@@ -201,116 +247,77 @@ def filter_by_keywords(papers):
     return filtered
 
 def analyze_innovation(papers):
-    """AI深度解析：详细分析研究背景、方法、发现、突破"""
+    """AI深度解析：生成连贯的研究故事"""
     if not papers:
         return []
     
     if not ai_client:
         print("⚠️ 未配置AI API，跳过深度解析")
         for paper in papers:
-            paper['research_background'] = "未配置AI"
-            paper['methodology'] = "请手动查看原文"
-            paper['key_findings'] = "暂无分析"
-            paper['theory_breakthrough'] = "暂无"
-            paper['performance_breakthrough'] = "暂无"
+            paper['research_story'] = "（未配置AI，无法生成深度解析）"
         return papers
     
-    print(f"\n🤖 第二步：AI深度解析（仅{len(papers)}篇）...")
+    print(f"\n🤖 第二步：AI深度解析（共{len(papers)}篇）...")
     print(f"   使用API: {'DeepSeek' if BASE_URL else 'OpenAI'}")
     
     for i, paper in enumerate(papers, 1):
         print(f"  [{i}/{len(papers)}] AI分析: {paper['title'][:50]}...")
         
-        # 更详细的Prompt，要求结构化输出
-        prompt = f"""请详细分析这篇学术论文，按以下结构输出：
+        prompt = f"""请用2-3段连贯的文字（总共250-350字），像撰写科学新闻一样讲述这篇论文的研究故事：
 
 期刊：{paper['journal']}
 标题：{paper['title']}
 摘要：{paper['summary'][:1000]}
 
-请按以下5个部分详细分析（每部分50-80字，要具体）：
-
-1. 研究背景：该研究解决了什么科学/技术问题？现有方法的局限是什么？
-2. 研究方法：采用了什么实验/理论方法？关键的技术路线或策略？
-3. 核心发现：研究得出了什么重要结论？发现了什么新现象或新机制？
-4. 理论突破：在理论认识、机理阐明或模型建立方面有什么创新？
-5. 性能突破：具体的性能指标提升（如效率、稳定性、寿命等，带具体数值）
+要求按以下逻辑路线叙述：
+1. 开篇点明研究背景和要解决的关键科学问题（领域痛点）
+2. 阐述作者采用的核心策略/方法（"鉴于此，作者通过..."）
+3. 说明关键发现或作用机制（"研究表明/计算发现..."）
+4. 最后点明取得的具体成果和性能数据（带具体数值）
 
 要求：
-- 避免空泛描述，要有实质内容
-- 性能突破部分必须带具体数据（如效率从X%提升到Y%）
-- 理论突破要说明新认识或新机制"""
+- 语言流畅，逻辑清晰，使用连接词（鉴于此、结果表明、最终等）
+- 不要分点，不要小标题，像讲故事一样自然过渡
+- 必须包含具体性能数据（效率、稳定性数值等）
+- 突出文章的逻辑链条：问题→策略→机制→成果"""
 
         try:
             response = ai_client.chat.completions.create(
                 model="gpt-3.5-turbo" if not BASE_URL else "deepseek-chat",
                 messages=[
-                    {"role": "system", "content": "你是资深的材料科学和能源领域专家，擅长深度解析学术论文的创新点和科学价值。"},
+                    {"role": "system", "content": "你是资深的材料科学领域科学写作专家，擅长用流畅的中文撰写学术新闻-style的研究解读。"},
                     {"role": "user", "content": prompt}
                 ],
-                max_tokens=800,  # 增加token以获取详细回答
-                temperature=0.5
+                max_tokens=600,
+                temperature=0.6
             )
             
             result = response.choices[0].message.content.strip()
             
-            # 解析结构化输出
-            sections = {
-                '研究背景': 'research_background',
-                '研究方法': 'methodology', 
-                '核心发现': 'key_findings',
-                '理论突破': 'theory_breakthrough',
-                '性能突破': 'performance_breakthrough'
-            }
+            # 清理格式：确保段落间有适当空行
+            paragraphs = [p.strip() for p in result.split('\n\n') if p.strip()]
+            if len(paragraphs) == 1:
+                # 如果只有一段，尝试按句号分段
+                sentences = re.split(r'([。！])', paragraphs[0])
+                new_paragraphs = []
+                current_para = ""
+                for j in range(0, len(sentences)-1, 2):
+                    current_para += sentences[j] + (sentences[j+1] if j+1 < len(sentences) else "")
+                    if len(current_para) > 80:  # 每段约80字后换段
+                        new_paragraphs.append(current_para)
+                        current_para = ""
+                if current_para:
+                    new_paragraphs.append(current_para)
+                paragraphs = new_paragraphs if new_paragraphs else paragraphs
             
-            current_section = None
-            content_buffer = []
-            
-            for line in result.split('\n'):
-                line = line.strip()
-                if not line:
-                    continue
-                    
-                # 检查是否是章节标题
-                for cn_title, en_key in sections.items():
-                    if cn_title in line and ('：' in line or ':' in line or line.startswith(f"{cn_title}")):
-                        # 保存上一个章节的内容
-                        if current_section and content_buffer:
-                            paper[current_section] = ' '.join(content_buffer).strip()
-                        # 开始新章节
-                        current_section = en_key
-                        content_buffer = []
-                        # 提取当前行的内容（去掉标题部分）
-                        if '：' in line:
-                            content = line.split('：', 1)[1].strip()
-                            if content:
-                                content_buffer.append(content)
-                        break
-                else:
-                    # 不是标题，是内容
-                    if current_section:
-                        content_buffer.append(line)
-            
-            # 保存最后一个章节
-            if current_section and content_buffer:
-                paper[current_section] = ' '.join(content_buffer).strip()
-            
-            # 确保所有字段都有值
-            for key in sections.values():
-                if not paper.get(key):
-                    paper[key] = "详见原文"
-            
-            print(f"      ✅ 解析完成")
+            paper['research_story'] = '\n\n'.join(paragraphs)
+            print(f"      ✅ 解析完成（{len(result)}字）")
             
         except Exception as e:
             print(f"      ⚠️ AI解析失败: {e}")
-            paper['research_background'] = "AI解析失败"
-            paper['methodology'] = "请查看原文"
-            paper['key_findings'] = "解析失败"
-            paper['theory_breakthrough'] = "暂无"
-            paper['performance_breakthrough'] = "暂无"
+            paper['research_story'] = "（AI解析失败，请查看原文获取详细信息）"
     
-    print(f"\n✅ AI深度解析完成：共处理{len(papers)}篇")
+    print(f"\n✅ AI深度解析完成")
     return papers
 
 def generate_html(papers):
@@ -327,8 +334,6 @@ def generate_html(papers):
             --primary: #667eea;
             --secondary: #764ba2;
             --accent: #48bb78;
-            --warning: #ed8936;
-            --info: #4299e1;
             --bg: #f7fafc;
         }}
         body {{
@@ -401,10 +406,8 @@ def generate_html(papers):
         .paper-title a {{
             color: var(--primary);
             text-decoration: none;
-            transition: color 0.2s;
         }}
         .paper-title a:hover {{
-            color: var(--secondary);
             text-decoration: underline;
         }}
         .paper-meta {{
@@ -414,12 +417,6 @@ def generate_html(papers):
             display: flex;
             flex-wrap: wrap;
             gap: 15px;
-            align-items: center;
-        }}
-        .meta-item {{
-            display: flex;
-            align-items: center;
-            gap: 5px;
         }}
         .tags {{
             display: flex;
@@ -428,7 +425,6 @@ def generate_html(papers):
             margin-top: 10px;
         }}
         .journal-tag {{
-            display: inline-block;
             background: #e53e3e;
             color: white;
             padding: 6px 14px;
@@ -437,7 +433,6 @@ def generate_html(papers):
             font-weight: 600;
         }}
         .keyword-tag {{
-            display: inline-block;
             background: var(--accent);
             color: white;
             padding: 6px 14px;
@@ -446,22 +441,19 @@ def generate_html(papers):
             font-weight: 500;
         }}
         
-        /* Abstract部分 */
+        /* 原文摘要 */
         .abstract-section {{
             background: #f8fafc;
-            border-left: 4px solid var(--info);
+            border-left: 4px solid #4299e1;
             padding: 20px;
             margin: 20px 0;
             border-radius: 0 8px 8px 0;
         }}
         .abstract-title {{
             font-weight: 700;
-            color: var(--info);
+            color: #4299e1;
             font-size: 14px;
             margin-bottom: 10px;
-            display: flex;
-            align-items: center;
-            gap: 8px;
         }}
         .abstract-content {{
             color: #4a5568;
@@ -470,90 +462,112 @@ def generate_html(papers):
             text-align: justify;
         }}
         
-        /* AI分析部分 */
-        .ai-analysis {{
+        /* AI连贯叙述 */
+        .research-story {{
             background: linear-gradient(135deg, #faf5ff 0%, #f0fff4 100%);
             border: 2px solid #e2e8f0;
             border-radius: 12px;
             padding: 25px;
             margin-top: 25px;
         }}
-        .ai-title {{
-            font-size: 18px;
+        .story-header {{
+            font-size: 16px;
             font-weight: 700;
             color: #2d3748;
-            margin-bottom: 20px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
+            margin-bottom: 15px;
             padding-bottom: 10px;
             border-bottom: 2px solid #e2e8f0;
-        }}
-        .ai-section {{
-            margin-bottom: 18px;
-            padding-bottom: 18px;
-            border-bottom: 1px dashed #e2e8f0;
-        }}
-        .ai-section:last-child {{
-            border-bottom: none;
-            margin-bottom: 0;
-            padding-bottom: 0;
-        }}
-        .ai-section-title {{
-            font-weight: 700;
-            font-size: 14px;
-            margin-bottom: 8px;
             display: flex;
             align-items: center;
             gap: 8px;
         }}
-        .ai-section-content {{
+        .story-content {{
             color: #2d3748;
-            font-size: 15px;
-            line-height: 1.7;
-            padding-left: 28px;
+            font-size: 15.5px;
+            line-height: 1.9;
+            text-align: justify;
+        }}
+        .story-content p {{
+            margin-bottom: 15px;
+            text-indent: 2em;
+        }}
+        /* 高亮关键数据 */
+        .story-content .highlight-data {{
+            background: linear-gradient(120deg, #fef3c7 0%, #fde68a 100%);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: 600;
+            color: #92400e;
         }}
         
-        /* 不同部分的配色 */
-        .bg-research {{ color: #805ad5; }}  /* 紫色 - 背景 */
-        .bg-method {{ color: #3182ce; }}    /* 蓝色 - 方法 */
-        .bg-finding {{ color: #38a169; }}   /* 绿色 - 发现 */
-        .bg-theory {{ color: #d69e2e; }}    /* 黄色 - 理论 */
-        .bg-performance {{ color: #e53e3e; }} /* 红色 - 性能 */
-        
-        .add-btn {{
+        /* 操作按钮 */
+        .action-buttons {{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 25px;
+            padding-top: 20px;
+            border-top: 2px solid #e2e8f0;
+        }}
+        .btn {{
             display: inline-flex;
             align-items: center;
-            gap: 8px;
-            margin-top: 20px;
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            color: white;
-            padding: 12px 24px;
+            gap: 6px;
+            padding: 10px 20px;
             border-radius: 8px;
             text-decoration: none;
-            font-size: 15px;
+            font-size: 14px;
             font-weight: 600;
             transition: all 0.3s;
+        }}
+        .zotero-btn {{
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
             box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
         }}
-        .add-btn:hover {{
+        .zotero-btn:hover {{
             transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
         }}
-        .empty {{
-            text-align: center;
-            padding: 80px 40px;
+        .pdf-btn {{
+            background: #e53e3e;
+            color: white;
+        }}
+        .pdf-btn:hover {{
+            background: #c53030;
+            transform: translateY(-2px);
+        }}
+        .si-btn {{
+            background: #38a169;
+            color: white;
+        }}
+        .si-btn:hover {{
+            background: #2f855a;
+            transform: translateY(-2px);
+        }}
+        .source-btn {{
+            background: #718096;
+            color: white;
+        }}
+        .source-btn:hover {{
+            background: #4a5568;
+            transform: translateY(-2px);
+        }}
+        
+        .oa-note {{
+            font-size: 12px;
             color: #718096;
-            font-size: 18px;
+            margin-top: 10px;
+            font-style: italic;
         }}
-        .footer {{
-            text-align: center;
-            margin-top: 50px;
-            padding-top: 30px;
-            border-top: 2px solid #e2e8f0;
-            color: #a0aec0;
-            font-size: 13px;
+        
+        mark {{
+            background: #fef3c7;
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-weight: 600;
+            color: #92400e;
         }}
+        
         .ai-badge {{
             position: absolute;
             top: 20px;
@@ -564,34 +578,35 @@ def generate_html(papers):
             border-radius: 20px;
             font-size: 12px;
             font-weight: 700;
-            box-shadow: 0 2px 10px rgba(102, 126, 234, 0.4);
         }}
-        mark {{
-            background: linear-gradient(120deg, #fef3c7 0%, #fef3c7 100%);
-            padding: 2px 6px;
-            border-radius: 4px;
-            font-weight: 600;
-            color: #92400e;
+        
+        .footer {{
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 2px solid #e2e8f0;
+            color: #a0aec0;
+            font-size: 13px;
         }}
     </style>
 </head>
 <body>
     <div class="container">
         <h1>📚 今日文献精选</h1>
-        <div class="subtitle">智能筛选 · 深度解析 · 一键收藏</div>
+        <div class="subtitle">智能筛选 · 深度解读 · 一键下载</div>
         
         <div class="stats">
             <strong>筛选模式：</strong>关键词匹配 + AI深度解析 | 
             <strong>关键词：</strong>{', '.join(KEYWORDS)} | 
-            <strong>精选文献：</strong>{len(papers)}篇 | 
-            <strong>来源：</strong>{len(FEEDS)}个顶刊
+            <strong>精选文献：</strong>{len(papers)}篇
         </div>
 """
     
     if not papers:
-        html += '<div class="empty">今日暂无匹配文献<br><small>建议更换关键词或扩大时间范围</small></div>'
+        html += '<div style="text-align:center;padding:60px;color:#718096;">今日暂无匹配文献</div>'
     else:
         for paper in papers:
+            pdf_url, si_url = get_download_links(paper)
             zotero_link = f"https://www.zotero.org/save?url={quote(paper['link'])}&title={quote(paper['title'])}"
             
             # 高亮关键词
@@ -600,23 +615,27 @@ def generate_html(papers):
                 pattern = re.compile(re.escape(kw), re.IGNORECASE)
                 display_title = pattern.sub(f'<mark>{kw}</mark>', display_title)
             
-            # 构建AI分析HTML
-            ai_html = ""
-            sections_data = [
-                ('📋', '研究背景', 'bg-research', paper.get('research_background', '')),
-                ('🔬', '研究方法', 'bg-method', paper.get('methodology', '')),
-                ('💡', '核心发现', 'bg-finding', paper.get('key_findings', '')),
-                ('📐', '理论突破', 'bg-theory', paper.get('theory_breakthrough', '')),
-                ('📈', '性能突破', 'bg-performance', paper.get('performance_breakthrough', ''))
-            ]
+            # 处理AI叙述：高亮关键数据
+            story_html = ""
+            if paper.get('research_story') and paper['research_story'] != "（AI解析失败，请查看原文获取详细信息）":
+                story_text = paper['research_story']
+                # 高亮百分比
+                story_text = re.sub(r'(\d+\.?\d*%)', r'<span class="highlight-data">\1</span>', story_text)
+                # 高亮时间
+                story_text = re.sub(r'(\d+\s*(小时|h|天|年))', r'<span class="highlight-data">\1</span>', story_text)
+                # 转为HTML段落
+                paragraphs = story_text.split('\n\n')
+                story_html = ''.join([f'<p>{p}</p>' for p in paragraphs])
+            else:
+                story_html = f'<p style="color:#718096;">{paper.get("research_story", "AI解析中...")}</p>'
             
-            for icon, title, css_class, content in sections_data:
-                if content and content != "详见原文" and content != "AI解析失败":
-                    ai_html += f"""
-                <div class="ai-section">
-                    <div class="ai-section-title {css_class}">{icon} {title}</div>
-                    <div class="ai-section-content">{content}</div>
-                </div>"""
+            # 构建按钮
+            buttons = f'<a href="{zotero_link}" class="btn zotero-btn" target="_blank">➕ 添加到Zotero</a>'
+            if pdf_url:
+                buttons += f'<a href="{pdf_url}" class="btn pdf-btn" target="_blank">📄 下载PDF</a>'
+            if si_url:
+                buttons += f'<a href="{si_url}" class="btn si-btn" target="_blank">📎 查看SI</a>'
+            buttons += f'<a href="{paper["link"]}" class="btn source-btn" target="_blank">🔗 原文链接</a>'
             
             html += f"""
         <div class="paper">
@@ -627,9 +646,9 @@ def generate_html(papers):
                     <a href="{paper['link']}" target="_blank">{display_title}</a>
                 </div>
                 <div class="paper-meta">
-                    <span class="meta-item">👤 {paper['authors']}</span>
-                    <span class="meta-item">📅 {paper['published']}</span>
-                    <span class="meta-item">📰 {paper['journal']}</span>
+                    <span>👤 {paper['authors']}</span>
+                    <span>📅 {paper['published']}</span>
+                    <span>📰 {paper['journal']}</span>
                 </div>
                 <div class="tags">
                     <span class="journal-tag">{paper['journal']}</span>
@@ -642,22 +661,26 @@ def generate_html(papers):
                 <div class="abstract-content">{paper['summary']}</div>
             </div>
             
-            <div class="ai-analysis">
-                <div class="ai-title">🔍 AI深度解读</div>
-                {ai_html if ai_html else '<div style="color:#718096;text-align:center;padding:20px;">AI解析加载中...</div>'}
+            <div class="research-story">
+                <div class="story-header">
+                    <span>🔬</span>
+                    <span>研究深度解读</span>
+                </div>
+                <div class="story-content">
+                    {story_html}
+                </div>
             </div>
             
-            <a href="{zotero_link}" class="add-btn" target="_blank">
-                <span>➕</span>
-                <span>添加到Zotero</span>
-            </a>
+            <div class="action-buttons">
+                {buttons}
+            </div>
+            <div class="oa-note">💡 提示：PDF按钮对于Open Access文献可直接下载，订阅制文献将跳转到期刊网站</div>
         </div>
 """
     
     html += f"""
         <div class="footer">
             <p>自动生成于 {today} | 关键词筛选 + {'DeepSeek' if BASE_URL else 'OpenAI'} AI深度解析</p>
-            <p style="margin-top:10px;font-size:12px;">本页面由GitHub Actions自动生成，每日更新</p>
         </div>
     </div>
 </body>
