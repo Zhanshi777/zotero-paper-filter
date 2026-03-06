@@ -1,0 +1,35 @@
+name: Fetch and Filter Papers
+
+on:
+  schedule:
+    - cron: '0 8 * * *'  # 每天北京时间8点运行
+  workflow_dispatch:  # 允许手动触发
+
+jobs:
+  fetch-papers:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+    
+    - name: Install dependencies
+      run: |
+        pip install feedparser requests openai beautifulsoup4
+    
+    - name: Fetch and filter papers
+      env:
+        OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        ZOTERO_RSS_URL: ${{ secrets.ZOTERO_RSS_URL }}
+        RESEARCH_TOPICS: ${{ secrets.RESEARCH_TOPICS }}
+      run: python scripts/fetch_papers.py
+    
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./docs
