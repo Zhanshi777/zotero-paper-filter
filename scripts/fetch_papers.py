@@ -27,8 +27,20 @@ FEEDS = {
 TOPICS_ENV = os.environ.get('RESEARCH_TOPICS', 'battery, energy storage, materials science, catalysis')
 TOPICS = [t.strip() for t in TOPICS_ENV.split(',') if t.strip()]
 
-openai.api_key = os.environ.get('OPENAI_API_KEY', '')
+# API配置 - 同时支持OpenAI和DeepSeek
+API_KEY = os.environ.get('OPENAI_API_KEY', '')
+# DeepSeek用户需要设置这个环境变量：https://api.deepseek.com
+BASE_URL = os.environ.get('OPENAI_BASE_URL', None)  
+
 DAYS_BACK = 3
+
+# 初始化OpenAI客户端（v1.0+新方式）
+client = None
+if API_KEY:
+    client_kwargs = {"api_key": API_KEY}
+    if BASE_URL:
+        client_kwargs["base_url"] = BASE_URL
+    client = openai.OpenAI(**client_kwargs)
 
 # ==================== 核心函数 ====================
 
@@ -56,14 +68,12 @@ def fetch_papers():
         try:
             print(f"  📰 正在获取: {journal}")
             
-            # 使用requests获取内容（支持timeout），然后用feedparser解析
             headers = {
                 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
             }
             response = requests.get(url, timeout=30, headers=headers)
-            response.raise_for_status()  # 检查HTTP错误
+            response.raise_for_status()
             
-            # 用feedparser解析内容
             feed = feedparser.parse(response.content)
             
             if feed.bozo:
@@ -71,18 +81,15 @@ def fetch_papers():
             
             for entry in feed.entries:
                 try:
-                    # 解析日期
                     pub_date = None
                     if hasattr(entry, 'published_parsed') and entry.published_parsed:
                         pub_date = datetime(*entry.published_parsed[:6])
                     elif hasattr(entry, 'updated_parsed') and entry.updated_parsed:
                         pub_date = datetime(*entry.updated_parsed[:6])
                     
-                    # 只保留最近3天的文献
                     if pub_date and pub_date < cutoff_date:
                         continue
                     
-                    # 提取作者
                     authors = "Unknown"
                     if hasattr(entry, 'authors') and entry.authors:
                         author_list = [a.get('name', '') for a in entry.authors if a.get('name')]
@@ -93,7 +100,6 @@ def fetch_papers():
                     elif hasattr(entry, 'author'):
                         authors = entry.author
                     
-                    # 提取摘要
                     summary = ""
                     if hasattr(entry, 'summary'):
                         summary = clean_html(entry.summary)
@@ -123,7 +129,6 @@ def fetch_papers():
             print(f"  ❌ 获取 {journal} 失败: {e}")
             continue
     
-    # 按日期降序排序
     all_papers.sort(key=lambda x: x['published'], reverse=True)
     print(f"\n✅ 总共获取到 {len(all_papers)} 篇最近{DAYS_BACK}天的文献")
     return all_papers
@@ -134,11 +139,12 @@ def filter_by_ai(papers):
         print("没有文献需要筛选")
         return []
     
-    if not openai.api_key:
-        print("⚠️ 未设置OpenAI API Key，跳过AI筛选，返回所有文献")
+    if not client:
+        print("⚠️ 未设置API Key，跳过AI筛选，返回所有文献")
         return papers
     
     print(f"\n🤖 AI正在筛选文献（关注主题: {', '.join(TOPICS)}）...")
+    print(f"   使用API: {'DeepSeek' if BASE_URL else 'OpenAI'}")
     filtered = []
     
     for i, paper in enumerate(papers, 1):
@@ -154,8 +160,9 @@ def filter_by_ai(papers):
 如果不相关，回复：NOT_RELEVANT"""
 
         try:
-            response = openai.ChatCompletion.create(
-                model="gpt-3.5-turbo",
+            # 新版OpenAI API调用方式（兼容DeepSeek）
+            response = client.chat.completions.create(
+                model="gpt-3.5-turbo" if not BASE_URL else "deepseek-chat",  # DeepSeek使用deepseek-chat模型
                 messages=[
                     {"role": "system", "content": "你是专业的学术文献筛选助手"},
                     {"role": "user", "content": prompt}
@@ -178,6 +185,7 @@ def filter_by_ai(papers):
                 
         except Exception as e:
             print(f"      ⚠️ AI错误: {e}")
+            # 出错时默认保留，避免漏掉重要文献
             paper['matched_topic'] = 'AI Error - Manual Review'
             paper['recommendation'] = 'Please check manually'
             paper['relevance_score'] = 50
@@ -363,7 +371,7 @@ def generate_html(papers):
     
     html += f"""
         <div class="footer">
-            自动生成于 {today} | GitHub Actions + OpenAI
+            自动生成于 {today} | GitHub Actions + {'DeepSeek' if BASE_URL else 'OpenAI'}
         </div>
     </div>
 </body>
