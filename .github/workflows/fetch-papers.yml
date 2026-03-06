@@ -29,6 +29,7 @@ jobs:
     - name: Fetch and filter papers
       env:
         OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        OPENAI_BASE_URL: ${{ secrets.OPENAI_BASE_URL }}  # 添加这一行！
         RESEARCH_TOPICS: ${{ secrets.RESEARCH_TOPICS }}
       run: python scripts/fetch_papers.py
     
