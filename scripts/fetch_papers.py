@@ -6,10 +6,10 @@ import openai
 from urllib.parse import quote
 import re
 import html
+import requests
 
 # ==================== 配置区域 ====================
 
-# 期刊RSS源配置（直接硬编码，不依赖环境变量）
 FEEDS = {
     "Nature": "https://www.nature.com/nature.rss",
     "Nature Communications": "https://www.nature.com/ncomms.rss",
@@ -24,14 +24,10 @@ FEEDS = {
     "Advanced Functional Materials": "https://advanced.onlinelibrary.wiley.com/feed/16163028/most-recent"
 }
 
-# 获取环境变量（带默认值，防止None）
 TOPICS_ENV = os.environ.get('RESEARCH_TOPICS', 'battery, energy storage, materials science, catalysis')
 TOPICS = [t.strip() for t in TOPICS_ENV.split(',') if t.strip()]
 
-# OpenAI配置
 openai.api_key = os.environ.get('OPENAI_API_KEY', '')
-
-# 只获取最近3天的文献
 DAYS_BACK = 3
 
 # ==================== 核心函数 ====================
@@ -53,20 +49,24 @@ def fetch_papers():
     print(f"关注主题: {', '.join(TOPICS)}")
     
     for journal, url in FEEDS.items():
-        if not url:  # 防御性检查
+        if not url:
             print(f"  ⚠️ {journal} 的URL为空，跳过")
             continue
             
         try:
             print(f"  📰 正在获取: {journal}")
-            # 添加超时和agent防止被屏蔽
-            feed = feedparser.parse(
-                url, 
-                timeout=30,
-                agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
-            )
             
-            if feed.bozo:  # 解析出错
+            # 使用requests获取内容（支持timeout），然后用feedparser解析
+            headers = {
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+            }
+            response = requests.get(url, timeout=30, headers=headers)
+            response.raise_for_status()  # 检查HTTP错误
+            
+            # 用feedparser解析内容
+            feed = feedparser.parse(response.content)
+            
+            if feed.bozo:
                 print(f"    ⚠️ 解析警告: {feed.bozo_exception}")
             
             for entry in feed.entries:
@@ -115,6 +115,10 @@ def fetch_papers():
                     print(f"    ⚠️ 处理单篇文献出错: {e}")
                     continue
                     
+        except requests.exceptions.Timeout:
+            print(f"  ⏱️ 获取 {journal} 超时（30秒）")
+        except requests.exceptions.RequestException as e:
+            print(f"  ❌ 获取 {journal} 网络错误: {e}")
         except Exception as e:
             print(f"  ❌ 获取 {journal} 失败: {e}")
             continue
@@ -174,7 +178,6 @@ def filter_by_ai(papers):
                 
         except Exception as e:
             print(f"      ⚠️ AI错误: {e}")
-            # AI出错时默认保留，避免漏掉重要文献
             paper['matched_topic'] = 'AI Error - Manual Review'
             paper['recommendation'] = 'Please check manually'
             paper['relevance_score'] = 50
@@ -367,12 +370,10 @@ def generate_html(papers):
 </html>
 """
     
-    # 保存文件
     os.makedirs('docs', exist_ok=True)
     with open('docs/index.html', 'w', encoding='utf-8') as f:
         f.write(html)
     
-    # 保存JSON备份
     with open('docs/papers.json', 'w', encoding='utf-8') as f:
         json.dump({
             'date': today,
