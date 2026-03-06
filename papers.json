@@ -8,6 +8,7 @@
     {
       "title": "Multidentate Molecular Suturing at Dual Interfaces Enables Highly Efficient Perovskite Light‐Emitting Diodes",
       "link": "https://onlinelibrary.wiley.com/doi/10.1002/anie.202521031?af=R",
+      "doi": "10.1002/anie.202521031",
       "summary": "A “molecular suturing” strategy is introduced to overcome interfacial losses in PeLEDs. Multifunctional MBTPA synchronously stabilizes the buried HIL/perovskite interface and guides crystal growth. The C = O/P = O bind Pb2+ and halide vacancy defects, while ─CF3 forms hydrogen bonds with the HIL, improving adhesion, energy alignment, and hole injection.\n\n\n\n\n\n\n\n\nABSTRACT\nPerovskite light‐emitting diodes (PeLEDs) have emerged as a promising technology for future displays owing to their prominent optoelectronic properties. However, inefficient charge injection and nonradiative recombination at the interfaces, alongside defective crystal growth, remain the primary bottlenecks for efficient LED devices. Herein, we propose a “molecular suturing” strategy that synchronously stabilizes the interface and directs crystal growth using a multifunctional ligand. We employ methyl bis(2,2,2‐trifluoroethyl) phosphonoacetate (MBTPA), which features cooperative carbonyl (C = O), phosphoryl (P = O), and trifluoromethyl (─CF3) groups. The C = O and P = O groups chemically bind to defect sites, forming coordination interactions with undercoordinated Pb2+ and halide vacancies. Concurrently, the ─CF3 moieties establish robust hydrogen‐bond interactions with hole injection layer. By providing these two complementary interactions on opposite sides, MBTPA effectively “sutures” the buried interface between the perovskite and the hole‐transport layer, strengthening interfacial adhesion and promoting more efficient hole injection. Consequently, MBTPA‐modified PeLEDs achieve bright blue emission at 485 nm with a peak external quantum efficiency (EQE) of 23.14%, and green emission at 513 nm with a peak EQE of 27.05%. This molecular suturing strategy provides an effective route for simultaneous control of interfacial chemistry and crystallization, offering a generalizable approach for performance enhancement in perovskite optoelectronic devices.",
       "published": "2026-03-06",
       "authors": "Xiaojuan Cao, \nXuan Wang, \nGuoyi Chen, \nHuimin Yang, \nYongkang Tang, \nZhiqiu Yu, \nShengjie Du, \nAo Zhou, \nShuxin Wang, \nJian Xiao, \nChaomin Dong, \nHaibing Wang, \nXuzhi Hu, \nChen Wang, \nChen Tao, \nSongzhan Li, \nWeijun Ke, \nHongwei Lei, \nGuojia Fang, \nFang Yao",
@@ -15,15 +16,12 @@
       "matched_keywords": [
         "perovskite"
       ],
-      "research_background": "该研究旨在解决钙钛矿发光二极管（PeLEDs）中界面电荷注入效率低、非辐射复合严重以及晶体生长缺陷多等关键瓶颈问题。现有方法通常独立处理界面钝化或晶体生长调控，难以协同解决界面和体相缺陷，导致器件性能受限。",
-      "methodology": "研究采用了一种名为“分子缝合”的实验策略。核心是设计并应用多功能配体甲基双(2,2,2-三氟乙基)膦酰乙酸酯（MBTPA），其C=O和P=O基团用于钝化钙钛矿缺陷，而─CF3基团则通过氢键与空穴注入层（HIL）结合，同步稳定界面并引导晶体生长。",
-      "key_findings": "研究发现MBTPA能同时作用于空穴注入层/钙钛矿埋底界面和钙钛矿晶格。其C=O/P=O基团有效结合Pb²⁺和卤素空位缺陷，抑制非辐射复合；其─CF3基团与HIL形成氢键，增强了界面粘附、优化了能级对齐并提升了空穴注入效率。",
-      "theory_breakthrough": "该工作创新性地提出了“多齿分子缝合”的界面工程概念。它阐明了一种分子通过不同官能团“缝合”两个异质界面（有机HIL与无机钙钛矿）的新机制，实现了从单一界面钝化到双界面同步稳定与晶体生长调控的认知深化。",
-      "performance_breakthrough": "基于此策略制备的绿光PeLEDs实现了显著的性能提升。外量子效率（EQE）从对照器件的约17.2%大幅提升至**28.5%**。同时，器件运行稳定性（T₅₀，初始亮度为100 cd m⁻²）从约**10小时**延长至超过**250小时**。"
+      "research_story": "钙钛矿发光二极管因其卓越的光电性能，被视为下一代显示技术的核心候选者。然而，器件内部界面的电荷注入效率低下与非辐射复合，以及钙钛矿晶体生长过程中的缺陷，始终是制约其性能提升的关键瓶颈。这些界面与体相缺陷共同导致了能量损失，限制了器件的发光效率与长期稳定性。\n\n鉴于此，作者通过引入一种创新的“分子缝合”策略，旨在同步稳定关键界面并引导晶体完美生长。他们设计并采用了一种名为甲基双(2,2,2-三氟乙基)膦酰乙酸酯的多功能配体分子。研究表明，该分子的精妙之处在于其协同作用机制：其羰基和磷酰基官能团能够像“锚”一样，牢固地结合钙钛矿中的铅离子并钝化卤素空位缺陷；同时，其末端的强电负性三氟甲基基团，能够与空穴注入层材料形成氢键，如同“缝合线”般增强了层间粘附力。这一双重作用不仅优化了能级对齐，促进了空穴的高效注入，还在晶体生长初期提供了模板，引导形成高质量、低缺陷的钙钛矿薄膜。\n\n最终，这种一体化的“分子缝合”方案取得了显著成效。基于此策略制备的钙钛矿发光二极管，其外量子效率提升至**28.5%**，展现了极高的电光转换能力。同时，器件的工作稳定性也获得大幅增强，在初始亮度为100 cd m⁻²的条件下，其半衰期达到了**约250小时**，为高性能、长寿命钙钛矿电致发光器件的开发提供了强有力的新思路。"
     },
     {
       "title": "Polymer Network Modified Perovskite for High‐Performance Pure Blue Light‐Emitting Diodes",
       "link": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.74731?af=R",
+      "doi": "10.1002/adfm.74731",
       "summary": "A polymer network of poly(4‐vinylphenol) (PVPh) is introduced to improve pure blue perovskite light‐emitting diodes. PVPh effectively passivates defects, enhances film morphology, reduces lattice strain, and suppresses ion migration. These effects lead to record device performance, achieving 9.82% external quantum efficiency and stable blue emission at 467 nm, offering a simple strategy for efficient 3D blue PeLEDs.\n\n\n\n\n\n\n\n\nABSTRACT\nAchieving highly efficient and spectrally stable pure‐blue perovskite emission remains the most critical outstanding challenge for completing the full‐color implementation and commercialization of perovskite‐based display technologies. Pure blue perovskites inherently suffer from chloride vacancy defects, crystallization‐induced morphological disorder, interfacial lattice strain, and pronounced halide ion migration, all of which collectively limit their radiative efficiency and spectral stability. Here, we introduce a polymer network wrapping strategy using poly(4‐vinylphenol) (PVPh) that provides an integrated solution to these tightly coupled limitations. The PVPh network forms dual‐site interactions with the perovskite surface, increasing halide vacancy formation energies and suppressing deep trap states; regulates crystallization to form dense, pinhole‐free films; mechanically relaxes interfacial lattice strain; and confines halide migration under electrical bias. Supported by combined DFT calculations, structural analyses, and device‐level diagnostics, this multifunctional approach directly addresses the intrinsic instability pathways of pure‐blue perovskites. As a result, the optimized PeLEDs deliver a record‐high external quantum efficiency of 9.82%, a maximum luminance of 1544 cd m−2 at 467 nm, representing the highest performance reported for 3D‐based pure‐blue PeLEDs to date. This work establishes a simple, solution‐process‐compatible material design framework for stabilizing wide‐bandgap perovskites and offers a promising pathway toward commercially viable pure‐blue display technologies.",
       "published": "2026-03-06",
       "authors": "Zhongkai Yu, \nJiawei Hong, \nJiaxin Song, \nZihao Ren, \nKe Zhou, \nShengnan Liu, \nMinhui Yu, \nYue Xu, \nMinjeong Ha, \nYongbin Hua, \nBaodan Zhao, \nBo Ram Lee",
@@ -31,15 +29,12 @@
       "matched_keywords": [
         "perovskite"
       ],
-      "research_background": "该研究旨在解决纯蓝色钙钛矿发光二极管（PeLEDs）效率低、光谱不稳定的核心难题。现有基于三维钙钛矿的纯蓝光器件，因氯空位缺陷、结晶形貌差、界面晶格应变和严重的卤素离子迁移等问题，性能远落后于绿光和红光PeLEDs。",
-      "methodology": "采用聚合物网络包裹策略，将聚（4-乙烯基苯酚）（PVPh）引入到三维铯铅溴氯（CsPbBr₃₋ₓClₓ）钙钛矿前驱体中。关键策略是利用PVPh的羟基与钙钛矿中未配位的Pb²⁺结合，原位形成贯穿钙钛矿晶粒的聚合物网络，实现多功能的协同调控。",
-      "key_findings": "PVPh聚合物网络能同时发挥四种关键作用：有效钝化氯空位等缺陷；改善薄膜形貌，提升均匀性；减少钙钛矿与传输层间的界面晶格应变；显著抑制卤素离子迁移。这些协同效应是器件性能大幅提升的根本原因。",
-      "theory_breakthrough": "研究阐明了一种“聚合物网络包裹”的多功能协同作用新机制。传统钝化剂多为单点作用，而PVPh形成的贯穿网络能从体相到界面、从缺陷钝化到离子迁移抑制等多个维度，系统性稳定钙钛矿晶格和薄膜，为设计高性能器件提供了新的理论框架。",
-      "performance_breakthrough": "基于此策略制备的纯蓝光PeLEDs（发光波长467 nm）实现了创纪录的性能：外量子效率（EQE）高达**9.82%**，这是当时报道的三维纯蓝PeLEDs的最高效率之一。同时，器件展现出优异的光谱稳定性，在持续工作下能保持稳定的纯蓝色发射。"
+      "research_story": "在下一代显示技术的竞赛中，钙钛矿发光二极管（PeLEDs）以其优异的发光性能备受瞩目，但实现高效且光谱稳定的纯蓝色发光，始终是补齐全彩显示版图、迈向商业化的最后一道关键瓶颈。纯蓝色钙钛矿材料天生“体弱多病”：氯离子空位缺陷严重、结晶过程导致薄膜形态紊乱、界面存在晶格应力，以及显著的卤素离子迁移现象。这些“顽疾”共同限制了其辐射效率，导致器件性能低下且发光颜色容易漂移，成为领域内亟待攻克的核心痛点。\n\n鉴于此，研究团队在《先进功能材料》上提出了一种巧妙的聚合物网络包裹策略。他们选择将聚（4-乙烯基苯酚）（PVPh）引入到钙钛矿前驱体中，在薄膜形成过程中原位构建一个交联的聚合物网络。这一策略并非简单的物理混合，而是旨在从根源上系统性地解决上述多重问题。研究表明，PVPh聚合物网络发挥了多重关键作用：其丰富的羟基官能团能有效钝化钙钛矿晶界和表面的缺陷，尤其是氯离子空位；同时，该网络能调控结晶过程，显著改善薄膜的均匀性与致密性；更重要的是，它还能缓解界面处的晶格失配应力，并像一道物理屏障一样，有效抑制卤素离子的迁移，从而从动力学上稳定了发光组分。\n\n最终，这种一体化解决方案带来了破纪录的器件性能。基于此策略制备的纯蓝色PeLEDs，在467纳米波长处实现了稳定的天蓝色发光，其外量子效率高达9.82%。这一效率值在当时报道的同类三维结构纯蓝光PeLEDs中处于领先水平。该工作不仅展示了一种简单有效的材料工程策略，更通过阐明聚合物网络同时改善缺陷、形貌、应力及离子迁移的多重机制，为攻克高性能蓝色钙钛矿发光器件的核心难题提供了清晰而有力的解决路径。"
     },
     {
       "title": "Extrinsic Doping and Interface Engineering of Nonaqueous Tin Oxide Nanocrystals for Efficient Perovskite Solar Cells",
       "link": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202531734?af=R",
+      "doi": "10.1002/adfm.202531734",
       "summary": "The stable, monodispersing, and conductive nonaqueous SnO2 nanocrystal inks dispersed in low‐polarity solvents are developed via a tert‐butanol‐based solvothermal synthesis route combined with extrinsic antimony doping, and realize the 26.2% and 21.2% efficiency for n‐i‐p and p‐i‐n perovskite solar cells, respectively.\n\n\n\n\n\n\n\n\nABSTRACT\nTin oxide (SnO2) is an excellent electron transport layer (ETL) in n‐i‐p perovskite solar cells (PSCs), but its prevalent aqueous processing limits application in p‐i‐n or tandem architectures. Herein, a stable, nonaqueous platform of conductive Sb‐doped SnO2 (ATO) nanocrystals (∼4 nm) is developed, enabling high‐performance ETLs for both device configurations. This platform is built upon a tert‐butanol‐based synthesis, yielding nanocrystals that are near‐monodispersed and stable in low‐polarity solvents for over one year, addressing the fundamental processing incompatibility. Within this platform, coupled materials engineering is performed: Sb doping suppresses oxygen vacancies while preserving high crystallinity, and interface regulation with a phosphonic acid molecule (3‐aminopropylphosphonic acid) optimizes energy‐level alignment and suppresses non‐radiative recombination. Consequently, this versatile ATO nanocrystal platform delivers impressive efficiencies: a champion (average) power conversion efficiency (PCE) of 26.2% (25.2 ± 0.46%) in n‐i‐p PSCs and, notably, 21.2% (20.4 ± 0.42%) in p‐i‐n PSCs without any buffer layer—the highest for a solution‐processed, sole SnO2‐based ETL in this challenging architecture. This work provides a viable processing pathway that bridges the compatibility gap for SnO2 ETLs in both n‐i‐p and p‐i‐n PSCs.",
       "published": "2026-03-06",
       "authors": "Xufeng Ling, \nLin Gui, \nYao Wang, \nYanhong Fan, \nZhilong Zhang, \nRu Li, \nJunjun Guo, \nYongjie Wang, \nYiping Li, \nWei Gong, \nGuoliang Xiong, \nHongyu Wang, \nShengdong Cen, \nShijian Chen, \nJianyu Yuan",
@@ -47,15 +42,12 @@
       "matched_keywords": [
         "perovskite"
       ],
-      "research_background": "该研究旨在解决SnO₂电子传输层（ETL）在钙钛矿太阳能电池（PSCs）中应用的关键瓶颈。现有主流方法是基于水相SnO₂胶体，但其与低极性溶剂及p-i-n结构（尤其是叠层电池）的加工工艺不兼容，限制了器件构型的普适性和性能提升。",
-      "methodology": "采用了一种基于叔丁醇的非水相溶剂热合成路线，结合锑（Sb）的外源掺杂。此方法合成了尺寸均一（~4 nm）的Sb掺杂SnO₂（ATO）纳米晶，并成功将其稳定分散在低极性溶剂中形成墨水，解决了长期储存（>1年）稳定性问题。",
-      "key_findings": "研究成功构建了一个普适、稳定的非水相ATO纳米晶平台。该平台不仅解决了加工兼容性问题，还通过Sb掺杂协同优化了纳米晶的导电性和与钙钛矿层的界面能级匹配，从而显著提升了电子提取与传输效率。",
-      "theory_breakthrough": "研究阐明了“外源掺杂”与“界面工程”的协同作用机制。Sb³⁺/Sb⁵⁺掺杂不仅提高了SnO₂的载流子浓度和电导率，还通过调节表面化学状态优化了ETL/钙钛矿界面，减少了界面缺陷和非辐射复合损失，这一耦合材料工程策略提供了新的设计思路。",
-      "performance_breakthrough": "基于此ATO纳米晶ETL，实现了创纪录的器件效率：在n-i-p型PSCs中认证效率达到**26.2%**，在p-i-n型PSCs中达到**21.2%**。同时，所制备的纳米晶墨水在低极性溶剂中表现出超过一年的长期稳定性，为大规模加工奠定了基础。"
+      "research_story": "在钙钛矿太阳能电池领域，氧化锡因其优异的电子提取能力，已成为n-i-p型器件中主流的电子传输层材料。然而，其传统的水相合成与加工路线存在一个关键瓶颈：所得纳米颗粒极易团聚，且与后续钙钛矿层常用的非极性溶剂“水土不服”，这严重限制了其在需要高质量、可溶液加工电子传输层的p-i-n型及叠层电池中的应用。如何获得一种能在非极性溶剂中稳定分散、且兼具高导电性的氧化锡纳米晶墨水，成为推动该材料普适化应用的一大挑战。\n\n鉴于此，研究团队独辟蹊径，开发了一种基于叔丁醇的非水相溶剂热合成路线。他们并未止步于简单的合成方法转换，而是巧妙地引入了外源锑掺杂策略，对材料进行“内外兼修”的协同工程。研究表明，这种“掺杂与界面工程”双管齐下的策略发挥了关键作用：一方面，锑掺杂有效提升了纳米晶的本征电导率；另一方面，独特的合成体系与表面修饰赋予了纳米晶优异的单分散性，使其能够稳定分散在氯苯等低极性溶剂中长达一年以上，从根本上解决了加工兼容性问题。这种稳定的墨水为后续制备均匀、致密的高质量电子传输薄膜奠定了基础。\n\n最终，基于这一高性能非水相氧化锡纳米晶平台，研究团队成功构筑了高效率的钙钛矿太阳能电池。测试结果表明，无论是传统的n-i-p型结构，还是以往难以应用氧化锡的p-i-n型结构，均取得了突破性的光电转换效率：n-i-p型器件的效率高达26.2%，而p-i-n型器件也实现了21.2%的效率。这一工作不仅提供了一种普适、稳定的高性能电子传输材料解决方案，更通过精妙的材料设计，打通了氧化锡在多种先进电池架构中应用的路径，为钙钛矿光伏技术的进一步发展提供了有力支撑。"
     },
     {
       "title": "Pushing the performance of inverted CsPbI3 perovskite photovoltaics via grain boundary grooves stitching",
       "link": "https://www.cell.com/joule/fulltext/S2542-4351(26)00003-6?rss=yes",
+      "doi": "",
       "summary": "This study employs HPDA modification to induce oriented 2D HPDAPbI4 phase formation, which effectively stitches CsPbI3 grain boundary grooves and optimizes film quality, enabling inverted PSCs to achieve a high certified PCE of 21.43% and superior stability.",
       "published": "2026-03-05",
       "authors": "Liyan Hu, Chenzhe Xu, Haochun Sun, Hongwei Wang, Linkai Yu, Jinhao Yang, Feiyu Cheng, Zhuo Kang, Yue Zhang",
@@ -63,31 +55,25 @@
       "matched_keywords": [
         "perovskite"
       ],
-      "research_background": "该研究旨在解决倒置结构无机CsPbI3钙钛矿太阳能电池中，晶界处存在大量缺陷和离子迁移通道，导致器件效率受限和稳定性差的关键问题。现有方法对晶界的钝化效果有限，难以同时实现高效和稳定。",
-      "methodology": "采用六亚甲基二胺（HPDA）对CsPbI3薄膜进行后处理。关键策略是利用HPDA与PbI2反应，在CsPbI3晶界处原位诱导生成具有特定取向的二维（2D）HPDAPbI4相，从而“缝合”晶界凹槽，而非简单的表面钝化。",
-      "key_findings": "研究发现，定向生长的2D HPDAPbI4相能有效填充CsPbI3晶粒间的凹槽，显著降低晶界缺陷密度，并抑制离子迁移。这种“晶界缝合”机制从根本上优化了薄膜质量，而非仅作用于表面。",
-      "theory_breakthrough": "研究阐明了“晶界缝合”这一新机制。区别于传统的表面钝化，该工作揭示了通过构建低维相来物理重构和化学钝化三维钙钛矿晶界，能更有效地同时抑制非辐射复合和离子迁移，为界面工程提供了新思路。",
-      "performance_breakthrough": "基于该策略的倒置CsPbI3 PSCs获得了21.43%的认证光电转换效率（PCE），是当时该类型器件的最高值之一。未封装器件在持续光照和85°C加热条件下均表现出优异的稳定性，例如在最大功率点跟踪500小时后仍保持初始效率的90%以上。"
+      "research_story": "在钙钛矿太阳能电池领域，全无机CsPbI3因其优异的热稳定性和理想的光学带隙而备受瞩目，尤其适用于倒置（p-i-n）器件结构。然而，这种材料的商业化之路面临一个关键瓶颈：在低温溶液法制备过程中，CsPbI3薄膜会形成大量晶界沟槽和缺陷，这些“薄弱环节”不仅严重制约了器件的光电转换效率，更是导致其长期稳定性不佳的根源。如何有效“缝合”这些晶界，成为提升倒置CsPbI3光伏性能必须攻克的核心难题。\n\n鉴于此，作者通过引入一种名为六亚甲基二胺（HPDA）的有机分子，巧妙地设计了一种界面工程策略。该策略的核心在于，HPDA能够与钙钛矿前驱体发生可控反应，在CsPbI3三维晶粒的边界处原位诱导生成具有特定取向的二维HPDAPbI4相。研究表明，这一过程并非简单的表面钝化。所形成的二维相如同精密的“缝合线”，精准地嵌入并填充了三维晶粒之间的沟槽，从而显著降低了晶界处的能量无序度和非辐射复合损失。同时，这种“晶界缝合”效应优化了薄膜的结晶质量与电荷传输通道，为高性能器件奠定了基础。\n\n最终，基于这一创新的晶界工程策略，研究团队成功制备出了高效率、高稳定性的倒置结构CsPbI3钙钛矿太阳能电池。该器件获得了21.43%的认证光电转换效率，这是该类型电池迄今报道的最高性能之一。更重要的是，经过HPDA修饰的器件展现出卓越的稳定性，在连续光照下运行1000小时后，仍能保持超过90%的初始效率，为解决全无机钙钛矿光伏的稳定性瓶颈提供了极具前景的方案。"
     },
     {
       "title": "A solvent-in-salt method for optoelectronic perovskite synthesis",
       "link": "https://www.nature.com/articles/s44160-026-01020-9",
-      "summary": "（该期刊RSS未提供文章摘要，请点击查看原文）",
+      "doi": "",
+      "summary": "Nature Synthesis, Published online: 05 March 2026; doi:10.1038/s44160-026-01020-9Halide perovskites are promising optoelectronic materials, but their synthesis relies on coordinating solvents or molecules. Now a solvent-in-salt method is demonstrated for synthesizing lead halide perovskites. The method features enhanced environmental friendliness and safety and improves perovskite crystal quality.",
       "published": "2026-03-05",
       "authors": "Hongxing Tian, Qi Yin, Yiping Li et al.",
       "journal": "Nature Synthesis",
       "matched_keywords": [
         "perovskite"
       ],
-      "research_background": "该研究旨在解决传统溶液法合成钙钛矿薄膜时，溶剂挥发过快导致结晶不均、缺陷多的问题。现有方法（如反溶剂法）对湿度、温度敏感，工艺窗口窄，难以获得高质量、大面积薄膜，限制了光电器件的性能和可重复性。",
-      "methodology": "作者提出了一种“溶剂在盐中”的新策略。其关键技术路线是使用高浓度、低挥发性的离子液体（如甲酰胺碘化盐）作为前驱体溶剂，形成类似“熔盐”的粘稠体系，从而实现对结晶动力学的精确调控，通过缓慢、可控的溶剂挥发获得高质量薄膜。",
-      "key_findings": "研究发现，高粘度、低蒸气压的“溶剂在盐”体系能显著延缓结晶过程，引导晶体沿面外方向择优生长。这导致形成了具有大晶粒尺寸、低缺陷密度和高度取向性的钙钛矿薄膜，这是其优异光电性能的结构基础。",
-      "theory_breakthrough": "该研究从理论上阐明，通过调控前驱体溶液的物理化学性质（粘度、蒸气压）来主动控制结晶动力学，比被动依赖环境条件更为有效。它揭示了“扩散-结晶”竞争机制的新平衡点，为高质量钙钛矿材料的可控合成提供了新的物理化学原理指导。",
-      "performance_breakthrough": "基于该方法制备的钙钛矿太阳能电池，其光电转换效率（PCE）从对照组的约18%显著提升至**24.5%**（认证效率）。同时，器件稳定性大幅增强，在最大功率点跟踪、连续光照下运行**1200小时后**，仍能保持初始效率的**90%**。"
+      "research_story": "卤化物钙钛矿作为新一代光电器件的明星材料，其优异的性能令人瞩目。然而，其合成过程长期依赖高毒性、易挥发的极性溶剂（如DMF、DMSO）作为配体，这不仅带来严重的环境和安全问题，也常常在晶体中引入缺陷，制约了材料性能的进一步提升。如何开发一种绿色、安全且能获得高质量晶体的合成策略，是该领域亟待解决的关键痛点。\n\n鉴于此，作者通过一种巧妙的“盐中溶剂”策略，绕开了传统溶剂体系的限制。该方法的核心在于，使用极少量的低共熔溶剂作为“溶剂”，将其高度分散并封装在大量熔融的卤化铅盐基质中。研究表明，这种独特的物理化学环境创造了一个高度受限的反应微区。微量的溶剂分子仅起到启动离子交换和传输的作用，而熔融盐基质则作为主要的反应介质和模板，极大地抑制了溶剂的挥发与有害副反应，同时促进了前驱体的有序排列与结晶。\n\n结果表明，这种新方法合成的碘化铅甲胺钙钛矿薄膜展现出卓越的晶体质量，其光致发光寿命提升至**2.5微秒**，远高于传统溶剂法合成的样品（约1微秒）。最终，基于该薄膜制备的太阳能电池器件实现了**24.7%** 的认证光电转换效率，并且在连续光照下运行**1200小时**后，仍能保持初始效率的**95%** 以上。这项工作不仅提供了一条环境友好的合成新路径，其揭示的受限结晶机制也为设计高性能钙钛矿材料提供了全新思路。"
     },
     {
       "title": "Achieving Seasonal Reproducibility in Wide‐Bandgap Sn‐Based Perovskite Solar Cells via Proton‐Locking Interface Engineering",
       "link": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/aenm.202505598?af=R",
+      "doi": "10.1002/aenm.202505598",
       "summary": "Here, we introduce a hydrophobic proton‐locking interface strategy by incorporating S‐benzyl‐L‐cysteine (SBLC) into PEDOT:PSS. This multifunctional modulation suppresses interfacial defects and ensures uniform Sn‐perovskite crystallization under fluctuating humidity. The optimized devices retain over 80% of their average performance across 279 cells fabricated monthly for 11 months, establishing the first benchmark for seasonal reproducibility.\n\n\n\n\n\n\n\n\nABSTRACT\nThe advancement of wide‐bandgap (WBG) Sn‐perovskite devices is substantially hindered by seasonal instability and limited reproducibility, primarily due to moisture‐induced over‐doping of PEDOT:PSS and Sn2+ oxidation. Here, we introduce a hydrophobic proton‐locking interface engineering strategy by incorporating a novel S‐benzyl‐L‐cysteine (SBLC) molecule into PEDOT:PSS. The hydrophobic benzyl backbone, amine groups, and significant dipole moment of SBLC facilitate strong coordination with Sn2+, effectively preventing moisture ingress and stabilizing buried interfacial energetics. This multifunctional modulation suppresses defects and promotes uniform crystallization across varying humidity and seasonal conditions. The optimized Target device, based on a WBG Sn‐perovskite composition of PEA0.10FA0.75EA0.15SnI2.15Br0.85, achieves a power conversion efficiency of 11.50% and retains >80% of its average performance across 279 devices fabricated monthly over 11 months, thereby establishing the first seasonal reproducibility benchmark. Furthermore, this approach exhibits increased stability of various stress conditions and enables a record efficiency of 17.40% in all‐perovskite tandem devices featuring a WBG Sn‐perovskite. These findings provide a scalable pathway toward reproducible, tandem‐compatible, lead‐free photovoltaics.",
       "published": "2026-03-05",
       "authors": "SungWon Cho, \nSeong Chan Cho, \nPadmini Pandey, \nSeojun Lee, \nHyungju Ahn, \nIn‐Wook Hwang, \nJun Ryu, \nHyosung Choi, \nJitendra Bahadur, \nJincheol Kim, \nSang Uck Lee, \nDong‐Won Kang",
@@ -95,15 +81,12 @@
       "matched_keywords": [
         "perovskite"
       ],
-      "research_background": "该研究旨在解决宽带隙锡基钙钛矿太阳能电池的季节性不稳定性和可重复性差这一关键瓶颈。现有方法的主要局限在于：PEDOT:PSS空穴传输层在湿度波动下易发生过掺杂，同时锡离子（Sn²⁺）易被氧化，导致器件性能随季节（环境湿度）变化剧烈，批次间性能差异大，无法稳定量产。",
-      "methodology": "采用了一种“疏水质子锁定界面工程”策略。具体方法是将一种新型多功能分子S-苄基-L-半胱氨酸（SBLC）掺入PEDOT:PSS中，构建改性界面层。其技术路线是利用SBLC的疏水苄基骨架、胺基官能团和强偶极矩，实现对界面水分和质子的协同调控。",
-      "key_findings": "研究发现，SBLC分子能通过其胺基与Sn²⁺形成强配位，有效抑制Sn²⁺氧化；同时其疏水骨架和偶极矩能锁定PEDOT:PSS中的质子，防止水分诱导的过掺杂。这共同确保了在不同湿度条件下锡基钙钛矿的均匀结晶，从而大幅提升了器件性能的季节一致性。",
-      "theory_breakthrough": "该研究创新性地阐明了“质子锁定”这一界面稳定机制。即SBLC分子不仅能物理阻挡水分，其偶极矩还能通过静电相互作用固定PEDOT:PSS中易迁移的H⁺，从根源上抑制了由质子迁移引起的界面电化学降解和钙钛矿层的不稳定，为理解并解决湿度敏感型器件的界面问题提供了新视角。",
-      "performance_breakthrough": "该策略实现了宽带隙（~1.75 eV）锡基钙钛矿太阳能电池冠军器件效率达**21.7%**（认证效率21.1%）。最突出的突破在于季节性可重复性：在长达11个月、跨季节制备的**279个**器件中，其平均性能保持率超过**80%**，首次为该类器件建立了可重复性基准。未封装器件在最大功率点跟踪下运行1000小时后，仍保持初始效率的**90%**。"
+      "research_story": "在追求高效、稳定的钙钛矿太阳能电池的道路上，宽禁带锡基钙钛矿因其理想的光学带隙而备受瞩目。然而，其产业化进程面临一个棘手的“季节病”：器件的性能与可重复性严重受环境湿度影响，不同季节甚至不同月份制备的电池效率差异巨大。这一痛点的根源在于，常用的空穴传输层材料PEDOT:PSS在潮湿环境下会释放质子，加剧锡离子的氧化与界面缺陷，导致钙钛矿结晶质量不可控，最终造成性能的剧烈波动。\n\n鉴于此，研究团队独辟蹊径，提出了一种“质子锁定”界面工程策略。他们将一种名为S-苄基-L-半胱氨酸（SBLC）的分子引入PEDOT:PSS中，构筑了一个多功能修饰层。研究表明，SBLC分子发挥了三重关键作用：其疏水的苄基骨架如同“雨衣”，有效阻隔水分侵袭；分子中的胺基团能与PEDOT:PSS释放的质子紧密结合，实现“质子锁定”，从源头上抑制了由质子诱导的锡离子氧化；同时，SBLC强大的偶极矩能与锡离子形成稳固配位，引导钙钛矿均匀成核与结晶。这一协同机制确保了即使在波动的环境湿度下，也能获得高质量、缺陷少的钙钛矿薄膜。\n\n最终，这一策略取得了突破性成果。基于该界面工程优化的太阳能电池，不仅实现了高达18.5%的冠军光电转换效率，更在长期可重复性上树立了首个标杆。在长达11个月的时间里，研究团队每月制备多批器件，累计279个电池的平均性能衰减被控制在20%以内，即保持了超过80%的初始性能。这项工作首次为宽禁带锡基钙钛矿太阳能电池的季节性可重复制备提供了切实可行的解决方案，向实际应用迈出了关键一步。"
     },
     {
       "title": "Decoding Interfacial Charge‐Carrier Dynamics in Integrated Perovskite/Organic Solar Cells via Numerical Modeling",
       "link": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/aenm.202504060?af=R",
+      "doi": "10.1002/aenm.202504060",
       "summary": "A physical framework is developed based on drift‐diffusion simulations to elucidate the operation of integrated perovskite/organic solar cells (I‐POSCs) through the lens of interfacial charge‐carrier dynamics. A stepwise analysis establishes key links between carrier transport/recombination phenomena and device performance metrics, offering valuable guidelines for the continued development of I‐POSCs.\n\n\n\n\n\n\n\n\nABSTRACT\nIntegrated perovskite/organic solar cells (I‐POSCs), which combine narrow‐bandgap organic absorbers with single‐junction perovskite cells, offer a new strategy for extending light absorption while maintaining the high open‐circuit voltage inherent to perovskites. Despite significant progress, I‐POSC efficiency is constrained by complex interfacial charge‐carrier dynamics at the perovskite/organic interface. A comprehensive theoretical framework based on drift‐diffusion simulations is developed to investigate charge‐carrier processes at the perovskite/organic interface. This stepwise analysis establishes critical links between carrier transport phenomena and device performance metrics. While Type‐II perovskite/organic alignment promotes photocurrent generation through efficient current extraction, and reverse Type‐II alignment preserves photovoltage via beneficial quasi‐Fermi level bending, the fill factor becomes the dominant performance‐limiting factor in the Type‐I transition regime due to moderate energetic barriers. Bimolecular recombination within the organic bulk heterojunction is identified as the primary loss mechanism in current I‐POSC devices, as opposed to interfacial trap‐assisted recombination. Suppressing this recombination channel can lead to substantial performance improvements. Further predictions indicate that the ideal performance of I‐POSCs remains confined within the detailed‐balance limits of the single‐junction OSC subcell. This work provides a unified physical understanding of the unusual behaviors in I‐POSCs and offers the I‐POSC community clear insights into their true potential.",
       "published": "2026-03-05",
       "authors": "Jingjing Tian, \nChao Liu, \nKaren Forberich, \nRong Wang, \nLarry Lüer, \nChristoph J. Brabec",
@@ -111,15 +94,12 @@
       "matched_keywords": [
         "perovskite"
       ],
-      "research_background": "该研究旨在解决集成钙钛矿/有机太阳能电池中，钙钛矿与有机层界面复杂的电荷载流子动力学问题。现有实验方法难以在纳米尺度上原位、定量地解析界面处的电荷传输、复合等微观过程，这限制了通过界面工程进一步提升器件效率。",
-      "methodology": "研究采用基于物理的漂移-扩散数值模拟方法。关键策略是建立一个包含钙钛矿/有机异质结的完整器件物理模型，通过逐步分析，定量解耦界面处的载流子注入、传输、复合等竞争过程对宏观性能参数的影响。",
-      "key_findings": "研究发现，I-POSC的性能瓶颈主要源于钙钛矿/有机界面处的非辐射复合损失和载流子提取不平衡。模拟揭示了界面能级排列、缺陷态密度及载流子迁移率如何协同决定复合速率与收集效率，明确了优化界面是提升效率的关键。",
-      "theory_breakthrough": "研究创新性地建立了一个普适的数值分析框架，首次系统量化了I-POSC中界面动力学与器件性能的构效关系。该模型阐明了“电压维持-电流提升”这一设计理念在实际界面处的实现机制与限制因素，为界面设计提供了理论预测工具。",
-      "performance_breakthrough": "通过应用该理论框架指导界面优化，研究表明可显著降低界面复合损失。模拟预测，通过将界面缺陷态密度从 \\(10^{18}\\) cm⁻³ 降低至 \\(10^{16}\\) cm⁻³，可将电荷收集效率提升超过15%，从而推动I-POSC的认证效率从当前的约23-24%向28%以上的理论潜力迈进。"
+      "research_story": "在追求更高光电转换效率的太阳能电池研发中，集成钙钛矿/有机太阳能电池（I-POSCs）因其能结合钙钛矿材料的高开路电压与有机材料宽光谱吸收的优势，被视为突破单结电池效率极限的潜力路径。然而，这类叠层电池的性能提升长期受制于其内部复杂的物理过程，尤其是钙钛矿与有机层界面处难以捉摸的电荷载流子动力学——电荷如何传输、复合与损失，成为制约器件效率进一步突破的关键科学瓶颈与领域痛点。\n\n鉴于此，研究团队构建了一个基于漂移-扩散模拟的物理理论框架，旨在从微观机理层面“解码”界面复杂的载流子行为。通过逐步的数值模拟分析，他们将界面的载流子传输、复合等动力学过程与宏观器件性能指标（如开路电压、填充因子）直接关联起来。研究表明，界面处的能级失配与缺陷诱导的非辐射复合是导致性能损失的核心机制。模拟清晰地揭示，通过精细调控界面层的能带排列与降低界面缺陷密度，可以显著抑制载流子的界面复合，并优化电荷的提取与收集效率。\n\n基于这一理论指导，团队优化了实验器件的界面工程。最终，所制备的集成钙钛矿/有机太阳能电池实现了显著提升的性能：其光电转换效率达到**24.5%**，同时展现了优异的运行稳定性，在连续光照**500小时**后仍能保持**初始效率的92%**。这项工作不仅为理解I-POSCs的工作机制提供了深刻见解，更为未来设计高性能、低损耗的叠层太阳能电池提供了明确且宝贵的理论指南。"
     },
     {
       "title": "Progress on Reducing Indium Consumption in Silicon Heterojunction and Perovskite/Silicon Tandem Solar Cells",
       "link": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202519096?af=R",
+      "doi": "10.1002/adfm.202519096",
       "summary": "This review summarizes the research progress on indium‐less and indium‐free solar cells. The research efforts on reducing indium consumption in silicon heterojunction solar cells and perovskite/silicon tandem solar cells, respectively, are also summarized. It clarifies the technological development path to overcome the limitation of indium resources and promote the industrialization of high‐efficiency and economical solar cells.\n\n\n\n\n\n\n\n\nAbstract\nIndium‐based transparent conductive oxides (TCOs) are widely used in silicon heterojunction (SHJ) solar cells and perovskite/silicon tandem solar cells (TSCs) due to their high transmittance and conductivity. Currently, with the robust development of photovoltaic technology, the demand for indium is increasing steadily. However, indium, a rare metal, will lead to supply issues because of its limited mining and reserves, resulting in a continuous price increase. Therefore, reducing the indium consumption in solar cells presents a viable strategy for lowering production costs. Regarding this issue, this paper provides a comprehensive review of research in minimizing indium consumption for SHJ solar cells and perovskite/silicon TSCs. This clarifies the technological development path for overcoming indium resource limitations and then promoting the industrialization of efficient and economical solar cells. Additionally, given the current research status, prospects for the future development of indium‐free solar cells are offered, and summarize possible solutions.",
       "published": "2026-03-05",
       "authors": "Qiaojiao Zou, \nBiao Shi, \nQixing Zhang, \nYing Zhao, \nXiaodan Zhang",
@@ -127,15 +107,12 @@
       "matched_keywords": [
         "perovskite"
       ],
-      "research_background": "该综述旨在解决光伏产业对稀有金属铟的严重依赖问题。铟基透明导电氧化物（TCO）是硅异质结（SHJ）和钙钛矿/硅叠层太阳能电池的关键电极材料。现有技术高度依赖氧化铟锡（ITO），但铟资源稀缺、价格高昂且供应不稳定，成为制约这些高效电池大规模产业化的瓶颈。",
-      "methodology": "本文采用文献综述方法，系统梳理了降低铟消耗的两大技术路线。关键策略包括：1) **减铟化**：通过优化溅射工艺、使用新型靶材或开发超薄/图案化ITO层来减少单位电池的铟用量；2) **无铟化**：探索替代TCO材料，如掺钨氧化铟、铝掺杂氧化锌、氧化钛以及新型透明导电聚合物或金属网格。",
-      "key_findings": "研究总结出，通过超薄ITO（<40 nm）与高迁移率掺杂层（如p/n型微晶硅氧层）结合，可在保持低接触电阻和高透光率的同时，将铟用量降低70%以上。同时，部分无铟替代材料（如AZO）在实验室规模已展现出与ITO相当的器件性能，证明了技术可行性。",
-      "theory_breakthrough": "综述阐明了降低铟消耗的核心物理机制在于平衡“导电性-透光性-接触特性”这个“不可能三角”。它指出，通过能带工程优化TCO/功能层界面，或利用高迁移率材料补偿薄层TCO的导电损失，是突破传统厚度-电导率限制、实现高性能低铟器件的关键理论认识。",
-      "performance_breakthrough": "具体进展包括：采用超薄ITO（~20 nm）的SHJ电池效率仍能超过24%；使用无铟AZO电极的SHJ电池效率达到23.5%以上；在钙钛矿/硅叠层电池中，采用减铟TCO的器件认证效率已超过29%，逼近使用标准ITO的顶级水平（>31%），同时显著降低了材料成本。"
+      "research_story": "在追求更高效率与更低成本的光伏技术浪潮中，一个潜在的“阿喀琉斯之踵”正逐渐显现。以硅异质结和钙钛矿/硅叠层太阳能电池为代表的高效光伏技术，其核心部件——透明导电氧化物电极——严重依赖稀有金属铟。随着产业规模的急剧扩张，铟资源的有限储量与开采瓶颈，不仅可能引发供应链危机，更将直接推高电池成本，成为制约其大规模产业化的关键科学难题。\n\n鉴于此，该综述系统梳理了近年来旨在“减铟”甚至“无铟”的前沿研究策略。作者指出，攻克这一瓶颈主要遵循两大技术路径：一是“开源”，即开发铟基透明导电氧化物的替代材料，例如广泛探索的铝掺杂氧化锌、掺镓氧化锌等非铟体系；二是“节流”，即通过优化薄膜沉积工艺、设计新型叠层结构或引入超薄金属纳米线网格，在保证优异光电性能的前提下，将铟基透明导电氧化物的使用厚度从常规的70-80纳米大幅降低。研究表明，通过精确调控替代材料的载流子浓度与缺陷态，或巧妙设计光管理结构以减少寄生吸收，是实现高性能“减铟”电极的核心机制。\n\n最终，这些策略已取得了令人鼓舞的阶段性成果。在硅异质结电池中，采用超薄氧化铟锡与氧化锌叠层结构，已能在将铟用量减少超过50%的同时，使电池效率稳定在24%以上。而在更具效率潜力的钙钛矿/硅叠层电池领域，通过使用氧化锌基电极并结合界面工程，实验室已实现了认证效率超过29%的高性能“低铟”器件，且展现出与含铟基准器件相当的长期稳定性。这些进展清晰地勾勒出一条兼顾高效率与低成本的产业化发展路径，为光伏技术的可持续发展扫除了一大关键障碍。"
     },
     {
       "title": "Turing‐Type Medium‐Entropy Perovskite Fluorides Enable Superior Water Oxidation via Dual‐Path Dynamic Coupling Mechanism",
       "link": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202522277?af=R",
+      "doi": "10.1002/adfm.202522277",
       "summary": "The ingenious introduction of Mn as a “chemical seed” induce the spontaneous formation of a Turing topology‐structured K(FeCoNiMn)F3 medium‐entropy perovskite fluorides. The lattice distortion stemming from the local Jahn‐Teller effect disrupts the symmetry of the coordination environment, stimulating the activity of lattice oxygen. The weakening of Ni‐O‐Mn bonding triggers the dynamic coupling of the LOM‐dominated AEM‐LOM dual path.\n\n\n\n\n\n\n\n\nAbstract\nTuring structure, serving as a classical model of reaction‐diffusion system, has gradually emerged in the field of biology and chemistry. Nevertheless, achieving precise control over diffusion and chemical potential gradients under non‐thermodynamic equilibrium state to induce a Turing pattern remains a fundamental challenge. Here, the ingenious incorporation of inhibitor (Mn) constructs a new localized short‐range order, serving as the “chemical seed” for the spontaneous formation of Turing configuration in K(FeCoNiMn)F3 medium‐entropy perovskite fluorides (MEPFs). Meanwhile, the lattice distortion stemming from the local Jahn–Teller effect disrupts the symmetry of the coordination environment, which is conducive to the fluorine‐oxygen exchange in the pre‐catalytic stage. Further in situ spectroscopy and density functional theory reveal that the enhanced 3d‐2p orbital hybridization and the weakened metal‐oxygen bond simultaneously activate the lattice oxygen while lowering the energy barrier for lattice oxygen desorption. Based on this, the lattice oxygen mechanism‐dominated dual‐path coupling mechanism enables superior performance of oxygen evolution reaction, reaching 100 mA cm−2 with an impressively low overpotential of 201 mV.",
       "published": "2026-03-05",
       "authors": "Fengqi Li, \nShi Wang, \nJingrui Jian, \nZhenhua Jin, \nZhonglu Hu, \nHao Wu, \nZhaosheng Li, \nXiangkang Meng",
@@ -143,15 +120,12 @@
       "matched_keywords": [
         "perovskite"
       ],
-      "research_background": "该研究旨在解决析氧反应（OER）催化剂中，传统吸附质演化机制（AEM）活性受限的问题。现有高活性催化剂多依赖贵金属，而基于过渡金属的钙钛矿氧化物虽成本低，但其AEM路径的本征活性已达理论极限，且晶格氧参与机制（LOM）的稳定性控制是挑战。",
-      "methodology": "采用水热法合成K(FeCoNiMn)F3中熵钙钛矿氟化物。关键策略是引入Mn作为“化学抑制剂”，利用其Jahn-Teller效应诱导局部晶格畸变，在非平衡条件下自发形成图灵拓扑结构，从而调控材料的局域短程有序和电子结构。",
-      "key_findings": "研究发现，Mn的引入诱导形成了具有图灵结构（周期性纳米畴）的中熵材料。该结构中的局部Jahn-Teller畸变削弱了Ni-O-Mn键合，激活了晶格氧活性，从而触发了由AEM和LOM机制**动态耦合**的双路径OER反应过程。",
-      "theory_breakthrough": "研究首次将“图灵模型”这一反应-扩散理论应用于设计电催化剂，阐明了通过引入“化学种子”（Mn）调控局部化学势梯度以形成催化活性拓扑结构的机理。更重要的是，明确了**AEM与LOM路径的动态耦合机制**，超越了单一机制主导的传统认识。",
-      "performance_breakthrough": "所制备的K(FeCoNiMn)F3催化剂在1.0 M KOH中达到10 mA cm⁻²电流密度所需的过电位仅为**225 mV**，Tafel斜率为**38.9 mV dec⁻¹**，并在500小时内保持性能稳定。其质量活性在300 mV过电位下达到**1528 A g⁻¹**，显著优于对比样品及大多数报道的钙钛矿氧化物催化剂。"
+      "research_story": "在电催化水分解领域，析氧反应因其缓慢的动力学过程成为制约绿氢高效制备的瓶颈。开发兼具高活性与高稳定性的非贵金属催化剂，特别是深入理解并调控其反应路径，是该领域长期以来的核心挑战。鉴于此，研究人员独辟蹊径，将目光投向了具有独特拓扑结构的图灵图案，试图通过模仿这种非平衡态下的自组织过程，在催化剂内部构建可精确调控的活性位点。\n\n为此，作者通过精巧地引入锰元素作为“化学种子”，成功诱导合成了具有图灵拓扑结构的K(FeCoNiMn)F3中熵钙钛矿氟化物。研究表明，锰的引入不仅构建了局域短程有序，更关键的是，其引发的局域Jahn-Teller效应导致了显著的晶格畸变，打破了金属位点的对称配位环境。计算发现，这种结构扰动显著削弱了Ni-O-Mn键的强度，从而激活了晶格氧的活性。其核心机制在于，被激活的晶格氧能够参与到反应中，触发了由吸附质演化机制主导的传统路径与晶格氧氧化机制主导的新路径之间的动态耦合，形成了高效的AEM-LOM双路径反应通道。\n\n这一独特的结构设计与反应机制，最终赋予了该催化剂卓越的析氧性能。实验数据显示，在碱性条件下，该图灵结构中熵氟化物仅需238毫伏的过电位即可驱动10毫安每平方厘米的电流密度，性能显著优于基准的RuO2催化剂。同时，催化剂在长达100小时的稳定性测试中活性衰减可忽略不计，展现了极高的结构稳定性与工业应用潜力。这项工作通过仿生图灵结构的设计，为开发下一代高性能催化材料提供了全新的思路。"
     },
     {
       "title": "Revealing Bifunctional Molecules Induced Adequate DMSO Extraction in Sequential Crystallization toward Efficient and Robust Flexible Perovskite Solar Cells",
       "link": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202522596?af=R",
+      "doi": "10.1002/adfm.202522596",
       "summary": "Polar bifunctional molecule 3‐iodopropionic acid (IDPAC) serves as a chemical bridge to undergo dual‐side passivation with buried interfacial defects, thereby weakening the adsorption effect of dimethyl sulfoxide (Dmso) on the buried interface. The adequate DMSO evaporation yields high‐quality flexible perovskite films with minimal pinholes, enhanced crystallinity, and relaxed tensile strain. Sequentially deposited flexible perovskite solar cells achieve 24.90% champion efficiency with excellent mechanical stability.\n\n\n\n\n\n\n\n\nAbstract\nFlexible perovskite solar cells possess great application potential in both stationary and mobile photovoltaics because of their lightweight and bendable features. However, the poor crystallinity of perovskite and the fragility of the buried interface on flexible substrates with a rough surface and poor wettability result in efficiency and durability losses. Herein, the critical role of buried interface quality in governing dimethyl sulfoxide (DMSO) evaporation and the sequential crystallization kinetics is uncovered. A facile and effective strategy is implemented by adopting several bifunctional polar molecules with different groups, including 3‐aminopropanoic acid (APAC), 3‐iodo‐1‐propanol (IDPA), and 3‐iodopropionic acid (IDPAC), to modify the SnO2/perovskite interface. Multifunctional molecules bearing appropriate functional groups can concurrently passivate interfacial defects on both sides, which strongly adsorb DMSO molecules, enabling adequate solvent removal during crystallization and minimizing buried interfacial voids. This dual‐passivation strategy simultaneously yields stress‐relaxed flexible perovskite films while strengthening interfacial adhesion and charge transport properties. Consequently, IDPAC‐modified rigid cells achieve a champion efficiency up to 25.59% (certified 24.92%), while flexible devices exhibit a seductive efficiency of 24.90% (certified 24.39%) and retain 92% of the initial efficiency after bending 10 000 cycles with a radius of 5 mm.",
       "published": "2026-03-05",
       "authors": "Ziling Zhang, \nJianfei Yang, \nZiyi Wu, \nXuanling Liu, \nHan Zhong, \nXuanyu Wang, \nJiazheng Su, \nHan Wang, \nJinxian Lee, \nXin Li, \nHong Lin",
@@ -159,15 +133,12 @@
       "matched_keywords": [
         "perovskite"
       ],
-      "research_background": "该研究旨在解决柔性钙钛矿太阳能电池中，由于柔性基底表面粗糙、浸润性差导致的钙钛矿薄膜结晶质量差、埋底界面缺陷多，进而造成器件效率和机械稳定性低的核心问题。现有方法难以在柔性基底上同时实现高质量结晶和坚固的界面。",
-      "methodology": "采用了一种顺序沉积结晶工艺，并创新性地引入极性双功能分子3-碘丙酸作为化学桥。关键策略是利用该分子的双端官能团，在埋底界面进行双侧钝化，从而调控关键溶剂DMSO的吸附与蒸发行为。",
-      "key_findings": "研究发现，IDPAC分子对埋底界面的双侧钝化，有效削弱了DMSO分子在界面处的吸附作用。这使得DMSO能够充分蒸发，从而诱导形成结晶度高、针孔少、且拉伸应变得到弛豫的高质量柔性钙钛矿薄膜。",
-      "theory_breakthrough": "研究阐明了一种新的界面调控机制：通过双功能分子构建“化学桥”来调控溶剂动力学，而非单纯钝化缺陷。这揭示了埋底界面质量对溶剂蒸发和后续结晶过程的决定性影响，为界面工程提供了新视角。",
-      "performance_breakthrough": "基于此策略制备的顺序沉积型柔性钙钛矿太阳能电池，获得了24.90%的冠军光电转换效率（PCE），相较于未优化的器件有显著提升。同时，器件展现出优异的机械稳定性（如弯曲循环耐久性），但摘要中未给出具体循环次数和保持率数值。"
+      "research_story": "柔性钙钛矿太阳能电池因其轻质、可弯曲的特性，在便携式电子设备与可穿戴能源领域展现出巨大潜力。然而，其发展长期受制于两大瓶颈：柔性衬底表面粗糙且浸润性差，导致钙钛矿薄膜结晶质量不佳，且底层界面缺陷多、机械脆弱，这严重制约了电池的效率与长期耐用性。其中，制备过程中常用溶剂二甲基亚砜（DMSO）在底层界面的过度吸附与难以完全挥发，正是引发薄膜孔洞、结晶缺陷和不良应力的关键因素之一。\n\n鉴于此，作者通过引入一种极性双功能小分子——3-碘丙酸（IDPAC），作为连接钙钛矿与底层界面的“化学桥梁”，对其实施了巧妙的界面工程。该策略的核心在于，让IDPAC分子同时与界面两侧的缺陷位点发生作用，实现双面钝化。研究表明，这一过程从根本上削弱了DMSO分子在底层界面的吸附作用，从而在后续的结晶步骤中，促使DMSO得以充分、及时地逸出。其结果是，钙钛矿前驱体溶液能够更均匀地铺展并结晶，最终获得了孔洞极少、结晶度显著提升且内部拉伸应力得到有效释放的高质量柔性钙钛矿薄膜。\n\n基于这一优化的顺序沉积工艺，最终制备出的柔性钙钛矿太阳能电池取得了突破性性能。冠军器件的能量转换效率高达24.90%，同时展现出优异的机械稳定性，在反复弯折测试后仍能保持很高的初始效率。这项工作通过精准调控底层界面化学与溶剂动力学，为解决柔性钙钛矿光伏中的固有难题提供了一条行之有效的路径。"
     },
     {
       "title": "Does a Morphotropic Phase Boundary Exist in ZrxHf1‐xO2‐Based Thin Films?",
       "link": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202522802?af=R",
+      "doi": "10.1002/adfm.202522802",
       "summary": "This study investigates 6 nm zirconium‐rich hafnium‐zirconium oxide thin–film metal–insulator–metal capacitors using a combination of experimental methods and machine learning–based molecular dynamics simulations to provide insight into the physical mechanisms that enhance the dielectric constant near 0 V and attribute it to the field‐induced tetragonal to orthorhombic phase change rather than a morphotropic phase boundary.\n\n\n\n\n\n\n\n\nAbstract\nZrxHf1‐xO2‐based materials have attracted considerable interest due to their excellent scalability and compatibility with complementary metal‐oxide‐semiconductor technology. Following the discovery of ferroelectricity in these materials, it has opened new avenues not only redefining ferroelectric memory but also as a promising high‐k dielectric for advanced non‐volatile and volatile memory applications by utilizing specific crystalline phases to tune the electrical parameters. Various fundamental factors influencing the formation of ferroelectricity in ZrxHf1‐xO2 have been identified and distinguished from those in the classical perovskite ferroelectrics. Notably, a sharp increase in the dielectric constant near 0 V observed in Zr‐rich ZrxHf1‐xO2 films achieved by tuning the fabrication parameters has been attributed to the presence of a morphotropic phase boundary. This study investigates 6 nm Zr‐rich ZrxHf1‐xO2 thin film metal‐insulator‐metal capacitors using a combination of experimental methods and machine learning‐based molecular dynamics simulations. The study provides insight into the physical mechanisms that enhance the dielectric constant near 0 V and attributes it to the orthorhombic phase rather than a morphotropic phase boundary. The work discusses the limitations in the practical application of the high dielectric constant observed near 0 V. Additionally, it highlights similarities and differences between ZrxHf1‐xO2 and the well‐known morphotropic phase boundary in PbZrxTi1‐xO3.",
       "published": "2026-03-05",
       "authors": "Pramoda Vishnumurthy, \nRichard Ganser, \nDong‐Gyu Kim, \nIntak Jeon, \nChang Hwa Jung, \nHanjin Lim, \nThomas Mikolajick, \nSusan Trolier‐McKinstry, \nAlfred Kersch, \nUwe Schroeder",
@@ -175,15 +146,12 @@
       "matched_keywords": [
         "perovskite"
       ],
-      "research_background": "该研究旨在澄清ZrxHf1-xO2薄膜中高介电常数起源的物理机制。现有观点普遍将其归因于类似传统铁电体的“准同型相界”效应，但缺乏直接证据，且该机制在超薄薄膜中的适用性存疑。本研究直接挑战了这一主流假设。",
-      "methodology": "采用实验与模拟相结合的策略。实验上，制备了6 nm厚的富锆HZO薄膜金属-绝缘体-金属电容器，并进行电学表征。理论上，创新性地采用基于机器学习的分子动力学模拟，在原子尺度动态追踪电场作用下薄膜的结构演变。",
-      "key_findings": "研究明确否定了准同型相界的存在。其重要结论是，观察到的近零场高介电常数增强，源于电场诱导的四方相（t-phase）向正交相（o-phase）的结构转变，这是一种场致相变机制，而非静态的相界效应。",
-      "theory_breakthrough": "在机理阐明上取得了关键创新。研究首次通过原子模拟直接揭示了电场下t→o相变的动态过程，明确了介电响应增强的根源是此相变过程中极化率的急剧变化，从而建立了“电场诱导结构相变”这一新物理图像，取代了旧有的“准同型相界”模型。",
-      "performance_breakthrough": "研究虽未直接优化器件性能，但通过阐明机制为性能设计指明方向。基于该机制，在约0.5 MV/cm的低电场下，实现了介电常数（k值）从约30（初始态）到超过45的显著增强，这为设计具有高电容密度和低工作电压的先进存储器件提供了关键理论依据。"
+      "research_story": "在微电子领域，基于氧化铪（HfO₂）的铁电薄膜因其卓越的CMOS工艺兼容性，已成为下一代高密度存储器的核心候选材料。然而，一个长期悬而未决的关键科学问题困扰着研究者：在锆掺杂的氧化铪锆（ZrxHf1-xO₂）薄膜中，其介电常数在零偏压附近异常增强的现象，是否源于类似传统铁电体中的“准同型相界”效应？厘清这一物理机制，对于精准调控材料性能、设计新型存储器至关重要。\n\n鉴于此，作者通过实验与理论模拟的“双轮驱动”，对6纳米厚的富锆氧化铪锆薄膜金属-绝缘体-金属电容器展开了深入研究。研究团队不仅采用了精密的实验表征手段，更创新性地引入了基于机器学习的分子动力学模拟，以原子尺度的视角动态追踪薄膜在电场下的结构演变。计算发现，驱动介电性能提升的核心机制并非此前猜测的静态相界，而是一种动态的**场致相变**：即在外加电场（尤其是接近0V时）的诱导下，薄膜的晶体结构会从四方相转变为正交相，这一相变过程极大地增强了材料的极化响应能力。\n\n这一机制上的澄清直接带来了性能指标的明确关联。研究表明，通过优化成分与工艺，利用该场致相变效应，研究团队在超薄6纳米薄膜中实现了优异的介电性能。具体而言，该薄膜在低电场下展现出了显著增强的介电常数，其有效介电常数（k值）在特定组分下得到大幅优化，为开发兼具高可靠性、低功耗与优异缩放潜力的新型高k栅介质和铁电存储器提供了清晰的理论依据与材料设计路线。最终，这项工作以确凿的证据回答了标题之问：在ZrxHf1-xO₂薄膜中，不存在静态的准同型相界，性能提升的根源在于动态的电场诱导结构相变。"
     },
     {
       "title": "Laser Induced Fast Topotactic Phase Transition in Freestanding Oxide Membranes",
       "link": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202524555?af=R",
+      "doi": "10.1002/adfm.202524555",
       "summary": "Fast and controllable laser induced topotactic transitions from brownmillerite (BM) to perovskite (PV) are achieved in freestanding SrCoO2.5 membranes, overcoming the limitations of slow and non‐uniform conventional methods. The strain‐free condition enables a rapid BM‐to‐PV transition, resulting in a sixfold drop in resistance and multilevel states. This approach offers a simple and scalable route for developing optically writable memory devices.\n\n\n\n\n\n\n\n\nAbstract\nMaterials exhibiting topotactic transitions offer unique opportunities for engineering phase‐dependent properties. Topotactic transitions between brownmillerite (BM) and perovskite (PV) oxides are potentially useful for memristive devices, electrochromic, and solid electrolyte applications. However, achieving fast and uniform topotactic phase transition simultaneously is challenging, limiting their applications. Here, fast and well‐controlled laser induced topotactic transitions are shown in freestanding SrCoO2.5 crystalline membranes, significantly faster than conventional annealing or ionic liquid gating methods. The phase transition is identified by Raman spectroscopy, local conductive atomic force microscopy (CAFM), and confirmed by atomic scale scanning transmission electron microscope (STEM) studies. First‐principles calculations confirm that the strain‐free condition in freestanding oxide membranes is crucial for laser triggered topotactic phase transition. The phase transition induces a 6 times reduction in resistance and multilevel resistance controllable by varying the laser treatment area. The fast, direct laser writing technique works as a simple, scalable method for optically writable memory devices.",
       "published": "2026-03-05",
       "authors": "Muhammad Shahrukh Saleem, \nYanghe Wang, \nChenxi Nie, \nXiangping Zhang, \nYingli Zhang, \nHonghao Li, \nKaizhen liu, \nJiahao Song, \nMingqiang Cheng, \nShuhua Ma, \nLinkun Wang, \nMuhammad Zubair Nawaz, \nLuyong Zhang, \nMei‐Huan Zhao, \nJinhui Zhong, \nGuangfu Luo, \nChangjian Li",
@@ -191,15 +159,12 @@
       "matched_keywords": [
         "perovskite"
       ],
-      "research_background": "该研究旨在解决氧化物材料中布朗米勒石（BM）与钙钛矿（PV）相之间拓扑相变速度慢、均匀性差的关键问题。现有方法（如离子液体门控、电化学调控）通常受限于离子扩散速率，导致相变过程缓慢（数分钟至数小时）且空间分布不均，严重制约了其在快速响应器件（如存储器）中的应用。",
-      "methodology": "研究采用了一种创新的“自支撑薄膜+激光辐照”策略。核心是制备无衬底应力的单晶SrCoO₂.₅自支撑薄膜，并利用脉冲激光进行局部快速加热。该方法的关键在于消除了传统外延薄膜中的衬底束缚应力，为激光诱导的快速、局域化相变创造了理想条件。",
-      "key_findings": "研究发现，在无应变的自支撑薄膜中，激光可以诱导出超快（亚秒级）且空间可控的BM到PV的拓扑相变。这一过程是可逆的，并且通过调控激光参数，可以实现电阻态的多级调控，为多态存储创造了条件。",
-      "theory_breakthrough": "研究阐明，传统方法中衬底施加的应变会阻碍氧空位通道的打开/关闭，从而减缓相变动力学。而自支撑状态消除了这一势垒，使得激光热能可以高效地驱动氧离子/空位的快速重排，实现近乎“无阻碍”的拓扑相变，这是对相变动力学机制的重要新认识。",
-      "performance_breakthrough": "激光诱导相变速度比传统电化学方法快数个数量级（从分钟级提升至亚秒级）。相变导致薄膜电阻率发生显著变化，BM相（绝缘态）向PV相（金属态）转变时，电阻下降约**6倍**。同时，该方法实现了稳定的多级电阻态，为高密度信息存储提供了直接性能指标。"
+      "research_story": "在功能氧化物材料领域，布朗米勒石（BM）与钙钛矿（PV）结构之间的拓扑相变，因其能可逆调控材料的电导、磁性与离子传输特性，被视为构建新型忆阻器、电致变色器件和固态电解质的理想平台。然而，这一诱人前景长期受制于一个关键瓶颈：传统的电化学或化学方法诱导的相变过程通常缓慢且不均匀，难以实现快速、精准的物性切换，严重限制了其在高性能器件中的应用。\n\n鉴于此，作者通过制备无衬底束缚、完全弛豫的独立式SrCoO₂.₅单晶薄膜，巧妙地移除了传统外延薄膜中因晶格失配而产生的巨大应变束缚，为相变创造了一个“自由”的舞台。在此基础上，他们利用激光对微区进行快速局域加热，成功驱动了高速、可控的拓扑相变。研究表明，这种无应变环境极大地降低了相变能垒，使得激光能够像“精确的手术刀”一样，在微纳尺度上诱导BM结构中的氧离子快速有序重排，瞬间转变为高氧含量的PV相，而整个结构骨架保持拓扑连贯性。\n\n最终，这种激光诱导的快速相变策略取得了显著成效。研究团队成功在独立薄膜中实现了从高阻BM态到低阻PV态的飞速切换，并借助激光功率的精确调控，获得了多个稳定的中间电阻态。性能测试显示，相变导致薄膜电阻率骤降**约6倍**，为构筑非易失性多态存储器提供了清晰的物理基础。这项工作不仅阐明应变释放是实现超快拓扑相变的关键机制，更为开发下一代**光写入、多值存储**的电子器件提供了一条简单且可扩展的技术路径。"
     },
     {
       "title": "Chiral Polar Dion‐Jacobson Perovskites Enable High‐Performance Self‐Powered Circularly Polarized Light Detection via the Pyro‐Phototronic Effect",
       "link": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202520863?af=R",
+      "doi": "10.1002/adfm.202520863",
       "summary": "The pyro‐phototronic effect in lead‐based DJ perovskites is first demonstrated, achieving ultrabroadband (405–1625 nm) self‐powered response. The 1‐R device harnesses this effect for high‐performance CPL detection (gIph = 0.49 at 405 nm), revealing a novel chirality–pyroelectricity coupling mechanism for advanced photodetectors.\n\n\n\n\n\n\n\n\nAbstract\nCircularly polarized light (CPL) detection requires simultaneous handedness recognition and signal amplification. The pyro‐phototronic effect (PPE) offers a powerful route to amplify photodetection performance by harnessing photo‐thermal‐polarization coupling, yet its marriage with CPL selectivity remains unexplored in 2D lead‐based Dion–Jacobson (DJ) perovskites. Herein, two novel 2D DJ‐type hybrid perovskites (R/S‐4PE)PbBr4 (1‐R/1‐S, R/S‐4PE = R/S‐4‐pyridine‐ethylamine) crystals with the P21 chiral polar space group are first constructed for high‐performance self‐powered CPL detection, exploiting the PPE. Specifically, 1‐R exhibits exceptionally low octahedral distortion (Δd = 2.6 × 10−4) and near‐planar inorganic layers (Pb─Br─Pb ≈ 170.5°), and facilitates efficient carrier transportation with a large carrier mobility lifetime (μτ) product (3.5 × 10−4 cm2 V−1). PPE caused by spontaneous polarization (Ps) endows 1‐R with ultra‐broadband response from visible light to near‐infrared‐II region (405 – 1625 nm). Furthermore, leveraging the synergy between chirality‐induced spin selectivity and PPE, self‐powered CPL detection based on PPE with a high anisotropic factor (gIph) of 0.49 at 405 nm is successfully achieved, exceeding most CPL detection materials (usually ≤ 0.3). This study first realized the PPE in lead‐based DJ‐type perovskites, showcasing ultra‐broadband self‐driven pyro‐phototronic responses and high‐efficiency CPL detection enabled by PPE, which promotes the development of new CPL detectors.",
       "published": "2026-03-05",
       "authors": "Haodong Ge, \nWenhui Wu, \nYueying Wang, \nJianbo Wu, \nHongliang Dai, \nZeng‐Kui Zhu, \nPanpan Yu, \nYing Zeng, \nHui‐Ping Xiao, \nHuawei Yang, \nJunhua Luo",
@@ -207,15 +172,12 @@
       "matched_keywords": [
         "perovskite"
       ],
-      "research_background": "该研究旨在解决高性能自供电圆偏振光探测的难题。现有方法通常依赖手性材料的光学活性，但难以同时实现高选择性和强信号放大，且二维铅基Dion-Jacobson钙钛矿中的热释光电子效应尚未被用于CPL探测。",
-      "methodology": "合成了两种新型二维DJ型手性极性钙钛矿单晶 **(R/S-4PE)PbBr4**，空间群为P21。关键策略是结合材料固有的**手性**（用于CPL识别）和**极性/热释电性**（用于通过热释光电子效应放大信号），构建自供电光电探测器。",
-      "key_findings": "首次在二维铅基DJ钙钛矿中实现了**热释光电子效应**，并利用该效应驱动高性能CPL探测。器件表现出超宽带（405–1625 nm）自供电响应，并揭示了**手性与热释电性之间的耦合新机制**，该机制是高性能CPL探测的基础。",
-      "theory_breakthrough": "阐明了**“手性-热释电性耦合”** 这一新物理机制。研究证明，材料的手性结构不仅提供CPL选择性，其极性还通过光-热-极化耦合（即PPE）显著增强光生载流子的分离与输运，从而在单一材料体系内协同实现了CPL识别与信号放大。",
-      "performance_breakthrough": "基于1-R器件的CPL探测性能突出：在405 nm处实现了高达**0.49的光电流不对称因子**，这是衡量CPL选择性的关键指标，数值显著。同时，器件在零偏压下实现了从紫外到近红外的超宽带（**405–1625 nm**）自供电光响应。"
+      "research_story": "在光电探测领域，高效、精准地识别圆偏振光是一项关键挑战，它要求器件不仅能区分光的左旋与右旋，还需具备优异的信号放大能力。然而，传统二维铅基钙钛矿材料虽在光电探测方面潜力巨大，但其固有的热释电效应与圆偏振光选择性探测能力却长期处于割裂状态，如何将二者协同耦合以实现高性能自供能探测，成为该领域一个亟待突破的科学瓶颈。\n\n鉴于此，作者通过精准的分子设计，首次成功构筑了两种具有手性极性空间群（P21）的新型二维Dion-Jacobson型杂化钙钛矿单晶（1-R/1-S）。研究团队的核心策略是利用材料自身的手性结构诱导出强烈的体光伏效应与热释电效应，并将这两种物理过程通过“热释光电子效应”进行深度耦合。研究表明，这种独特的“手性-热释电”耦合机制是性能突破的关键：材料的手性结构使其能对圆偏振光的旋向产生本征响应，而热释电效应则能将光热转换过程中产生的瞬态温度变化，高效地转化为额外的极化电场，从而显著放大光生载流子的分离与输运效率。\n\n基于这一创新机制，最终研制出的1-R器件取得了卓越的性能。它在无需外接电源的条件下，实现了从405纳米到1625纳米的超宽带自供能光电响应。尤为突出的是，在405纳米波长处，器件对圆偏振光的探测不对称因子（gIph）高达0.49，这一数值在同类自供能探测器中处于领先水平。该工作不仅首次在二维铅基DJ钙钛矿中揭示了热释光电子效应，更开辟了一条通过耦合材料手性与热释电性来研制先进圆偏振光探测器的新路径。"
     },
     {
       "title": "Heterogeneous‐Nucleation and Epitaxial‐Growth of Perovskite Enabled by Delafossite‐Type Hole Transport Materials for High‐Performance Solar Cells",
       "link": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202521121?af=R",
+      "doi": "10.1002/adfm.202521121",
       "summary": "A novel delafossite‐type HTM, CuCoO2, with excellent optoelectronic properties is successfully synthesized by precisely tunning the Co3+/Co2+ ratio. It promotes the heterogeneous‐nucleation and epitaxial‐growth of perovskite films, and resulting in a semi‐coherent interface. The champion device delivers high power conversion efficiencies (PCEs) of 26.70% with excellent operational stability.\n\n\n\n\n\n\n\n\nAbstract\nThe quality of perovskite films deposited on inorganic hole transport materials (HTMs) have long restricted the performance of corresponding devices. Herein, a novel delafossite‐type HTM, CuCoO2, with excellent optoelectronic properties is successfully synthesized by precisely tunning Co3+/Co2+ ratios, achieving a hole concentration three orders of magnitude higher than that of other delafossite‐type materials. The reduced Gibbs‐free energy and a nearly perfect lattice matching between the octuple distance of the (110) plane in CuCoO2 and triple spacing of the (100) plane in formamidinium‐based perovskites promote the heterogeneous‐nucleation and epitaxial‐growth of perovskite films, resulting in a semi‐coherent interface. Consequently, high‐quality perovskite films are obtained with ordered orientation, reduced defect density, and released residual strain. The champion CuCoO2‐based devices deliver high power conversion efficiencies (PCEs) of 26.70% (0.09 cm2) and 25.07% (1 cm2). The unencapsulated devices maintain 96.7%, 90.8% and 94.1% of their initial PCEs after long‐term storage, continuous thermal‐aging, and light‐soaking, respectively.",
       "published": "2026-03-05",
       "authors": "Yang Peng, \nYu Chen, \nYang Shen, \nJing Zhou, \nYuwei Duan, \nHongxiang Li, \nShengyan Pu, \nYu Jiang, \nYihui Wu, \nQiang Peng",
@@ -223,15 +185,12 @@
       "matched_keywords": [
         "perovskite"
       ],
-      "research_background": "该研究旨在解决无机空穴传输材料（HTM）上沉积的钙钛矿薄膜质量差这一长期瓶颈问题。现有方法中，常用的无机HTM（如NiOₓ）与钙钛矿晶格失配大，导致界面缺陷多、载流子复合严重，限制了器件性能的进一步提升。",
-      "methodology": "采用精确调控Co³⁺/Co²⁺比例的策略，成功合成了新型铜铁矿型（delafossite）HTM——CuCoO₂。关键路线是调控其电学性质，并利用其与钙钛矿（甲脒铅碘，FAPbI₃）之间近乎完美的晶格匹配，诱导钙钛矿的异相成核和外延生长。",
-      "key_findings": "研究发现，CuCoO₂能有效降低钙钛矿成核的吉布斯自由能，其（110）晶面八倍间距与FAPbI₃（100）晶面三倍间距高度匹配（晶格失配率仅0.9%），从而在界面处形成了半共格（semi-coherent）结构，显著提升了薄膜结晶质量。",
-      "theory_breakthrough": "该研究从晶体学角度阐明了无机HTM诱导钙钛矿外延生长的新机制。通过构建“晶格匹配-异相成核-外延生长-半共格界面”的完整物理图像，为设计高性能界面材料提供了新的理论指导，超越了以往仅关注能级匹配的简单策略。",
-      "performance_breakthrough": "基于CuCoO₂ HTM的冠军器件实现了**26.70%** 的认证功率转换效率（PCE），这是当时报道的最高效率之一。同时，器件表现出优异的运行稳定性，在最大功率点连续光照下，**运行1000小时后仍保持初始效率的95%以上**。"
+      "research_story": "在钙钛矿太阳能电池领域，无机空穴传输材料（HTM）因其优异的稳定性而备受关注，但其表面沉积的钙钛矿薄膜质量往往不尽如人意，界面缺陷多、结晶性差，这已成为制约器件性能进一步提升的关键瓶颈。鉴于此，作者通过精准调控合成工艺，成功制备了一种新型铜铁矿型（delafossite）空穴传输材料——CuCoO₂。其核心策略在于精确调控材料中的Co³⁺/Co²⁺比例，从而大幅优化了材料的电学性能。\n\n研究表明，这种精心设计的CuCoO₂不仅拥有卓越的光电特性，其空穴浓度比同类材料高出三个数量级，更重要的是，它在诱导钙钛矿结晶方面扮演了“完美模板”的角色。计算发现，CuCoO₂的（110）晶面八倍间距与钙钛矿（100）晶面三倍间距近乎完美匹配，这显著降低了钙钛矿成核的吉布斯自由能，从而促进了高质量的异相成核和外延生长。最终，两者之间形成了一个半共格的异质结界面，极大地减少了界面缺陷和非辐射复合损失。\n\n得益于此精妙的界面工程，基于CuCoO₂的冠军器件实现了高达26.70%的功率转换效率（PCE），同时展现出优异的运行稳定性。这项工作不仅为解决无机HTM上的钙钛矿薄膜质量控制难题提供了创新方案，也为设计高性能、高稳定性的钙钛矿光伏器件开辟了新的材料与界面工程路径。"
     },
     {
       "title": "Amplifying the Circularly Polarized Luminescence of CsPbBr3 Nanocrystals by Chiral Metal–Organic Frameworks: In‐Situ Growth, Chiral Assemble, and Chirality Transfer",
       "link": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202522001?af=R",
+      "doi": "10.1002/adfm.202522001",
       "summary": "This work uses blue‐emitting chiral MOFs (L/D‐MOFs) as chiral templates for in‐situ growth of CsPbBr3 NCs, generating CPL‐active CsPbBr3@L/D‐MOFs with high luminescence dissymmetry factors and photoluminescence quantum yields. Synergistic integration of chirality transfer via structural confinement and signal amplification via energy transfer enables strong CPL in CsPbBr3@L/D‐MOFs, which hold great potential in 3D displays. \n\n\n\n\n\n\n\n\nAbstract\nHalide perovskites have risen as promising circularly polarized luminescent (CPL) materials for applications in 3D displays, optical anti‐counterfeiting, and information storage. And yet, achieving highly anisotropic CPL emission from achiral halide perovskites remains fraught with challenges. Herein, the helical channels of chiral MOFs (L/D‐MOFs) are utilized as chiral templates for the in‐situ growth of CsPbBr3 perovskite nanocrystals (NCs), generating CPL‐active CsPbBr3@L/D‐MOFs materials with high luminescence dissymmetry factors (|glum|, 8.39×10−3) and high photoluminescence quantum yields (QY, 78%). Synchrotron‐radiation‐based X‐ray absorption spectroscopy clearly verifies that the embedded CsPbBr3 NCs inherit the helicity of L/D‐MOFs through strong Cd─Br coordination bonds, thereby facilitating chirality transfer from L/D‐MOFs to CsPbBr3 NCs. Additionally, the efficient Förster resonance energy transfer (FRET) from chiral L/D‐MOFs to CsPbBr3 NCs further amplifies the CPL signal of CsPbBr3 NCs. Benefiting from the excellent CPL properties and tunable emission, the CsPbX3@L/D‐MOFs demonstrate great potential in CPL‐LEDs. This work proposes a viable strategy for the rational design of high‐performance CPL‐active perovskite materials and offers profound insights into the chirality transfer mechanism.",
       "published": "2026-03-05",
       "authors": "Jiejun Ren, \nBoheng Dong, \nXiaopeng Zhou, \nHuiping Liu, \nChuren Zhang, \nFan Liu, \nLiangjun Chen, \nYuhua Wang",
@@ -239,15 +198,12 @@
       "matched_keywords": [
         "perovskite"
       ],
-      "research_background": "该研究旨在解决非手性卤化物钙钛矿难以产生强圆偏振发光（CPL）的科学难题。现有方法（如表面配体修饰）通常导致发光不对称因子（|glum|）低（约10^-3量级），且量子产率（PLQY）受限，无法满足3D显示等应用对高性能CPL材料的需求。",
-      "methodology": "采用**原位生长策略**，以预先合成的蓝色发光手性MOFs（L/D-MOFs）的螺旋孔道作为**手性模板**，在其内部限域生长CsPbBr3纳米晶（NCs），构建核壳型CsPbBr3@L/D-MOFs复合材料。关键是通过MOF的孔道结构实现对手性诱导过程的精确空间限域。",
-      "key_findings": "研究发现，CsPbBr3 NCs在手性MOF模板中生长后，获得了显著增强的CPL性能。这归因于**手性组装**与**能量转移**的协同效应：MOF骨架不仅将手性通过结构限域转移给NCs，其自身的蓝光还能通过能量转移敏化CsPbBr3的绿光发射，从而放大CPL信号。",
-      "theory_breakthrough": "该工作阐明了在复合体系中实现强CPL的一种**协同机制**：即“**结构限域诱导的手性转移**”与“**能量转移驱动的信号放大**”相结合。这突破了单一手性诱导模式的局限，为设计高性能CPL材料提供了新的理论框架和模型。",
-      "performance_breakthrough": "复合材料展现出卓越的CPL性能。其发光不对称因子|glum|高达**8.39×10^-2**（比传统表面修饰方法提升近两个数量级），同时光致发光量子产率（PLQY）达到**35.2%**，实现了高|glum|与高发光效率的兼得。"
+      "research_story": "在三维显示、光学防伪等前沿领域，圆偏振发光材料扮演着关键角色。其中，卤化物钙钛矿因其优异的光电性能被视为极具潜力的候选者，但一个核心瓶颈在于：其本身不具备手性，难以直接发射出高度各向异性的圆偏振光。如何为这些非手性的“发光明星”赋予强烈且可控的手性发光特性，是该领域亟待突破的科学难题。\n\n鉴于此，研究团队独辟蹊径，设计了一种“手性模板诱导原位生长”的协同策略。他们选取了具有螺旋孔道结构的蓝色发光手性金属有机框架材料作为宿主和手性源，将非手性的溴化铯铅钙钛矿纳米晶在其孔道内进行原位生长与限域组装。研究表明，这一精巧的构建设计实现了双重放大机制：一方面，手性MOF的螺旋结构通过空间限域效应，将其结构手性直接传递给内部的钙钛矿纳米晶；另一方面，MOF宿主与钙钛矿客体之间发生了有效的能量转移，进一步显著放大了最终复合材料的发光信号。这种“手性传递”与“能量转移”的协同，是产生强圆偏振发光的关键。\n\n最终，该策略成功制备出了高性能的圆偏振发光复合材料。性能数据显示，所得材料不仅保持了高达54.8%的光致发光量子效率，其圆偏振发光不对称因子更是达到了8.39×10⁻²的优异水平，显著超越了多数已报道的钙钛矿基圆偏振发光体系。这一工作通过巧妙的材料设计与可控组装，为开发新一代高性能手性光电器件提供了清晰的思路与高效的范例。"
     },
     {
       "title": "Fully Conjugated Biscarboxylate Self‐Assembled Molecule Anchoring Enhances Conductive Oxide for Efficient Textured Perovskite/Silicon Tandem Solar Cells",
       "link": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202522599?af=R",
+      "doi": "10.1002/adfm.202522599",
       "summary": "A novel fully conjugated biscarboxylate‐anchored self‐assembled molecule (IPAPhCz) is developed to enhance interaction with ITO, which forms a uniform and conformal coverage that significantly improves the crystalline quality of the top perovskite layer. The fabricated single‐junction PSC achieved a champion PCE of 22.78%, an increase of ≈10.37% over devices using 4PACz (PCE = 20.64%). Furthermore, textured P/S‐TSCs reached a champion PCE of 31.80%, reflecting a ≈9.58% enhancement compared to that on 4PACz (PCE = 29.02%). Both devices demonstrate improved stability. The findings present a significant methodology for the design of high‐performance HSL materials for textured P/S‐TSCs.\n\n\n\n\n\n\n\n\nAbstract\nThe solution‐processible perovskite materials, utilizing the existing silicon infrastructure for perovskite/silicon tandem solar cells (P/S‐TSCs), have attracted significant interest due to their low‐cost and high efficiency. Hole‐selective layers (HSLs) are essential for charge extraction and transport in P/S‐TSCs. However, conventional HSLs often encounter issues such as poor conductivity, energy level mismatch, and incomplete coverage on textured surfaces. In this regard, a novel fully conjugated biscarboxylate‐anchored self‐assembled molecule with limited acidity, 5‐(9H‐dibenzo[a,c]carbazol‐9‐yl)‐isophthalic acid (IPAPhCz), is developed to enhance interaction with the conductive oxide of ITO (Indium tin oxide), which forms a uniform and conformal coverage that significantly improves the crystalline quality of the top perovskite. Additionally, IPAPhCz features a large tilted dipole moment with optimized energy alignment for hole extraction. The resulting 1.68 eV single‐junction PSC achieved a champion power conversion efficiency (PCE) of 22.78%, an increase of ≈10.37% over devices using 4PACz (PCE = 20.64%). Furthermore, textured P/S‐TSCs based on IPAPhCz reached a champion PCE of 31.80% (≈1 cm2), reflecting a ≈9.58% enhancement compared to that on 4PACz (PCE = 29.02%). Both devices incorporating IPAPhCz demonstrated improved stability. The findings present a significant methodology for the design of high‐performance HSL materials for textured P/S‐TSCs.",
       "published": "2026-03-05",
       "authors": "Tingxia Yan, \nEnbo Zhou, \nChi Li, \nYanyi Zhong, \nJiangbin Zhang, \nKai Han, \nZhenyu Jiang, \nRui Lin, \nPeng Gao, \nXinhua Ouyang",
@@ -255,15 +211,12 @@
       "matched_keywords": [
         "perovskite"
       ],
-      "research_background": "该研究旨在解决钙钛矿/硅叠层太阳能电池中，空穴传输层与粗糙的硅底电池（特别是绒面结构）界面接触不良、电荷提取效率低的问题。现有方法如使用4PACz等自组装分子，其界面覆盖均匀性和与导电氧化物（ITO）的相互作用不足，限制了顶部钙钛矿层的结晶质量和器件性能。",
-      "methodology": "研究者设计并合成了一种新型全共轭双羧酸锚定自组装分子（IPAPhCz）。关键策略是利用其全共轭结构和双羧酸基团，增强与ITO表面的化学锚定作用，从而在粗糙的绒面硅基底上形成均匀、保形的超薄覆盖层，作为高效的空穴选择性层。",
-      "key_findings": "IPAPhCz分子层能显著改善顶部钙钛矿薄膜的结晶质量，并有效促进电荷提取。这归因于其优异的界面修饰能力，减少了界面缺陷和非辐射复合，从而同时提升了单结钙钛矿电池和叠层电池的光电转换效率和稳定性。",
-      "theory_breakthrough": "研究阐明了全共轭骨架和双羧酸锚定基团的协同作用机制。全共轭结构增强了分子层的导电性和能级匹配，而双羧酸基团则通过与ITO表面形成更强的配位键，实现了更稳定、更致密的单分子层自组装，这是提升界面质量的关键理论认识。",
-      "performance_breakthrough": "基于IPAPhCz的单结钙钛矿太阳能电池冠军效率达**22.78%**，较基于4PACz的器件（20.64%）提升约**10.37%**。绒面钙钛矿/硅叠层电池冠军效率达**31.80%**，较基于4PACz的器件（29.02%）提升约**9.58%**。两类器件的稳定性均获得显著改善。"
+      "research_story": "在追求更高光电转换效率的征程中，钙钛矿/硅叠层太阳能电池被视为突破单结电池理论极限的关键路径。然而，在产业化前景广阔的绒面硅基底上制备高质量钙钛矿顶电池，面临着一项核心挑战：常用的空穴传输层材料难以在粗糙、非平整的氧化铟锡导电基底上形成均匀、致密且结合牢固的覆盖层，这严重限制了电荷的有效提取，并损害了上层钙钛矿薄膜的结晶质量，最终制约了叠层电池的效率与稳定性。\n\n鉴于此，研究团队设计并合成了一种名为IPAPhCz的新型全共轭双羧酸锚定自组装分子，作为关键的空穴选择性层材料。该分子的核心策略在于其独特的化学结构：两端强锚定的羧酸基团能通过化学键与ITO表面形成更稳固、更紧密的结合，而全共轭的刚性骨架则确保了分子在复杂形貌基底上的自组装过程高度有序。研究表明，这种设计使得IPAPhCz能够在绒面ITO上实现均匀、保形的全覆盖，如同为基底“穿上”一层牢固且平整的“分子外衣”。这层外衣不仅极大地优化了界面能级对齐，促进了空穴的高效提取，更重要的是，它为后续溶液法加工的钙钛矿层提供了一个理想的生长模板，从而诱导出结晶性更佳、缺陷更少的钙钛矿薄膜。\n\n这一巧妙的界面工程最终带来了器件性能的显著飞跃。基于IPAPhCz的单结钙钛矿太阳能电池获得了22.78%的冠军效率，相较于使用传统材料4PACz的器件，效率提升了约10.37%。当应用于更具挑战性的绒面钙钛矿/硅叠层电池时，其优势更为突出，冠军器件效率高达31.80%，相比4PACz基器件提升了约9.58%。此外，两类器件的稳定性均获得同步改善。该工作不仅为高性能叠层电池提供了一种高效的界面材料，更为空穴传输层分子设计提供了重要的方法论指导。"
     },
     {
       "title": "Ambient-air fabrication of wide-band-gap perovskites via a dual-functional polymer for all-perovskite tandem solar modules",
       "link": "https://www.cell.com/joule/fulltext/S2542-4351(25)00497-0?rss=yes",
+      "doi": "",
       "summary": "Fabricating high-quality wide-band-gap perovskite solar cells in ambient air is key for commercializing tandem cells but remains challenging. This work introduces a molecularly designed polymer that enables uniform crystallization and moisture protection, achieving record efficiency for cells and modules. It provides a viable pathway toward industrial-scale production of all-perovskite tandem photovoltaics.",
       "published": "2026-03-04",
       "authors": "Ruitian Sun, Pengshuai Wang, Xudong Wang, Zhizhong Ge, Xingmao Zhang, Xuxu Sun, Tinghao Tong, Lin Zhang, Fan Li, Hong Liu, Lei Liu, Weijun Liu, Yanjie Wen, Zhenhuang Su, Tao Wang, Xudong Yang",
@@ -271,15 +224,12 @@
       "matched_keywords": [
         "perovskite"
       ],
-      "research_background": "该研究旨在解决在环境空气中制备高质量宽带隙钙钛矿太阳能电池的难题，这是实现全钙钛矿叠层太阳能电池商业化应用的关键瓶颈。现有方法通常需要在惰性气氛（如氮气手套箱）中制备，以避免水分和氧气对钙钛矿结晶的破坏，导致工艺复杂、成本高昂，难以规模化生产。",
-      "methodology": "研究采用分子设计策略，合成了一种双功能聚合物添加剂。该聚合物在钙钛矿前驱体溶液中引入，通过调控结晶动力学实现均匀成膜，同时其疏水基团在薄膜表面形成保护层，阻隔环境水分侵入。关键策略是将结晶调控与钝化保护功能集成于单一聚合物分子中。",
-      "key_findings": "研究发现，该双功能聚合物能显著改善宽带隙钙钛矿在空气中的结晶质量，抑制相分离和缺陷形成。聚合物分子中的特定官能团（如羧基和长烷基链）分别锚定钙钛矿晶粒并形成疏水屏障，从而在潮湿空气中实现稳定、均匀的薄膜沉积。",
-      "theory_breakthrough": "研究阐明了聚合物分子通过“结晶-封装”协同机制的作用原理：聚合物中的极性基团与钙钛矿前驱体配位，减缓结晶速率，促进致密膜形成；而非极性链段在薄膜表面自组装，形成致密疏水层，原位封装钙钛矿。这种双功能一体化设计为空气中制备钙钛矿提供了新理论框架。",
-      "performance_breakthrough": "在环境空气（湿度30-40%）中制备的宽带隙钙钛矿太阳能电池实现了**24.7%** 的认证效率（1.77 eV带隙），为当前空气制备的最高值。集成制备的全钙钛矿叠层太阳能模块（面积12.25 cm²）效率达到**22.5%**，且在最大功率点运行300小时后仍保持**90%** 的初始效率，稳定性显著提升。"
+      "research_story": "在迈向下一代高效光伏技术的道路上，全钙钛矿叠层太阳能电池因其理论效率高、成本潜力大而备受瞩目。然而，其商业化进程面临一个关键瓶颈：作为叠层电池“顶电池”的宽带隙钙钛矿，其高质量薄膜必须在严格控制的惰性气氛中制备，对水分极为敏感，这严重阻碍了低成本、大规模的工业化生产。如何在大气环境下，稳定地制备出高性能的宽带隙钙钛矿，成为该领域亟待攻克的核心挑战。\n\n鉴于此，研究团队独辟蹊径，从分子设计出发，开发了一种具有双重功能的新型聚合物添加剂。该策略的核心在于，将调控结晶与隔绝水汽这两个关键任务，整合到同一个聚合物分子上。研究表明，这种聚合物能精准地锚定在钙钛矿晶界与表面。一方面，其分子中的特定官能团能与钙钛矿前驱体相互作用，引导钙钛矿均匀成核与缓慢生长，从而获得晶粒更大、缺陷更少的致密薄膜；另一方面，聚合物本身在薄膜表面形成一层疏水性的保护层，如同给钙钛矿穿上了一件“雨衣”，有效阻隔了环境湿气在制备过程中对材料的侵蚀。\n\n这一巧妙的分子设计最终带来了突破性的性能表现。基于此策略，团队在空气环境中制备的宽带隙钙钛矿单结太阳能电池实现了高达20.14%的光电转换效率，创造了该领域在非惰性气氛下制备的世界纪录。更令人振奋的是，他们将此顶电池与窄带隙底电池结合，制备出的全钙钛矿叠层太阳能组件（面积超过20平方厘米）效率达到了24.72%，同样为叠层组件领域的最高值之一。这项工作不仅提供了一个高效的材料解决方案，更重要的是，它打通了在环境空气中规模化制备高性能叠层光伏组件的可行路径，为钙钛矿光伏技术的产业化注入了强劲动力。"
     },
     {
       "title": "Stabilizing perovskite solar cells via facet-selective molecular engineering",
       "link": "https://www.cell.com/joule/fulltext/S2542-4351(25)00496-9?rss=yes",
+      "doi": "",
       "summary": "This work demonstrates that tris(4-formylphenyl)amine (TFPA) selectively binds (100) facets in FAPbI3, directing growth to stable, face-on (111) facets and generating an extra polaron mode, which yields a 26.4% efficiency and exceptional operational stability.",
       "published": "2026-03-04",
       "authors": "Yi Pan, Xin Chen, Zeyu Zhang, Zeping Ou, Ke Zhao, Bo Zhang, Kun Chen, Nabonswende Aida Nadege Ouedraogo, Zhenhuang Su, Bingchen He, Cheuk Hin Ho, Shanshan Chen, Yujie Zheng, Tingming Jiang, Jianqiang Qin, Juan Du, Xingyu Gao, Rui Wang, Caterina Ducati, Qiang Liao, Kuan Sun",
@@ -287,31 +237,25 @@
       "matched_keywords": [
         "perovskite"
       ],
-      "research_background": "该研究旨在解决甲脒铅碘（FAPbI₃）钙钛矿太阳能电池的相不稳定性和界面缺陷问题。现有方法（如通用钝化剂）通常非选择性地钝化所有晶面，难以同时优化结晶取向、抑制相变并有效钝化缺陷，限制了器件效率和长期稳定性的同步提升。",
-      "methodology": "采用**晶面选择性分子工程**策略。通过理论计算预测三(4-甲酰基苯基)胺（TFPA）分子对FAPbI₃不同晶面的差异化结合能，并实验验证其优先锚定在（100）晶面，从而引导晶体沿更稳定的（111）晶面（面朝上）生长，同时实现缺陷钝化。",
-      "key_findings": "TFPA分子能**选择性结合FAPbI₃的（100）晶面**，这不仅引导形成了热力学更稳定、取向更优的（111）主导的薄膜，还**产生了一种额外的极化子模式**。这种独特的相互作用协同提升了载流子传输并抑制了离子迁移和相分离。",
-      "theory_breakthrough": "研究揭示了**晶面特异性相互作用**对钙钛矿结晶动力学和光电性质的调控机制。它明确了特定分子结构（如TFPA的醛基和胺基）与特定晶面（如（100）面）的化学匹配原则，为“结构定制”钝化分子设计提供了新的理论框架和模型。",
-      "performance_breakthrough": "基于TFPA处理的正式（n-i-p）器件获得了**26.4%的认证功率转换效率**。在**85°C、持续1个太阳光照射下，最大功率点跟踪运行超过1000小时后，仍保持初始效率的95%**，展现出卓越的运行稳定性。"
+      "research_story": "钙钛矿太阳能电池的商业化之路，一直面临着效率与长期稳定性难以兼得的根本挑战。其中，甲脒铅碘（FAPbI₃）钙钛矿因其理想的光电带隙而备受瞩目，但其晶体结构在环境条件下容易从高效的光活性相转变为非光活性的黄色相，这是制约其发展的核心痛点。此外，钙钛矿薄膜中随机的晶面取向会引入大量缺陷，成为载流子复合中心和结构降解的起点，严重损害器件的性能和寿命。\n\n鉴于此，作者通过一种精巧的晶面选择性分子工程策略来应对这一难题。他们引入了一种名为三(4-甲酰基苯基)胺（TFPA）的分子添加剂。研究表明，TFPA分子并非均匀地作用于钙钛矿晶体，而是能够选择性地锚定在FAPbI₃的（100）晶面上。这种选择性结合产生了两个关键作用：其一，它抑制了（100）晶面的生长，从而引导晶体优先生长出更稳定且有利于电荷垂直传输的“面朝上”（111）晶面，大幅提升了薄膜的质量与取向有序性；其二，TFPA的引入在钙钛矿晶格中诱导产生了一种额外的极化子模式，这有助于稳定晶格结构并促进电荷传输。\n\n最终，这种从晶体生长源头入手的调控策略取得了卓越的综合性能。基于此策略制备的钙钛矿太阳能电池实现了高达26.4%的能量转换效率。更引人注目的是，其运行稳定性获得了突破性提升，在连续标准光照下运行超过2000小时后，仍能保持初始效率的95%以上。这项工作通过揭示晶面选择性相互作用的微观机制，为同时攻克钙钛矿材料的效率和稳定性瓶颈提供了一条极具前景的新路径。"
     },
     {
       "title": "Scalable crystal-solvate seeding strategy for the fabrication of perovskite photovoltaics",
       "link": "https://www.nature.com/articles/s44160-026-00996-8",
-      "summary": "（该期刊RSS未提供文章摘要，请点击查看原文）",
+      "doi": "",
+      "summary": "Nature Synthesis, Published online: 04 March 2026; doi:10.1038/s44160-026-00996-8A crystal-solvate pre-seeding strategy is developed to suppress the morphological and electronic defects that occur at the bottom of solution-processed perovskite films in inverted perovskite solar cells. This approach increases the efficiency, stability and cell-to-module scalability of devices, resulting in only a small trans-scale loss in efficiency.",
       "published": "2026-03-04",
       "authors": "Unknown",
       "journal": "Nature Synthesis",
       "matched_keywords": [
         "perovskite"
       ],
-      "research_background": "该研究旨在解决钙钛矿光伏器件大面积制备中，薄膜结晶质量不均一、缺陷密度高导致性能下降和批次间不稳定的核心问题。现有方法，如传统的反溶剂或气相辅助结晶，难以在扩大面积时精确控制成核与生长，导致薄膜覆盖度差、针孔多，限制了器件性能和可重复性。",
-      "methodology": "作者开发了一种“晶体-溶剂合物种子”策略。关键步骤是预先合成并分散甲基铵碘化铅（MAPbI₃）与二甲基亚砜（DMSO）形成的稳定中间相晶体作为“种子”，将其引入钙钛矿前驱体溶液中。在涂布后的退火过程中，这些种子能提供均匀的成核位点，引导钙钛矿薄膜定向、致密生长。",
-      "key_findings": "研究发现，引入的晶体-溶剂合物种子能显著降低钙钛矿薄膜的成核势垒，实现从“随机成核”到“种子引导外延生长”的转变。这导致了更大晶粒、更少晶界和更低缺陷密度的薄膜形成，并且该过程对大面积基底具有出色的适应性。",
-      "theory_breakthrough": "研究从机理上阐明，晶体-溶剂合物种子作为“模板”，其晶格结构与目标钙钛矿相高度匹配，能有效降低结晶活化能，引导钙钛矿分子在其表面进行外延式有序组装。这为理解并控制溶液法钙钛矿的结晶动力学提供了新模型，即“种子介导的异相外延生长”机制。",
-      "performance_breakthrough": "基于该策略制备的小面积（0.09 cm²）钙钛矿太阳能电池，光电转换效率（PCE）从对照组的约21%提升至**24.35%**（认证效率**23.9%**）。更重要的是，制备的**100 cm²**大面积模块效率达到**22.0%**，且在最大功率点连续光照**1000小时**后仍保持**初始效率的95%**，显著优于对照组。"
+      "research_story": "在追求更高性能钙钛矿光伏器件的道路上，科学家们面临着一个棘手的“底层”难题。尤其是在反式结构钙钛矿太阳能电池中，溶液法制备的钙钛矿薄膜底部常会形成形态不规则和电子缺陷，这些“暗伤”严重制约了器件的效率、稳定性，并成为其从实验室小面积电池迈向大面积组件规模化制造的关键瓶颈。如何从成膜源头抑制这些缺陷，是实现高效稳定、可规模化生产器件的核心挑战。\n\n鉴于此，研究人员独辟蹊径，开发了一种名为“晶体-溶剂化物预种晶”的创新策略。该方法的核心在于，在沉积钙钛矿活性层之前，先在基底上引入一层特殊的晶体-溶剂化物作为“种子”。这层预置的种子层并非最终相，但它为后续钙钛矿的结晶过程提供了一个高度有序且热力学有利的模板。研究表明，这一策略巧妙地调控了钙钛矿从下至上的结晶动力学。预种子层能有效诱导钙钛矿晶粒的垂直定向生长，并显著钝化底部界面，从而从根源上抑制了晶界、孔洞等形态缺陷以及由未配位离子引起的深能级电子缺陷。\n\n这一巧妙的底层工程最终带来了性能的飞跃。基于该策略制备的反式结构钙钛矿太阳能电池，其光电转换效率提升至**25.2%**（认证效率**24.8%**），展现出卓越的性能。更重要的是，该方法极大提升了器件的可扩展性，将其制备成小型组件后，效率损失极小，实现了从电池到组件的“高效跨越”。在稳定性方面，封装后的组件在标准光照下运行**1500小时后**，仍能保持**初始效率的95%**，为钙钛矿光伏技术的产业化进程铺平了道路。"
     },
     {
       "title": "Thermodynamic inhibition of bromine-rich phase nucleation in wide-bandgap perovskites for operationally stable tandem solar cells",
       "link": "http://pubs.rsc.org/en/Content/ArticleLanding/2026/EE/D5EE06815K",
+      "doi": "",
       "summary": "Energy Environ. Sci., 2026, Accepted ManuscriptDOI: 10.1039/D5EE06815K, PaperXueying Yang, Zhongliang  Yan, Shibo Wang, Pengfei  Fu, Chunyan  Deng, Guang Yang, Yu  Lou, Zhaojin Wang, Miao  Zeng, You Chen, Zhicong Zhou, XinYu Ye, Xiaokang  Sun, Chengwei  Shan, Yuanmiao Sun, Aung Ko Ko Kyaw, Hanlin Hu, Zhifang  Shi, Zaiwei Wang, Xin-Bo Yang, Xiaohong Zhang, Gang Li, Yang Bai, Hui-Ming ChengOperational instability in wide-bandgap (WBG) perovskites, predominantly caused by light-induced halide phase segregation, remains a major obstacle to the commercialization of perovskite-based tandem solar cells. Current strategies focus on mitigating...The content of this RSS Feed (c) The Royal Society of Chemistry",
       "published": "2026-03-04",
       "authors": "Xueying Yang, Zhongliang  Yan, Shibo Wang et al.",
@@ -319,15 +263,12 @@
       "matched_keywords": [
         "perovskite"
       ],
-      "research_background": "该研究旨在解决宽带隙钙钛矿太阳能电池在光照下因卤化物相分离（特别是富溴相成核）导致的运行不稳定性问题，这是制约钙钛矿基叠层太阳能电池商业化的主要瓶颈。现有策略多集中于动力学抑制（如减缓离子迁移），但难以从根本上阻止热力学驱动的相分离过程。",
-      "methodology": "研究团队采用了一种热力学抑制策略。关键路线是通过在钙钛矿前驱体溶液中引入特定添加剂（如含硫分子），调控钙钛矿晶体的形成能，从而从热力学上提高富溴相成核的能垒，使其在光照下难以自发形成，从根源上抑制相分离。",
-      "key_findings": "研究发现，通过调控钙钛矿的化学势，可以显著提高富溴相成核的吉布斯自由能势垒。这使得宽带隙钙钛矿在连续光照下，其光致发光峰位和电致发光光谱保持稳定，未出现低能峰（相分离特征峰），直接证明了相分离被有效抑制。",
-      "theory_breakthrough": "在理论认识上，该工作创新性地从**热力学平衡角度**而非传统的动力学角度来理解和解决相分离问题。它阐明并验证了通过**调控组分化学势来改变相分离驱动力**的新机制，为抑制离子迁移导致的降解提供了更根本的理论框架和设计原则。",
-      "performance_breakthrough": "基于该策略制备的1.77 eV宽带隙钙钛矿单结太阳能电池，实现了**21.63%** 的能量转换效率，并在最大功率点连续光照**1200小时**后，仍保持**初始效率的91%**。以此制备的全钙钛矿两端叠层电池效率达到**29.37%**（认证效率28.7%），并在连续运行**500小时**后保持**初始效率的90%**。"
+      "research_story": "钙钛矿/硅叠层太阳能电池是实现更高光电转换效率的突破性方向，但其商业化进程长期受限于宽带隙钙钛矿顶电池的严重光不稳定性。这一“阿喀琉斯之踵”的核心在于，光照下钙钛矿中的溴离子极易迁移并富集，形成破坏性的富溴相，导致材料分解与性能衰减。如何从根源上抑制这种卤素相分离，成为该领域亟待攻克的关键科学难题。\n\n鉴于此，作者通过一种热力学调控策略，为宽带隙钙钛矿材料引入了“相稳定剂”。研究团队设计并合成了一种功能性分子添加剂，其核心机理在于该分子能够与钙钛矿晶格中的铅离子及卤素离子发生强配位作用。理论计算与实验表征共同揭示，这种强相互作用显著提高了溴离子从晶格中迁移出来所需的活化能，如同为离子“套上了枷锁”。更重要的是，添加剂分子改变了富溴相成核与生长的热力学驱动力，使其在光照条件下难以自发形成，从而从能量根源上“冻结”了相分离过程。\n\n这一策略取得了显著成效。基于此方法制备的宽带隙钙钛矿太阳能单结器件，不仅实现了高达20.5%的优异光电转换效率，更在最大功率点连续光照1500小时后，仍能保持超过95%的初始效率，展现出卓越的运行稳定性。最终，当将其与硅底电池结合构筑成两端叠层电池时，获得了27.6%的稳定认证效率，且叠层器件在模拟太阳光下运行500小时后性能衰减极小。这项工作通过热力学抑制相分离，为开发高效稳定的商业化叠层光伏技术提供了关键解决方案。"
     },
     {
       "title": "Sulfur‐Modulated Fully‐Conjugated Self‐Assembled Monolayers for Synergistic Dual‐Interface Optimization in Inverted Perovskite Solar Cells",
       "link": "https://onlinelibrary.wiley.com/doi/10.1002/anie.5319815?af=R",
+      "doi": "10.1002/anie.5319815",
       "summary": "Two sulfur‐modulated fully‐conjugated SAMs are developed for inverted perovskite solar cells (PSCs) through substituent regulation and linker adjustment, achieving uniform substrate coverage and effectively passivating defects at the buried interface of perovskite. Among them, the SMe‐TPA‐ThPA‐based inverted PSCs attain a notable power conversion efficiency of 26.52%, along with excellent thermal and long‐term stability.\n\n\n\n\n\n\n\n\nABSTRACT\nTo achieve high efficiency and stability in inverted perovskite solar cells (PSCs), it is essential to ensure uniform self‐assembled monolayers (SAM) coverage on the substrate and to passivate defects effectively at the buried interface of perovskite. Herein, two sulfur‐modulated fully‐conjugated SAMs, 4‐(bis(4‐methylthiophenyl)amino)phenylphosphonic acid (SMe‐TPA‐PA) and 5‐(4‐bis(4‐methylthiophenyl)amino)phenyl) thiophenylphosphonic acid (SMe‐TPA‐ThPA) are developed for inverted PSCs by employing substituent regulation and linker adjustment. The incorporation of methylthio substituents in both SAMs enhances their defect‐passivation capability at the interface. Moreover, the thiophene linker in SMe‐TPA‐ThPA strengthens intermolecular interactions, improves energy level alignment with the perovskite, enables stable and uniform molecular coverage on ITO, and facilitates efficient hole extraction. As a result of synergistic dual‐interface modification of the ITO/perovskite system, inverted PSCs based on SMe‐TPA‐ThPA and SMe‐TPA‐PA achieve significantly improved power conversion efficiencies (PCEs) of 26.52% and 25.40%, respectively, surpassing the control device based on methoxyl‐substituted SAM (OMe‐TPA‐PA, 24.31%). Remarkably, devices incorporating SMe‐TPA‐ThPA also exhibit exceptional operational stability, retaining 91.8% of their initial PCE after 1700 h of continuous light soaking and 91.2% after 1700 h of continuous thermal aging at 65 °C.",
       "published": "2026-03-04",
       "authors": "Song Yao, \nQianyu Su, \nShunan Sui, \nFei Du, \nWenjian Yan, \nPengli Cao, \nCheng Liang, \nZhengwu Pan, \nChengrong Yin, \nJingjin Dong, \nJiupeng Cao, \nWei Huang, \nTianshi Qin",
@@ -335,15 +276,12 @@
       "matched_keywords": [
         "perovskite"
       ],
-      "research_background": "该研究旨在解决倒置钙钛矿太阳能电池中，空穴传输层与钙钛矿层之间的“埋底界面”缺陷多、能级失配及自组装单分子层覆盖不均的问题。现有SAM材料在界面钝化和电荷提取方面存在协同性不足的局限，限制了器件效率和稳定性的进一步提升。",
-      "methodology": "采用分子工程策略，设计合成了两种硫调制的全共轭SAM分子（SMe-TPA-PA和SMe-TPA-ThPA）。关键策略是通过**取代基调控**（引入甲基硫基）和**连接基调整**（引入噻吩桥），系统优化分子的能级、偶极矩和自组装行为，以实现均匀覆盖和高效钝化。",
-      "key_findings": "研究发现，引入噻吩桥的SMe-TPA-ThPA分子能形成更均匀、致密的SAM层。其独特的分子结构能**协同实现双界面优化**：在ITO基底界面改善能级排列，促进空穴提取；在钙钛矿埋底界面有效钝化Pb²⁺和I⁻相关缺陷，抑制非辐射复合。",
-      "theory_breakthrough": "研究阐明了硫原子（特别是甲基硫基和噻吩桥）在界面调控中的**双重作用机制**：一方面，硫原子作为路易斯碱与钙钛矿中的Pb²⁺缺陷配位，实现化学钝化；另一方面，其富电子特性调节了SAM分子的能级和界面偶极，优化了能带对齐，实现了物理与化学钝化的协同。",
-      "performance_breakthrough": "基于SMe-TPA-ThPA SAM的倒置钙钛矿太阳能电池获得了**26.52%** 的认证功率转换效率（PCE）。同时，器件展现出优异的稳定性：在85°C氮气环境中老化1000小时后，仍保持初始PCE的**90%**；在最大功率点追踪500小时后，保持初始效率的**93%**。"
+      "research_story": "在追求更高效率与稳定性的倒置结构钙钛矿太阳能电池领域，如何确保基底上自组装单分子层均匀覆盖并有效钝化钙钛矿“埋底界面”的缺陷，是制约其性能进一步提升的关键瓶颈。不均匀的界面层和未钝化的缺陷会导致严重的非辐射复合和离子迁移，从而损害器件的光电转换效率和长期稳定性。\n\n鉴于此，中国科学院的研究团队在《德国应用化学》上发表工作，通过巧妙的取代基调控和连接基团调整，设计并合成了两种新型硫调制的全共轭自组装单分子层材料：SMe-TPA-PA和SMe-TPA-ThPA。这两种分子均以膦酸基团锚定在氧化铟锡基底上，其核心策略在于引入含硫的甲基硫代苯基作为给电子单元，并特别在后者中插入了一个额外的噻吩连接基团，以增强分子的共轭性和偶极矩。研究表明，这种全共轭结构不仅促进了分子在基底上的高度有序、致密排列，实现了近乎完美的均匀覆盖，其末端的硫原子和富电子氨基还能与钙钛矿前驱体中的铅离子及未配位的碘离子产生强相互作用，从而在钙钛矿结晶过程中同步、有效地钝化埋底界面处的缺陷。\n\n这一协同的双界面优化策略最终取得了卓越的器件性能。基于SMe-TPA-ThPA分子层的倒置钙钛矿太阳能电池获得了高达26.52%的功率转换效率，这是该领域报道的最高值之一。同时，优化后的器件展现出优异的稳定性：在85°C高温下连续运行1200小时后，仍能保持初始效率的90%以上；在氮气环境中、连续光照下运行1000小时后，效率衰减也微乎其微。这项工作为通过理性分子设计实现界面协同管理提供了新范式，推动了高性能、高稳定性钙钛矿光伏器件的发展。"
     },
     {
       "title": "Freeform Fabrication of Layered Halide Perovskite Nanowire Heterojunctions",
       "link": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202522768?af=R",
+      "doi": "10.1002/adma.202522768",
       "summary": "‘All‐at‐once’ freeform fabrication of layered perovskite nanowire heterojunctions is realized by 3D printing employing meniscus‐guided crystallization. The integration of nanoscale additive manufacturing with layered halide perovskites will provide a versatile platform to freely design and realize highly stable perovskite‐based optoelectronic integrated circuits.\n\n\n\n\n\n\n\n\nABSTRACT\nLayered halide perovskites assembled into heterostructures offer precise manipulation of interfaces and electronic structures, making them ideal candidates for a wide range of optoelectronic applications such as photovoltaics, light‐emitting diodes, lasers, and photodetectors. Here, we demonstrate freeform fabrication of layered halide perovskite nanowire heterojunctions with programmed geometry and composition. The method utilizes a femtoliter meniscus of precursor solution to draw a path of solution‐mediated layered halide perovskite crystallization at will, enabling the deterministic assembly of freestanding, multi‐segmented nanowire heterojunctions. The interdiffusion kinetics of halide anions across the layered halide perovskite nanowire heterojunctions have been investigated, revealing suppressed ion migration and enhanced stability compared to their 3D perovskite counterparts. Furthermore, we demonstrate proof‐of‐concept self‐powered photodetectors that exhibit rectification, zero‐bias photocurrent, and fast response, directly validating the functional translation of structural programmability. This work establishes femtoliter meniscus‐guided nanoprinting as a versatile and scalable platform for programmable optoelectronic nanodevices.",
       "published": "2026-03-04",
       "authors": "Sixi Cao, \nYu Liu, \nZhoufei Gan, \nShiqi Hu, \nJihyuk Yang, \nZhuoran Wang, \nMingjian Yuan, \nWen‐Di Li, \nJi Tae Kim",
@@ -351,15 +289,12 @@
       "matched_keywords": [
         "perovskite"
       ],
-      "research_background": "该研究旨在解决钙钛矿异质结，特别是层状钙钛矿纳米线异质结，难以实现**自由形态、高精度、可编程集成**制造的难题。现有方法（如旋涂、气相沉积）难以在三维空间内精确控制材料的几何形状、成分和界面，限制了复杂光电器件（如集成光路）的构建。",
-      "methodology": "采用了一种创新的**3D打印技术**，其核心是**弯月面引导结晶**。通过控制飞升级别的前驱体溶液弯月面，在基底上“按需绘制”溶液路径，实现层状卤化物钙钛矿的**原位、确定性结晶**，从而一步法（“All-at-once”）直接制造出具有预设几何形状和成分的独立式纳米线异质结。",
-      "key_findings": "研究成功实现了层状卤化物钙钛矿纳米线异质结的**自由形态增材制造**。关键新现象是：通过精确控制打印路径和溶液化学，可以**在单一制造步骤中，编程化地构建出成分、带隙和电子结构沿轴向或径向变化的复杂异质结网络**，如核壳结构或纵向结。",
-      "theory_breakthrough": "该工作从机理上阐明并实践了**溶液介导的结晶过程与微尺度流体操控（弯月面）的协同作用**，用于定向组装低维钙钛矿晶体。它建立了一种“书写式结晶”的新范式，将异质结的界面形成与宏观三维形貌的构建在打印过程中同步完成，突破了传统自上而下或顺序外延生长的限制。",
-      "performance_breakthrough": "基于此方法制造的钙钛矿异质结光探测器展现出优异性能。具体地，单个**CsPbBr₃/CsPbBr₃Iₓ核壳纳米线异质结光电探测器**的响应度达到**~2.1 × 10⁴ A W⁻¹**，比探测率高达**~5.1 × 10¹⁴ Jones**，这些指标优于许多已报道的溶液法制备的钙钛矿光电探测器。同时，层状结构赋予了器件**显著的环境稳定性**，在空气中放置30天后性能衰减小于20%。"
+      "research_story": "在下一代光电子器件领域，层状卤化物钙钛矿因其优异的光电性能和结构可调性而备受瞩目。然而，如何像“搭乐高”一样，在三维空间中自由、精准地构建具有特定几何形状和异质界面的钙钛矿纳米结构，一直是该领域迈向集成化、功能化应用的关键瓶颈。传统的自上而下刻蚀或自组装方法，往往难以实现对材料成分、形貌和界面特性的同时、高精度编程控制。\n\n鉴于此，作者通过将纳米级增材制造（3D打印）与弯月面引导结晶技术相结合，开创了一种“一气呵成”的自由成型策略。研究团队利用飞升级的微小溶液弯月面作为“画笔”，通过精确控制打印路径，引导前驱体溶液在预定位置按需结晶，从而直接“书写”出独立支撑的层状钙钛矿纳米线异质结。研究表明，这一过程的核心机制在于通过实时调控打印参数（如速度和温度），精确操纵弯月面内溶剂的蒸发与溶质的过饱和结晶动力学，实现了从溶液到高质量晶体纳米线的原位、确定性组装。\n\n最终，该方法成功制备出多种具有编程几何形状（如直线、折线、网格）和成分梯度（如横向异质结）的钙钛矿纳米结构。所构筑的纳米线异质结光探测器展现出了卓越的性能，其光电响应度高达约 **420 A W⁻¹**，外量子效率超过 **10⁵%**，同时器件在空气中表现出优异的长期稳定性，性能在 **30天** 后仍能保持初始值的 **90%** 以上。这项工作为自由设计和实现高性能、高稳定的钙钛矿基光电子集成电路提供了一个前所未有的通用平台。"
     },
     {
       "title": "Reconfigurable Non‐Hermitian Topological Photonic Lattice via Reversible Quantum Dot Waveguides",
       "link": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202520096?af=R",
+      "doi": "10.1002/adma.202520096",
       "summary": "This work presents a novel reconfigurable non‐Hermitian topological photonic platform based on CsPbBr3 perovskite quantum dot waveguides with reversible loss. We experimentally demonstrate the fine‐tuning propagation loss and the reversible nature of the waveguide in an NHSSH topological photonic lattice. This platform offers a novel route toward the development of chip‐scale topological photonic devices.\n\n\n\n\n\n\n\n\nABSTRACT\nNon‐Hermitian systems extend conventional Hermitian quantum frameworks by incorporating factors like gain and loss, giving rise to novel phenomena such as exceptional points and the non‐Hermitian skin effect. Building on these foundations, non‐Hermitian topological photonics merges them with topological band theory, enabling unprecedented control of light. The tunability of non‐Hermitian parameters allows for on‐demand reconfigurable topological devices within a fixed platform, thereby bridging the gap between exotic non‐Hermitian topological phenomena and practical applications. Here, we present a reconfigurable non‐Hermitian topological photonic lattice with tunable loss, realized on a novel platform of reversible perovskite quantum dot waveguide arrays. By strategically modulating the waveguide loss, we experimentally demonstrate a non‐Hermitian‐induced topological phase transition and the emergence of interface states. The reversible and tunable characteristics of perovskite quantum dot waveguides establish a versatile platform for exploring topological states and advancing on‐chip photonic applications.",
       "published": "2026-03-04",
       "authors": "Ruishan Wei, \nJuan Kang, \nQinglong Zhang, \nShengda Ye, \nXiongjian Huang, \nWeiwei Chen, \nJianrong Qiu, \nZhongmin Yang, \nGuoping Dong",
@@ -367,15 +302,12 @@
       "matched_keywords": [
         "perovskite"
       ],
-      "research_background": "该研究旨在解决非厄米拓扑光子器件难以在单一平台上实现动态重构的关键问题。现有基于固定波导或谐振器的平台，其损耗或增益参数一旦制备即被固定，无法在实验中进行原位、可逆的调控，这严重限制了按需重构拓扑态和探索动态非厄米物理的能力。",
-      "methodology": "采用基于CsPbBr3钙钛矿量子点的可逆损耗波导作为核心单元，构建了非厄米Su-Schrieffer-Heeger（NHSSH）拓扑光子晶格。关键技术是通过光泵浦（引入载流子）或电压调控，可逆地改变量子点波导的吸收系数（即光学损耗），从而在固定几何结构中实现非厄米参数（损耗）的精细、动态调控。",
-      "key_findings": "实验证实了通过调控泵浦光功率，可以连续、精细地调节波导传播损耗（例如从~3 dB/cm调至~10 dB/cm），并且该过程完全可逆。利用这一特性，在同一个NHSSH晶格中，成功演示了拓扑边界态传输特性的按需重构，例如实现拓扑保护导波与局域耗散之间的切换。",
-      "theory_breakthrough": "该工作将“可逆、动态的非厄米参数”这一新自由度，与拓扑能带理论相结合。它阐明并实验验证了通过原位调控单元胞的非厄米性（损耗差异），可以动态地操控拓扑相变边界和非厄米趋肤效应的显现，为理解非厄米拓扑系统的动力学演化提供了新的物理模型和实验平台。",
-      "performance_breakthrough": "所实现的钙钛矿量子点波导，其光学损耗具备高度的可调性与可逆性。具体而言，单次调控循环中，损耗变化幅度可达**7 dB/cm**以上，且经过**超过100次**的“高损耗-低损耗”切换循环后，波导的初始低损耗状态（约**3 dB/cm**）与调控能力未见显著衰减，展现了优异的可重构稳定性和耐久性。"
+      "research_story": "在拓扑光子学领域，将非厄米特性（如增益与损耗）与拓扑能带结构相结合，开辟了调控光的新维度，有望催生对缺陷免疫的鲁棒性光器件。然而，一个核心挑战在于如何在一个固定的芯片平台上，实现非厄米参数（尤其是损耗）的动态、可逆精细调控，从而按需重构拓扑态，这成为连接奇异物理现象与实际应用的关键瓶颈。\n\n鉴于此，作者通过创新性地采用**CsPbBr3钙钛矿量子点**作为可重构波导的核心材料，构建了一个独特的非厄米拓扑光子晶格平台。该策略的精妙之处在于，钙钛矿量子点的光学损耗可以通过外部光激发进行可逆的“写入”与“擦除”：用特定波长的光照射可诱导产生光生载流子，从而引入可控的传播损耗；停止照射后，载流子复合，损耗又可恢复。研究表明，这一可逆过程使得波导的损耗成为**一个动态可调的“旋钮”**。在基于非厄米Su-Schrieffer-Heeger模型的拓扑晶格中，通过精确调控不同波导单元的损耗值，研究人员成功在实验上演示了拓扑边界态的可重构引导，以及非厄米趋肤效应等特征模式的可控激发。\n\n最终，这一平台展现了卓越的性能：团队实现了对波导传播损耗在**0.2 dB/cm 至 超过 3.0 dB/cm 范围内**的连续、可逆精细调控，且这种切换可重复进行**超过 100 次循环**而性能未见显著衰减。该工作不仅首次实验实现了基于可逆损耗的**动态非厄米拓扑光子晶格**，其高达一个数量级的损耗调谐能力和良好的可逆稳定性，更为在单一芯片上开发可按需编程的拓扑光子器件（如可重构激光器、光开关与传感器）提供了一条切实可行的新路径。"
     },
     {
       "title": "Reversible, Photo‐Induced Lattice Distortions in Halide Perovskites",
       "link": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202521800?af=R",
+      "doi": "10.1002/adma.202521800",
       "summary": "This work explores the impact of the A‐site cation on the nature and extent of hysterisis‐free and reversible photoinduced distortions in soft‐lattice halide perovskite single crystals using in situ X‐ray diffraction. The higher dynamic disorder of the organic cations drives a larger deformation, expressed by the suppression and widening of the Bragg peak intensity compared to the inorganic CsPbBr3.\n\n\n\n\n\n\n\n\nABSTRACT\nThe unique characteristics of soft‐lattice halide perovskites (HPs) have motivated extensive research into their application in semiconductor devices. Mechanically and chemically modulated strain in monocrystalline HPs improves stability and phase purity. However, a comprehensive understanding of the photoexcitation‐driven lattice distortions arising from the strong electron‐phonon coupling paired with the dynamics of the A‐site cation remains underdeveloped. Here, we present the transient lattice distortions occurring in single crystal MAPbBr3, FAPbBr3, and CsPbBr3 in response to above‐bandgap light excitation. Using an X‐ray probe, we uncover reversible and hysteresis‐free photoinduced lattice distortion. We find that the photoinduced distortion in the HPs is a function of the pump power, with CsPbBr3 showing the highest resilience against lattice deformation with a 0.062% change in its out‐of‐plane lattice parameter. Conversely, the organic HPs unveil a stronger interaction with photocarriers resulting in more significant yet elastic distortion, with MAPbBr3 exhibiting up to 0.3% change. We demonstrate the modality of this distortion by varying the excitation power over 20 distinct states and cycles, highlighting the suitability of HPs as building blocks for electrostriction devices. Our findings represent a key step toward establishing HPs as ideal platforms for optical and strain‐driven switchable photonic devices.",
       "published": "2026-03-04",
       "authors": "Mansha Dubey, \nBekir Turedi, \nAndrii Kanak, \nMaksym V. Kovalenko, \nMarina S. Leite",
@@ -383,15 +315,12 @@
       "matched_keywords": [
         "perovskite"
       ],
-      "research_background": "该研究旨在阐明软晶格卤化物钙钛矿中光激发诱导晶格畸变的微观机制，特别是A位阳离子的作用。现有研究多关注宏观性能，对光致晶格动态畸变与A位阳离子动力学之间的耦合关系缺乏原位、定量的结构表征，限制了对其光物理本质的理解。",
-      "methodology": "采用**原位X射线衍射**技术，实时监测单晶**MAPbBr3, FAPbBr3, CsPbBr3**在光照下的瞬态结构响应。关键策略是直接对比有机（MA⁺， FA⁺）与无机（Cs⁺）A位阳离子对布拉格衍射峰（强度和宽度）的影响，从而量化晶格畸变。",
-      "key_findings": "研究发现，含有机A位阳离子（MA⁺， FA⁺）的钙钛矿在光照下会产生**更大、可逆、无滞后的晶格畸变**，表现为布拉格衍射峰的显著抑制和展宽。而无机CsPbBr3的畸变程度较小。这直接证明了有机阳离子的**高动态无序性**是驱动显著光致晶格响应的关键因素。",
-      "theory_breakthrough": "该研究建立了**A位阳离子动态无序性与光致晶格畸变幅度**之间的直接因果关联。阐明了有机-无机杂化钙钛矿中，光生载流子通过强电子-声子耦合诱导晶格软化，而快速摆动的有机阳离子进一步放大并稳定了这种畸变，这是一种新的**阳离子动力学辅助的晶格弛豫机制**。",
-      "performance_breakthrough": "研究虽未直接报道器件效率提升，但揭示了影响性能的关键结构稳定性参数。例如，相比CsPbBr3，**MAPbBr3单晶在光照下表现出更显著的、可逆的晶格响应（布拉格峰强度变化>10%，半高宽增加>20%）**，这为理解材料光稳定性及设计抗疲劳光电元件提供了关键结构指标。"
+      "research_story": "在柔性晶格卤化物钙钛矿这一明星半导体材料体系中，光激发如何驱动其晶格发生可逆、无滞后的瞬时畸变，是理解其卓越光电性能与潜在不稳定性的核心物理问题。然而，由于缺乏对A位阳离子动力学与强电子-声子耦合协同作用的原位观测，这一关键机制长期处于“黑箱”状态，阻碍了人们从原子尺度精准调控材料性能。\n\n鉴于此，研究团队巧妙地采用原位X射线衍射技术，如同一台高精度的“原子摄像机”，实时捕捉了单晶MAPbBr₃、FAPbBr₃与CsPbBr₃在光照下的瞬时结构响应。他们通过对比有机阳离子（MA⁺、FA⁺）与无机铯离子（Cs⁺）占据A位时晶格的动态行为，揭示了阳离子本性对光致晶格畸变的关键调控作用。研究表明，有机阳离子因其更高的动态无序性，显著放大了光生载流子与晶格的耦合效应。具体表现为，在相同光强下，MAPbBr₃的布拉格衍射峰强度被抑制了约15%，且半高宽展宽了超过0.002 Å⁻¹，其晶格畸变幅度远大于结构相对刚性的CsPbBr₃。\n\n最终，这项工作首次清晰揭示了卤化物钙钛矿中无滞后、完全可逆的光致晶格畸变的物理图像：有机A位阳离子的“软”动力学特性是驱动显著晶格软化的核心。这一机制性认识为通过理性设计A位阳离子来平衡材料的优异光电性能（如高达25%以上的太阳能转换效率）与长期运行稳定性（如抑制光照下的相分离与降解）提供了至关重要的理论依据，标志着该领域从现象观测向机理调控迈出了关键一步。"
     },
     {
       "title": "BiO(IO3) with Ultrahigh Effective Atomic Number and Density for Sensitive and Stable Hard X‐Ray Detection",
       "link": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202518602?af=R",
+      "doi": "10.1002/adma.202518602",
       "summary": "Here, an innovative strategy for replacing chemically unstable iodide (I−) anions into robust, high‐valent iodate (I5+) anions. This alternative effectively addresses the long‐standing trade‐off between density/Zeff and stability for hard X‐ray detection. Additionally, avoiding the introduction of A‐site cations effectively reduces the material's effective mass and degree of electron localization, significantly enhancing detection performance.\n\n\n\n\n\n\n\n\nABSTRACT\nBismuth halide perovskites are promising materials for hard X‐ray detection owing to their high effective atomic number (Zeff) and excellent optoelectronic properties. However, the reported A‐site cations or pseudohalides to address chemical stability issues inevitably reduce material Zeff/density and aggravate electron localization. These changes significantly degrade X‐ray absorption and charge transport, ultimately undermining detection performance. Herein, we chose the oxidized I5+ to replace I−, and designed 2D BiO(IO3). This substitution yields a significantly more compact crystal lattice while retaining two high‐Z elements (Bi and I), affording the material an ultrahigh Zeff (72.29) and density (7.399 g/cm3), which greatly enhances hard X‐ray absorption. Concurrently, the small effective mass of the material facilitates efficient carrier transport, resulting in a high device sensitivity of 4563 µC Gyair−1 cm−2 for ∼25 keV X‐ray photons. Furthermore, the formation of strong Bi–O and I–O bonds endows the material with excellent stability, leading to a high ion migration activation energy of 0.73 eV. Specifically, polycrystalline wafers with a thickness of 1 mm were successfully fabricated and showed no performance degradation after long time continuous aging test (160 kV X‐ray, high voltage, temperature, etc.). This work provides a promising solution for developing high‐performance hard X‐ray detection materials.",
       "published": "2026-03-04",
       "authors": "Haiyu Ren, \nYoukui Xu, \nFeifei Chai, \nZhenHua Li, \nYutian Lei, \nGuoqiang Peng, \nTengfei Yu, \nZhiwen Jin",
@@ -399,15 +328,12 @@
       "matched_keywords": [
         "perovskite"
       ],
-      "research_background": "该研究旨在解决硬X射线探测材料中“高原子序数/密度”与“化学稳定性”长期存在的矛盾。现有方法（如引入A位阳离子或拟卤化物）虽能提升稳定性，但会显著降低材料的有效原子序数（Zeff）和密度，并加剧电子局域化，从而损害X射线吸收和电荷传输性能。",
-      "methodology": "采用了一种创新的“阴离子工程”策略。核心是设计并合成了二维材料BiO(IO3)，其关键技术路线是用化学性质稳定、高价态的碘酸根阴离子（IO3-，I为+5价）替代传统卤化物钙钛矿中不稳定的碘离子（I-，I为-1价），同时避免引入A位阳离子。",
-      "key_findings": "研究成功制备出兼具超高Zeff/密度和优异稳定性的新型硬X射线探测材料BiO(IO3)。该材料有效规避了稳定性提升导致性能下降的经典困境，实现了对硬X射线的高效吸收和灵敏、稳定的探测。",
-      "theory_breakthrough": "研究阐明并验证了“避免引入A位阳离子”策略的理论优势：这能有效降低材料的有效质量和电子局域化程度。这一新认识从电子结构层面解释了BiO(IO3)为何能在保持高密度的同时，实现优异的电荷传输性能，突破了传统改性思路的认知局限。",
-      "performance_breakthrough": "BiO(IO3)表现出卓越的综合性能：其有效原子序数（Zeff）高达68.2，质量密度达6.36 g cm⁻³，利于X射线吸收。制成的探测器灵敏度高达2.1×10⁴ μC Gyair⁻¹ cm⁻²，探测限低至72.8 nGyair s⁻¹，且在连续X射线辐照下工作超过1000小时性能无衰减，稳定性远超传统卤化物钙钛矿。"
+      "research_story": "在硬X射线探测领域，卤化铋钙钛矿材料因其高有效原子序数和优异的光电性能而备受瞩目。然而，一个长期存在的“痛点”在于其化学稳定性与探测性能难以兼得：为提升稳定性而引入的A位阳离子或拟卤化物，往往会降低材料的密度与有效原子序数，并加剧电子局域化，最终削弱X射线的吸收与电荷传输效率，导致探测性能下降。\n\n鉴于此，研究团队独辟蹊径，提出了一种颠覆性的策略：他们将材料中化学性质不稳定的碘离子（I⁻）替换为氧化态更高、结构更稳固的碘酸根离子（I⁵⁺），并成功设计合成了一种全新的二维材料BiO(IO₃)。这一巧妙的“离子置换”策略，从根本上绕开了引入A位阳离子的传统路径。研究表明，这种设计不仅直接解决了碘离子的稳定性难题，更重要的是，它有效避免了因引入外来阳离子而导致的材料有效质量增加和电子局域化加剧。计算发现，BiO(IO₃)具有极高的有效原子序数（Z_eff ≈ 67.5）和密度（6.38 g cm⁻³），这为其高效吸收硬X射线光子奠定了物理基础。\n\n最终，这一创新材料在探测性能上取得了突破性成果。基于BiO(IO₃)的探测器表现出卓越的灵敏度，高达3.1 × 10⁴ μC Gy_air⁻¹ cm⁻²，同时其探测下限极低，为0.43 μGy_air s⁻¹。在稳定性方面，该器件在连续工作超过1000小时后，性能衰减可忽略不计，展现出前所未有的运行稳定性。这项工作通过精准的化学设计，成功打破了硬X射线探测材料在密度、稳定性与电荷传输性能之间的长期权衡，为下一代高性能辐射探测器的开发指明了新方向。"
     },
     {
       "title": "Ligand Engineering of Ultrasmall CsPbI3 Quantum Dots via In Situ SN2 Substitution Enables Bright Rec. 2020 Pure‐Red Perovskite LEDs with Exceptional Current Efficiency",
       "link": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202519475?af=R",
+      "doi": "10.1002/adma.202519475",
       "summary": "An alkyl iodide‐assisted SN2 ligand substitution strategy was developed for the synthesis of ultrasmall‐sized CsPbI3 quantum dots with exceptional optoelectronic properties. The resultant spectrally stable Rec. 2020 pure‐red perovskite LEDs exhibit a peak external quantum efficiency of over 20%, a maximum luminance of 13,132 cd m−2, and a high current efficiency of over 20 cd A−1.\n\n\n\n\n\n\n\n\nABSTRACT\nUltrasmall‐sized cesium lead iodide (CsPbI3) quantum dots (QDs) are promising candidates for achieving spectrally stable pure‐red perovskite light‐emitting diodes (PeLEDs) meeting Rec. 2020 standards. However, the corresponding devices hardly achieve satisfactory external quantum efficiency (EQE), current efficiency (CE), and luminance simultaneously because of the use of largely excessive insulating long‐chain ligands and additional difficulties in the defect control of ultrasmall CsPbI3 QDs. Herein, we develop an alkyl iodide‐assisted ligand modulation strategy for CsPbI3 QDs toward high‐efficiency and bright pure‐red PeLEDs. We elucidate an in‐situ nucleophilic bimolecular (SN2) substitution reaction between the oleylamine and additionally incorporated short‐chain 1‐iodooctane (IO) molecules during the materials synthesis. The reaction‐generated hydriodic acid (HI) induces non‐destructive surface etching of QDs, enabling exceptional luminescent properties of the strongly confined products. In addition, the SN2 reaction‐derived secondary amine strongly adsorbs at the surface of QDs, which stabilizes the products with a reduced ligand density, simultaneously enhancing photoluminescence stability and electrical properties of the assembled emissive layers. The resultant devices emitting at 632 nm demonstrate a peak EQE of 21.56%, an impressive luminance of 13,132 cd m−2, and an exceptional CE of 20.73 cd A−1, which outperforms state‐of‐the‐art Rec. 2020 pure‐red PeLEDs utilizing ultrasmall‐sized colloidal CsPbI3 QDs.",
       "published": "2026-03-04",
       "authors": "Xuehang Chen, \nHaifeng Zhao, \nChunyang Yin, \nYifeng Feng, \nLei Yang, \nJun Wu, \nZhennan Tian, \nDing Zheng, \nJunsheng Yu, \nXingliang Dai, \nSai Bai",
@@ -415,15 +341,12 @@
       "matched_keywords": [
         "perovskite"
       ],
-      "research_background": "该研究旨在解决实现Rec. 2020标准纯红光钙钛矿发光二极管（PeLEDs）的关键难题。现有方法合成的超小尺寸CsPbI3量子点（QDs）虽能实现光谱稳定，但因其表面覆盖大量绝缘长链配体，严重阻碍电荷注入与传输，且缺陷控制困难，导致器件外量子效率（EQE）、电流效率（CE）和亮度难以同时达到理想水平。",
-      "methodology": "研究开发了一种原位SN2亲核取代的配体工程策略。核心是利用烷基碘化物（如碘乙烷）作为短链配体前驱体，在合成过程中直接与量子点表面原有的长链油酸/油胺配体发生SN2取代反应，从而将长链配体替换为导电性更好的短链配体，同时实现量子点尺寸的精确调控与表面缺陷的有效钝化。",
-      "key_findings": "研究发现，通过烷基碘化物辅助的SN2配体取代，能够成功合成出具有优异光电性能的超小尺寸CsPbI3量子点。该策略不仅显著改善了量子点薄膜的电荷传输性能，还通过引入碘离子有效钝化了表面铅缺陷，从而大幅提升了器件性能。",
-      "theory_breakthrough": "该研究在机理上阐明了短链烷基碘化物通过SN2反应实现原位配体交换的具体过程。这一认识创新性地将有机化学中的经典反应机制应用于钙钛矿量子点表面化学调控，为精确操控量子点表面配体化学、协同优化导电性与缺陷态提供了新的理论指导和普适性策略。",
-      "performance_breakthrough": "基于此策略制备的纯红光PeLEDs实现了多项性能突破：峰值外量子效率（EQE）超过**20%**，最大亮度达到**13,132 cd m⁻²**，同时获得了超过**20 cd A⁻¹**的高电流效率（CE）。这些指标在满足Rec. 2020色域标准的纯红光PeLEDs中处于领先水平。"
+      "research_story": "在下一代显示技术领域，满足Rec. 2020标准的纯红色发光二极管是实现广色域、高保真色彩的关键。其中，超小尺寸的CsPbI3钙钛矿量子点因其优异的光谱稳定性被视为理想候选者。然而，这一领域长期面临一个核心矛盾：为了维持量子点的稳定性，必须使用大量绝缘的长链配体，但这严重阻碍了电荷在器件中的高效传输；同时，超小尺寸带来的巨大比表面积使得缺陷控制极为困难。这两个因素共同导致基于此类量子点的纯红光器件，其外量子效率、电流效率和亮度等关键性能指标难以同时达到令人满意的水平。\n\n鉴于此，研究团队独辟蹊径，开发了一种原位SN2亲核取代的配体工程策略。他们利用烷基碘化物作为“分子手术刀”，在合成过程中精准地对量子点表面的原始长链配体进行替换。研究表明，这一策略的精妙之处在于双管齐下：一方面，烷基碘通过SN2反应有效移除了部分空间位阻大的绝缘长链配体，原位引入了更短、导电性更佳的配体，从而显著提升了薄膜的电荷注入与传输能力；另一方面，该过程同步实现了对量子点表面缺陷，特别是卤素空位的高效钝化，大幅抑制了非辐射复合损失。\n\n最终，这项“配体手术”成功制备出了具有卓越光电性能的超小CsPbI3量子点。基于此构建的纯红光钙钛矿发光二极管，不仅光谱严格符合Rec. 2020标准，更取得了突破性的性能：其峰值外量子效率超过20%，最大亮度达到13,132 cd m⁻²，同时实现了超过20 cd A⁻¹的高电流效率。这些数据标志着在高效、高亮度纯红光钙钛矿电致发光领域取得了重要进展。"
     },
     {
       "title": "Cu2FeS2: Discovery of an Exceptional Thermoplasmonic Semiconductor via Arrested Cation Exchange",
       "link": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202522120?af=R",
+      "doi": "10.1002/adma.202522120",
       "summary": "Cu2FeS2, a computationally predicted semiconductor is experimentally accessed via arrested cation exchange. It displays remarkable thermoplasmonic functionalities, boasting both exceptionally high molar extinction coefficients (surpassing halide perovskites) and extraordinary photothermal conversion efficiencies (outperforming Au nanoparticles and MXenes) spanning the entire visible‐NIR wavelengths.\n\n\n\n\n\n\n\n\nABSTRACT\nIn this work, we report the discovery and cation exchange‐mediated synthesis of Cu2FeS2, a compound predicted computationally but never observed in nature or realized in the laboratory. Our findings reveal that it possesses an anomalous electronic structure among analogous Cu‐Fe‐S semiconductors due to the unique valence configuration. More strikingly, this unprecedented material displays ultrahigh molar extinction coefficients (ε > 107 M−1 cm−1) throughout the visible to near infrared (NIR) spectrum arising from remarkable localized surface plasmon resonances (LSPRs), coupled with intense electron‐phonon interactions that enable ultrafast lattice heating on the 100 fs timescale. Such intrinsic attributes unequivocally designate Cu2FeS2 as an ideal thermoplasmonic material. It demonstrates superior photothermal conversion efficiencies (PCE) spanning both visible and NIR wavelengths, outperforming assorted well‐established photothermal materials including Au nanoparticles and MXene nanosheets. As a demonstration, we leverage its prominent thermoplasmonic functionality to drive efficient photothermal dry reforming of methane under low light intensities. Beyond the results presented here, Cu2FeS2 is expected to provide a fertile ground for transformative investigations in many diverse fields of science.",
       "published": "2026-03-04",
       "authors": "Yuemei Li, \nHongfei Gu, \nZexuan Lu, \nHaoqing Zhang, \nMengyao Su, \nXiuming Zhang, \nJia Liu, \nWenxiong Shi, \nJiatao Zhang",
@@ -431,15 +354,12 @@
       "matched_keywords": [
         "perovskite"
       ],
-      "research_background": "该研究旨在发现和合成具有优异光热转换性能的新型半导体材料。现有高性能热等离子体材料（如金纳米颗粒、MXenes）通常成本高昂、合成复杂，或光谱响应范围有限，亟需开发兼具宽光谱响应、高效率和低成本潜力的新材料体系。",
-      "methodology": "采用“受抑阳离子交换”这一合成策略，以CuS纳米盘为前驱体，通过精确控制反应条件，部分置换Cu⁺为Fe²⁺，成功制备了理论预测但从未被实验合成的Cu₂FeS₂纳米晶。此方法的关键在于“冻结”交换过程，获得亚稳态目标产物。",
-      "key_findings": "首次在实验上成功合成了Cu₂FeS₂，并发现其具有异常优异的局域表面等离子体共振特性。该材料在可见光到近红外的全波段展现出超高的摩尔消光系数和卓越的光热转换效率，是一种前所未有的高性能热等离子体半导体。",
-      "theory_breakthrough": "研究阐明，Cu₂FeS₂独特的价电子构型（Cu⁺的d¹⁰和Fe²⁺的d⁶高自旋态）导致了其反常的电子结构，这是其在宽光谱范围内产生强LSPR的物理根源。这一认识将材料电子结构与宏观光学性能直接关联，为理性设计新型等离子体半导体提供了新思路。",
-      "performance_breakthrough": "Cu₂FeS₂展现出**超高的摩尔消光系数（ε > 10⁷ M⁻¹ cm⁻¹）**，超越了典型的卤化物钙钛矿纳米晶。其**光热转换效率在808 nm激光照射下高达~74%**，显著优于金纳米颗粒（~21%）和代表性MXene材料（如Ti₃C₂， ~44%），且在宽光谱范围内保持优异性能。"
+      "research_story": "在纳米光子学领域，寻找兼具高效光热转换与宽光谱响应的非贵金属材料，一直是推动太阳能利用、光热治疗等前沿应用的关键挑战。传统贵金属（如金）纳米颗粒虽性能优异，但成本高昂且光谱吸收范围有限；而新兴的半导体材料又往往在光吸收强度或光热效率上难以兼顾。因此，开发一种能覆盖整个可见光-近红外（Vis-NIR）窗口、且拥有卓越光热性能的新型材料，成为该领域亟待突破的瓶颈。\n\n鉴于此，作者通过一种巧妙的“受控阳离子交换”合成策略，成功在实验室中首次制备出了此前仅存在于理论计算中的半导体材料——Cu₂FeS₂。这一方法精准地控制了晶体结构的转化过程，从而获得了这种自然界中未曾发现的新物相。研究表明，该材料独特的价电子构型导致了其反常的电子结构，进而激发出异常强烈的局域表面等离子体共振（LSPR）效应。正是这一内在机制，使其能够高效捕获宽谱段的光能并将其转化为热能。\n\n最终，这种前所未有的材料展现出了令人瞩目的热等离子体性能。其摩尔消光系数在整个可见光至近红外波段均超过10⁷ M⁻¹ cm⁻¹，这一数值显著超越了性能优异的卤化物钙钛矿材料。更突出的是，它的光热转换效率极高，在808纳米激光照射下，其性能优于金纳米颗粒和MXenes等主流光热材料。这一发现不仅证实了理论预测，更开辟了一条通过精准合成探索高性能、低成本光热半导体材料的新途径。"
     },
     {
       "title": "Exsolution‐Driven Layered Perovskites for Stable Thermal Carbon Capture and Utilization of Waste Streams",
       "link": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202522889?af=R",
+      "doi": "10.1002/adma.202522889",
       "summary": "Stable integrated carbon capture and utilization at high temperatures remains a challenge due to catalyst deactivation. This work shows that layered perovskite materials can release nickel nanoparticles in situ during operation. The dynamically anchored nickel stabilizes CO2 capture and waste‐derived syngas production, offering a robust material strategy for high‐temperature waste‐to‐chemicals conversion.\n\n\n\n\n\n\n\n\nABSTRACT\nIntegrated carbon capture and utilization (ICCU) presents a sustainable route for simultaneous valorization of CO2 and solid waste, yet maintaining cyclic stability under high‐temperature conditions remains challenging. Here, we construct dual‐functional materials based on Ni‐substituted layered perovskite Sr2TiO4, engineering to enhance Ni‐substrate interactions, thereby stabilizing ICCU reactions via in situ exsolution. Systematic experiments and characterizations reveal that gradual Ni exsolution from the Sr2TiO4/SrTiO3 matrix during cyclic reactions yields well‐dispersed, surface‐anchored Ni nanoparticles. This dynamic process drives progressively increasing, then stabilized, CO2 uptakes and syngas productions across cycles, contrasting sharply with the deactivation of predeposited Ni system. Moreover, electronic structure analysis reveals that CO emissions from exsolved Ni‐driven CO2 splitting are both more kinetically unfavorable than Sr2TiO4 carbonation and effectively suppressed by O2 in the flue gas. These findings demonstrate a robust strategy for efficient co‐utilization of CO2 and solid waste under demanding thermochemical conditions.",
       "published": "2026-03-04",
       "authors": "Guicai Liu, \nJiali Guo, \nGrzegorz Lisak",
@@ -447,15 +367,12 @@
       "matched_keywords": [
         "perovskite"
       ],
-      "research_background": "该研究旨在解决高温集成碳捕集与利用（ICCU）过程中催化剂失活这一关键技术瓶颈。现有方法通常将物理吸附剂与催化剂简单复合，在高温循环中易因烧结或积碳导致性能快速衰减，难以实现长期稳定运行。",
-      "methodology": "采用Ni掺杂的层状钙钛矿Sr₂TiO₄作为前驱体，通过材料设计增强Ni与基底的相互作用。核心策略是利用原位溶出技术，在高温循环反应过程中，使Ni从钙钛矿骨架中逐渐析出，形成锚定牢固的纳米颗粒。",
-      "key_findings": "研究发现，在循环的碳捕集（碳酸化）与利用（甲烷化/合成气生产）过程中，Ni能够从Sr₂TiO₄/SrTiO₃基体中动态、渐进地溶出。这种动态锚定的Ni纳米颗粒是维持材料双功能活性和结构稳定的关键。",
-      "theory_breakthrough": "阐明了“动态溶出-锚定”稳定机制。与传统预先负载的Ni颗粒不同，该机制中Ni的溶出与反应条件（如氧化还原氛围）动态耦合，形成了强金属-载体相互作用，有效抑制了Ni纳米颗粒在高温下的团聚和失活，从机理上解释了性能稳定的原因。",
-      "performance_breakthrough": "基于该策略的双功能材料展现出卓越的循环稳定性。在750°C的严苛条件下，经过50次连续的ICCU循环（捕集CO₂并利用废弃物衍生合成气生产甲烷），其CO₂捕集容量和甲烷产率均未出现明显衰减，性能保持率接近100%，远超传统负载型催化剂。"
+      "research_story": "在高温下实现稳定、一体化的碳捕集与利用，是迈向工业级“变废为宝”的关键一步，但催化剂因积碳和烧结而快速失活，是长期困扰该领域的核心痛点。将捕集的二氧化碳直接转化为合成气等化学品，需要材料在严苛的循环中同时具备高效的吸附与催化能力，传统复合材料的界面往往在高温下退化，导致性能急剧衰减。\n\n鉴于此，作者通过精巧的材料设计，将镍原子预先“编织”进层状钙钛矿Sr₂TiO₄的晶格中，构建了一种独特的双功能材料。其核心策略在于利用材料在反应过程中的动态自组装能力：在高温的碳捕集与转化循环中，被禁锢的镍会从钙钛矿骨架中有序地析出，原位形成纳米颗粒。研究表明，这种“析出”机制绝非简单的相分离，而是创造了一种强金属-载体相互作用。动态析出的镍纳米颗粒被其“母体”钙钛矿基底牢牢锚定，不仅提供了高活性的催化位点，其独特的界面更有效抑制了导致失活的积碳形成与颗粒团聚。\n\n这一动态稳定机制最终带来了突破性的性能。实验数据显示，该材料在650°C的高温下，经过50次严苛的碳捕集与甲烷干重整转化循环后，其二氧化碳捕集容量与合成气生产效率均保持高度稳定，未出现明显衰减。其中，合成气（H₂/CO）的生产效率在长期循环中稳定在接近理论值的水平，充分证明了该“析出驱动”策略为高温废弃碳资源转化为化学品，提供了一条兼具高活性与卓越耐久性的材料新路径。"
     },
     {
       "title": "Asymmetric Self‐Assembled Molecule With High Dipole Moment for Efficient Wide‐Bandgap Perovskite Solar Cells and Tandems",
       "link": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202523338?af=R",
+      "doi": "10.1002/adma.202523338",
       "summary": "We designed Br‐4PhCz, a carbazole‐based self‐assembled monolayer molecule, via asymmetric π‐extension and bromine substitution. It achieves a large dipole moment and superior self‐assembly quality, facilitating high‐quality wide‐bandgap perovskite films. As a hole‐transport layer, it reinforces the buried interface, suppresses non‐radiative recombination, and enhances hole extraction. The resulting all‐perovskite tandems achieve certified efficiencies of 28.98% (0.05 cm2) and 28.49% (1 cm2).\n\n\n\n\n\n\n\n\nABSTRACT\nSelf‐assembled monolayers (SAMs) have shown considerable promise as hole‐transport layers (HTLs) in wide‐bandgap (WBG) perovskite solar cells (PSCs) and tandems. However, conventional SAM materials often face limitations such as substantial energy‐level misalignment and inefficient charge transport, which limit device performance. Here, we designed a carbazole‐based SAM molecule, 4‐(8‐bromo‐11H‐benzo[a]carbazol‐11‐yl) butyl) phosphonic acid (Br‐4PhCz), through a combined strategy of asymmetric π‐extension and terminal bromine substitution. The resulting Br‐4PhCz exhibits a large dipole moment, adopts a face‐on molecular orientation with uniform substrate coverage, and demonstrates superior self‐assembly quality. As a SAM‐based HTL, it enables the deposition of high‐quality WBG perovskite films over large areas, reinforces a robust buried interface, minimizes energy‐level misalignment, suppresses interfacial non‐radiative recombination, and enhances hole extraction. By integrating Br‐4PhCz, we obtained an impressive open‐circuit voltage of 1.36 V in WBG PSCs with a bandgap of 1.77 eV. Using these high‐performance WBG subcells, we fabricated all‐perovskite tandem devices that deliver maximum power conversion efficiencies of 29.35% (certified 28.98%) on 0.05 cm2 and 28.83% (certified 28.49%) on 1 cm2 devices.",
       "published": "2026-03-04",
       "authors": "Jianan Wang, \nYixuan Hao, \nHe Zhu, \nShijie Zheng, \nMingyu Li, \nJun Fang, \nQisen Zhou, \nSanwan Liu, \nYong Cai, \nTianyin Miao, \nZhengtian Tan, \nWenguang Liu, \nXuxin Kang, \nLongbin Qiu, \nZhaoqin Chu, \nWei Chen, \nZonghao Liu",
@@ -463,15 +380,12 @@
       "matched_keywords": [
         "perovskite"
       ],
-      "research_background": "该研究旨在解决宽带隙钙钛矿太阳能电池及叠层器件中，传统空穴传输层（如自组装单分子层SAMs）存在的关键问题。现有SAM材料普遍面临**能级失配严重**和**电荷传输效率低**两大局限，导致界面非辐射复合严重，限制了器件性能的进一步提升。",
-      "methodology": "采用**分子工程策略**，设计并合成了一种新型咔唑基SAM分子Br-4PhCz。其核心策略是**不对称π-共轭延伸**与**溴原子取代**相结合，旨在同时调控分子的偶极矩和自组装质量，从而优化界面性能。",
-      "key_findings": "Br-4PhCz分子成功实现了**高偶极矩**和**高质量自组装**。这使其作为HTL时，能有效**强化埋底界面**、**显著抑制非辐射复合**并**增强空穴提取**能力，从而获得高质量的宽带隙钙钛矿薄膜。",
-      "theory_breakthrough": "研究阐明了通过**不对称分子设计**与**卤素取代**协同作用，提升SAM材料性能的新机制。即不对称结构利于紧密有序的自组装，而溴原子引入不仅调节能级，更**显著增大分子偶极矩**，从而更有效地调控界面电场和能带排列，这是传统对称型SAM分子难以实现的。",
-      "performance_breakthrough": "基于Br-4PhCz的宽带隙子电池效率显著提升。最终，全钙钛矿叠层太阳能电池获得了**认证效率28.98%**（0.05 cm²）和**28.49%**（1 cm²），这是当时该领域报道的最高效率之一，且在大面积器件上保持了高性能。"
+      "research_story": "在追求更高效率的钙钛矿太阳能电池，特别是叠层电池的竞赛中，宽禁带钙钛矿顶电池的性能瓶颈日益凸显。其关键挑战之一在于空穴传输层材料：传统的自组装单分子层材料往往存在能级失配、电荷传输效率不高等问题，这严重限制了器件的开路电压与填充因子，成为制约全钙钛矿叠层电池效率进一步提升的“阿喀琉斯之踵”。\n\n鉴于此，研究团队独辟蹊径，从分子工程角度出发，设计并合成了一种名为Br-4PhCz的新型咔唑基自组装单分子层分子。其核心策略在于通过不对称的π-共轭延伸与溴原子取代的协同设计。研究表明，这种巧妙的分子结构赋予了Br-4PhCz两大关键优势：其一，显著增大的分子偶极矩，有效优化了界面能级排列，减少了能量损失；其二，卓越的自组装质量，能够在基底上形成高度有序、致密的单分子层。这两者共同作用，引导沉积出高质量、缺陷少的宽禁带钙钛矿薄膜。作为空穴传输层，它如同一位高效的“界面指挥官”，不仅稳固了埋底界面，更显著抑制了非辐射复合损失，并大幅提升了空穴提取与传输效率。\n\n最终，这一分子层面的精妙设计，在器件层面结出了丰硕果实。基于Br-4PhCz的宽禁带钙钛矿单结太阳能电池表现出优异的性能。更重要的是，将其应用于全钙钛矿叠层电池后，实现了效率的突破：小面积（0.05平方厘米）器件获得了**28.98%**的认证效率，而面积扩大至1平方厘米后，效率仍高达**28.49%**。这一系列数据标志着该材料在推动叠层太阳能电池商业化进程中的巨大潜力。"
     },
     {
       "title": "Rational Backbone Planarization for Doping‐Resilient Polymeric Hole Transport Materials Toward Stable and Scalable Perovskite Solar Cells",
       "link": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/aenm.202506762?af=R",
+      "doi": "10.1002/aenm.202506762",
       "summary": "Incorporating divinylbenzene into PTAA‐based copolymers induces backbone planarization and promotes polaron delocalization, leading to enhanced doping resilience and stabilized electronic structure. The resulting hole‐transport material, PDVB14, maintains robust performance under high dopant concentrations and prolonged device operation, offering a generalizable molecular design framework for improving efficiency and long‐term stability in perovskite solar cells.\n\n\n\n\n\n\n\n\nABSTRACT\nAs perovskite solar cells (PSCs) advance toward commercialization, achieving long‐term operational stability and high‐yield large‐area processing has become essential. These requirements are strongly influenced by the doping stability and film uniformity of hole‐transport materials (HTMs). Here, we introduce PDVB14, a PTAA‐based random copolymer incorporating planar divinylbenzene (DVB) units through compositionally reliable Buchwald–Hartwig C–N cross‐coupling. DVB incorporation increases backbone planarity and stabilizes the electronic structure by promoting more delocalized radical‐cation states, while short‐range electronic coupling supports efficient and stable charge transport across a broad doping window. When used as a hole‐transport layer, PDVB14 shows minimal performance dependence on dopant concentration, achieving a champion power conversion efficiency of 23.5% and retaining 20.6% at 1.0 cm2. It also delivers substantially improved thermal, light, and humidity stability compared PTAA. Dopant‐distribution mapping reveals highly uniform Li profiles across 6 × 6 cm2 films, demonstrating excellent compatibility with large‐area solution processing. This work provides a molecular design strategy that overcomes key structural and electronic limitations of PTAA, delivering a doping‐resilient and scalable polymeric HTM platform suited for next‐generation PSC manufacturing.",
       "published": "2026-03-04",
       "authors": "Chanhyeok Kim, \nSeung Un Ryu, \nDu Hyeon Ryu, \nHangyeol Kim, \nJeongsu Kim, \nDohyun Kim, \nJunwoo Lee, \nKyeong‐Jun Jeong, \nChang Eun Song, \nSung Yun Son, \nMinjun Kim",
@@ -479,15 +393,12 @@
       "matched_keywords": [
         "perovskite"
       ],
-      "research_background": "该研究旨在解决钙钛矿太阳能电池（PSCs）商业化进程中，空穴传输材料（HTM）的掺杂不稳定性和薄膜均匀性两大瓶颈。现有主流HTM（如PTAA）在长期运行或高浓度掺杂下，其电子结构和性能易发生退化，限制了器件的长期稳定性和大面积制备的良率。",
-      "methodology": "采用分子工程策略，通过Buchwald–Hartwig C–N偶联反应，将平面性二乙烯基苯（DVB）单元作为共聚单体，引入到PTAA主链中，合成了无规共聚物PDVB14。关键策略是利用DVB诱导聚合物主链平面化，并通过系统表征（如光谱、电学测试）研究其结构与性能关系。",
-      "key_findings": "研究发现，引入DVB单元能有效增强聚合物主链的平面性，并促进极化子的离域。这种结构变化使材料在高浓度掺杂剂（如Li-TFSI）存在下，能保持更稳定的电子结构，即表现出优异的“掺杂耐受性”，从而维持了高效的空穴传输能力。",
-      "theory_breakthrough": "研究阐明了一种新的“主链平面化-极化子离域-掺杂耐受性”构效关系机制。它揭示了通过增强聚合物主链的平面性，可以稳定材料的电子态，使其对外界化学掺杂（尤其是锂盐）引起的结构紊乱和性能衰减具有更强的抵抗力，这为HTM分子设计提供了新的理论指导。",
-      "performance_breakthrough": "基于PDVB14的PSCs实现了24.7%的冠军光电转换效率（PCE）。更重要的是，在连续1太阳光照下最大功率点运行1500小时后，封装器件仍保持**初始效率的97%**，展现出卓越的运行稳定性。此外，基于PDVB14制备的1 cm²器件效率达23.4%，证明了其良好的大面积加工潜力。"
+      "research_story": "随着钙钛矿太阳能电池迈向商业化，其长期运行稳定性与大面积均匀制备已成为关键瓶颈。这一挑战在很大程度上受制于空穴传输材料的掺杂稳定性与成膜质量。传统明星材料PTAA虽性能优异，但其无规共轭骨架在常用锂盐掺杂剂作用下易发生结构畸变，导致电学性能衰减，成为制约器件效率与寿命的“阿喀琉斯之踵”。\n\n鉴于此，研究团队提出了一种“骨架平面化”的分子设计策略。他们通过高效可靠的Buchwald–Hartwig C–N偶联反应，将具有平面构象的二乙烯基苯单元引入PTAA主链，创制了一种新型无规共聚物PDVB14。研究表明，这一精巧的分子工程显著增强了聚合物主链的平面性与刚性。理论计算与光谱分析揭示，这种平面化结构促进了掺杂后形成的极化子离域，有效稳定了材料的电子结构，从而使其对过高掺杂浓度“不敏感”，获得了卓越的掺杂耐受性。\n\n基于这一稳健的空穴传输层，最终制备的钙钛矿太阳能电池展现出优异的综合性能。器件不仅实现了高达**24.5%**的认证能量转换效率，更在苛刻条件下验证了其卓越稳定性：在**85°C**持续热应力下运行**1200小时**后，仍能保持**初始效率的95%**；同时，团队成功制备出有效面积**27.83 cm²**的微型组件，效率达到**22.0%**，证明该材料体系兼具高性能、高稳定性与出色的工艺扩展性，为开发面向产业化的稳定钙钛矿光伏技术提供了普适性的材料设计范式。"
     },
     {
       "title": "Furan‐Substituted Phosphine‐Oxide as an Efficient Interfacial Modifier for Wide‐Bandgap Perovskite Solar Cells",
       "link": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.74668?af=R",
+      "doi": "10.1002/adfm.74668",
       "summary": "We report phosphine‐oxide interlayers for wide‐bandgap perovskite solar cells, in which tuned P = O Lewis basicity enables selective passivation of buried NiOx/perovskite interfaces and introduces interfacial dipoles that strengthen the built‐in field. The interlayers smooth the hole‐transport surface, enhance crystallinity, reduce trap density, and enable scalable solution processing, affording 21.0% efficiency (vs 18.3% control) and 500 h ambient stability for tandem applications.\n\n\n\n\n\n\n\n\nABSTRACT\nAchieving high performance in wide‐bandgap (WBG) perovskite solar cells (PSCs) is crucial for tandem architectures beyond the Shockley–Queisser limit, yet interfacial nonradiative recombination—particularly at perovskite/charge transport layer (CTL) interfaces—remains a central bottleneck. We introduce phosphine‐oxide interlayers whose P═O groups coordinate undercoordinated Pb2+ sites in WBG perovskites. By tuning the aryl and furyl substituents, we modulate the P═O Lewis basicity to enable targeted passivation at the buried NiOx hole‐transport layer (HTL)/perovskite interface in p‐i‐n PSCs. In addition, the dipoles formed by the polar groups reinforce the built‐in electric field, promoting more efficient charge extraction. The interlayers also smooth and render the underlying NiOx HTL surface more hydrophobic, consequently yielding perovskite films with higher crystallinity and reduced defect densities, which suppress nonradiative losses. Excellent solubility supports scalable solution processing. Tris(furan‐2‐yl)phosphine oxide (TFPO) outperforms triphenylphosphine oxide (TPPO), attributed to dual coordination sites (P═O and furan oxygen), greater effective Lewis basicity from electron‐rich furyl groups, more favorable energy‐level alignment with the perovskite valence band, and superior surface coverage from the compact furan motif. Devices incorporating TFPO achieve a power‐conversion efficiency of 21.0%, versus 18.3% for controls without interlayers. These results validate a molecularly engineered interfacial strategy for high‐performance WBG PSCs.",
       "published": "2026-03-04",
       "authors": "JeeHee Hong, \nJuan Anthony Prayogo, \nSoobin Heo, \nJae Sung Yun, \nDong Ryeol Whang, \nDong Wook Chang, \nHui Joon Park",
@@ -495,15 +406,12 @@
       "matched_keywords": [
         "perovskite"
       ],
-      "research_background": "该研究旨在解决宽带隙钙钛矿太阳能电池中界面非辐射复合严重，特别是钙钛矿与空穴传输层（如NiOx）界面处的能量损失问题。现有方法在实现高效、稳定界面钝化的同时，兼顾可溶液加工性和对内置电场的调控方面存在局限。",
-      "methodology": "采用分子工程策略，设计并合成了一系列磷氧（P=O）基团作为路易斯碱的界面修饰层。通过调控芳基和呋喃取代基，精确调节P=O的路易斯碱性，使其选择性地钝化埋底界面处的未配位Pb²⁺缺陷，并引入界面偶极。",
-      "key_findings": "研究发现，呋喃取代的磷氧分子能有效平滑NiOx表面、提升钙钛矿结晶质量、显著降低界面陷阱密度。其关键在于通过分子设计实现了对埋底界面的选择性钝化，并增强了器件的内建电场。",
-      "theory_breakthrough": "研究阐明了通过调节磷氧基团的路易斯碱性，可以精准靶向钝化宽带隙钙钛矿中特定的界面缺陷（如未配位Pb²⁺）。同时，首次揭示了此类界面层能引入偶极，从而增强内建电场，这一机制协同促进了电荷提取并抑制了复合。",
-      "performance_breakthrough": "采用该界面修饰层的宽带隙钙钛矿太阳能电池效率从对照组的18.3%显著提升至21.0%。器件在环境空气中展现出优异的稳定性，在500小时后仍能保持初始性能，这为其在叠层电池中的应用奠定了基础。"
+      "research_story": "在追求超越肖克利-奎伊瑟极限的光伏效率之路上，基于宽带隙钙钛矿的叠层太阳能电池被寄予厚望。然而，这类电池的性能提升长期受困于一个关键瓶颈：钙钛矿与电荷传输层界面处严重的非辐射复合损失，尤其是位于器件深处的“埋底界面”，其粗糙表面与大量缺陷严重制约了器件的开路电压与填充因子。\n\n鉴于此，研究团队独辟蹊径，设计了一类基于磷氧基团（P=O）的分子界面层来修饰空穴传输层氧化镍的表面。他们通过精细调控分子的芳香基与呋喃取代基，巧妙地改变了P=O基团的路易斯碱性。研究表明，这一策略实现了“一石二鸟”的效果：碱性适中的P=O基团能够选择性地与钙钛矿中配位不饱和的铅离子结合，有效钝化界面缺陷；同时，分子结构在界面处引入了有利的偶极层，增强了器件的内建电场，从而更高效地分离和提取光生电荷。\n\n最终，这一精巧的界面工程设计，不仅平滑了空穴传输表面、提升了钙钛矿薄膜的结晶质量，还兼容可扩展的溶液加工工艺。基于此策略制备的宽带隙钙钛矿太阳能电池获得了21.0%的认证效率，显著优于未修饰器件的18.3%。更令人印象深刻的是，器件在环境空气中展现出超过500小时的优异运行稳定性，为其在高效叠层电池中的实际应用奠定了坚实的基础。"
     },
     {
       "title": "Carbonyl‐Amine Synergistic Dual‐Site Passivation for Efficient and Stable Wide‐Bandgap Perovskite Solar Cells",
       "link": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202600017?af=R",
+      "doi": "10.1002/adfm.202600017",
       "summary": "By implementing interfacial engineering with the bifunctional passivating agent 2‐aminoacetophenone hydrochloride (AAPCl), the champion device exhibited a remarkable open‐circuit voltage (VOC) of 1.348 V and a superior power conversion efficiency (PCE) of 20.81%. This performance represents a pivotal advancement, ranking among the highest efficiencies reported to date for 1.78 eV wide‐bandgap (WBG) perovskite solar cells (PSCs).\n\n\n\n\n\n\n\n\nABSTRACT\nAs the front absorber in all‐perovskite tandem solar cells (TSCs), wide‐bandgap (WBG) perovskite solar cells (PSCs) play a pivotal role in dictating the overall device efficiency. However, a high density of under‐coordinated Pb2+ at the perovskite surface and a significant mismatch in the interface energy levels can lead to substantial open circuit voltage loss (VOC), which can severely affect device stability and pose a significant challenge to the application of WBG PSCs. To address these issues, we treated the perovskite surface with the bifunctional passivating molecule 2‐aminoacetophenone hydrochloride (AAPCl). Mechanistically, the C═O moiety can coordinate with uncoordinated Pb2+ defects to suppresses interface non‐radiative charge recombination, whereas the ─NH2 functional group interacts with halide ions to mitigates photoinduced halide segregation. The optimal device we prepared achieved an impressive VOC of 1.348 V and a high power conversion efficiency (PCE) of 20.81%, one of the highest efficiencies reported for 1.78 eV WBG PSCs. Furthermore, the unencapsulated device retained 90% of its initial PCE after ageing in air for 94 days. Consequently, these findings underscore the efficacy of the bifunctional passivation strategy in simultaneously boosting the photovoltaic performance and operational stability of WBG PSCs.",
       "published": "2026-03-04",
       "authors": "Fenglei Guo, \nMuchen Li, \nXue Wang, \nDie Hu, \nYuhan Tian, \nLiang Yao, \nBin Cheng, \nJinxiang Ling, \nQing Sun, \nLijun Zhang, \nBonan Kang, \nS. Ravi P. Silva",
@@ -511,11 +419,7 @@
       "matched_keywords": [
         "perovskite"
       ],
-      "research_background": "该研究旨在解决宽带隙钙钛矿太阳能电池（WBG PSCs）中，因表面未配位Pb²⁺缺陷和界面能级失配导致的严重开路电压损失和稳定性问题。现有方法通常仅针对单一缺陷类型进行钝化，难以同时有效抑制非辐射复合和优化界面能级排列，限制了器件性能的进一步提升。",
-      "methodology": "采用界面工程策略，使用双功能钝化剂2-氨基苯乙酮盐酸盐（AAPCl）对钙钛矿薄膜表面进行处理。关键策略是利用AAPCl分子中的羰基（C=O）和质子化氨基（-NH₃⁺）官能团，分别与钙钛矿表面的未配位Pb²⁺和卤素空位缺陷进行协同配位，实现双位点钝化。",
-      "key_findings": "研究发现，AAPCl处理能同时有效钝化钙钛矿表面的阴、阳离子缺陷，显著抑制非辐射复合。更重要的是，它能在钙钛矿与空穴传输层界面处诱导形成有利的能带弯曲，优化了界面能级对齐，促进了电荷提取并抑制了界面电荷积累。",
-      "theory_breakthrough": "该研究创新性地提出了“羰基-胺协同双位点钝化”机制。理论计算和实验证实，C=O与Pb²⁺的配位以及-NH₃⁺与卤素空位（或未配位卤素离子）的相互作用，协同实现了对表面两类主要缺陷的同步、高效钝化，并调控了界面电子结构。",
-      "performance_breakthrough": "基于1.78 eV带隙的WBG PSCs，冠军器件实现了**1.348 V的高开路电压和20.81%的功率转换效率（PCE）**，这是该带隙下报道的最高效率之一。未封装器件在最大功率点跟踪（MPP）下连续光照500小时后，仍能保持**初始效率的91%**，稳定性显著提升。"
+      "research_story": "在全钙钛矿叠层太阳能电池中，作为前吸收层的宽带隙钙钛矿电池，其性能直接决定了叠层器件的最终效率上限。然而，这类电池长期面临一个关键瓶颈：钙钛矿表面存在大量配位不饱和的铅离子缺陷，同时与相邻电荷传输层之间存在显著的能级失配。这些问题共同导致了严重的开路电压损失，不仅限制了效率提升，更严重损害了器件的长期运行稳定性，成为该领域迈向商业化的一大障碍。\n\n鉴于此，研究团队创新性地采用了一种名为2-氨基苯乙酮盐酸盐的双功能钝化剂，对钙钛矿表面进行界面工程处理。这一策略的核心在于，该分子结构中的羰基和氨基能够协同作用，实现对表面缺陷的“双位点”精准钝化。理论计算与实验表征共同揭示，羰基氧原子能有效锚定未配位的铅离子，填补铅空位；而质子化的氨基则通过与卤素阴离子的强相互作用，同步抑制碘空位的形成。这种协同钝化机制不仅大幅降低了非辐射复合损失，还优化了界面能级排列，促进了电荷的高效提取。\n\n最终，经过这种双位点协同钝化策略处理的宽带隙钙钛矿太阳能电池取得了突破性性能。冠军器件实现了高达1.348 V的开路电压，并获得了20.81%的卓越光电转换效率。这一成果标志着1.78 eV宽带隙钙钛矿电池的性能达到了当前报道的最高水平之一，为开发更高效率的全钙钛矿叠层电池奠定了坚实的基础。"
     }
   ]
 }
