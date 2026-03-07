@@ -916,7 +916,7 @@ def generate_html(papers):
         json.dump({
             'date': today,
             'keywords': KEYWORDS,
-            count: len(papers),
+            'count': len(papers),
             'papers': papers
         }, f, ensure_ascii=False, indent=2)
     
