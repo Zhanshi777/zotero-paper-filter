@@ -2,11 +2,13 @@ import feedparser
 import os
 import json
 from datetime import datetime, timedelta
-from urllib.parse import quote
+from urllib.parse import quote, urljoin
 import re
 import html
 import requests
 import openai
+from bs4 import BeautifulSoup
+import time
 
 # ==================== 配置区域 ====================
 
@@ -39,6 +41,13 @@ if API_KEY:
         client_kwargs["base_url"] = BASE_URL
     ai_client = openai.OpenAI(**client_kwargs)
 
+# 请求头，模拟浏览器
+HEADERS = {
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
+    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+    'Accept-Language': 'en-US,en;q=0.5',
+}
+
 # ==================== 核心函数 ====================
 
 def clean_html(text):
@@ -49,7 +58,6 @@ def clean_html(text):
     return clean.strip()
 
 def extract_doi(entry):
-    """从entry中提取DOI"""
     doi = ""
     if hasattr(entry, 'id'):
         doi_match = re.search(r'10\.\d{4,}/[^\s<>"\']+', entry.id)
@@ -64,7 +72,6 @@ def extract_doi(entry):
     return doi
 
 def get_download_links(paper):
-    """生成PDF和SI下载/查看链接"""
     journal = paper['journal']
     doi = paper.get('doi', '')
     link = paper.get('link', '')
@@ -111,8 +118,138 @@ def get_download_links(paper):
     
     return pdf_url, si_url
 
+def fetch_article_content(url, journal):
+    """
+    访问文章网页获取真实Abstract和Figures
+    返回: (abstract_text, figures_list)
+    figures_list: [{'number': '1', 'url': '...', 'caption': '...'}, ...]
+    """
+    try:
+        print(f"      🌐 正在爬取网页: {url[:60]}...")
+        response = requests.get(url, headers=HEADERS, timeout=15)
+        response.raise_for_status()
+        soup = BeautifulSoup(response.content, 'html.parser')
+        
+        abstract = ""
+        figures = []
+        
+        # 根据不同期刊解析HTML
+        if journal in ["Nature", "Nature Communications", "Nature Energy", "Nature Synthesis"]:
+            # Nature系列
+            abs_div = soup.find('div', {'id': 'Abs1-content'}) or soup.find('div', class_='c-article-teaser__text')
+            if abs_div:
+                abstract = clean_html(str(abs_div))
+            
+            # 获取Figures - Nature通常在<div class="c-article-section__figure">
+            figure_tags = soup.find_all('figure')
+            for i, fig in enumerate(figure_tags[:6], 1):  # 限制前6个图避免太多
+                img = fig.find('img')
+                caption = fig.find('figcaption')
+                if img and caption:
+                    img_url = img.get('src', '')
+                    if img_url.startswith('/'):
+                        img_url = urljoin(url, img_url)
+                    figures.append({
+                        'number': str(i),
+                        'url': img_url,
+                        'caption': clean_html(str(caption))[:200] + "..."
+                    })
+        
+        elif journal in ["Angewandte Chemie", "Advanced Materials", 
+                        "Advanced Energy Materials", "Advanced Functional Materials"]:
+            # Wiley期刊
+            abs_section = soup.find('section', {'id': 'abstract'}) or soup.find('div', class_='article-section__abstract')
+            if abs_section:
+                abstract = clean_html(str(abs_section))
+            
+            # Figures - Wiley在<div class="figure">
+            figure_divs = soup.find_all('div', class_='figure')
+            for i, fig in enumerate(figure_divs[:6], 1):
+                img = fig.find('img')
+                caption = fig.find('div', class_='figure__caption')
+                if img:
+                    img_url = img.get('src', '')
+                    if img_url.startswith('/'):
+                        img_url = urljoin(url, img_url)
+                    figures.append({
+                        'number': str(i),
+                        'url': img_url,
+                        'caption': clean_html(str(caption))[:200] + "..." if caption else f"Figure {i}"
+                    })
+        
+        elif journal == "Joule":
+            # Cell Press
+            abs_div = soup.find('div', class_='abstract') or soup.find('section', {'id': 'abstract'})
+            if abs_div:
+                abstract = clean_html(str(abs_div))
+            
+            # Figures
+            figure_tags = soup.find_all('figure', class_='figure')
+            for i, fig in enumerate(figure_tags[:6], 1):
+                img = fig.find('img')
+                if img:
+                    img_url = img.get('src', '')
+                    if img_url.startswith('/'):
+                        img_url = urljoin(url, img_url)
+                    figures.append({
+                        'number': str(i),
+                        'url': img_url,
+                        'caption': f"Figure {i}"
+                    })
+        
+        elif journal == "Energy & Environmental Science":
+            # RSC期刊
+            abs_div = soup.find('div', {'id': 'abstract'}) or soup.find('p', class_='abstract')
+            if abs_div:
+                abstract = clean_html(str(abs_div))
+            
+            # Figures
+            figure_tags = soup.find_all('div', class_='img-tbl')
+            for i, fig in enumerate(figure_tags[:6], 1):
+                img = fig.find('img')
+                if img:
+                    img_url = img.get('src', '')
+                    if img_url.startswith('/'):
+                        img_url = urljoin(url, img_url)
+                    figures.append({
+                        'number': str(i),
+                        'url': img_url,
+                        'caption': f"Figure {i}"
+                    })
+        
+        else:
+            # 通用策略
+            # Abstract: 找包含"Abstract"的div或section
+            for tag in ['section', 'div', 'p']:
+                abs_tag = soup.find(tag, string=re.compile('Abstract', re.I))
+                if abs_tag:
+                    abstract = clean_html(str(abs_tag))
+                    break
+            
+            # Figures: 找所有figure标签
+            figure_tags = soup.find_all('figure')[:6]
+            for i, fig in enumerate(figure_tags, 1):
+                img = fig.find('img')
+                if img:
+                    img_url = img.get('src', '')
+                    if img_url.startswith('/'):
+                        img_url = urljoin(url, img_url)
+                    figures.append({
+                        'number': str(i),
+                        'url': img_url,
+                        'caption': f"Figure {i}"
+                    })
+        
+        # 清理abstract，去除"Abstract"字样
+        abstract = re.sub(r'^[Aa]bstract\s*[：:]?\s*', '', abstract).strip()
+        
+        return abstract, figures
+        
+    except Exception as e:
+        print(f"      ⚠️ 爬取网页失败: {e}")
+        return "", []
+
 def fetch_papers():
-    """从所有RSS源获取最近文献"""
     all_papers = []
     cutoff_date = datetime.now() - timedelta(days=DAYS_BACK)
     
@@ -126,10 +263,7 @@ def fetch_papers():
         try:
             print(f"  📰 正在获取: {journal}")
             
-            headers = {
-                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
-            }
-            response = requests.get(url, timeout=30, headers=headers)
+            response = requests.get(url, timeout=30, headers=HEADERS)
             response.raise_for_status()
             
             feed = feedparser.parse(response.content)
@@ -155,61 +289,44 @@ def fetch_papers():
                     elif hasattr(entry, 'author'):
                         authors = entry.author
                     
-                    # 改进的摘要提取
-                    summary = ""
-                    possible_fields = [
-                        ('content', lambda x: x[0].value if isinstance(x, list) else x.value if hasattr(x, 'value') else str(x)),
-                        ('summary', lambda x: str(x)),
-                        ('description', lambda x: str(x)),
-                    ]
-                    
-                    for field_name, extractor in possible_fields:
-                        if hasattr(entry, field_name) and getattr(entry, field_name):
-                            try:
-                                raw_content = getattr(entry, field_name)
-                                extracted = extractor(raw_content)
-                                if extracted and len(extracted) > 50:
-                                    summary = clean_html(extracted)
-                                    break
-                            except:
-                                continue
-                    
-                    # 过滤期刊元数据
-                    if summary:
-                        metadata_patterns = [
-                            r'Volume\s+\d+,\s*Issue\s+\d+',
-                            r'©\s*\d{4}\s+[\w\s]+Ltd',
-                            r'https://doi\.org/',
-                        ]
-                        is_metadata = False
-                        for pattern in metadata_patterns:
-                            if re.search(pattern, summary, re.IGNORECASE) and len(summary) < 500:
-                                is_metadata = True
-                                break
-                        if is_metadata:
-                            summary = ""
-                    
-                    if not summary and hasattr(entry, 'dc_description'):
-                        summary = clean_html(entry.dc_description)
-                    
                     title = clean_html(entry.get('title', 'No Title'))
+                    link = entry.get('link', '')
                     doi = extract_doi(entry)
+                    
+                    # 尝试从网页获取真实Abstract和Figures（如果失败则回退到RSS）
+                    web_abstract = ""
+                    figures = []
+                    
+                    if link and not link.endswith('.pdf'):
+                        web_abstract, figures = fetch_article_content(link, journal)
+                        time.sleep(0.5)  # 避免请求过快
+                    
+                    # 如果网页抓取失败，回退到RSS摘要
+                    if not web_abstract:
+                        summary = ""
+                        if hasattr(entry, 'summary'):
+                            summary = clean_html(entry.summary)
+                        elif hasattr(entry, 'description'):
+                            summary = clean_html(entry.description)
+                        web_abstract = summary if summary else "（暂无摘要）"
                     
                     paper = {
                         'title': title,
-                        'link': entry.get('link', ''),
+                        'link': link,
                         'doi': doi,
-                        'summary': summary if summary else "（该期刊RSS未提供文章摘要，请点击查看原文）",
+                        'summary': web_abstract,  # 使用网页抓取的真实摘要
                         'published': pub_date.strftime('%Y-%m-%d') if pub_date else datetime.now().strftime('%Y-%m-%d'),
                         'authors': authors,
                         'journal': journal,
                         'matched_keywords': [],
-                        'research_story': ''  # AI连贯叙述
+                        'research_story': '',
+                        'figures': figures  # 新增：存储图片列表
                     }
                     
                     all_papers.append(paper)
                     
                 except Exception as e:
+                    print(f"    ⚠️ 处理单篇文献出错: {e}")
                     continue
                     
         except Exception as e:
@@ -221,7 +338,6 @@ def fetch_papers():
     return all_papers
 
 def filter_by_keywords(papers):
-    """关键词快速筛选"""
     if not papers:
         return []
     
@@ -247,7 +363,6 @@ def filter_by_keywords(papers):
     return filtered
 
 def analyze_innovation(papers):
-    """AI深度解析：生成专家级学术评述"""
     if not papers:
         return []
     
@@ -262,12 +377,11 @@ def analyze_innovation(papers):
     for i, paper in enumerate(papers, 1):
         print(f"  [{i}/{len(papers)}] AI分析: {paper['title'][:50]}...")
         
-        # 专家级Prompt：硬核学术风格，面向领域研究者
         prompt = f"""请以领域专家视角，用严谨学术语言撰写该论文的核心评述（200-250字）。
 
 期刊：{paper['journal']}
 标题：{paper['title']}
-摘要：{paper['summary'][:1000]}
+摘要：{paper['summary'][:1200]}
 
 写作要求：
 1. **科学问题**：明确指出该工作针对的具体技术瓶颈或科学难题（1句话）
@@ -281,33 +395,29 @@ def analyze_innovation(papers):
 - 客观陈述，不夸大，突出技术细节
 - 逻辑严密：问题→策略→机理→结果→价值
 - 禁止出现"值得一提的是"、"令人振奋的是"等主观感叹
-- 禁止出现"为未来...奠定了基础"等空话，必须给出具体机理或数据支撑"""
+- 禁止出现"为未来...奠定了基础"等空话"""
 
         try:
             response = ai_client.chat.completions.create(
                 model="gpt-3.5-turbo" if not BASE_URL else "deepseek-chat",
                 messages=[
-                    {"role": "system", "content": "你是该领域的资深研究者，撰写的是面向同行的学术评述，不是科普文章。要求客观、精准、信息密度高。"},
+                    {"role": "system", "content": "你是该领域的资深研究者，撰写的是面向同行的学术评述，要求客观、精准、信息密度高。"},
                     {"role": "user", "content": prompt}
                 ],
                 max_tokens=500,
-                temperature=0.3  # 降低温度，减少创造性发挥，更严谨
+                temperature=0.3
             )
             
             result = response.choices[0].message.content.strip()
             
-            # 后处理：清理主观感叹词
-            subjective_words = [
-                "值得一提的是", "令人振奋的是", "值得注意的是", "令人惊讶的是",
+            # 清理主观词
+            subjective_words = ["值得一提的是", "令人振奋的是", "值得注意的是", "令人惊讶的是",
                 "首次实现了", "开创性地", "极大地", "显著地", "为未来奠定了基础",
-                "具有重要意义", "具有重要价值", "有望推动", "将改变"
-            ]
+                "具有重要意义", "具有重要价值", "有望推动", "将改变"]
             for word in subjective_words:
                 result = result.replace(word, "")
             
-            # 确保段落间有空行
             result = result.replace("。", "。\n").replace(".\n", ".\n\n")
-            # 合并过短行
             lines = [l.strip() for l in result.split('\n') if l.strip()]
             result = '\n\n'.join(lines)
             
@@ -374,9 +484,6 @@ def generate_html(papers):
             font-size: 15px;
             box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
         }}
-        .stats strong {{
-            color: #ffd700;
-        }}
         .paper {{
             border: 1px solid #e2e8f0;
             padding: 30px;
@@ -442,7 +549,7 @@ def generate_html(papers):
             font-weight: 500;
         }}
         
-        /* 原文摘要 */
+        /* Abstract部分 */
         .abstract-section {{
             background: #f8fafc;
             border-left: 4px solid #4299e1;
@@ -455,6 +562,9 @@ def generate_html(papers):
             color: #4299e1;
             font-size: 14px;
             margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
         }}
         .abstract-content {{
             color: #4a5568;
@@ -463,7 +573,7 @@ def generate_html(papers):
             text-align: justify;
         }}
         
-        /* AI连贯叙述 */
+        /* AI评述 */
         .research-story {{
             background: linear-gradient(135deg, #faf5ff 0%, #f0fff4 100%);
             border: 2px solid #e2e8f0;
@@ -489,16 +599,102 @@ def generate_html(papers):
             text-align: justify;
         }}
         .story-content p {{
-            margin-bottom: 15px;
-            text-indent: 2em;
+            margin-bottom: 12px;
         }}
-        /* 高亮关键数据 */
-        .story-content .highlight-data {{
-            background: linear-gradient(120deg, #fef3c7 0%, #fde68a 100%);
-            padding: 2px 6px;
-            border-radius: 4px;
+        
+        /* Figures折叠区域 - 新增 */
+        .figures-section {{
+            margin-top: 25px;
+            border: 2px solid #e2e8f0;
+            border-radius: 12px;
+            overflow: hidden;
+            background: #fff;
+        }}
+        .figures-toggle {{
+            background: linear-gradient(135deg, #f6f8fb 0%, #e9edf5 100%);
+            padding: 15px 20px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
             font-weight: 600;
-            color: #92400e;
+            color: #2d3748;
+            font-size: 15px;
+            border-bottom: 2px solid transparent;
+            transition: all 0.3s;
+        }}
+        .figures-toggle:hover {{
+            background: linear-gradient(135deg, #e9edf5 0%, #dce3f0 100%);
+        }}
+        .figures-toggle::before {{
+            content: "📊";
+            margin-right: 8px;
+            font-size: 18px;
+        }}
+        .figures-toggle::after {{
+            content: "▼";
+            transition: transform 0.3s;
+            color: #718096;
+        }}
+        .figures-section.open .figures-toggle::after {{
+            transform: rotate(180deg);
+        }}
+        .figures-toggle .count {{
+            font-size: 13px;
+            color: #718096;
+            font-weight: 500;
+            margin-left: auto;
+            margin-right: 10px;
+        }}
+        .figures-container {{
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-out;
+            background: #fafbfc;
+        }}
+        .figures-section.open .figures-container {{
+            max-height: 3000px; /* 足够大的高度 */
+            transition: max-height 0.5s ease-in;
+        }}
+        .figure-item {{
+            padding: 25px;
+            border-bottom: 1px solid #e2e8f0;
+            text-align: center;
+        }}
+        .figure-item:last-child {{
+            border-bottom: none;
+        }}
+        .figure-number {{
+            font-size: 16px;
+            font-weight: 700;
+            color: #2d3748;
+            margin-bottom: 15px;
+            text-align: left;
+            padding-left: 10px;
+            border-left: 4px solid var(--primary);
+        }}
+        .figure-image {{
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            margin-bottom: 12px;
+            background: white;
+            padding: 10px;
+        }}
+        .figure-caption {{
+            font-size: 13px;
+            color: #4a5568;
+            text-align: left;
+            line-height: 1.6;
+            max-width: 90%;
+            margin: 0 auto;
+        }}
+        .no-figures {{
+            padding: 40px;
+            text-align: center;
+            color: #718096;
+            font-style: italic;
         }}
         
         /* 操作按钮 */
@@ -520,45 +716,28 @@ def generate_html(papers):
             font-size: 14px;
             font-weight: 600;
             transition: all 0.3s;
+            border: none;
+            cursor: pointer;
         }}
         .zotero-btn {{
             background: linear-gradient(135deg, var(--primary), var(--secondary));
             color: white;
-            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
-        }}
-        .zotero-btn:hover {{
-            transform: translateY(-2px);
         }}
         .pdf-btn {{
             background: #e53e3e;
             color: white;
         }}
-        .pdf-btn:hover {{
-            background: #c53030;
-            transform: translateY(-2px);
-        }}
         .si-btn {{
             background: #38a169;
             color: white;
-        }}
-        .si-btn:hover {{
-            background: #2f855a;
-            transform: translateY(-2px);
         }}
         .source-btn {{
             background: #718096;
             color: white;
         }}
-        .source-btn:hover {{
-            background: #4a5568;
+        .btn:hover {{
             transform: translateY(-2px);
-        }}
-        
-        .oa-note {{
-            font-size: 12px;
-            color: #718096;
-            margin-top: 10px;
-            font-style: italic;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
         }}
         
         mark {{
@@ -594,10 +773,10 @@ def generate_html(papers):
 <body>
     <div class="container">
         <h1>📚 今日文献精选</h1>
-        <div class="subtitle">智能筛选 · 深度解读 · 一键下载</div>
+        <div class="subtitle">智能筛选 · 深度解读 · 原文图表</div>
         
         <div class="stats">
-            <strong>筛选模式：</strong>关键词匹配 + AI深度解析 | 
+            <strong>筛选模式：</strong>关键词匹配 + AI深度解析 + 原文Figure抓取 | 
             <strong>关键词：</strong>{', '.join(KEYWORDS)} | 
             <strong>精选文献：</strong>{len(papers)}篇
         </div>
@@ -616,21 +795,53 @@ def generate_html(papers):
                 pattern = re.compile(re.escape(kw), re.IGNORECASE)
                 display_title = pattern.sub(f'<mark>{kw}</mark>', display_title)
             
-            # 处理AI叙述：高亮关键数据
+            # AI评述
             story_html = ""
-            if paper.get('research_story') and paper['research_story'] != "（AI解析失败，请查看原文获取详细信息）":
+            if paper.get('research_story') and paper['research_story'] != "（AI解析失败）":
                 story_text = paper['research_story']
-                # 高亮百分比
-                story_text = re.sub(r'(\d+\.?\d*%)', r'<span class="highlight-data">\1</span>', story_text)
-                # 高亮时间
-                story_text = re.sub(r'(\d+\s*(小时|h|天|年))', r'<span class="highlight-data">\1</span>', story_text)
-                # 转为HTML段落
+                story_text = re.sub(r'(\d+\.?\d*%)', r'<mark>\1</mark>', story_text)
                 paragraphs = story_text.split('\n\n')
                 story_html = ''.join([f'<p>{p}</p>' for p in paragraphs])
             else:
                 story_html = f'<p style="color:#718096;">{paper.get("research_story", "AI解析中...")}</p>'
             
-            # 构建按钮
+            # Figures HTML（可折叠）
+            figures_html = ""
+            figures = paper.get('figures', [])
+            if figures:
+                figures_count = len(figures)
+                figures_items = ""
+                for fig in figures:
+                    figures_items += f"""
+                    <div class="figure-item">
+                        <div class="figure-number">Figure {fig['number']}</div>
+                        <img src="{fig['url']}" alt="Figure {fig['number']}" class="figure-image" loading="lazy" onerror="this.style.display='none'">
+                        <div class="figure-caption">{fig.get('caption', '')}</div>
+                    </div>
+                    """
+                
+                figures_html = f"""
+                <div class="figures-section" id="figures-{hash(paper['title']) % 10000}">
+                    <div class="figures-toggle" onclick="toggleFigures(this)">
+                        <span>📊 查看原文图表 (Figures)</span>
+                        <span class="count">{figures_count}张图片</span>
+                    </div>
+                    <div class="figures-container">
+                        {figures_items}
+                    </div>
+                </div>
+                """
+            else:
+                figures_html = f"""
+                <div class="figures-section">
+                    <div class="figures-toggle" style="cursor: default; opacity: 0.6;">
+                        <span>📊 原文图表</span>
+                        <span class="count">未抓取到图片</span>
+                    </div>
+                </div>
+                """
+            
+            # 按钮
             buttons = f'<a href="{zotero_link}" class="btn zotero-btn" target="_blank">➕ 添加到Zotero</a>'
             if pdf_url:
                 buttons += f'<a href="{pdf_url}" class="btn pdf-btn" target="_blank">📄 下载PDF</a>'
@@ -665,25 +876,34 @@ def generate_html(papers):
             <div class="research-story">
                 <div class="story-header">
                     <span>🔬</span>
-                    <span>研究深度解读</span>
+                    <span>专家评述</span>
                 </div>
                 <div class="story-content">
                     {story_html}
                 </div>
             </div>
             
+            {figures_html}
+            
             <div class="action-buttons">
                 {buttons}
             </div>
-            <div class="oa-note">💡 提示：PDF按钮对于Open Access文献可直接下载，订阅制文献将跳转到期刊网站</div>
         </div>
 """
     
     html += f"""
         <div class="footer">
-            <p>自动生成于 {today} | 关键词筛选 + {'DeepSeek' if BASE_URL else 'OpenAI'} AI深度解析</p>
+            <p>自动生成于 {today} | 关键词筛选 + {'DeepSeek' if BASE_URL else 'OpenAI'} AI解析 + 网页图表抓取</p>
+            <p style="margin-top:10px;font-size:12px;">注意：图表抓取受期刊网站结构影响，部分图片可能无法显示</p>
         </div>
     </div>
+    
+    <script>
+        function toggleFigures(element) {{
+            const section = element.parentElement;
+            section.classList.toggle('open');
+        }}
+    </script>
 </body>
 </html>
 """
@@ -696,7 +916,7 @@ def generate_html(papers):
         json.dump({
             'date': today,
             'keywords': KEYWORDS,
-            'count': len(papers),
+            count: len(papers),
             'papers': papers
         }, f, ensure_ascii=False, indent=2)
     
