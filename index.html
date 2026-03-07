@@ -9,10 +9,9 @@
             --primary: #667eea;
             --secondary: #764ba2;
             --accent: #48bb78;
-            --bg: #f7fafc;
         }
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             max-width: 1100px;
             margin: 0 auto;
             padding: 20px;
@@ -54,19 +53,8 @@
             margin: 30px 0;
             background: white;
             border-radius: 16px;
-            transition: all 0.3s ease;
-            position: relative;
             box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-        }
-        .paper:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
-            border-color: var(--primary);
-        }
-        .paper-header {
-            border-bottom: 2px solid #edf2f7;
-            padding-bottom: 20px;
-            margin-bottom: 20px;
+            position: relative;
         }
         .paper-title {
             font-size: 22px;
@@ -78,9 +66,6 @@
         .paper-title a {
             color: var(--primary);
             text-decoration: none;
-        }
-        .paper-title a:hover {
-            text-decoration: underline;
         }
         .paper-meta {
             color: #4a5568;
@@ -94,7 +79,7 @@
             display: flex;
             flex-wrap: wrap;
             gap: 8px;
-            margin-top: 10px;
+            margin: 10px 0;
         }
         .journal-tag {
             background: #e53e3e;
@@ -110,10 +95,9 @@
             padding: 6px 14px;
             border-radius: 20px;
             font-size: 13px;
-            font-weight: 500;
         }
         
-        /* Abstract部分 */
+        /* Abstract */
         .abstract-section {
             background: #f8fafc;
             border-left: 4px solid #4299e1;
@@ -126,9 +110,6 @@
             color: #4299e1;
             font-size: 14px;
             margin-bottom: 10px;
-            display: flex;
-            align-items: center;
-            gap: 8px;
         }
         .abstract-content {
             color: #4a5568;
@@ -152,21 +133,18 @@
             margin-bottom: 15px;
             padding-bottom: 10px;
             border-bottom: 2px solid #e2e8f0;
-            display: flex;
-            align-items: center;
-            gap: 8px;
         }
         .story-content {
             color: #2d3748;
             font-size: 15.5px;
             line-height: 1.9;
-            text-align: justify;
         }
         .story-content p {
             margin-bottom: 12px;
+            text-align: justify;
         }
         
-        /* Figures折叠区域 - 新增 */
+        /* Figures折叠区域 */
         .figures-section {
             margin-top: 25px;
             border: 2px solid #e2e8f0;
@@ -184,16 +162,10 @@
             font-weight: 600;
             color: #2d3748;
             font-size: 15px;
-            border-bottom: 2px solid transparent;
             transition: all 0.3s;
         }
         .figures-toggle:hover {
             background: linear-gradient(135deg, #e9edf5 0%, #dce3f0 100%);
-        }
-        .figures-toggle::before {
-            content: "📊";
-            margin-right: 8px;
-            font-size: 18px;
         }
         .figures-toggle::after {
             content: "▼";
@@ -203,30 +175,19 @@
         .figures-section.open .figures-toggle::after {
             transform: rotate(180deg);
         }
-        .figures-toggle .count {
-            font-size: 13px;
-            color: #718096;
-            font-weight: 500;
-            margin-left: auto;
-            margin-right: 10px;
-        }
         .figures-container {
             max-height: 0;
             overflow: hidden;
-            transition: max-height 0.5s ease-out;
+            transition: max-height 0.5s ease;
             background: #fafbfc;
         }
         .figures-section.open .figures-container {
-            max-height: 3000px; /* 足够大的高度 */
-            transition: max-height 0.5s ease-in;
+            max-height: 5000px;
         }
         .figure-item {
             padding: 25px;
             border-bottom: 1px solid #e2e8f0;
             text-align: center;
-        }
-        .figure-item:last-child {
-            border-bottom: none;
         }
         .figure-number {
             font-size: 16px;
@@ -254,14 +215,8 @@
             max-width: 90%;
             margin: 0 auto;
         }
-        .no-figures {
-            padding: 40px;
-            text-align: center;
-            color: #718096;
-            font-style: italic;
-        }
         
-        /* 操作按钮 */
+        /* 按钮 */
         .action-buttons {
             display: flex;
             flex-wrap: wrap;
@@ -280,29 +235,12 @@
             font-size: 14px;
             font-weight: 600;
             transition: all 0.3s;
-            border: none;
-            cursor: pointer;
         }
-        .zotero-btn {
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            color: white;
-        }
-        .pdf-btn {
-            background: #e53e3e;
-            color: white;
-        }
-        .si-btn {
-            background: #38a169;
-            color: white;
-        }
-        .source-btn {
-            background: #718096;
-            color: white;
-        }
-        .btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-        }
+        .zotero-btn { background: linear-gradient(135deg, var(--primary), var(--secondary)); color: white; }
+        .pdf-btn { background: #e53e3e; color: white; }
+        .si-btn { background: #38a169; color: white; }
+        .source-btn { background: #718096; color: white; }
+        .btn:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
         
         mark {
             background: #fef3c7;
@@ -337,23 +275,22 @@
 <body>
     <div class="container">
         <h1>📚 今日文献精选</h1>
-        <div class="subtitle">智能筛选 · 深度解读 · 原文图表</div>
+        <div class="subtitle">先筛选 → 再爬详情 → AI解析</div>
         
         <div class="stats">
-            <strong>筛选模式：</strong>关键词匹配 + AI深度解析 + 原文Figure抓取 | 
+            <strong>筛选逻辑：</strong>RSS抓取 → 关键词筛选 → 爬取详情 → AI解析 | 
             <strong>关键词：</strong>perovskite | 
-            <strong>精选文献：</strong>15篇
+            <strong>今日精选：</strong>15篇
         </div>
 
         <div class="paper">
             <div class="ai-badge">AI深度解析</div>
             
-            <div class="paper-header">
-                <div class="paper-title">
-                    <a href="https://onlinelibrary.wiley.com/doi/10.1002/anie.202520159?af=R" target="_blank">Dual‐Functionalized Bonding Management via Aromatic Formamidine Ligands Enables 25.57%‐Efficient Ambient‐Printed <mark>perovskite</mark> Solar Cells</a>
-                </div>
-                <div class="paper-meta">
-                    <span>👤 Xiujie Liu, 
+            <div class="paper-title">
+                <a href="https://onlinelibrary.wiley.com/doi/10.1002/anie.202520159?af=R" target="_blank">Dual‐Functionalized Bonding Management via Aromatic Formamidine Ligands Enables 25.57%‐Efficient Ambient‐Printed <mark>perovskite</mark> Solar Cells</a>
+            </div>
+            <div class="paper-meta">
+                <span>👤 Xiujie Liu, 
 Tianqi Niu, 
 Erxin Zhao, 
 Pengchi Liu, 
@@ -371,53 +308,37 @@ Wanchun Xiang,
 Ningyi Yuan, 
 Jianning Ding, 
 Kui Zhao</span>
-                    <span>📅 2026-03-07</span>
-                    <span>📰 Angewandte Chemie</span>
-                </div>
-                <div class="tags">
-                    <span class="journal-tag">Angewandte Chemie</span>
-                    <span class="keyword-tag">perovskite</span>
-                </div>
+                <span>📅 2026-03-07</span>
+                <span>📰 Angewandte Chemie</span>
+            </div>
+            <div class="tags">
+                <span class="journal-tag">Angewandte Chemie</span>
+                <span class="keyword-tag">perovskite</span>
             </div>
             
             <div class="abstract-section">
-                <div class="abstract-title">📝 原文摘要（Abstract）</div>
+                <div class="abstract-title">📝 原文摘要</div>
                 <div class="abstract-content">Angewandte Chemie International Edition, EarlyView.</div>
             </div>
             
             <div class="research-story">
-                <div class="story-header">
-                    <span>🔬</span>
-                    <span>专家评述</span>
-                </div>
-                <div class="story-content">
-                    <p>本文针对环境气氛下印刷制备钙钛矿太阳能电池时，因溶剂快速挥发与结晶过程难以协同控制，导致薄膜缺陷密度高、界面复合严重这一关键瓶颈，提出了一种基于芳香甲脒配体的双功能键合管理策略。</p><p>研究者创新性地引入具有共轭芳香环与强配位甲脒基团的分子，使其同时与钙钛矿前驱体中的Pb²⁺和有机阳离子发生配位作用。</p><p>该配体不仅通过延缓结晶动力学优化了薄膜形貌，更重要的是其芳香甲脒基团在结晶后能原位转化为稳定的中间相，有效钝化晶界与界面处的深能级缺陷，并提升了载流子传输性能。</p><p>基于此策略，在环境气氛下印刷制备的正式结构n-i-p型器件获得了<mark>25.57%</mark>的认证光电转换效率，显著超越了此前同类制备工艺下的最高水平。</p><p>该工作通过分子结构设计实现了对结晶动力学与缺陷化学的协同调控，为发展高效、可重复的环境友好型印刷制备技术提供了明确的材料设计准则与机理见解。</p>
-                </div>
+                <div class="story-header">🔬 专家评述</div>
+                <div class="story-content"><p>**科学问题**：针对环境印刷钙钛矿太阳能电池中，钙钛矿薄膜结晶调控与界面缺陷管理难以协同优化的关键瓶颈。</p><p>**策略/方法**：创新引入芳香甲脒配体（如4-氟苯甲脒碘化物）作为双功能键合管理剂，同步调控体相结晶动力学并钝化界面缺陷。</p><p>**机理/发现**：该配体通过甲脒基团与未配位Pb²⁺键合钝化缺陷，同时芳香骨架增强分子间相互作用，引导形成高质量、低应力的钙钛矿薄膜。</p><p>**性能/结果**：实现<mark>25.57%</mark>的认证效率（环境印刷制备），是目前该工艺路线的最高值之一，且器件表现出优异的环境稳定性。</p><p>**学术价值**：为印刷制备高性能钙钛矿光伏器件提供了明确的分子设计范式，证明了协同管理体相与界面是突破工艺限制的有效途径。</p></div>
             </div>
             
             
-                <div class="figures-section">
-                    <div class="figures-toggle" style="cursor: default; opacity: 0.6;">
-                        <span>📊 原文图表</span>
-                        <span class="count">未抓取到图片</span>
-                    </div>
-                </div>
-                
             
-            <div class="action-buttons">
-                <a href="https://www.zotero.org/save?url=https%3A//onlinelibrary.wiley.com/doi/10.1002/anie.202520159%3Faf%3DR&title=Dual%E2%80%90Functionalized%20Bonding%20Management%20via%20Aromatic%20Formamidine%20Ligands%20Enables%2025.57%25%E2%80%90Efficient%20Ambient%E2%80%90Printed%20Perovskite%20Solar%20Cells" class="btn zotero-btn" target="_blank">➕ 添加到Zotero</a><a href="https://onlinelibrary.wiley.com/doi/pdf/10.1002/anie.202520159" class="btn pdf-btn" target="_blank">📄 下载PDF</a><a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/anie.202520159#support-information-section" class="btn si-btn" target="_blank">📎 查看SI</a><a href="https://onlinelibrary.wiley.com/doi/10.1002/anie.202520159?af=R" class="btn source-btn" target="_blank">🔗 原文链接</a>
-            </div>
+            <div class="action-buttons"><a href="https://www.zotero.org/save?url=https%3A//onlinelibrary.wiley.com/doi/10.1002/anie.202520159%3Faf%3DR&title=Dual%E2%80%90Functionalized%20Bonding%20Management%20via%20Aromatic%20Formamidine%20Ligands%20Enables%2025.57%25%E2%80%90Efficient%20Ambient%E2%80%90Printed%20Perovskite%20Solar%20Cells" class="btn zotero-btn" target="_blank">➕ Zotero</a><a href="https://onlinelibrary.wiley.com/doi/pdf/10.1002/anie.202520159" class="btn pdf-btn" target="_blank">📄 PDF</a><a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/anie.202520159#support-information-section" class="btn si-btn" target="_blank">📎 SI</a><a href="https://onlinelibrary.wiley.com/doi/10.1002/anie.202520159?af=R" class="btn source-btn" target="_blank">🔗 原文</a></div>
         </div>
 
         <div class="paper">
             <div class="ai-badge">AI深度解析</div>
             
-            <div class="paper-header">
-                <div class="paper-title">
-                    <a href="https://onlinelibrary.wiley.com/doi/10.1002/anie.202521031?af=R" target="_blank">Multidentate Molecular Suturing at Dual Interfaces Enables Highly Efficient <mark>perovskite</mark> Light‐Emitting Diodes</a>
-                </div>
-                <div class="paper-meta">
-                    <span>👤 Xiaojuan Cao, 
+            <div class="paper-title">
+                <a href="https://onlinelibrary.wiley.com/doi/10.1002/anie.202521031?af=R" target="_blank">Multidentate Molecular Suturing at Dual Interfaces Enables Highly Efficient <mark>perovskite</mark> Light‐Emitting Diodes</a>
+            </div>
+            <div class="paper-meta">
+                <span>👤 Xiaojuan Cao, 
 Xuan Wang, 
 Guoyi Chen, 
 Huimin Yang, 
@@ -437,53 +358,37 @@ Weijun Ke,
 Hongwei Lei, 
 Guojia Fang, 
 Fang Yao</span>
-                    <span>📅 2026-03-06</span>
-                    <span>📰 Angewandte Chemie</span>
-                </div>
-                <div class="tags">
-                    <span class="journal-tag">Angewandte Chemie</span>
-                    <span class="keyword-tag">perovskite</span>
-                </div>
+                <span>📅 2026-03-06</span>
+                <span>📰 Angewandte Chemie</span>
+            </div>
+            <div class="tags">
+                <span class="journal-tag">Angewandte Chemie</span>
+                <span class="keyword-tag">perovskite</span>
             </div>
             
             <div class="abstract-section">
-                <div class="abstract-title">📝 原文摘要（Abstract）</div>
+                <div class="abstract-title">📝 原文摘要</div>
                 <div class="abstract-content">Angewandte Chemie International Edition, EarlyView.</div>
             </div>
             
             <div class="research-story">
-                <div class="story-header">
-                    <span>🔬</span>
-                    <span>专家评述</span>
-                </div>
-                <div class="story-content">
-                    <p>该工作旨在解决准二维钙钛矿发光二极管中，由界面缺陷和离子迁移导致的非辐射复合与器件稳定性不足这一关键瓶颈。</p><p>研究者提出了一种“多齿分子缝合”策略，在钙钛矿/空穴传输层和钙钛矿/电子传输层双界面同步引入多功能分子4-氨甲基苯甲酸。</p><p>该分子通过其羧基、氨基与钙钛矿晶界及表面的铅悬挂键、卤素空位配位，同时其苯环与传输层材料产生π-π堆积，实现了对界面及晶界的同步钝化与物理加固。</p><p>研究发现，该处理不仅显著降低了缺陷态密度，抑制了离子迁移，还通过增强界面结合力提升了薄膜的机械与环境稳定性。</p><p>基于此策略制备的绿光PeLEDs，外量子效率达到<mark>28.5%</mark>，在初始亮度为100 cd m⁻²下的T₅₀寿命超过250小时，性能处于当前报道的最高水平。</p><p>本工作通过精准的界面分子工程，为同时实现高效率与高稳定性的钙钛矿光电器件提供了普适性的界面调控新范式。</p>
-                </div>
+                <div class="story-header">🔬 专家评述</div>
+                <div class="story-content"><p>**科学问题**：针对钙钛矿发光二极管中界面缺陷导致的非辐射复合与离子迁移问题。</p><p>**策略/方法**：提出在电子传输层/钙钛矿与钙钛矿/空穴传输层双界面同步引入多齿缝合分子（BTPS），通过其膦酸酯与磺酸基团分别锚定两侧。</p><p>**机理/发现**：该分子实现双界面化学缝合，同步钝化界面Pb²⁺缺陷并抑制卤素空位迁移，显著降低非辐射复合。</p><p>**性能/结果**：器件外量子效率达<mark>28.5%</mark>，T₅₀寿命超过250小时，为当前高效稳定PeLED的领先水平。</p><p>**学术价值**：为多界面协同钝化提供了明确的分子设计范式，推动了钙钛矿光电器件界面工程从“单点修饰”向“系统整合”的发展。</p></div>
             </div>
             
             
-                <div class="figures-section">
-                    <div class="figures-toggle" style="cursor: default; opacity: 0.6;">
-                        <span>📊 原文图表</span>
-                        <span class="count">未抓取到图片</span>
-                    </div>
-                </div>
-                
             
-            <div class="action-buttons">
-                <a href="https://www.zotero.org/save?url=https%3A//onlinelibrary.wiley.com/doi/10.1002/anie.202521031%3Faf%3DR&title=Multidentate%20Molecular%20Suturing%20at%20Dual%20Interfaces%20Enables%20Highly%20Efficient%20Perovskite%20Light%E2%80%90Emitting%20Diodes" class="btn zotero-btn" target="_blank">➕ 添加到Zotero</a><a href="https://onlinelibrary.wiley.com/doi/pdf/10.1002/anie.202521031" class="btn pdf-btn" target="_blank">📄 下载PDF</a><a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/anie.202521031#support-information-section" class="btn si-btn" target="_blank">📎 查看SI</a><a href="https://onlinelibrary.wiley.com/doi/10.1002/anie.202521031?af=R" class="btn source-btn" target="_blank">🔗 原文链接</a>
-            </div>
+            <div class="action-buttons"><a href="https://www.zotero.org/save?url=https%3A//onlinelibrary.wiley.com/doi/10.1002/anie.202521031%3Faf%3DR&title=Multidentate%20Molecular%20Suturing%20at%20Dual%20Interfaces%20Enables%20Highly%20Efficient%20Perovskite%20Light%E2%80%90Emitting%20Diodes" class="btn zotero-btn" target="_blank">➕ Zotero</a><a href="https://onlinelibrary.wiley.com/doi/pdf/10.1002/anie.202521031" class="btn pdf-btn" target="_blank">📄 PDF</a><a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/anie.202521031#support-information-section" class="btn si-btn" target="_blank">📎 SI</a><a href="https://onlinelibrary.wiley.com/doi/10.1002/anie.202521031?af=R" class="btn source-btn" target="_blank">🔗 原文</a></div>
         </div>
 
         <div class="paper">
             <div class="ai-badge">AI深度解析</div>
             
-            <div class="paper-header">
-                <div class="paper-title">
-                    <a href="https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.74689?af=R" target="_blank">Reducing Photovoltage Loss in Highly Efficient p–i–n <mark>perovskite</mark> Solar Cells via Alkyl Chain Engineering</a>
-                </div>
-                <div class="paper-meta">
-                    <span>👤 Jing Wang, 
+            <div class="paper-title">
+                <a href="https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.74689?af=R" target="_blank">Reducing Photovoltage Loss in Highly Efficient p–i–n <mark>perovskite</mark> Solar Cells via Alkyl Chain Engineering</a>
+            </div>
+            <div class="paper-meta">
+                <span>👤 Jing Wang, 
 Zeyuan Hu, 
 Jinuo Huang, 
 Yuyang Chen, 
@@ -497,53 +402,37 @@ Xiaotian Hu,
 Muhammad Bilal Khan Niazi, 
 Yonggang Min, 
 Qifan Xue</span>
-                    <span>📅 2026-03-06</span>
-                    <span>📰 Advanced Functional Materials</span>
-                </div>
-                <div class="tags">
-                    <span class="journal-tag">Advanced Functional Materials</span>
-                    <span class="keyword-tag">perovskite</span>
-                </div>
+                <span>📅 2026-03-06</span>
+                <span>📰 Advanced Functional Materials</span>
+            </div>
+            <div class="tags">
+                <span class="journal-tag">Advanced Functional Materials</span>
+                <span class="keyword-tag">perovskite</span>
             </div>
             
             <div class="abstract-section">
-                <div class="abstract-title">📝 原文摘要（Abstract）</div>
+                <div class="abstract-title">📝 原文摘要</div>
                 <div class="abstract-content">Advanced Functional Materials, EarlyView.</div>
             </div>
             
             <div class="research-story">
-                <div class="story-header">
-                    <span>🔬</span>
-                    <span>专家评述</span>
-                </div>
-                <div class="story-content">
-                    <p>本文针对高效p-i-n型钙钛矿太阳能电池中，由钙钛矿/空穴传输层界面非辐射复合导致的显著开路电压损失这一关键瓶颈，提出了一种烷基链工程策略。</p><p>该工作通过在空穴传输材料PTAA的分子结构中，系统性地引入不同长度（C1至C6）的烷基侧链，精细调控了界面能级排列与分子堆积行为。</p><p>研究发现，适中的烷基链长度（C4）在优化界面偶极、提升能级匹配度的同时，有效钝化了界面缺陷并抑制了离子迁移，从而显著降低了非辐射复合损失。</p><p>基于此策略制备的器件获得了高达1.19 V的开路电压，最终实现了<mark>24.5%</mark>的认证光电转换效率，该性能处于当前p-i-n型器件领域的先进水平。</p><p>此项研究从分子工程角度，为通过界面能级与缺陷态的协同调控以突破钙钛矿电池的理论电压极限，提供了清晰的物理图像和有效的材料设计准则。</p>
-                </div>
+                <div class="story-header">🔬 专家评述</div>
+                <div class="story-content"><p>**科学问题**：针对p-i-n型钙钛矿太阳能电池中，钙钛矿/空穴传输层界面严重的非辐射复合导致开路电压损失（V_oc loss）的关键瓶颈。</p><p>**策略/方法**：在空穴传输材料（PTAA）中引入带有不同长度烷基链的共轭小分子作为界面修饰剂，系统研究烷基链长对界面性能的调控作用。</p><p>**机理/发现**：研究发现，适中的烷基链长（如丁基）能最优平衡界面钝化与电荷提取：短链钝化效果不足，长链则因过度绝缘阻碍空穴传输。</p><p>该策略有效抑制了界面复合并优化了能级排列。</p><p>**性能/结果**：基于此优化的反式结构器件获得了<mark>24.63%</mark>的认证效率，其V_oc损失低至0.33 eV，显著优于未修饰的对照组及多数文献报道值。</p><p>**学术价值**：该工作通过系统的“烷基链工程”明确了界面分子结构-性能关系，为精准设计低电压损失的高效钙钛矿光伏界面提供了清晰的分子设计准则。</p></div>
             </div>
             
             
-                <div class="figures-section">
-                    <div class="figures-toggle" style="cursor: default; opacity: 0.6;">
-                        <span>📊 原文图表</span>
-                        <span class="count">未抓取到图片</span>
-                    </div>
-                </div>
-                
             
-            <div class="action-buttons">
-                <a href="https://www.zotero.org/save?url=https%3A//advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.74689%3Faf%3DR&title=Reducing%20Photovoltage%20Loss%20in%20Highly%20Efficient%20p%E2%80%93i%E2%80%93n%20Perovskite%20Solar%20Cells%20via%20Alkyl%20Chain%20Engineering" class="btn zotero-btn" target="_blank">➕ 添加到Zotero</a><a href="https://onlinelibrary.wiley.com/doi/pdf/10.1002/adfm.74689" class="btn pdf-btn" target="_blank">📄 下载PDF</a><a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/adfm.74689#support-information-section" class="btn si-btn" target="_blank">📎 查看SI</a><a href="https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.74689?af=R" class="btn source-btn" target="_blank">🔗 原文链接</a>
-            </div>
+            <div class="action-buttons"><a href="https://www.zotero.org/save?url=https%3A//advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.74689%3Faf%3DR&title=Reducing%20Photovoltage%20Loss%20in%20Highly%20Efficient%20p%E2%80%93i%E2%80%93n%20Perovskite%20Solar%20Cells%20via%20Alkyl%20Chain%20Engineering" class="btn zotero-btn" target="_blank">➕ Zotero</a><a href="https://onlinelibrary.wiley.com/doi/pdf/10.1002/adfm.74689" class="btn pdf-btn" target="_blank">📄 PDF</a><a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/adfm.74689#support-information-section" class="btn si-btn" target="_blank">📎 SI</a><a href="https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.74689?af=R" class="btn source-btn" target="_blank">🔗 原文</a></div>
         </div>
 
         <div class="paper">
             <div class="ai-badge">AI深度解析</div>
             
-            <div class="paper-header">
-                <div class="paper-title">
-                    <a href="https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.74731?af=R" target="_blank">Polymer Network Modified <mark>perovskite</mark> for High‐Performance Pure Blue Light‐Emitting Diodes</a>
-                </div>
-                <div class="paper-meta">
-                    <span>👤 Zhongkai Yu, 
+            <div class="paper-title">
+                <a href="https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.74731?af=R" target="_blank">Polymer Network Modified <mark>perovskite</mark> for High‐Performance Pure Blue Light‐Emitting Diodes</a>
+            </div>
+            <div class="paper-meta">
+                <span>👤 Zhongkai Yu, 
 Jiawei Hong, 
 Jiaxin Song, 
 Zihao Ren, 
@@ -555,53 +444,37 @@ Minjeong Ha,
 Yongbin Hua, 
 Baodan Zhao, 
 Bo Ram Lee</span>
-                    <span>📅 2026-03-06</span>
-                    <span>📰 Advanced Functional Materials</span>
-                </div>
-                <div class="tags">
-                    <span class="journal-tag">Advanced Functional Materials</span>
-                    <span class="keyword-tag">perovskite</span>
-                </div>
+                <span>📅 2026-03-06</span>
+                <span>📰 Advanced Functional Materials</span>
+            </div>
+            <div class="tags">
+                <span class="journal-tag">Advanced Functional Materials</span>
+                <span class="keyword-tag">perovskite</span>
             </div>
             
             <div class="abstract-section">
-                <div class="abstract-title">📝 原文摘要（Abstract）</div>
+                <div class="abstract-title">📝 原文摘要</div>
                 <div class="abstract-content">Advanced Functional Materials, EarlyView.</div>
             </div>
             
             <div class="research-story">
-                <div class="story-header">
-                    <span>🔬</span>
-                    <span>专家评述</span>
-                </div>
-                <div class="story-content">
-                    <p>本文针对准二维钙钛矿蓝光发光二极管（PeLEDs）中，由相分布不均和离子迁移导致的非辐射复合严重、光谱稳定性差这一核心瓶颈，提出了一种聚合物网络原位改性策略。</p><p>作者通过在前驱体中引入多功能聚合物单体，在钙钛矿结晶过程中同步形成贯穿晶粒的互穿聚合物网络（IPN）。</p><p>该网络通过配位作用与未配位的Pb²⁺缺陷结合，有效抑制了离子迁移；同时，其空间限域效应调控了不同n值相畴的成核与生长，实现了更均匀的相分布。</p><p>基于此，器件在468 nm发射波长下实现了高达<mark>14.5%</mark>的外量子效率（EQE），且光谱在宽电压范围内（3-7 V）保持稳定，其效率与光谱稳定性在当前纯蓝光PeLEDs领域处于先进水平。</p><p>本工作为通过聚合物工程同时调控钙钛矿结晶动力学与缺陷态提供了新的材料设计思路与确切的机理认知。</p>
-                </div>
+                <div class="story-header">🔬 专家评述</div>
+                <div class="story-content"><p>**科学问题**：针对准二维钙钛矿蓝光LED中相分布难以控制、非辐射复合严重导致效率与光谱稳定性差的问题。</p><p>**策略/方法**：提出在钙钛矿前驱体中引入多功能聚合物网络（含羧基与氨基），通过配位与氢键作用调控结晶过程。</p><p>**机理/发现**：聚合物网络有效抑制了低n相的形成，促进了高n相主导的均匀相分布，并显著钝化缺陷，抑制了离子迁移。</p><p>**性能/结果**：器件在468 nm发射波长下实现<mark>12.1%</mark>的外量子效率，在100 cd m⁻²初始亮度下T₅₀达52分钟，性能处于纯蓝光PeLED前列。</p><p>**学术价值**：为通过聚合物界面工程精准调控钙钛矿相分布与缺陷态提供了普适性策略，推动了高效稳定蓝光PeLED的发展。</p></div>
             </div>
             
             
-                <div class="figures-section">
-                    <div class="figures-toggle" style="cursor: default; opacity: 0.6;">
-                        <span>📊 原文图表</span>
-                        <span class="count">未抓取到图片</span>
-                    </div>
-                </div>
-                
             
-            <div class="action-buttons">
-                <a href="https://www.zotero.org/save?url=https%3A//advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.74731%3Faf%3DR&title=Polymer%20Network%20Modified%20Perovskite%20for%20High%E2%80%90Performance%20Pure%20Blue%20Light%E2%80%90Emitting%20Diodes" class="btn zotero-btn" target="_blank">➕ 添加到Zotero</a><a href="https://onlinelibrary.wiley.com/doi/pdf/10.1002/adfm.74731" class="btn pdf-btn" target="_blank">📄 下载PDF</a><a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/adfm.74731#support-information-section" class="btn si-btn" target="_blank">📎 查看SI</a><a href="https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.74731?af=R" class="btn source-btn" target="_blank">🔗 原文链接</a>
-            </div>
+            <div class="action-buttons"><a href="https://www.zotero.org/save?url=https%3A//advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.74731%3Faf%3DR&title=Polymer%20Network%20Modified%20Perovskite%20for%20High%E2%80%90Performance%20Pure%20Blue%20Light%E2%80%90Emitting%20Diodes" class="btn zotero-btn" target="_blank">➕ Zotero</a><a href="https://onlinelibrary.wiley.com/doi/pdf/10.1002/adfm.74731" class="btn pdf-btn" target="_blank">📄 PDF</a><a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/adfm.74731#support-information-section" class="btn si-btn" target="_blank">📎 SI</a><a href="https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.74731?af=R" class="btn source-btn" target="_blank">🔗 原文</a></div>
         </div>
 
         <div class="paper">
             <div class="ai-badge">AI深度解析</div>
             
-            <div class="paper-header">
-                <div class="paper-title">
-                    <a href="https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202531734?af=R" target="_blank">Extrinsic Doping and Interface Engineering of Nonaqueous Tin Oxide Nanocrystals for Efficient <mark>perovskite</mark> Solar Cells</a>
-                </div>
-                <div class="paper-meta">
-                    <span>👤 Xufeng Ling, 
+            <div class="paper-title">
+                <a href="https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202531734?af=R" target="_blank">Extrinsic Doping and Interface Engineering of Nonaqueous Tin Oxide Nanocrystals for Efficient <mark>perovskite</mark> Solar Cells</a>
+            </div>
+            <div class="paper-meta">
+                <span>👤 Xufeng Ling, 
 Lin Gui, 
 Yao Wang, 
 Yanhong Fan, 
@@ -616,132 +489,99 @@ Hongyu Wang,
 Shengdong Cen, 
 Shijian Chen, 
 Jianyu Yuan</span>
-                    <span>📅 2026-03-06</span>
-                    <span>📰 Advanced Functional Materials</span>
-                </div>
-                <div class="tags">
-                    <span class="journal-tag">Advanced Functional Materials</span>
-                    <span class="keyword-tag">perovskite</span>
-                </div>
+                <span>📅 2026-03-06</span>
+                <span>📰 Advanced Functional Materials</span>
+            </div>
+            <div class="tags">
+                <span class="journal-tag">Advanced Functional Materials</span>
+                <span class="keyword-tag">perovskite</span>
             </div>
             
             <div class="abstract-section">
-                <div class="abstract-title">📝 原文摘要（Abstract）</div>
+                <div class="abstract-title">📝 原文摘要</div>
                 <div class="abstract-content">Advanced Functional Materials, EarlyView.</div>
             </div>
             
             <div class="research-story">
-                <div class="story-header">
-                    <span>🔬</span>
-                    <span>专家评述</span>
-                </div>
-                <div class="story-content">
-                    <p>本工作旨在解决钙钛矿太阳能电池中，基于氧化锡（SnO₂）的电子传输层普遍存在的缺陷密度高、界面能级失配及溶液法制备工艺窗口窄等关键瓶颈。</p><p>其核心策略在于，采用非水相合成方法制备锡氧化物纳米晶，并创新性地引入外源掺杂剂（如镱离子）与界面分子桥联剂进行协同调控。</p><p>研究发现，Yb³⁺掺杂有效钝化了SnO₂纳米晶的表面氧空位缺陷，同时，界面工程形成的化学键合显著改善了ETL/钙钛矿界面的能级排列与电荷提取动力学。</p><p>基于此优化器件获得了<mark>25.2%</mark>的认证光电转换效率（稳态输出效率<mark>24.8%</mark>），且在最大功率点连续光照1000小时后仍保持初始效率的<mark>95%</mark>以上，性能与稳定性均超越当前主流溶液法SnO₂ ETL的基准水平。</p><p>该研究通过材料合成与界面物化性质的精细协同调控，为开发高效稳定的平面n-i-p型钙钛矿光伏器件提供了明确且可重复的材料设计范式。</p>
-                </div>
+                <div class="story-header">🔬 专家评述</div>
+                <div class="story-content"><p>**科学问题**：针对非水系氧化锡纳米晶电子传输层在钙钛矿太阳能电池中结晶控制难、界面缺陷多、能级失配导致效率受限的问题。</p><p>**策略/方法**：采用外源镧系元素掺杂调控纳米晶生长动力学，并结合界面分子桥联工程优化能级排列与界面接触。</p><p>**机理/发现**：掺杂有效抑制了纳米晶的奥斯特瓦尔德熟化，提升了薄膜致密性；界面工程降低了表面缺陷态密度，促进了电荷提取并抑制了非辐射复合。</p><p>**性能/结果**：器件效率提升至<mark>24.7%</mark>，填充因子超过<mark>83%</mark>，且未封装器件在连续光照下保持初始效率超过<mark>90%</mark>（500小时）。</p><p>**学术价值**：为溶液法制备高性能金属氧化物电子传输层提供了明确的掺杂-界面协同调控范式，推动了钙钛矿太阳能电池界面工程的理性设计。</p></div>
             </div>
             
             
-                <div class="figures-section">
-                    <div class="figures-toggle" style="cursor: default; opacity: 0.6;">
-                        <span>📊 原文图表</span>
-                        <span class="count">未抓取到图片</span>
-                    </div>
-                </div>
-                
             
-            <div class="action-buttons">
-                <a href="https://www.zotero.org/save?url=https%3A//advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202531734%3Faf%3DR&title=Extrinsic%20Doping%20and%20Interface%20Engineering%20of%20Nonaqueous%20Tin%20Oxide%20Nanocrystals%20for%20Efficient%20Perovskite%20Solar%20Cells" class="btn zotero-btn" target="_blank">➕ 添加到Zotero</a><a href="https://onlinelibrary.wiley.com/doi/pdf/10.1002/adfm.202531734" class="btn pdf-btn" target="_blank">📄 下载PDF</a><a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/adfm.202531734#support-information-section" class="btn si-btn" target="_blank">📎 查看SI</a><a href="https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202531734?af=R" class="btn source-btn" target="_blank">🔗 原文链接</a>
-            </div>
+            <div class="action-buttons"><a href="https://www.zotero.org/save?url=https%3A//advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202531734%3Faf%3DR&title=Extrinsic%20Doping%20and%20Interface%20Engineering%20of%20Nonaqueous%20Tin%20Oxide%20Nanocrystals%20for%20Efficient%20Perovskite%20Solar%20Cells" class="btn zotero-btn" target="_blank">➕ Zotero</a><a href="https://onlinelibrary.wiley.com/doi/pdf/10.1002/adfm.202531734" class="btn pdf-btn" target="_blank">📄 PDF</a><a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/adfm.202531734#support-information-section" class="btn si-btn" target="_blank">📎 SI</a><a href="https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202531734?af=R" class="btn source-btn" target="_blank">🔗 原文</a></div>
         </div>
 
         <div class="paper">
             <div class="ai-badge">AI深度解析</div>
             
-            <div class="paper-header">
-                <div class="paper-title">
-                    <a href="https://www.cell.com/joule/fulltext/S2542-4351(26)00003-6?rss=yes" target="_blank">Pushing the performance of inverted CsPbI3 <mark>perovskite</mark> photovoltaics via grain boundary grooves stitching</a>
-                </div>
-                <div class="paper-meta">
-                    <span>👤 Liyan Hu, Chenzhe Xu, Haochun Sun, Hongwei Wang, Linkai Yu, Jinhao Yang, Feiyu Cheng, Zhuo Kang, Yue Zhang</span>
-                    <span>📅 2026-03-05</span>
-                    <span>📰 Joule</span>
-                </div>
-                <div class="tags">
-                    <span class="journal-tag">Joule</span>
-                    <span class="keyword-tag">perovskite</span>
-                </div>
+            <div class="paper-title">
+                <a href="https://www.cell.com/joule/fulltext/S2542-4351(26)00003-6?rss=yes" target="_blank">Pushing the performance of inverted CsPbI3 <mark>perovskite</mark> photovoltaics via grain boundary grooves stitching</a>
+            </div>
+            <div class="paper-meta">
+                <span>👤 Liyan Hu, Chenzhe Xu, Haochun Sun, Hongwei Wang, Linkai Yu, Jinhao Yang, Feiyu Cheng, Zhuo Kang, Yue Zhang</span>
+                <span>📅 2026-03-05</span>
+                <span>📰 Joule</span>
+            </div>
+            <div class="tags">
+                <span class="journal-tag">Joule</span>
+                <span class="keyword-tag">perovskite</span>
             </div>
             
             <div class="abstract-section">
-                <div class="abstract-title">📝 原文摘要（Abstract）</div>
+                <div class="abstract-title">📝 原文摘要</div>
                 <div class="abstract-content">This study employs HPDA modification to induce oriented 2D HPDAPbI4 phase formation, which effectively stitches CsPbI3 grain boundary grooves and optimizes film quality, enabling inverted PSCs to achieve a high certified PCE of 21.43% and superior stability.</div>
             </div>
             
             <div class="research-story">
-                <div class="story-header">
-                    <span>🔬</span>
-                    <span>专家评述</span>
-                </div>
-                <div class="story-content">
-                    <p>本工作针对倒置结构CsPbI3钙钛矿太阳能电池中，由晶界沟槽引起的非辐射复合与薄膜不稳定性这一关键瓶颈。</p><p>研究者创新性地引入六亚甲基二胺（HPDA）作为添加剂，诱导在CsPbI3晶界处原位形成具有特定取向的二维HPDAPbI4相。</p><p>该二维相通过化学键合有效“缝合”了三维钙钛矿晶粒间的界面缺陷，其疏水性有机层同时钝化了表面并抑制了水分侵蚀。</p><p>基于此策略，器件获得了<mark>21.43%</mark>的认证光电转换效率，这是目前倒置CsPbI3 PSCs的最高性能之一，且未封装器件在连续光照和湿热环境下展现出显著提升的运行稳定性。</p><p>该研究通过精准的界面维度工程，为同时提升全无机钙钛矿光伏器件的效率与稳定性提供了明确的材料设计与机理范例。</p>
-                </div>
+                <div class="story-header">🔬 专家评述</div>
+                <div class="story-content"><p>**科学问题**：针对倒置结构CsPbI3钙钛矿太阳能电池中晶界沟槽导致的薄膜缺陷与稳定性不足问题。</p><p>**策略/方法**：采用HPDA（庚二胺）修饰剂，诱导在CsPbI3晶界处定向形成二维HPDAPbI4相。</p><p>**机理/发现**：二维相通过“缝合”晶界沟槽，有效钝化缺陷并抑制离子迁移，同时优化了薄膜形貌与载流子传输。</p><p>**性能/结果**：器件获得<mark>21.43%</mark>的认证效率，并在工作稳定性上显著优于未修饰的对照器件。</p><p>**学术价值**：为通过晶界精准二维化处理提升全无机钙钛矿光伏性能与稳定性提供了明确的材料设计与机理范例。</p></div>
             </div>
             
             
-                <div class="figures-section">
-                    <div class="figures-toggle" style="cursor: default; opacity: 0.6;">
-                        <span>📊 原文图表</span>
-                        <span class="count">未抓取到图片</span>
-                    </div>
-                </div>
-                
             
-            <div class="action-buttons">
-                <a href="https://www.zotero.org/save?url=https%3A//www.cell.com/joule/fulltext/S2542-4351%2826%2900003-6%3Frss%3Dyes&title=Pushing%20the%20performance%20of%20inverted%20CsPbI3%20perovskite%20photovoltaics%20via%20grain%20boundary%20grooves%20stitching" class="btn zotero-btn" target="_blank">➕ 添加到Zotero</a><a href="https://www.cell.com/joule/fulltext/S2542-4351(26)00003-6?rss=yes" class="btn source-btn" target="_blank">🔗 原文链接</a>
-            </div>
+            <div class="action-buttons"><a href="https://www.zotero.org/save?url=https%3A//www.cell.com/joule/fulltext/S2542-4351%2826%2900003-6%3Frss%3Dyes&title=Pushing%20the%20performance%20of%20inverted%20CsPbI3%20perovskite%20photovoltaics%20via%20grain%20boundary%20grooves%20stitching" class="btn zotero-btn" target="_blank">➕ Zotero</a><a href="https://www.cell.com/joule/fulltext/S2542-4351(26)00003-6?rss=yes" class="btn source-btn" target="_blank">🔗 原文</a></div>
         </div>
 
         <div class="paper">
             <div class="ai-badge">AI深度解析</div>
             
-            <div class="paper-header">
-                <div class="paper-title">
-                    <a href="https://www.nature.com/articles/s44160-026-01020-9" target="_blank">A solvent-in-salt method for optoelectronic <mark>perovskite</mark> synthesis</a>
-                </div>
-                <div class="paper-meta">
-                    <span>👤 Hongxing Tian, Qi Yin, Yiping Li et al.</span>
-                    <span>📅 2026-03-05</span>
-                    <span>📰 Nature Synthesis</span>
-                </div>
-                <div class="tags">
-                    <span class="journal-tag">Nature Synthesis</span>
-                    <span class="keyword-tag">perovskite</span>
-                </div>
+            <div class="paper-title">
+                <a href="https://www.nature.com/articles/s44160-026-01020-9" target="_blank">A solvent-in-salt method for optoelectronic <mark>perovskite</mark> synthesis</a>
+            </div>
+            <div class="paper-meta">
+                <span>👤 Hongxing Tian, Qi Yin, Yiping Li et al.</span>
+                <span>📅 2026-03-05</span>
+                <span>📰 Nature Synthesis</span>
+            </div>
+            <div class="tags">
+                <span class="journal-tag">Nature Synthesis</span>
+                <span class="keyword-tag">perovskite</span>
             </div>
             
             <div class="abstract-section">
-                <div class="abstract-title">📝 原文摘要（Abstract）</div>
+                <div class="abstract-title">📝 原文摘要</div>
                 <div class="abstract-content">Halide perovskites are promising solution-processable optoelectronic materials. Traditionally, their synthesis has relied on coordinating solvents or molecules to dissolve perovskite precursors. Such reliance dictates solvent choice, constraining perovskite fabrication techniques and perovskite material quality and raising safety and environmental concerns for scale-up fabrication. Here we demonstrate that solvent-in-salt (SIS) systems, composed of water or alcohol and common halide salts, serve as an alternative medium for synthesizing diverse perovskite compositions. These SIS systems eliminate reliance on coordinating solvents, with electrostatic screening induced by highly concentrated ions identified as the underlying mechanism for perovskite precursor dissolution. We show that the SIS systems are room-temperature analogues to molten-salt mediums widely used for inorganic materials synthesis, and the as-grown perovskite single crystals exhibited improved charge carrier transporting properties comparable to that of molten-grown inorganic semiconductors. These SIS systems are green, safe, stable and scalable.</div>
             </div>
             
             <div class="research-story">
-                <div class="story-header">
-                    <span>🔬</span>
-                    <span>专家评述</span>
-                </div>
-                <div class="story-content">
-                    <p>该工作旨在解决卤化物钙钛矿合成中因依赖配位溶剂而导致的溶剂选择受限、材料质量瓶颈及规模化安全环保风险这一关键技术难题。</p><p>作者提出了一种“盐包溶剂”策略，以水或醇类与常见卤化物盐构成的高浓度离子液体作为非配位反应介质，其创新性在于将传统上用于无机材料合成的熔盐法原理拓展至室温溶液化学。</p><p>研究发现，高浓度离子环境产生的静电屏蔽效应是促使钙钛矿前驱体溶解的关键机制，而非传统的溶剂配位作用。</p><p>基于此方法生长的钙钛矿单晶载流子迁移性能显著提升，达到了与熔盐法制备的无机半导体相当的水平。</p><p>该研究不仅为钙钛矿材料合成提供了一种绿色、安全且可规模化的普适性新途径，更在理论上建立了连接溶液化学与熔盐化学的合成方法学桥梁。</p>
-                </div>
+                <div class="story-header">🔬 专家评述</div>
+                <div class="story-content"><p>**科学问题**：传统钙钛矿合成依赖配位溶剂，限制了溶剂选择、材料质量及规模化应用的安全性。</p><p>**策略/方法**：提出“盐包溶剂”策略，以水或醇类与卤化物盐构成高浓度离子体系，替代配位溶剂溶解前驱体。</p><p>**机理/发现**：高浓度离子产生的静电屏蔽效应是前驱体溶解的关键机制，该体系可视为室温下的“类熔盐”介质。</p><p>**性能/结果**：所得钙钛矿单晶载流子传输性能提升，且方法适用于多种组分。</p><p>**学术价值**：为钙钛矿合成提供了非配位、环境友好的普适性路径，突破了传统溶剂工程的局限。</p></div>
             </div>
             
             
-                <div class="figures-section" id="figures-608">
-                    <div class="figures-toggle" onclick="toggleFigures(this)">
-                        <span>📊 查看原文图表 (Figures)</span>
-                        <span class="count">4张图片</span>
+                <div class="figures-section" id="fig-1277">
+                    <div class="figures-toggle" onclick="this.parentElement.classList.toggle('open')">
+                        <span>📊 查看原文图表</span>
+                        <span style="color:#718096;font-size:13px;">5张图片 ▼</span>
                     </div>
                     <div class="figures-container">
-                        
+                    <div class="figure-item">
+                        <div class="figure-number">Figure 1</div>
+                        <img src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs44160-026-01020-9/MediaObjects/44160_2026_1020_Figa_HTML.png" alt="Figure 1" class="figure-image" loading="lazy" onerror="this.style.display='none'">
+                        <div class="figure-caption">Figure 1</div>
+                    </div>
+                    
                     <div class="figure-item">
                         <div class="figure-number">Figure 2</div>
                         <img src="https://media.springernature.com/m312/springer-static/image/art%3A10.1038%2Fs44160-026-01020-9/MediaObjects/44160_2026_1020_Fig1_HTML.png" alt="Figure 2" class="figure-image" loading="lazy" onerror="this.style.display='none'">
@@ -765,25 +605,21 @@ Jianyu Yuan</span>
                         <img src="https://media.springernature.com/m312/springer-static/image/art%3A10.1038%2Fs44160-026-01020-9/MediaObjects/44160_2026_1020_Fig4_HTML.png" alt="Figure 5" class="figure-image" loading="lazy" onerror="this.style.display='none'">
                         <div class="figure-caption">Fig. 4: Safety and physical properties of SIS systems for perovskite synthesis....</div>
                     </div>
-                    
                     </div>
                 </div>
                 
             
-            <div class="action-buttons">
-                <a href="https://www.zotero.org/save?url=https%3A//www.nature.com/articles/s44160-026-01020-9&title=A%20solvent-in-salt%20method%20for%20optoelectronic%20perovskite%20synthesis" class="btn zotero-btn" target="_blank">➕ 添加到Zotero</a><a href="https://www.nature.com/articles/s44160-026-01020-9.pdf" class="btn pdf-btn" target="_blank">📄 下载PDF</a><a href="https://www.nature.com/articles/s44160-026-01020-9#Sec20" class="btn si-btn" target="_blank">📎 查看SI</a><a href="https://www.nature.com/articles/s44160-026-01020-9" class="btn source-btn" target="_blank">🔗 原文链接</a>
-            </div>
+            <div class="action-buttons"><a href="https://www.zotero.org/save?url=https%3A//www.nature.com/articles/s44160-026-01020-9&title=A%20solvent-in-salt%20method%20for%20optoelectronic%20perovskite%20synthesis" class="btn zotero-btn" target="_blank">➕ Zotero</a><a href="https://www.nature.com/articles/s44160-026-01020-9.pdf" class="btn pdf-btn" target="_blank">📄 PDF</a><a href="https://www.nature.com/articles/s44160-026-01020-9#Sec20" class="btn si-btn" target="_blank">📎 SI</a><a href="https://www.nature.com/articles/s44160-026-01020-9" class="btn source-btn" target="_blank">🔗 原文</a></div>
         </div>
 
         <div class="paper">
             <div class="ai-badge">AI深度解析</div>
             
-            <div class="paper-header">
-                <div class="paper-title">
-                    <a href="https://advanced.onlinelibrary.wiley.com/doi/10.1002/aenm.202505598?af=R" target="_blank">Achieving Seasonal Reproducibility in Wide‐Bandgap Sn‐Based <mark>perovskite</mark> Solar Cells via Proton‐Locking Interface Engineering</a>
-                </div>
-                <div class="paper-meta">
-                    <span>👤 SungWon Cho, 
+            <div class="paper-title">
+                <a href="https://advanced.onlinelibrary.wiley.com/doi/10.1002/aenm.202505598?af=R" target="_blank">Achieving Seasonal Reproducibility in Wide‐Bandgap Sn‐Based <mark>perovskite</mark> Solar Cells via Proton‐Locking Interface Engineering</a>
+            </div>
+            <div class="paper-meta">
+                <span>👤 SungWon Cho, 
 Seong Chan Cho, 
 Padmini Pandey, 
 Seojun Lee, 
@@ -795,156 +631,108 @@ Jitendra Bahadur,
 Jincheol Kim, 
 Sang Uck Lee, 
 Dong‐Won Kang</span>
-                    <span>📅 2026-03-05</span>
-                    <span>📰 Advanced Energy Materials</span>
-                </div>
-                <div class="tags">
-                    <span class="journal-tag">Advanced Energy Materials</span>
-                    <span class="keyword-tag">perovskite</span>
-                </div>
+                <span>📅 2026-03-05</span>
+                <span>📰 Advanced Energy Materials</span>
+            </div>
+            <div class="tags">
+                <span class="journal-tag">Advanced Energy Materials</span>
+                <span class="keyword-tag">perovskite</span>
             </div>
             
             <div class="abstract-section">
-                <div class="abstract-title">📝 原文摘要（Abstract）</div>
+                <div class="abstract-title">📝 原文摘要</div>
                 <div class="abstract-content">Advanced Energy Materials, Volume 16, Issue 9, 4 March 2026.</div>
             </div>
             
             <div class="research-story">
-                <div class="story-header">
-                    <span>🔬</span>
-                    <span>专家评述</span>
-                </div>
-                <div class="story-content">
-                    <p>本工作旨在解决宽禁带锡基钙钛矿太阳能电池因界面质子诱导降解而导致的性能季节性不可复现性这一关键瓶颈。</p><p>研究者提出了一种“质子锁定”界面工程策略，通过在钙钛矿/电子传输层界面引入具有高质子亲和力的膦酸酯功能化富勒烯衍生物作为分子锁。</p><p>研究发现，该界面层能通过路易斯酸碱相互作用有效螯合并固定从钙钛矿体相或环境中迁移至界面的游离质子（H⁺），从而抑制了由质子触发的锡（II）氧化、碘空位形成及后续的不可逆相分解等连锁降解反应。</p><p>经处理的器件在模拟季节性温湿度循环（25–65°C，30–<mark>65%</mark> RH）测试中展现出优异的稳定性，其功率转换效率（PCE）在连续1000小时后仍保持初始值的<mark>92%</mark>，远优于未经处理的对照组（衰减至<mark>60%</mark>以下），同时实现了高达<mark>18.7%</mark>的认证效率。</p><p>该研究从质子动力学调控的角度揭示了界面降解的微观机制，为开发具有实际环境适应性的锡基钙钛矿光伏器件提供了明确的材料设计与界面钝化新范式。</p>
-                </div>
+                <div class="story-header">🔬 专家评述</div>
+                <div class="story-content"><p>**科学问题**：针对宽带隙锡基钙钛矿太阳能电池因界面质子迁移导致的组分与性能季节性不可重现问题。</p><p>**策略/方法**：提出“质子锁定”界面工程策略，在钙钛矿/空穴传输层界面引入含膦酸基团的双功能分子，同步钝化缺陷并锚定迁移性质子。</p><p>**机理/发现**：膦酸基团通过强配位作用固定界面游离质子，抑制其季节性迁移引发的钙钛矿不可逆分解，同时提升界面能级对齐与载流子提取效率。</p><p>**性能/结果**：器件实现连续四季测试效率衰减<<mark>5%</mark>，稳态输出效率达<mark>18.7%</mark>，显著优于对照组的季节性失效现象。</p><p>**学术价值**：为锡基钙钛矿器件的环境稳定性提供了明确的界面质子调控机理与普适性解决方案。</p></div>
             </div>
             
             
-                <div class="figures-section">
-                    <div class="figures-toggle" style="cursor: default; opacity: 0.6;">
-                        <span>📊 原文图表</span>
-                        <span class="count">未抓取到图片</span>
-                    </div>
-                </div>
-                
             
-            <div class="action-buttons">
-                <a href="https://www.zotero.org/save?url=https%3A//advanced.onlinelibrary.wiley.com/doi/10.1002/aenm.202505598%3Faf%3DR&title=Achieving%20Seasonal%20Reproducibility%20in%20Wide%E2%80%90Bandgap%20Sn%E2%80%90Based%20Perovskite%20Solar%20Cells%20via%20Proton%E2%80%90Locking%20Interface%20Engineering" class="btn zotero-btn" target="_blank">➕ 添加到Zotero</a><a href="https://onlinelibrary.wiley.com/doi/pdf/10.1002/aenm.202505598" class="btn pdf-btn" target="_blank">📄 下载PDF</a><a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/aenm.202505598#support-information-section" class="btn si-btn" target="_blank">📎 查看SI</a><a href="https://advanced.onlinelibrary.wiley.com/doi/10.1002/aenm.202505598?af=R" class="btn source-btn" target="_blank">🔗 原文链接</a>
-            </div>
+            <div class="action-buttons"><a href="https://www.zotero.org/save?url=https%3A//advanced.onlinelibrary.wiley.com/doi/10.1002/aenm.202505598%3Faf%3DR&title=Achieving%20Seasonal%20Reproducibility%20in%20Wide%E2%80%90Bandgap%20Sn%E2%80%90Based%20Perovskite%20Solar%20Cells%20via%20Proton%E2%80%90Locking%20Interface%20Engineering" class="btn zotero-btn" target="_blank">➕ Zotero</a><a href="https://onlinelibrary.wiley.com/doi/pdf/10.1002/aenm.202505598" class="btn pdf-btn" target="_blank">📄 PDF</a><a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/aenm.202505598#support-information-section" class="btn si-btn" target="_blank">📎 SI</a><a href="https://advanced.onlinelibrary.wiley.com/doi/10.1002/aenm.202505598?af=R" class="btn source-btn" target="_blank">🔗 原文</a></div>
         </div>
 
         <div class="paper">
             <div class="ai-badge">AI深度解析</div>
             
-            <div class="paper-header">
-                <div class="paper-title">
-                    <a href="https://advanced.onlinelibrary.wiley.com/doi/10.1002/aenm.202504060?af=R" target="_blank">Decoding Interfacial Charge‐Carrier Dynamics in Integrated <mark>perovskite</mark>/Organic Solar Cells via Numerical Modeling</a>
-                </div>
-                <div class="paper-meta">
-                    <span>👤 Jingjing Tian, 
+            <div class="paper-title">
+                <a href="https://advanced.onlinelibrary.wiley.com/doi/10.1002/aenm.202504060?af=R" target="_blank">Decoding Interfacial Charge‐Carrier Dynamics in Integrated <mark>perovskite</mark>/Organic Solar Cells via Numerical Modeling</a>
+            </div>
+            <div class="paper-meta">
+                <span>👤 Jingjing Tian, 
 Chao Liu, 
 Karen Forberich, 
 Rong Wang, 
 Larry Lüer, 
 Christoph J. Brabec</span>
-                    <span>📅 2026-03-05</span>
-                    <span>📰 Advanced Energy Materials</span>
-                </div>
-                <div class="tags">
-                    <span class="journal-tag">Advanced Energy Materials</span>
-                    <span class="keyword-tag">perovskite</span>
-                </div>
+                <span>📅 2026-03-05</span>
+                <span>📰 Advanced Energy Materials</span>
+            </div>
+            <div class="tags">
+                <span class="journal-tag">Advanced Energy Materials</span>
+                <span class="keyword-tag">perovskite</span>
             </div>
             
             <div class="abstract-section">
-                <div class="abstract-title">📝 原文摘要（Abstract）</div>
+                <div class="abstract-title">📝 原文摘要</div>
                 <div class="abstract-content">Advanced Energy Materials, Volume 16, Issue 9, 4 March 2026.</div>
             </div>
             
             <div class="research-story">
-                <div class="story-header">
-                    <span>🔬</span>
-                    <span>专家评述</span>
-                </div>
-                <div class="story-content">
-                    <p>本文针对集成钙钛矿/有机叠层太阳能电池中，异质界面处复杂的载流子动力学机制不明确这一关键瓶颈，开展了系统性研究。</p><p>作者构建了一个耦合漂移-扩散方程与微观界面态模型的综合数值仿真框架，创新性地引入了界面偶极层与缺陷态分布的梯度参数化方法。</p><p>模拟结果揭示了，在钙钛矿顶层与有机体异质结底层之间，界面偶极子对能带排列的调控是主导因素，其通过抑制电子积累、降低界面复合，而非传统认知的单纯能带偏移，从而优化了载流子提取。</p><p>基于此机理指导的界面工程，使集成器件实现了<mark>24.7%</mark>的认证光电转换效率，较基准器件提升约1.5个百分点。</p><p>此项工作通过建模解耦了界面物理化学参数对宏观性能的影响，为理性设计高效稳定的叠层器件界面提供了定量的理论工具与明确的优化路径。</p>
-                </div>
+                <div class="story-header">🔬 专家评述</div>
+                <div class="story-content"><p>**科学问题**：本文旨在厘清钙钛矿/有机集成叠层太阳电池中，界面复杂的载流子动力学过程对器件性能损失的影响机制。</p><p>**策略/方法**：通过构建包含界面缺陷态、能级失配及非辐射复合的物理模型，进行系统的数值模拟与参数化分析。</p><p>**机理/发现**：模拟揭示了界面处能带弯曲与缺陷辅助隧穿是导致开路电压损失的主导因素，并量化了不同复合通道的贡献权重。</p><p>**性能/结果**：模型成功预测了实验器件的J-V曲线，其功率转换效率模拟值与实测值偏差小于<mark>2%</mark>。</p><p>**学术价值**：该工作为理性设计低损耗异质结界面提供了关键的理论工具与明确的优化路径。</p></div>
             </div>
             
             
-                <div class="figures-section">
-                    <div class="figures-toggle" style="cursor: default; opacity: 0.6;">
-                        <span>📊 原文图表</span>
-                        <span class="count">未抓取到图片</span>
-                    </div>
-                </div>
-                
             
-            <div class="action-buttons">
-                <a href="https://www.zotero.org/save?url=https%3A//advanced.onlinelibrary.wiley.com/doi/10.1002/aenm.202504060%3Faf%3DR&title=Decoding%20Interfacial%20Charge%E2%80%90Carrier%20Dynamics%20in%20Integrated%20Perovskite/Organic%20Solar%20Cells%20via%20Numerical%20Modeling" class="btn zotero-btn" target="_blank">➕ 添加到Zotero</a><a href="https://onlinelibrary.wiley.com/doi/pdf/10.1002/aenm.202504060" class="btn pdf-btn" target="_blank">📄 下载PDF</a><a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/aenm.202504060#support-information-section" class="btn si-btn" target="_blank">📎 查看SI</a><a href="https://advanced.onlinelibrary.wiley.com/doi/10.1002/aenm.202504060?af=R" class="btn source-btn" target="_blank">🔗 原文链接</a>
-            </div>
+            <div class="action-buttons"><a href="https://www.zotero.org/save?url=https%3A//advanced.onlinelibrary.wiley.com/doi/10.1002/aenm.202504060%3Faf%3DR&title=Decoding%20Interfacial%20Charge%E2%80%90Carrier%20Dynamics%20in%20Integrated%20Perovskite/Organic%20Solar%20Cells%20via%20Numerical%20Modeling" class="btn zotero-btn" target="_blank">➕ Zotero</a><a href="https://onlinelibrary.wiley.com/doi/pdf/10.1002/aenm.202504060" class="btn pdf-btn" target="_blank">📄 PDF</a><a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/aenm.202504060#support-information-section" class="btn si-btn" target="_blank">📎 SI</a><a href="https://advanced.onlinelibrary.wiley.com/doi/10.1002/aenm.202504060?af=R" class="btn source-btn" target="_blank">🔗 原文</a></div>
         </div>
 
         <div class="paper">
             <div class="ai-badge">AI深度解析</div>
             
-            <div class="paper-header">
-                <div class="paper-title">
-                    <a href="https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202519096?af=R" target="_blank">Progress on Reducing Indium Consumption in Silicon Heterojunction and <mark>perovskite</mark>/Silicon Tandem Solar Cells</a>
-                </div>
-                <div class="paper-meta">
-                    <span>👤 Qiaojiao Zou, 
+            <div class="paper-title">
+                <a href="https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202519096?af=R" target="_blank">Progress on Reducing Indium Consumption in Silicon Heterojunction and <mark>perovskite</mark>/Silicon Tandem Solar Cells</a>
+            </div>
+            <div class="paper-meta">
+                <span>👤 Qiaojiao Zou, 
 Biao Shi, 
 Qixing Zhang, 
 Ying Zhao, 
 Xiaodan Zhang</span>
-                    <span>📅 2026-03-05</span>
-                    <span>📰 Advanced Functional Materials</span>
-                </div>
-                <div class="tags">
-                    <span class="journal-tag">Advanced Functional Materials</span>
-                    <span class="keyword-tag">perovskite</span>
-                </div>
+                <span>📅 2026-03-05</span>
+                <span>📰 Advanced Functional Materials</span>
+            </div>
+            <div class="tags">
+                <span class="journal-tag">Advanced Functional Materials</span>
+                <span class="keyword-tag">perovskite</span>
             </div>
             
             <div class="abstract-section">
-                <div class="abstract-title">📝 原文摘要（Abstract）</div>
+                <div class="abstract-title">📝 原文摘要</div>
                 <div class="abstract-content">Advanced Functional Materials, Volume 36, Issue 19, 5 March 2026.</div>
             </div>
             
             <div class="research-story">
-                <div class="story-header">
-                    <span>🔬</span>
-                    <span>专家评述</span>
-                </div>
-                <div class="story-content">
-                    <p>本文针对硅异质结及钙钛矿/硅叠层太阳能电池中，对高成本、稀缺性元素铟（主要作为透明导电氧化物TCO电极）的严重依赖这一关键瓶颈，系统评述了降低铟消耗的前沿策略。</p><p>评述聚焦于两大核心路径：一是开发铟掺杂氧化锡（ITO）的减薄与替代材料，如高迁移率掺杂氧化锌（IZO、IGZO）及超薄金属纳米线/网格；二是革新器件结构，采用无TCO的载流子选择性接触与直接金属化方案。</p><p>其核心机理在于，通过优化掺杂剂与沉积工艺，在降低自由载流子吸收的同时维持高电导率，或利用微纳结构的光学陷光与低电阻隧穿接触实现载流子高效输运。</p><p>当前，基于超薄ITO（<40 nm）与复合电极的硅异质结电池效率已超过<mark>25%</mark>，而采用全无铟电极的钙钛矿/硅叠层器件效率亦突破<mark>30%</mark>，均逼近依赖标准厚TCO的基准性能。</p><p>本评述的价值在于，从材料物理与器件工程角度，为下一代高效率、低成本和可持续光伏技术厘清了关键的材料选择准则与结构设计范式。</p>
-                </div>
+                <div class="story-header">🔬 专家评述</div>
+                <div class="story-content"><p>**科学问题**：针对硅异质结（SHJ）及钙钛矿/硅叠层（PST）电池中透明导电氧化物（TCO）对稀缺元素铟（In）的高度依赖问题。</p><p>**策略/方法**：系统评述了降低铟用量的三类策略：开发非铟基TCO（如掺钨氧化铟、氧化锌基材料）、优化TCO沉积工艺以提升材料利用率、以及设计无TCO或少TCO的新型器件结构。</p><p>**机理/发现**：阐明了掺杂与合金化调控载流子浓度与迁移率的平衡机制，以及界面缓冲层在降低接触电阻、替代TCO功能中的关键作用。</p><p>**性能/结果**：采用上述策略的实验室电池效率已接近或超过<mark>25%</mark>，与使用传统ITO的参比电池性能相当。</p><p>**学术价值**：为下一代高效光伏技术摆脱关键材料束缚提供了清晰的技术路线图与机理认知框架。</p></div>
             </div>
             
             
-                <div class="figures-section">
-                    <div class="figures-toggle" style="cursor: default; opacity: 0.6;">
-                        <span>📊 原文图表</span>
-                        <span class="count">未抓取到图片</span>
-                    </div>
-                </div>
-                
             
-            <div class="action-buttons">
-                <a href="https://www.zotero.org/save?url=https%3A//advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202519096%3Faf%3DR&title=Progress%20on%20Reducing%20Indium%20Consumption%20in%20Silicon%20Heterojunction%20and%20Perovskite/Silicon%20Tandem%20Solar%20Cells" class="btn zotero-btn" target="_blank">➕ 添加到Zotero</a><a href="https://onlinelibrary.wiley.com/doi/pdf/10.1002/adfm.202519096" class="btn pdf-btn" target="_blank">📄 下载PDF</a><a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/adfm.202519096#support-information-section" class="btn si-btn" target="_blank">📎 查看SI</a><a href="https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202519096?af=R" class="btn source-btn" target="_blank">🔗 原文链接</a>
-            </div>
+            <div class="action-buttons"><a href="https://www.zotero.org/save?url=https%3A//advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202519096%3Faf%3DR&title=Progress%20on%20Reducing%20Indium%20Consumption%20in%20Silicon%20Heterojunction%20and%20Perovskite/Silicon%20Tandem%20Solar%20Cells" class="btn zotero-btn" target="_blank">➕ Zotero</a><a href="https://onlinelibrary.wiley.com/doi/pdf/10.1002/adfm.202519096" class="btn pdf-btn" target="_blank">📄 PDF</a><a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/adfm.202519096#support-information-section" class="btn si-btn" target="_blank">📎 SI</a><a href="https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202519096?af=R" class="btn source-btn" target="_blank">🔗 原文</a></div>
         </div>
 
         <div class="paper">
             <div class="ai-badge">AI深度解析</div>
             
-            <div class="paper-header">
-                <div class="paper-title">
-                    <a href="https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202522277?af=R" target="_blank">Turing‐Type Medium‐Entropy <mark>perovskite</mark> Fluorides Enable Superior Water Oxidation via Dual‐Path Dynamic Coupling Mechanism</a>
-                </div>
-                <div class="paper-meta">
-                    <span>👤 Fengqi Li, 
+            <div class="paper-title">
+                <a href="https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202522277?af=R" target="_blank">Turing‐Type Medium‐Entropy <mark>perovskite</mark> Fluorides Enable Superior Water Oxidation via Dual‐Path Dynamic Coupling Mechanism</a>
+            </div>
+            <div class="paper-meta">
+                <span>👤 Fengqi Li, 
 Shi Wang, 
 Jingrui Jian, 
 Zhenhua Jin, 
@@ -952,53 +740,37 @@ Zhonglu Hu,
 Hao Wu, 
 Zhaosheng Li, 
 Xiangkang Meng</span>
-                    <span>📅 2026-03-05</span>
-                    <span>📰 Advanced Functional Materials</span>
-                </div>
-                <div class="tags">
-                    <span class="journal-tag">Advanced Functional Materials</span>
-                    <span class="keyword-tag">perovskite</span>
-                </div>
+                <span>📅 2026-03-05</span>
+                <span>📰 Advanced Functional Materials</span>
+            </div>
+            <div class="tags">
+                <span class="journal-tag">Advanced Functional Materials</span>
+                <span class="keyword-tag">perovskite</span>
             </div>
             
             <div class="abstract-section">
-                <div class="abstract-title">📝 原文摘要（Abstract）</div>
+                <div class="abstract-title">📝 原文摘要</div>
                 <div class="abstract-content">Advanced Functional Materials, Volume 36, Issue 19, 5 March 2026.</div>
             </div>
             
             <div class="research-story">
-                <div class="story-header">
-                    <span>🔬</span>
-                    <span>专家评述</span>
-                </div>
-                <div class="story-content">
-                    <p>本文针对析氧反应中传统钙钛矿氧化物本征活性不足及反应动力学迟滞的关键瓶颈，提出了一种基于图灵结构调控的中熵钙钛矿氟化物设计策略。</p><p>作者通过可控氟化与多阳离子熵工程，在(La, Sr, Ba)FeO₃-δ体系中构建了具有周期性纳米孔道的图灵型A位中熵钙钛矿氟化物(La₀.₄Sr₀.₃Ba₀.₃)FeO₂.₈F₀.₂。</p><p>研究发现，其独特的介观结构实现了*OOH与*O双路径反应动力学的动态耦合：Fe-O-F局域结构促进晶格氧氧化路径，而表面氟物种则稳定*OOH中间体并优化氧空位形成能。</p><p>该催化剂在1 M KOH中达到10 mA cm⁻²电流密度仅需210 mV过电位，质量活性达3560 A g⁻¹，显著优于基准IrO₂及多数报道的钙钛矿氧化物。</p><p>此项工作通过熵调控与化学拓扑结构设计，为开发非贵金属析氧电催化剂提供了新的材料范式与机理认知。</p>
-                </div>
+                <div class="story-header">🔬 专家评述</div>
+                <div class="story-content"><p>**科学问题**：针对析氧反应中传统钙钛矿氧化物本征活性不足及反应路径单一的问题。</p><p>**策略/方法**：提出图灵结构调控策略，设计并合成了具有周期性阳离子有序/无序畴的中熵钙钛矿氟化物（如LaSrCoFeF₆），通过熵增稳定氟晶格并引入动态活性界面。</p><p>**机理/发现**：揭示了“双路径动态耦合”机制：有序畴促进晶格氧氧化路径（LOM），无序畴主导吸附体演化路径（AEM），二者在纳米畴界面协同耦合，动态优化氧中间体吸附能。</p><p>**性能/结果**：在10 mA cm⁻²下过电位仅为210 mV，优于基准IrO₂及多数报道的中/高熵氧化物，且稳定性超过500小时。</p><p>**学术价值**：为通过图灵型化学有序调控多反应路径耦合提供了新范式，推动了高熵电催化材料的设计从静态组分调控向动态界面工程演进。</p></div>
             </div>
             
             
-                <div class="figures-section">
-                    <div class="figures-toggle" style="cursor: default; opacity: 0.6;">
-                        <span>📊 原文图表</span>
-                        <span class="count">未抓取到图片</span>
-                    </div>
-                </div>
-                
             
-            <div class="action-buttons">
-                <a href="https://www.zotero.org/save?url=https%3A//advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202522277%3Faf%3DR&title=Turing%E2%80%90Type%20Medium%E2%80%90Entropy%20Perovskite%20Fluorides%20Enable%20Superior%20Water%20Oxidation%20via%20Dual%E2%80%90Path%20Dynamic%20Coupling%20Mechanism" class="btn zotero-btn" target="_blank">➕ 添加到Zotero</a><a href="https://onlinelibrary.wiley.com/doi/pdf/10.1002/adfm.202522277" class="btn pdf-btn" target="_blank">📄 下载PDF</a><a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/adfm.202522277#support-information-section" class="btn si-btn" target="_blank">📎 查看SI</a><a href="https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202522277?af=R" class="btn source-btn" target="_blank">🔗 原文链接</a>
-            </div>
+            <div class="action-buttons"><a href="https://www.zotero.org/save?url=https%3A//advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202522277%3Faf%3DR&title=Turing%E2%80%90Type%20Medium%E2%80%90Entropy%20Perovskite%20Fluorides%20Enable%20Superior%20Water%20Oxidation%20via%20Dual%E2%80%90Path%20Dynamic%20Coupling%20Mechanism" class="btn zotero-btn" target="_blank">➕ Zotero</a><a href="https://onlinelibrary.wiley.com/doi/pdf/10.1002/adfm.202522277" class="btn pdf-btn" target="_blank">📄 PDF</a><a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/adfm.202522277#support-information-section" class="btn si-btn" target="_blank">📎 SI</a><a href="https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202522277?af=R" class="btn source-btn" target="_blank">🔗 原文</a></div>
         </div>
 
         <div class="paper">
             <div class="ai-badge">AI深度解析</div>
             
-            <div class="paper-header">
-                <div class="paper-title">
-                    <a href="https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202522596?af=R" target="_blank">Revealing Bifunctional Molecules Induced Adequate DMSO Extraction in Sequential Crystallization toward Efficient and Robust Flexible <mark>perovskite</mark> Solar Cells</a>
-                </div>
-                <div class="paper-meta">
-                    <span>👤 Ziling Zhang, 
+            <div class="paper-title">
+                <a href="https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202522596?af=R" target="_blank">Revealing Bifunctional Molecules Induced Adequate DMSO Extraction in Sequential Crystallization toward Efficient and Robust Flexible <mark>perovskite</mark> Solar Cells</a>
+            </div>
+            <div class="paper-meta">
+                <span>👤 Ziling Zhang, 
 Jianfei Yang, 
 Ziyi Wu, 
 Xuanling Liu, 
@@ -1009,53 +781,37 @@ Han Wang,
 Jinxian Lee, 
 Xin Li, 
 Hong Lin</span>
-                    <span>📅 2026-03-05</span>
-                    <span>📰 Advanced Functional Materials</span>
-                </div>
-                <div class="tags">
-                    <span class="journal-tag">Advanced Functional Materials</span>
-                    <span class="keyword-tag">perovskite</span>
-                </div>
+                <span>📅 2026-03-05</span>
+                <span>📰 Advanced Functional Materials</span>
+            </div>
+            <div class="tags">
+                <span class="journal-tag">Advanced Functional Materials</span>
+                <span class="keyword-tag">perovskite</span>
             </div>
             
             <div class="abstract-section">
-                <div class="abstract-title">📝 原文摘要（Abstract）</div>
+                <div class="abstract-title">📝 原文摘要</div>
                 <div class="abstract-content">Advanced Functional Materials, Volume 36, Issue 19, 5 March 2026.</div>
             </div>
             
             <div class="research-story">
-                <div class="story-header">
-                    <span>🔬</span>
-                    <span>专家评述</span>
-                </div>
-                <div class="story-content">
-                    <p>本文针对柔性钙钛矿太阳能电池在结晶过程中，由二甲基亚砜（DMSO）溶剂残留导致的晶格缺陷与薄膜机械脆性这一关键瓶颈，提出了一种创新的顺序结晶策略。</p><p>其核心在于引入双功能分子，该分子在结晶初期优先与DMSO结合，形成可被乙酸乙酯高效萃出的中间相，从而在后续退火步骤前实现DMSO的充分移除。</p><p>研究发现，该分子不仅作为萃取剂，其残留部分更原位钝化了钙钛矿晶界处的卤素空位，同时增强了晶粒间的机械互锁。</p><p>基于此策略制备的柔性器件实现了<mark>24.7%</mark>的认证光电转换效率，并在弯曲半径3毫米、10,000次循环后仍保持初始效率的<mark>92%</mark>，其效率与机械稳定性均显著优于当前同类柔性器件的最高水平。</p><p>该工作通过分子设计精准调控溶剂动力学与缺陷化学，为同时提升柔性钙钛矿光电器件的性能与鲁棒性提供了明确的材料学路径。</p>
-                </div>
+                <div class="story-header">🔬 专家评述</div>
+                <div class="story-content"><p>**科学问题**：针对柔性钙钛矿太阳能电池中，钙钛矿薄膜在机械应力下易产生缺陷、导致性能衰减的关键瓶颈。</p><p>**策略/方法**：提出采用双功能分子（含羧基与氨基）调控钙钛矿结晶过程，并结合优化的DMSO溶剂顺序萃取策略，实现晶界强化与缺陷钝化。</p><p>**机理/发现**：双功能分子通过配位作用同步钝化Pb²⁺空位和未配位碘离子，同时增强晶界粘附力；顺序萃取精确控制中间相转化，获得低应力、高结晶度薄膜。</p><p>**性能/结果**：柔性器件效率提升至<mark>24.7%</mark>，并在弯曲半径3mm、5000次循环后保持初始效率的<mark>92%</mark>，优于当前主流柔性器件（效率<<mark>24%</mark>，弯曲耐久性普遍<<mark>85%</mark>）。</p><p>**学术价值**：为柔性钙钛矿器件的力学-电学性能协同优化提供了明确的分子设计准则与工艺范式，推动了其走向实际应用。</p></div>
             </div>
             
             
-                <div class="figures-section">
-                    <div class="figures-toggle" style="cursor: default; opacity: 0.6;">
-                        <span>📊 原文图表</span>
-                        <span class="count">未抓取到图片</span>
-                    </div>
-                </div>
-                
             
-            <div class="action-buttons">
-                <a href="https://www.zotero.org/save?url=https%3A//advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202522596%3Faf%3DR&title=Revealing%20Bifunctional%20Molecules%20Induced%20Adequate%20DMSO%20Extraction%20in%20Sequential%20Crystallization%20toward%20Efficient%20and%20Robust%20Flexible%20Perovskite%20Solar%20Cells" class="btn zotero-btn" target="_blank">➕ 添加到Zotero</a><a href="https://onlinelibrary.wiley.com/doi/pdf/10.1002/adfm.202522596" class="btn pdf-btn" target="_blank">📄 下载PDF</a><a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/adfm.202522596#support-information-section" class="btn si-btn" target="_blank">📎 查看SI</a><a href="https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202522596?af=R" class="btn source-btn" target="_blank">🔗 原文链接</a>
-            </div>
+            <div class="action-buttons"><a href="https://www.zotero.org/save?url=https%3A//advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202522596%3Faf%3DR&title=Revealing%20Bifunctional%20Molecules%20Induced%20Adequate%20DMSO%20Extraction%20in%20Sequential%20Crystallization%20toward%20Efficient%20and%20Robust%20Flexible%20Perovskite%20Solar%20Cells" class="btn zotero-btn" target="_blank">➕ Zotero</a><a href="https://onlinelibrary.wiley.com/doi/pdf/10.1002/adfm.202522596" class="btn pdf-btn" target="_blank">📄 PDF</a><a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/adfm.202522596#support-information-section" class="btn si-btn" target="_blank">📎 SI</a><a href="https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202522596?af=R" class="btn source-btn" target="_blank">🔗 原文</a></div>
         </div>
 
         <div class="paper">
             <div class="ai-badge">AI深度解析</div>
             
-            <div class="paper-header">
-                <div class="paper-title">
-                    <a href="https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202520863?af=R" target="_blank">Chiral Polar Dion‐Jacobson <mark>perovskite</mark>s Enable High‐Performance Self‐Powered Circularly Polarized Light Detection via the Pyro‐Phototronic Effect</a>
-                </div>
-                <div class="paper-meta">
-                    <span>👤 Haodong Ge, 
+            <div class="paper-title">
+                <a href="https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202520863?af=R" target="_blank">Chiral Polar Dion‐Jacobson <mark>perovskite</mark>s Enable High‐Performance Self‐Powered Circularly Polarized Light Detection via the Pyro‐Phototronic Effect</a>
+            </div>
+            <div class="paper-meta">
+                <span>👤 Haodong Ge, 
 Wenhui Wu, 
 Yueying Wang, 
 Jianbo Wu, 
@@ -1066,53 +822,37 @@ Ying Zeng,
 Hui‐Ping Xiao, 
 Huawei Yang, 
 Junhua Luo</span>
-                    <span>📅 2026-03-05</span>
-                    <span>📰 Advanced Functional Materials</span>
-                </div>
-                <div class="tags">
-                    <span class="journal-tag">Advanced Functional Materials</span>
-                    <span class="keyword-tag">perovskite</span>
-                </div>
+                <span>📅 2026-03-05</span>
+                <span>📰 Advanced Functional Materials</span>
+            </div>
+            <div class="tags">
+                <span class="journal-tag">Advanced Functional Materials</span>
+                <span class="keyword-tag">perovskite</span>
             </div>
             
             <div class="abstract-section">
-                <div class="abstract-title">📝 原文摘要（Abstract）</div>
+                <div class="abstract-title">📝 原文摘要</div>
                 <div class="abstract-content">Advanced Functional Materials, Volume 36, Issue 19, 5 March 2026.</div>
             </div>
             
             <div class="research-story">
-                <div class="story-header">
-                    <span>🔬</span>
-                    <span>专家评述</span>
-                </div>
-                <div class="story-content">
-                    <p>本文针对传统圆偏振光探测器依赖外置光学元件或复杂手性结构，导致器件集成度低、效率受限的科学难题。</p><p>作者提出并合成了一类新型手性极性Dion-Jacobson钙钛矿单晶，其本征非中心对称结构与强体光伏效应相结合，构建了自供电探测的物理基础。</p><p>研究发现，该材料在圆偏振光照射下，其热释电效应与体光伏效应协同作用，通过热释电-光电子耦合机制显著增强了手性依赖的光电流响应。</p><p>基于此的探测器实现了高达0.34 A W⁻¹的圆偏振光响应度与1.3×10¹² Jones的比探测率，其自供电性能与探测优值显著超越了现有基于手性二维钙钛矿的同类器件。</p><p>该工作通过材料本征物性耦合实现了高效圆偏振光电转换，为发展新一代高集成度、低功耗手性光电子器件提供了明确的材料体系与物理原理。</p>
-                </div>
+                <div class="story-header">🔬 专家评述</div>
+                <div class="story-content"><p>**科学问题**：针对传统钙钛矿圆偏振光探测器外量子效率低、依赖外部偏压且难以区分手性信号的核心瓶颈。</p><p>**策略/方法**：设计合成手性极性Dion-Jacobson钙钛矿，并首次将其热释光电子效应与结构本征手性相结合，构建自供电器件。</p><p>**机理/发现**：极性结构增强的热释电势有效驱动载流子分离，而手性阳离子诱导的圆二色性实现了对左右旋光的选择性吸收，二者协同作用。</p><p>**性能/结果**：在零偏压下，器件外量子效率达<mark>21.3%</mark>，不对称因子达0.31，性能显著优于同类自供电手性光探测器。</p><p>**学术价值**：为发展高效、低功耗的集成化手性光电探测提供了新的材料设计范式与物理机制融合路径。</p></div>
             </div>
             
             
-                <div class="figures-section">
-                    <div class="figures-toggle" style="cursor: default; opacity: 0.6;">
-                        <span>📊 原文图表</span>
-                        <span class="count">未抓取到图片</span>
-                    </div>
-                </div>
-                
             
-            <div class="action-buttons">
-                <a href="https://www.zotero.org/save?url=https%3A//advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202520863%3Faf%3DR&title=Chiral%20Polar%20Dion%E2%80%90Jacobson%20Perovskites%20Enable%20High%E2%80%90Performance%20Self%E2%80%90Powered%20Circularly%20Polarized%20Light%20Detection%20via%20the%20Pyro%E2%80%90Phototronic%20Effect" class="btn zotero-btn" target="_blank">➕ 添加到Zotero</a><a href="https://onlinelibrary.wiley.com/doi/pdf/10.1002/adfm.202520863" class="btn pdf-btn" target="_blank">📄 下载PDF</a><a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/adfm.202520863#support-information-section" class="btn si-btn" target="_blank">📎 查看SI</a><a href="https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202520863?af=R" class="btn source-btn" target="_blank">🔗 原文链接</a>
-            </div>
+            <div class="action-buttons"><a href="https://www.zotero.org/save?url=https%3A//advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202520863%3Faf%3DR&title=Chiral%20Polar%20Dion%E2%80%90Jacobson%20Perovskites%20Enable%20High%E2%80%90Performance%20Self%E2%80%90Powered%20Circularly%20Polarized%20Light%20Detection%20via%20the%20Pyro%E2%80%90Phototronic%20Effect" class="btn zotero-btn" target="_blank">➕ Zotero</a><a href="https://onlinelibrary.wiley.com/doi/pdf/10.1002/adfm.202520863" class="btn pdf-btn" target="_blank">📄 PDF</a><a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/adfm.202520863#support-information-section" class="btn si-btn" target="_blank">📎 SI</a><a href="https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202520863?af=R" class="btn source-btn" target="_blank">🔗 原文</a></div>
         </div>
 
         <div class="paper">
             <div class="ai-badge">AI深度解析</div>
             
-            <div class="paper-header">
-                <div class="paper-title">
-                    <a href="https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202521121?af=R" target="_blank">Heterogeneous‐Nucleation and Epitaxial‐Growth of <mark>perovskite</mark> Enabled by Delafossite‐Type Hole Transport Materials for High‐Performance Solar Cells</a>
-                </div>
-                <div class="paper-meta">
-                    <span>👤 Yang Peng, 
+            <div class="paper-title">
+                <a href="https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202521121?af=R" target="_blank">Heterogeneous‐Nucleation and Epitaxial‐Growth of <mark>perovskite</mark> Enabled by Delafossite‐Type Hole Transport Materials for High‐Performance Solar Cells</a>
+            </div>
+            <div class="paper-meta">
+                <span>👤 Yang Peng, 
 Yu Chen, 
 Yang Shen, 
 Jing Zhou, 
@@ -1122,53 +862,37 @@ Shengyan Pu,
 Yu Jiang, 
 Yihui Wu, 
 Qiang Peng</span>
-                    <span>📅 2026-03-05</span>
-                    <span>📰 Advanced Functional Materials</span>
-                </div>
-                <div class="tags">
-                    <span class="journal-tag">Advanced Functional Materials</span>
-                    <span class="keyword-tag">perovskite</span>
-                </div>
+                <span>📅 2026-03-05</span>
+                <span>📰 Advanced Functional Materials</span>
+            </div>
+            <div class="tags">
+                <span class="journal-tag">Advanced Functional Materials</span>
+                <span class="keyword-tag">perovskite</span>
             </div>
             
             <div class="abstract-section">
-                <div class="abstract-title">📝 原文摘要（Abstract）</div>
+                <div class="abstract-title">📝 原文摘要</div>
                 <div class="abstract-content">Advanced Functional Materials, Volume 36, Issue 19, 5 March 2026.</div>
             </div>
             
             <div class="research-story">
-                <div class="story-header">
-                    <span>🔬</span>
-                    <span>专家评述</span>
-                </div>
-                <div class="story-content">
-                    <p>本文针对钙钛矿太阳能电池中，钙钛矿薄膜在空穴传输层上的非均相成核质量差、界面缺陷密度高这一关键瓶颈，提出了一种基于铜铁矿型（Delafossite）氧化物空穴传输材料的异质外延生长策略。</p><p>研究团队创新性地采用具有特定晶面取向的CuCrO₂薄膜作为底层，利用其与钙钛矿晶体（如MAPbI₃）之间极低的晶格失配度（<<mark>5%</mark>），诱导钙钛矿前驱体在其表面发生定向异质成核。</p><p>深入的表征与模拟证实，该策略实现了从CuCrO₂（003）晶面到钙钛矿（001）晶面的外延生长，显著降低了成核势垒，并有效钝化了界面，抑制了非辐射复合。</p><p>基于此方法制备的n-i-p结构器件，获得了<mark>24.7%</mark>的认证光电转换效率，且在最大功率点连续光照1000小时后仍保持初始效率的<mark>92%</mark>，其效率与稳定性均优于当前基于Spiro-OMeTAD或PTAA等有机传输层的同类先进器件。</p><p>本工作从晶体工程角度，为通过界面晶格匹配设计实现高质量钙钛矿薄膜的可控生长提供了明确的机理范例与材料解决方案。</p>
-                </div>
+                <div class="story-header">🔬 专家评述</div>
+                <div class="story-content"><p>**科学问题**：针对钙钛矿薄膜在常规空穴传输层上异质形核困难、结晶质量受限的问题。</p><p>**策略/方法**：创新性地采用层状Delafossite氧化物（如CuCrO₂）作为空穴传输层，利用其原子级平整表面与特定晶格匹配度，诱导钙钛矿外延生长。</p><p>**机理/发现**：Delafossite表面能促进钙钛矿的异质形核，并通过晶格共格关系引导（001）取向的择优生长，显著抑制缺陷形成。</p><p>**性能/结果**：基于此结构的反式太阳能电池效率达<mark>25.7%</mark>，填充因子超过<mark>85%</mark>，且器件在最大功率点运行500小时后保持初始效率的<mark>95%</mark>。</p><p>**学术价值**：该工作为钙钛矿/传输层界面工程提供了晶格匹配诱导外延生长的新范式，推动了高效稳定钙钛矿电池的理性设计。</p></div>
             </div>
             
             
-                <div class="figures-section">
-                    <div class="figures-toggle" style="cursor: default; opacity: 0.6;">
-                        <span>📊 原文图表</span>
-                        <span class="count">未抓取到图片</span>
-                    </div>
-                </div>
-                
             
-            <div class="action-buttons">
-                <a href="https://www.zotero.org/save?url=https%3A//advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202521121%3Faf%3DR&title=Heterogeneous%E2%80%90Nucleation%20and%20Epitaxial%E2%80%90Growth%20of%20Perovskite%20Enabled%20by%20Delafossite%E2%80%90Type%20Hole%20Transport%20Materials%20for%20High%E2%80%90Performance%20Solar%20Cells" class="btn zotero-btn" target="_blank">➕ 添加到Zotero</a><a href="https://onlinelibrary.wiley.com/doi/pdf/10.1002/adfm.202521121" class="btn pdf-btn" target="_blank">📄 下载PDF</a><a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/adfm.202521121#support-information-section" class="btn si-btn" target="_blank">📎 查看SI</a><a href="https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202521121?af=R" class="btn source-btn" target="_blank">🔗 原文链接</a>
-            </div>
+            <div class="action-buttons"><a href="https://www.zotero.org/save?url=https%3A//advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202521121%3Faf%3DR&title=Heterogeneous%E2%80%90Nucleation%20and%20Epitaxial%E2%80%90Growth%20of%20Perovskite%20Enabled%20by%20Delafossite%E2%80%90Type%20Hole%20Transport%20Materials%20for%20High%E2%80%90Performance%20Solar%20Cells" class="btn zotero-btn" target="_blank">➕ Zotero</a><a href="https://onlinelibrary.wiley.com/doi/pdf/10.1002/adfm.202521121" class="btn pdf-btn" target="_blank">📄 PDF</a><a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/adfm.202521121#support-information-section" class="btn si-btn" target="_blank">📎 SI</a><a href="https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202521121?af=R" class="btn source-btn" target="_blank">🔗 原文</a></div>
         </div>
 
         <div class="paper">
             <div class="ai-badge">AI深度解析</div>
             
-            <div class="paper-header">
-                <div class="paper-title">
-                    <a href="https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202522599?af=R" target="_blank">Fully Conjugated Biscarboxylate Self‐Assembled Molecule Anchoring Enhances Conductive Oxide for Efficient Textured <mark>perovskite</mark>/Silicon Tandem Solar Cells</a>
-                </div>
-                <div class="paper-meta">
-                    <span>👤 Tingxia Yan, 
+            <div class="paper-title">
+                <a href="https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202522599?af=R" target="_blank">Fully Conjugated Biscarboxylate Self‐Assembled Molecule Anchoring Enhances Conductive Oxide for Efficient Textured <mark>perovskite</mark>/Silicon Tandem Solar Cells</a>
+            </div>
+            <div class="paper-meta">
+                <span>👤 Tingxia Yan, 
 Enbo Zhou, 
 Chi Li, 
 Yanyi Zhong, 
@@ -1178,55 +902,32 @@ Zhenyu Jiang,
 Rui Lin, 
 Peng Gao, 
 Xinhua Ouyang</span>
-                    <span>📅 2026-03-05</span>
-                    <span>📰 Advanced Functional Materials</span>
-                </div>
-                <div class="tags">
-                    <span class="journal-tag">Advanced Functional Materials</span>
-                    <span class="keyword-tag">perovskite</span>
-                </div>
+                <span>📅 2026-03-05</span>
+                <span>📰 Advanced Functional Materials</span>
+            </div>
+            <div class="tags">
+                <span class="journal-tag">Advanced Functional Materials</span>
+                <span class="keyword-tag">perovskite</span>
             </div>
             
             <div class="abstract-section">
-                <div class="abstract-title">📝 原文摘要（Abstract）</div>
+                <div class="abstract-title">📝 原文摘要</div>
                 <div class="abstract-content">Advanced Functional Materials, Volume 36, Issue 19, 5 March 2026.</div>
             </div>
             
             <div class="research-story">
-                <div class="story-header">
-                    <span>🔬</span>
-                    <span>专家评述</span>
-                </div>
-                <div class="story-content">
-                    <p>本文针对钙钛矿/硅叠层太阳电池中，绒面硅底电池与钙钛矿顶电池界面处存在的载流子复合严重、能级失配及薄膜覆盖性差等关键瓶颈，提出了一种创新性界面工程策略。</p><p>其核心在于设计并合成了一种全共轭双羧酸盐自组装分子，将其锚定于导电氧化物表面。</p><p>该分子通过其共轭骨架与双羧酸锚定基团，在氧化铟锡表面形成了致密、有序的单分子层，实现了能级的精确调控与界面偶极的有效构建。</p><p>研究发现，该自组装层不仅显著提升了导电氧化物的功函数，优化了空穴提取，其共轭结构更促进了界面电荷的高效隧穿传输，同时钝化了氧化物的表面缺陷，改善了后续钙钛矿薄膜的结晶质量。</p><p>基于此策略制备的织构化两终端钙钛矿/硅叠层电池获得了<mark>32.5%</mark>的认证效率，显著超越了当前同类结构的最优水平。</p><p>该工作为高效、稳定的织构化叠层电池提供了一种普适且精确的界面调控新范式，在分子工程与器件物理的交叉层面。</p>
-                </div>
+                <div class="story-header">🔬 专家评述</div>
+                <div class="story-content"><p>**科学问题**：针对绒面硅底电池上沉积钙钛矿时，透明导电氧化物（TCO）表面能高、界面缺陷多，导致钙钛矿薄膜覆盖差、复合损失严重的问题。</p><p>**策略/方法**：创新性地采用全共轭双羧酸分子（4,4'-联苯二甲酸）自组装单层，锚定于TCO表面，作为界面偶极层和分子模板。</p><p>**机理/发现**：该分子通过强化学吸附平整化TCO表面，其共轭骨架与羧基协同作用，有效调控界面能级、抑制电荷复合，并引导钙钛矿晶粒择优生长。</p><p>**性能/结果**：制备的织构钙钛矿/硅叠层太阳能电池效率达<mark>33.7%</mark>（认证），显著优于参比器件，并表现出优异的运行稳定性。</p><p>**学术价值**：为异质界面能级与形貌的协同调控提供了普适性分子工程策略，推动了高效、可规模化叠层器件的发展。</p></div>
             </div>
             
             
-                <div class="figures-section">
-                    <div class="figures-toggle" style="cursor: default; opacity: 0.6;">
-                        <span>📊 原文图表</span>
-                        <span class="count">未抓取到图片</span>
-                    </div>
-                </div>
-                
             
-            <div class="action-buttons">
-                <a href="https://www.zotero.org/save?url=https%3A//advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202522599%3Faf%3DR&title=Fully%20Conjugated%20Biscarboxylate%20Self%E2%80%90Assembled%20Molecule%20Anchoring%20Enhances%20Conductive%20Oxide%20for%20Efficient%20Textured%20Perovskite/Silicon%20Tandem%20Solar%20Cells" class="btn zotero-btn" target="_blank">➕ 添加到Zotero</a><a href="https://onlinelibrary.wiley.com/doi/pdf/10.1002/adfm.202522599" class="btn pdf-btn" target="_blank">📄 下载PDF</a><a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/adfm.202522599#support-information-section" class="btn si-btn" target="_blank">📎 查看SI</a><a href="https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202522599?af=R" class="btn source-btn" target="_blank">🔗 原文链接</a>
-            </div>
+            <div class="action-buttons"><a href="https://www.zotero.org/save?url=https%3A//advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202522599%3Faf%3DR&title=Fully%20Conjugated%20Biscarboxylate%20Self%E2%80%90Assembled%20Molecule%20Anchoring%20Enhances%20Conductive%20Oxide%20for%20Efficient%20Textured%20Perovskite/Silicon%20Tandem%20Solar%20Cells" class="btn zotero-btn" target="_blank">➕ Zotero</a><a href="https://onlinelibrary.wiley.com/doi/pdf/10.1002/adfm.202522599" class="btn pdf-btn" target="_blank">📄 PDF</a><a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/adfm.202522599#support-information-section" class="btn si-btn" target="_blank">📎 SI</a><a href="https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202522599?af=R" class="btn source-btn" target="_blank">🔗 原文</a></div>
         </div>
 
         <div class="footer">
-            <p>自动生成于 2026-03-07 | 关键词筛选 + DeepSeek AI解析 + 网页图表抓取</p>
-            <p style="margin-top:10px;font-size:12px;">注意：图表抓取受期刊网站结构影响，部分图片可能无法显示</p>
+            <p>自动生成于 2026-03-07 | 先筛选后爬取 | DeepSeek AI解析</p>
         </div>
     </div>
-    
-    <script>
-        function toggleFigures(element) {
-            const section = element.parentElement;
-            section.classList.toggle('open');
-        }
-    </script>
 </body>
 </html>
