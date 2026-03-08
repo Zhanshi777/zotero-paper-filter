@@ -250,17 +250,44 @@ def fetch_papers():
     
     print(f"正在抓取 {len(FEEDS)} 个期刊的RSS源...")
     print(f"筛选关键词: {', '.join(KEYWORDS)}")
+    print(f"时间范围: 最近{DAYS_BACK}天")
+    print(f"截止日期: {cutoff_date.strftime('%Y-%m-%d')}")
+    print("-" * 50)
     
     for journal, url in FEEDS.items():
         if not url:
+            print(f"  ⚠️ {journal}: URL为空，跳过")
             continue
             
         try:
-            print(f"  📰 {journal}")
+            print(f"\n  📰 {journal}")
+            print(f"     链接: {url[:60]}...")
             
             response = requests.get(url, timeout=30, headers=HEADERS)
-            response.raise_for_status()
+            print(f"     状态码: {response.status_code}")
+            
+            if response.status_code != 200:
+                print(f"     ❌ HTTP错误: {response.status_code}")
+                print(f"     响应内容前100字符: {response.text[:100]}")
+                continue
+            
             feed = feedparser.parse(response.content)
+            
+            # 关键调试：显示 RSS 元数据
+            if hasattr(feed, 'feed') and feed.feed:
+                print(f"     RSS标题: {feed.feed.get('title', '未知')}")
+                print(f"     RSS更新时间: {feed.feed.get('updated', '未知')}")
+            
+            # 关键调试：显示解析到的文章数量
+            entry_count = len(feed.entries)
+            print(f"     解析到 {entry_count} 篇文章")
+            
+            if entry_count == 0:
+                print(f"     ⚠️ 警告: 该RSS没有文章，可能被屏蔽或链接失效")
+                continue
+            
+            valid_count = 0
+            too_old_count = 0
             
             for entry in feed.entries:
                 try:
@@ -270,8 +297,14 @@ def fetch_papers():
                     elif hasattr(entry, 'updated_parsed') and entry.updated_parsed:
                         pub_date = datetime(*entry.updated_parsed[:6])
                     
-                    if pub_date and pub_date < cutoff_date:
-                        continue
+                    # 调试：显示文章日期
+                    if pub_date:
+                        date_str = pub_date.strftime('%Y-%m-%d')
+                        if pub_date < cutoff_date:
+                            too_old_count += 1
+                            if too_old_count <= 2:  # 只显示前2篇太旧的文章
+                                print(f"     ⏰ 跳过(太旧): {date_str} - {clean_html(entry.get('title', ''))[:40]}...")
+                            continue
                     
                     authors = "Unknown"
                     if hasattr(entry, 'authors') and entry.authors:
@@ -283,7 +316,6 @@ def fetch_papers():
                     elif hasattr(entry, 'author'):
                         authors = entry.author
                     
-                    # 只从RSS获取临时摘要（用于关键词筛选）
                     temp_summary = ""
                     if hasattr(entry, 'summary'):
                         temp_summary = clean_html(entry.summary)
@@ -294,31 +326,58 @@ def fetch_papers():
                     link = entry.get('link', '')
                     doi = extract_doi(entry)
                     
+                    # 显示第一篇文章的标题（调试用）
+                    if valid_count == 0:
+                        print(f"     ✓ 最新文章: {title[:60]}...")
+                        print(f"       日期: {date_str if pub_date else '未知'}")
+                        print(f"       链接: {link[:60] if link else '无'}...")
+                    
                     paper = {
                         'title': title,
                         'link': link,
                         'doi': doi,
-                        'summary': temp_summary,  # 临时摘要，用于筛选
+                        'summary': temp_summary,
                         'published': pub_date.strftime('%Y-%m-%d') if pub_date else datetime.now().strftime('%Y-%m-%d'),
                         'authors': authors,
                         'journal': journal,
                         'matched_keywords': [],
                         'research_story': '',
                         'figures': [],
-                        'has_full_content': False  # 标记是否已爬取详细内容
+                        'has_full_content': False
                     }
                     
                     all_papers.append(paper)
+                    valid_count += 1
                     
-                except Exception:
+                except Exception as e:
+                    print(f"     ⚠️ 处理单篇文章出错: {e}")
                     continue
+            
+            print(f"     ✅ 成功添加 {valid_count} 篇，跳过 {too_old_count} 篇(太旧)")
                     
+        except requests.exceptions.Timeout:
+            print(f"  ⏱️ {journal}: 请求超时(30秒)")
+        except requests.exceptions.RequestException as e:
+            print(f"  ❌ {journal}: 网络错误 - {e}")
         except Exception as e:
-            print(f"  ❌ {journal} 失败: {e}")
+            print(f"  ❌ {journal}: 其他错误 - {e}")
+            import traceback
+            print(traceback.format_exc())
             continue
     
     all_papers.sort(key=lambda x: x['published'], reverse=True)
-    print(f"\n✅ RSS获取完成：{len(all_papers)} 篇")
+    print("-" * 50)
+    print(f"\n✅ RSS获取完成：共 {len(all_papers)} 篇")
+    
+    # 统计各期刊数量
+    journal_counts = {}
+    for p in all_papers:
+        j = p['journal']
+        journal_counts[j] = journal_counts.get(j, 0) + 1
+    print("各期刊分布:")
+    for j, c in sorted(journal_counts.items()):
+        print(f"  - {j}: {c}篇")
+    
     return all_papers
 
 def filter_by_keywords(papers):
