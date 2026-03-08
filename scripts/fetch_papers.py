@@ -29,7 +29,7 @@ FEEDS = {
 KEYWORDS_ENV = os.environ.get('RESEARCH_KEYWORDS', 'perovskite')
 KEYWORDS = [k.strip().lower() for k in KEYWORDS_ENV.split(',') if k.strip()]
 
-DAYS_BACK = 3
+DAYS_BACK = 7
 
 API_KEY = os.environ.get('OPENAI_API_KEY', '')
 BASE_URL = os.environ.get('OPENAI_BASE_URL', None)
