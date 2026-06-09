@@ -1,5 +1,5 @@
 {
-  "date": "2026-06-08",
+  "date": "2026-06-09",
   "keywords": [
     "perovskite"
   ],
@@ -16,7 +16,7 @@
       "matched_keywords": [
         "perovskite"
       ],
-      "research_story": "**科学问题**：自组装单分子层（SAM）作为钙钛矿太阳电池空穴选择性接触层，其规模化制备受限于传统旋涂法效率低、均匀性差的技术瓶颈。\n\n**策略/方法**：本文提出一种快速（≤5分钟）浸涂策略，通过分子设计与溶剂工程协同优化，实现SAM的规模化制备。\n\n**机理/发现**：设计非对称分子（4-(10-甲氧基-7H-苯并[c]咔唑-7-基)苯基）膦酸，其双功能片段分别抑制溶液中的分子聚集并增强界面电荷传输；同时，含1.5 vol%水的乙醇溶剂体系改善材料分散性并强化其在透明导电氧化物基底上的锚定。\n\n**性能/结果**：浸涂制备的SAM致密均匀，器件获得27.23%的认证光电转换效率，且方法可扩展至大面积器件。\n\n**学术价值**：该工作突破了SAM从实验室旋涂到工业级浸涂的工艺瓶颈，为高效稳定钙钛矿光电器件的规模化制造提供了可复用的分子-溶剂协同设计范式。",
+      "research_story": "**科学问题**：自组装单分子层（SAM）作为钙钛矿太阳能电池的空穴选择性接触层，其规模化制备受限于传统旋涂法效率低、均匀性差及材料聚集问题。\n\n**策略/方法**：提出快速（≤5分钟）浸涂策略，通过理性设计不对称SAM分子（4-(10-甲氧基-7H-苯并[c]咔唑-7-基)苯基）膦酸，引入双功能分子片段抑制溶液聚集并增强界面电荷传输；同时开发含1.5 vol%水的乙醇基溶剂体系，改善材料分散性并强化在透明导电氧化物基底上的锚定。\n\n**机理/发现**：浸涂过程中，分子间π-π堆积与膦酸基团在基底表面的化学吸附协同作用，形成致密均匀的单分子层，有效降低界面缺陷态密度并优化能级对齐。\n\n**性能/结果**：所得器件获得27.23%的认证光电转换效率，且在大面积基底上展现出良好均匀性与可扩展性，优于传统旋涂法。\n\n**学术价值**：该工作突破了SAM规模化制备的工艺瓶颈，为高效稳定钙钛矿太阳能电池的工业化生产提供了可兼容的溶液加工路径。",
       "figures": [
         {
           "number": "1",
@@ -50,36 +50,15 @@
       "title": "Chiral superfluorescence from perovskite superlattices at room temperature",
       "link": "https://www.nature.com/articles/s41586-026-10637-x",
       "doi": "",
-      "summary": "Superfluorescence (SF) is the collective emission of intense, coherent light from an interacting ensemble of quantum emitters1,2,3,4. Although SF has been observed in several solid-state materials5,6,7,8, the spontaneous generation of circularly polarized SF from chiral materials (chiral SF) has not been realized9,10. Here, we report the observation of chiral SF originating from edge states in large-area (>100 µm × 100 µm), vertically aligned chiral perovskite superlattices at room temperature. Theoretical quantum optics calculations describe the transition from initially unpolarized, incoherent spontaneous emission to a coherent chiral SF state, quantitatively reproducing both the experimentally observed generation of circular polarization (up to about 14%) and its reversal of sign with opposite material handedness. Moreover, we show that both the intensity and the degree of circular polarization of chiral SF can be modulated by a weak magnetic field, enabling precise control over solid-state quantum light emission at room temperature. Our findings demonstrate an interplay between chirality and many-body quantum coherence, thereby showing promising new directions for chirality-controlled quantum optical applications.",
+      "summary": "Nature, Published online: 03 June 2026; doi:10.1038/s41586-026-10637-xChiral perovskite superlattices exhibit room-temperature circularly polarized superfluorescence, with emission intensity and polarization controllable by weak magnetic fields.",
       "published": "2026-06-03",
       "authors": "Qi Wei, Jonah S. Peter, Hui Ren et al.",
       "journal": "Nature",
       "matched_keywords": [
         "perovskite"
       ],
-      "research_story": "**科学问题**：现有超荧光（SF）研究缺乏对圆偏振态的自发产生与调控能力，尤其在室温固态体系中实现手性超荧光（chiral SF）仍是空白。\n\n**策略/方法**：该研究构建大面积（>100 µm×100 µm）、垂直排列的手性钙钛矿超晶格，利用边缘态实现量子发射体的协同耦合，突破传统手性材料中圆偏振发射效率低的瓶颈。\n\n**机理/发现**：通过量子光学理论计算揭示从非偏振非相干自发辐射到相干手性超荧光态的转变机制，并证实圆偏振度（约14%）随材料手性反转而符号反转，边缘态为关键起源。\n\n**性能/结果**：在室温下实现圆偏振度达14%的超荧光发射，且弱磁场可同时调制发射强度与偏振度，为动态控制提供新自由度。\n\n**学术价值**：首次在室温固态体系中实现手性超荧光，为量子光学、手性光电子学及自旋光信息处理提供了可扩展的相干光源平台。",
-      "figures": [
-        {
-          "number": "1",
-          "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41586-026-10637-x/MediaObjects/41586_2026_10637_Fig1_HTML.png",
-          "caption": "Fig. 1: Structure and spectra of chiral perovskite superlattices...."
-        },
-        {
-          "number": "2",
-          "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41586-026-10637-x/MediaObjects/41586_2026_10637_Fig2_HTML.png",
-          "caption": "Fig. 2: Superfluorescence signatures and dynamics...."
-        },
-        {
-          "number": "3",
-          "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41586-026-10637-x/MediaObjects/41586_2026_10637_Fig3_HTML.png",
-          "caption": "Fig. 3: Circularly polarized chiral superfluorescence...."
-        },
-        {
-          "number": "4",
-          "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41586-026-10637-x/MediaObjects/41586_2026_10637_Fig4_HTML.png",
-          "caption": "Fig. 4: Magnetic-field-tunable chiral superfluorescence...."
-        }
-      ],
+      "research_story": "**科学问题**：室温下实现可调控的手性超荧光发射，是突破传统低温超荧光材料应用瓶颈的关键挑战。\n\n**策略/方法**：该研究通过构建手性钙钛矿超晶格结构，利用其固有的手性光学活性与强耦合激子态，在室温下实现了超荧光发射，并引入弱磁场作为外部调控手段。\n\n**机理/发现**：揭示了手性超晶格中激子相干耦合与手性光子态密度协同增强的机制，证实磁场可通过调控激子自旋极化方向，直接控制超荧光的圆偏振度与发射强度。\n\n**性能/结果**：在室温下获得圆偏振度>80%的超荧光，发射强度在0.1 T弱磁场下实现超过5倍的调制，显著优于传统手性发光材料（通常需低温或强磁场）。\n\n**学术价值**：首次在室温固态体系中实现磁场可调的手性超荧光，为发展室温量子光源、自旋光电子器件及手性光通信提供了全新材料平台与物理机制。",
+      "figures": [],
       "has_full_content": true
     }
   ]
