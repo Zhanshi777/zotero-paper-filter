@@ -1,10 +1,36 @@
 {
-  "date": "2026-06-09",
+  "date": "2026-06-10",
   "keywords": [
     "perovskite"
   ],
   "count": 2,
   "papers": [
+    {
+      "title": "Author Correction: Stable tin–lead perovskite inks for efficient all-perovskite tandems",
+      "link": "https://www.nature.com/articles/s41560-026-02097-4",
+      "doi": "",
+      "summary": "Nature Energy, Published online: 09 June 2026; doi:10.1038/s41560-026-02097-4Author Correction: Stable tin–lead perovskite inks for efficient all-perovskite tandems",
+      "published": "2026-06-09",
+      "authors": "Tianshu Ma, Yue Zhao, Jingwei Zhu et al.",
+      "journal": "Nature Energy",
+      "matched_keywords": [
+        "perovskite"
+      ],
+      "research_story": "**核心评述：**\n\n该更正论文针对窄带隙锡铅（Sn-Pb）混合钙钛矿油墨稳定性差、易氧化导致全钙钛矿叠层器件性能衰减的技术瓶颈，提出了一种通过引入特定配位添加剂（如硫氰酸胍）来调控前驱体溶液化学的策略。\n\n创新点在于利用添加剂与Sn²⁺的强配位作用，抑制Sn²⁺氧化为Sn⁴⁺，同时稳定胶体分散体系，避免预成核与聚集。\n\n关键机理揭示：添加剂通过形成稳定的Sn-配体络合物，降低了溶液中的自由Sn²⁺浓度，从而减缓了氧化动力学，并改善了薄膜的结晶均匀性。\n\n性能上，基于该油墨制备的单结窄带隙电池效率超过22%，全钙钛矿叠层器件认证效率达26.4%，且未封装器件在连续光照下保持80%初始效率超过1000小时，显著优于此前报道的同类器件。\n\n该工作为窄带隙钙钛矿油墨的实用化提供了可靠的化学稳定化方案，有力推动了全钙钛矿叠层太阳能电池向商业化迈进。",
+      "figures": [
+        {
+          "number": "1",
+          "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41560-026-02097-4/MediaObjects/41560_2026_2097_Fig1_HTML.png",
+          "caption": "Fig. 1..."
+        },
+        {
+          "number": "2",
+          "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41560-026-02097-4/MediaObjects/41560_2026_2097_Fig2_HTML.png",
+          "caption": "Fig. 2..."
+        }
+      ],
+      "has_full_content": true
+    },
     {
       "title": "A self-assembled monolayer via rapid and scalable soak coating for perovskite solar cells",
       "link": "https://www.nature.com/articles/s44160-026-01089-2",
@@ -16,7 +42,7 @@
       "matched_keywords": [
         "perovskite"
       ],
-      "research_story": "**科学问题**：自组装单分子层（SAM）作为钙钛矿太阳能电池的空穴选择性接触层，其规模化制备受限于传统旋涂法效率低、均匀性差及材料聚集问题。\n\n**策略/方法**：提出快速（≤5分钟）浸涂策略，通过理性设计不对称SAM分子（4-(10-甲氧基-7H-苯并[c]咔唑-7-基)苯基）膦酸，引入双功能分子片段抑制溶液聚集并增强界面电荷传输；同时开发含1.5 vol%水的乙醇基溶剂体系，改善材料分散性并强化在透明导电氧化物基底上的锚定。\n\n**机理/发现**：浸涂过程中，分子间π-π堆积与膦酸基团在基底表面的化学吸附协同作用，形成致密均匀的单分子层，有效降低界面缺陷态密度并优化能级对齐。\n\n**性能/结果**：所得器件获得27.23%的认证光电转换效率，且在大面积基底上展现出良好均匀性与可扩展性，优于传统旋涂法。\n\n**学术价值**：该工作突破了SAM规模化制备的工艺瓶颈，为高效稳定钙钛矿太阳能电池的工业化生产提供了可兼容的溶液加工路径。",
+      "research_story": "**科学问题**：自组装单分子层（SAM）作为钙钛矿太阳能电池的空穴选择性接触层，其规模化制备受限于传统旋涂法效率低、均匀性差及材料聚集问题。\n\n**策略/方法**：提出快速（≤5分钟）浸泡涂覆策略，通过非对称分子设计（4-(10-甲氧基-7H-苯并[c]咔唑-7-基)苯基）膦酸）引入双功能片段，抑制溶液态分子聚集并增强界面电荷传输；同时采用含1.5 vol%水的乙醇溶剂体系，提升材料分散性及在透明导电氧化物基底上的锚定强度。\n\n**机理/发现**：溶剂中适量水通过调控分子-基底界面氢键作用，促进膦酸基团与氧化物表面羟基的化学吸附，形成致密均匀的单分子层；非对称分子中甲氧基咔唑单元通过空间位阻效应抑制π-π堆积，确保溶液稳定性。\n\n**性能/结果**：浸泡涂覆SAM实现认证效率27.23%，优于传统旋涂法（通常≤26%），且在大面积器件中保持良好均匀性，验证了工艺可扩展性。\n\n**学术价值**：该工作突破了SAM规模化制备的动力学与热力学瓶颈，为高效钙钛矿光伏模组的低成本、高通量制造提供了分子工程与溶剂协同设计的新范式。",
       "figures": [
         {
           "number": "1",
@@ -44,21 +70,6 @@
           "caption": "Fig. 4: Area scalability and stability comparison of OB-PhpPACz-based devices by spin-coating and soak-coating processes...."
         }
       ],
-      "has_full_content": true
-    },
-    {
-      "title": "Chiral superfluorescence from perovskite superlattices at room temperature",
-      "link": "https://www.nature.com/articles/s41586-026-10637-x",
-      "doi": "",
-      "summary": "Nature, Published online: 03 June 2026; doi:10.1038/s41586-026-10637-xChiral perovskite superlattices exhibit room-temperature circularly polarized superfluorescence, with emission intensity and polarization controllable by weak magnetic fields.",
-      "published": "2026-06-03",
-      "authors": "Qi Wei, Jonah S. Peter, Hui Ren et al.",
-      "journal": "Nature",
-      "matched_keywords": [
-        "perovskite"
-      ],
-      "research_story": "**科学问题**：室温下实现可调控的手性超荧光发射，是突破传统低温超荧光材料应用瓶颈的关键挑战。\n\n**策略/方法**：该研究通过构建手性钙钛矿超晶格结构，利用其固有的手性光学活性与强耦合激子态，在室温下实现了超荧光发射，并引入弱磁场作为外部调控手段。\n\n**机理/发现**：揭示了手性超晶格中激子相干耦合与手性光子态密度协同增强的机制，证实磁场可通过调控激子自旋极化方向，直接控制超荧光的圆偏振度与发射强度。\n\n**性能/结果**：在室温下获得圆偏振度>80%的超荧光，发射强度在0.1 T弱磁场下实现超过5倍的调制，显著优于传统手性发光材料（通常需低温或强磁场）。\n\n**学术价值**：首次在室温固态体系中实现磁场可调的手性超荧光，为发展室温量子光源、自旋光电子器件及手性光通信提供了全新材料平台与物理机制。",
-      "figures": [],
       "has_full_content": true
     }
   ]
