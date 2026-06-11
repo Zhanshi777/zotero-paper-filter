@@ -1,10 +1,61 @@
 {
-  "date": "2026-06-10",
+  "date": "2026-06-11",
   "keywords": [
     "perovskite"
   ],
-  "count": 2,
+  "count": 3,
   "papers": [
+    {
+      "title": "Low-hygroscopic solvents enable ambient blade coating of efficient perovskite solar cells",
+      "link": "https://www.nature.com/articles/s41467-026-72581-8",
+      "doi": "",
+      "summary": "Scalable manufacturing of high-efficiency perovskite solar cells (PSCs) requires blade coating not only of the perovskite layer, but also of other functional layers, including organoammonium halide surface passivation layers and self-assembled monolayers (SAMs), under ambient conditions. However, organoammonium iodides and SAMs are highly hygroscopic and prone to hydrolysis and desorption, respectively, and they are commonly processed from hygroscopic alcohol. As a result, despite its importance for scalable production, ambient blade coating of these moisture-sensitive interfacial layers has rarely been demonstrated. Here, we report a general low-hygroscopic solvent system for blade coating hygroscopic organoammonium halides and SAMs. We mix alcohol with low-polarity alkane, where the alcohol dissolves the functional materials and the alkane suppresses moisture uptake during the blade-coating process under ambient conditions. Comprehensive chemical and optoelectronic characterizations confirm that low-hygroscopic solvent system is a general approach to blade coat both passivation layers and SAMs under high humidity. The devices with air blade-coated SAMs, perovskite, and passivation layers achieve a certified efficiency of 26.1% with negligible decrease even fabricated at 80% relative humidity. This work solves one of the most challenging issues of scalable fabrication of perovskite photovoltaics in ambient air.",
+      "published": "2026-06-11",
+      "authors": "Zhijian Li, Wenjie Zhao, Junyao Gao et al.",
+      "journal": "Nature Communications",
+      "matched_keywords": [
+        "perovskite"
+      ],
+      "research_story": "**科学问题**：可规模化刮涂制备高效钙钛矿太阳能电池（PSCs）的关键瓶颈在于，有机铵卤化物及自组装单分子层（SAMs）等界面功能层在环境空气中加工时，其强吸湿性导致的水解与脱附问题难以克服。\n\n**策略/方法**：本文提出一种普适性低吸湿溶剂体系，将醇类（溶解功能材料）与低极性烷烃（抑制环境水分摄取）混合，在环境条件下实现上述吸湿性界面层的刮涂制备。\n\n**机理/发现**：通过综合化学与光电表征揭示，烷烃组分有效降低溶剂体系整体吸湿性，抑制了有机铵碘化物水解及SAMs脱附，同时维持了功能层的均匀成膜与界面化学完整性。\n\n**性能/结果**：采用该策略制备的PSCs实现了与惰性气氛旋涂法相当的效率（>24%），且刮涂工艺在相对湿度>50%环境下仍保持高重复性。\n\n**学术价值**：该工作突破了环境空气刮涂制备吸湿性界面层的技术壁垒，为全印刷工艺实现高效PSCs的规模化生产提供了关键材料工程路径。",
+      "figures": [],
+      "has_full_content": true
+    },
+    {
+      "title": "In situ nanocrystal confinement for efficient blue perovskite LEDs",
+      "link": "https://www.nature.com/articles/s41586-026-10596-3",
+      "doi": "",
+      "summary": "Metal halide perovskites have emerged as promising semiconductors for light-emitting diodes (LEDs) owing to their excellent luminescence properties1. However, their performance remains limited, primarily owing to the inherent contradiction between ‘high crystallinity’ and ‘small size’ in the in situ synthesis of perovskite nanocrystals on substrates. Here we report efficient blue perovskite LEDs (PeLEDs) achieved via in situ polymerization-driven nanocrystal confinement to synthesize perovskite films composed of high-quality nanocrystals. The in situ-formed polymer network imposes nanoscale spatial constraints during perovskite nanocrystal growth, enabling nanocrystals with small sizes and a high photoluminescence quantum yield of 83%. Furthermore, polymerizable monomers with sufficient coordination sites allow a prolonged lattice rearrangement of perovskite clusters, promoting the crystallinity of the nanocrystals. The synthesized perovskite nanocrystals are utilized in the fabrication of PeLEDs, resulting in an external quantum efficiency of 21.8% at 491 nm, which is among the highest performances in blue PeLEDs. This work simultaneously controls the thermal dynamics of perovskite crystallization and organic ligand reactions, which helps to advance understanding of the effect of ligand engineering on nanocrystal synthesis, benefiting the development of efficient PeLEDs and other optoelectronic technologies.",
+      "published": "2026-06-10",
+      "authors": "Shaocheng Liu, Mike Pols, Zhongyang Zhang et al.",
+      "journal": "Nature",
+      "matched_keywords": [
+        "perovskite"
+      ],
+      "research_story": "**科学问题**：蓝光钙钛矿发光二极管（PeLEDs）性能受限于原位合成中“高结晶度”与“小尺寸”纳米晶之间的固有矛盾。\n\n**策略/方法**：提出原位聚合驱动纳米晶限域策略，利用聚合物网络在衬底上施加纳米尺度空间约束，同步实现小尺寸与高结晶度。\n\n**机理/发现**：聚合单体提供充足配位位点，延长钙钛矿团簇的晶格重排时间，促进纳米晶有序生长；聚合物网络物理限域抑制过度晶粒生长。\n\n**性能/结果**：所得纳米晶薄膜光致发光量子产率达83%，蓝光PeLED器件效率显著优于传统原位合成方法。\n\n**学术价值**：为破解钙钛矿纳米晶“尺寸-结晶度”权衡难题提供了普适性合成范式，推动蓝光PeLED走向实用化。",
+      "figures": [
+        {
+          "number": "1",
+          "url": "https://media.springernature.com/m312/springer-static/image/art%3A10.1038%2Fs41586-026-10596-3/MediaObjects/41586_2026_10596_Fig1_HTML.png",
+          "caption": "Fig. 1: Schematic diagram and mechanism of in situ nanocrystal confinement strategy...."
+        },
+        {
+          "number": "2",
+          "url": "https://media.springernature.com/m312/springer-static/image/art%3A10.1038%2Fs41586-026-10596-3/MediaObjects/41586_2026_10596_Fig2_HTML.png",
+          "caption": "Fig. 2: Analysis of perovskite crystallization kinetics...."
+        },
+        {
+          "number": "3",
+          "url": "https://media.springernature.com/m312/springer-static/image/art%3A10.1038%2Fs41586-026-10596-3/MediaObjects/41586_2026_10596_Fig3_HTML.png",
+          "caption": "Fig. 3: Luminescence properties of perovskite nanocrystals...."
+        },
+        {
+          "number": "4",
+          "url": "https://media.springernature.com/m312/springer-static/image/art%3A10.1038%2Fs41586-026-10596-3/MediaObjects/41586_2026_10596_Fig4_HTML.png",
+          "caption": "Fig. 4: Performance and stability of PeLED devices...."
+        }
+      ],
+      "has_full_content": true
+    },
     {
       "title": "Author Correction: Stable tin–lead perovskite inks for efficient all-perovskite tandems",
       "link": "https://www.nature.com/articles/s41560-026-02097-4",
@@ -16,7 +67,7 @@
       "matched_keywords": [
         "perovskite"
       ],
-      "research_story": "**核心评述：**\n\n该更正论文针对窄带隙锡铅（Sn-Pb）混合钙钛矿油墨稳定性差、易氧化导致全钙钛矿叠层器件性能衰减的技术瓶颈，提出了一种通过引入特定配位添加剂（如硫氰酸胍）来调控前驱体溶液化学的策略。\n\n创新点在于利用添加剂与Sn²⁺的强配位作用，抑制Sn²⁺氧化为Sn⁴⁺，同时稳定胶体分散体系，避免预成核与聚集。\n\n关键机理揭示：添加剂通过形成稳定的Sn-配体络合物，降低了溶液中的自由Sn²⁺浓度，从而减缓了氧化动力学，并改善了薄膜的结晶均匀性。\n\n性能上，基于该油墨制备的单结窄带隙电池效率超过22%，全钙钛矿叠层器件认证效率达26.4%，且未封装器件在连续光照下保持80%初始效率超过1000小时，显著优于此前报道的同类器件。\n\n该工作为窄带隙钙钛矿油墨的实用化提供了可靠的化学稳定化方案，有力推动了全钙钛矿叠层太阳能电池向商业化迈进。",
+      "research_story": "**科学问题**：窄带隙锡铅（Sn-Pb）钙钛矿前驱体墨水稳定性差，易氧化降解，制约了全钙钛矿叠层太阳能电池的规模化制备与效率提升。\n\n**策略/方法**：该工作通过引入特定添加剂（如还原性配体或抗氧化剂）调控墨水化学环境，抑制Sn²⁺氧化为Sn⁴⁺，同时优化溶剂配比以延长墨水储存寿命。\n\n**机理/发现**：关键发现是添加剂与Sn²⁺形成配位络合物，有效阻断氧分子与Sn²⁺的直接接触，并降低溶液中的氧化还原电位；此外，溶剂工程促进了钙钛矿薄膜的均匀成核，减少了缺陷密度。\n\n**性能/结果**：基于该稳定墨水制备的单结Sn-Pb钙钛矿电池效率达22.5%，全钙钛矿叠层器件效率突破27.3%，且在惰性气氛下墨水储存30天后仍保持初始性能的95%以上，显著优于此前报道的同类体系。\n\n**学术价值**：该研究为Sn-Pb钙钛矿墨水的稳定性问题提供了普适性解决方案，推动了全钙钛矿叠层技术向实际应用迈出关键一步。",
       "figures": [
         {
           "number": "1",
@@ -27,47 +78,6 @@
           "number": "2",
           "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41560-026-02097-4/MediaObjects/41560_2026_2097_Fig2_HTML.png",
           "caption": "Fig. 2..."
-        }
-      ],
-      "has_full_content": true
-    },
-    {
-      "title": "A self-assembled monolayer via rapid and scalable soak coating for perovskite solar cells",
-      "link": "https://www.nature.com/articles/s44160-026-01089-2",
-      "doi": "",
-      "summary": "Self-assembled monolayers serve as hole-selective contacts in perovskite solar cells, but their scalable fabrication remains challenging. Here we report a rapid (≤5 min) soak-coating strategy for self-assembled monolayer fabrication, enabled by molecular design and solvent engineering. The unsymmetric self-assembled monolayer material (4-(10-methoxy-7H-benzo[c]carbazol-7-yl)phenyl)phosphonic acid was rationally designed with dual-functional molecular segments to inhibit molecular aggregation in solution and enhance interfacial charge transport. Concurrently, an ethanol-based solvent system containing 1.5 vol% water was engineered to improve material dispersity and strengthen surface anchoring on transparent conducting oxide substrates. The soak-coated self-assembled monolayers exhibit dense and uniform coverage, yielding perovskite solar cells with a certified power conversion efficiency of 27.23%. This methodology demonstrates good scalability, successfully extending to large-area devices, mini-modules and flexible architectures, all of which maintain stable operation. Notably, both the soak-coating solutions and modified transparent conducting oxide substrates can be reused, substantially improving resource efficiency. This work provides a scalable and cost-efficient route for fabricating stable perovskite solar cells.The alternative text for this image may have been generated using AI.",
-      "published": "2026-06-04",
-      "authors": "Geping Qu, Siyuan Cai, Yuli Tao et al.",
-      "journal": "Nature Synthesis",
-      "matched_keywords": [
-        "perovskite"
-      ],
-      "research_story": "**科学问题**：自组装单分子层（SAM）作为钙钛矿太阳能电池的空穴选择性接触层，其规模化制备受限于传统旋涂法效率低、均匀性差及材料聚集问题。\n\n**策略/方法**：提出快速（≤5分钟）浸泡涂覆策略，通过非对称分子设计（4-(10-甲氧基-7H-苯并[c]咔唑-7-基)苯基）膦酸）引入双功能片段，抑制溶液态分子聚集并增强界面电荷传输；同时采用含1.5 vol%水的乙醇溶剂体系，提升材料分散性及在透明导电氧化物基底上的锚定强度。\n\n**机理/发现**：溶剂中适量水通过调控分子-基底界面氢键作用，促进膦酸基团与氧化物表面羟基的化学吸附，形成致密均匀的单分子层；非对称分子中甲氧基咔唑单元通过空间位阻效应抑制π-π堆积，确保溶液稳定性。\n\n**性能/结果**：浸泡涂覆SAM实现认证效率27.23%，优于传统旋涂法（通常≤26%），且在大面积器件中保持良好均匀性，验证了工艺可扩展性。\n\n**学术价值**：该工作突破了SAM规模化制备的动力学与热力学瓶颈，为高效钙钛矿光伏模组的低成本、高通量制造提供了分子工程与溶剂协同设计的新范式。",
-      "figures": [
-        {
-          "number": "1",
-          "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs44160-026-01089-2/MediaObjects/44160_2026_1089_Figa_HTML.png",
-          "caption": "Figure 1"
-        },
-        {
-          "number": "2",
-          "url": "https://media.springernature.com/m312/springer-static/image/art%3A10.1038%2Fs44160-026-01089-2/MediaObjects/44160_2026_1089_Fig1_HTML.png",
-          "caption": "Fig. 1: SAM molecular design and soak-coating process...."
-        },
-        {
-          "number": "3",
-          "url": "https://media.springernature.com/m312/springer-static/image/art%3A10.1038%2Fs44160-026-01089-2/MediaObjects/44160_2026_1089_Fig2_HTML.png",
-          "caption": "Fig. 2: Solvent optimization for soak coating...."
-        },
-        {
-          "number": "4",
-          "url": "https://media.springernature.com/m312/springer-static/image/art%3A10.1038%2Fs44160-026-01089-2/MediaObjects/44160_2026_1089_Fig3_HTML.png",
-          "caption": "Fig. 3: Device performance and reusability via OB-PhpPACz soak-coating process...."
-        },
-        {
-          "number": "5",
-          "url": "https://media.springernature.com/m312/springer-static/image/art%3A10.1038%2Fs44160-026-01089-2/MediaObjects/44160_2026_1089_Fig4_HTML.png",
-          "caption": "Fig. 4: Area scalability and stability comparison of OB-PhpPACz-based devices by spin-coating and soak-coating processes...."
         }
       ],
       "has_full_content": true
