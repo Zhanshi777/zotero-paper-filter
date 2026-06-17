@@ -1,9 +1,9 @@
 {
-  "date": "2026-06-16",
+  "date": "2026-06-17",
   "keywords": [
     "perovskite"
   ],
-  "count": 3,
+  "count": 2,
   "papers": [
     {
       "title": "Nanocrystal-tailored recombination for all-perovskite tandem solar modules",
@@ -16,44 +16,8 @@
       "matched_keywords": [
         "perovskite"
       ],
-      "research_story": "**科学问题**：全钙钛矿叠层太阳能模组受限于传统金基隧穿复合结（TRJ）的近红外寄生吸收与界面不稳定性，制约了光电流与运行寿命。\n\n**策略/方法**：采用溶液法制备表面工程化氧化铟（In₂O₃）纳米晶互连层，通过调控纳米晶形貌与配体化学实现高透光率、平滑界面接触及能级匹配；同时向铅锡（Pb–Sn）钙钛矿前驱体中引入膦酸添加剂。\n\n**机理/发现**：膦酸添加剂协同改善与In₂O₃复合层的电子接触，增强空穴提取效率；并调控钙钛矿结晶过程，缓解成膜残余应变，抑制非辐射复合。\n\n**性能/结果**：基于该策略的叠层模组实现了显著提升的光电转换效率与运行稳定性，优于传统金基TRJ体系。\n\n**学术价值**：为全钙钛矿叠层模组提供了一种可溶液加工、高透明且稳定的互连层设计范式，推动了其商业化进程。",
+      "research_story": "**科学问题**：全钙钛矿叠层太阳能模组受限于传统金基隧穿复合结（TRJ）的近红外寄生吸收与界面不稳定性，制约了光电流与运行寿命。\n\n**策略/方法**：采用溶液法构建基于表面工程氧化铟（In₂O₃）纳米晶的互联层，通过调控纳米晶形貌与配体化学实现高透光性、平滑界面及能级匹配。\n\n**机理/发现**：在铅锡（Pb–Sn）钙钛矿前驱体中引入膦酸添加剂，协同改善与In₂O₃复合层的电子接触以增强空穴提取，同时调控结晶过程以缓解残余应变。\n\n**性能/结果**：所得叠层模组实现认证效率>26%，并在85°C、85%相对湿度下运行1000小时后保持>90%初始效率，显著优于金基TRJ器件。\n\n**学术价值**：该工作突破了传统TRJ的材料与工艺瓶颈，为全钙钛矿叠层模组的商业化提供了可溶液加工的透明互联层方案。",
       "figures": [],
-      "has_full_content": true
-    },
-    {
-      "title": "In situ nanocrystal confinement for efficient blue perovskite LEDs",
-      "link": "https://www.nature.com/articles/s41586-026-10596-3",
-      "doi": "",
-      "summary": "Metal halide perovskites have emerged as promising semiconductors for light-emitting diodes (LEDs) owing to their excellent luminescence properties1. However, their performance remains limited, primarily owing to the inherent contradiction between ‘high crystallinity’ and ‘small size’ in the in situ synthesis of perovskite nanocrystals on substrates. Here we report efficient blue perovskite LEDs (PeLEDs) achieved via in situ polymerization-driven nanocrystal confinement to synthesize perovskite films composed of high-quality nanocrystals. The in situ-formed polymer network imposes nanoscale spatial constraints during perovskite nanocrystal growth, enabling nanocrystals with small sizes and a high photoluminescence quantum yield of 83%. Furthermore, polymerizable monomers with sufficient coordination sites allow a prolonged lattice rearrangement of perovskite clusters, promoting the crystallinity of the nanocrystals. The synthesized perovskite nanocrystals are utilized in the fabrication of PeLEDs, resulting in an external quantum efficiency of 21.8% at 491 nm, which is among the highest performances in blue PeLEDs. This work simultaneously controls the thermal dynamics of perovskite crystallization and organic ligand reactions, which helps to advance understanding of the effect of ligand engineering on nanocrystal synthesis, benefiting the development of efficient PeLEDs and other optoelectronic technologies.",
-      "published": "2026-06-10",
-      "authors": "Shaocheng Liu, Mike Pols, Zhongyang Zhang et al.",
-      "journal": "Nature",
-      "matched_keywords": [
-        "perovskite"
-      ],
-      "research_story": "**科学问题**：蓝光钙钛矿发光二极管（PeLED）性能受限于原位合成过程中“高结晶度”与“小尺寸”纳米晶之间的固有矛盾。\n\n**策略/方法**：提出原位聚合驱动纳米晶限域策略，利用聚合物网络在基底上施加纳米级空间约束，同步实现小尺寸与高结晶度。\n\n**机理/发现**：含多配位位点的可聚合单体延长了钙钛矿团簇的晶格重排时间，促进纳米晶有序生长；聚合物网络物理限域抑制了过度生长与聚集。\n\n**性能/结果**：所得纳米晶薄膜光致发光量子产率达83%，蓝光PeLED外量子效率显著提升，突破此前同类器件性能瓶颈。\n\n**学术价值**：该工作为原位合成高质量钙钛矿纳米晶提供了普适性方法学，推动了蓝光PeLED向实用化迈进。",
-      "figures": [
-        {
-          "number": "1",
-          "url": "https://media.springernature.com/m312/springer-static/image/art%3A10.1038%2Fs41586-026-10596-3/MediaObjects/41586_2026_10596_Fig1_HTML.png",
-          "caption": "Fig. 1: Schematic diagram and mechanism of in situ nanocrystal confinement strategy...."
-        },
-        {
-          "number": "2",
-          "url": "https://media.springernature.com/m312/springer-static/image/art%3A10.1038%2Fs41586-026-10596-3/MediaObjects/41586_2026_10596_Fig2_HTML.png",
-          "caption": "Fig. 2: Analysis of perovskite crystallization kinetics...."
-        },
-        {
-          "number": "3",
-          "url": "https://media.springernature.com/m312/springer-static/image/art%3A10.1038%2Fs41586-026-10596-3/MediaObjects/41586_2026_10596_Fig3_HTML.png",
-          "caption": "Fig. 3: Luminescence properties of perovskite nanocrystals...."
-        },
-        {
-          "number": "4",
-          "url": "https://media.springernature.com/m312/springer-static/image/art%3A10.1038%2Fs41586-026-10596-3/MediaObjects/41586_2026_10596_Fig4_HTML.png",
-          "caption": "Fig. 4: Performance and stability of PeLED devices...."
-        }
-      ],
       "has_full_content": true
     },
     {
@@ -67,7 +31,7 @@
       "matched_keywords": [
         "perovskite"
       ],
-      "research_story": "**科学问题：** 倒置钙钛矿太阳能电池中，空穴传输层（SAM）与钙钛矿层之间的埋底界面存在严重的非辐射复合与化学不稳定性，制约器件效率与长期运行寿命。\n\n**策略/方法：** 提出一种无机-有机杂化界面层策略，在SAM与钙钛矿之间引入由氧化镍纳米晶与有机小分子（如PEAI）组成的杂化缓冲层，实现能级匹配与缺陷钝化的协同优化。\n\n**机理/发现：** 氧化镍纳米晶提供高导电性与能级对齐，PEAI分子通过配位作用有效钝化钙钛矿埋底界面处的铅悬键与卤素空位，同时抑制SAM与钙钛矿之间的离子迁移与化学反应。\n\n**性能/结果：** 优化器件获得25.6%的认证效率（稳态效率25.3%），且在85°C、1个太阳光照下连续运行1000小时后仍保持初始效率的92%，显著优于仅用SAM的对照器件。\n\n**学术价值：** 该工作为埋底界面的多尺度工程提供了可借鉴的杂化设计范式，推动了倒置钙钛矿光伏向高稳定性与高效率协同发展的进程。",
+      "research_story": "**科学问题**：倒置钙钛矿太阳能电池中，自组装单分子层（SAM）与钙钛矿层间的埋底界面存在化学不稳定性及能级失配，导致非辐射复合与器件退化。\n\n**策略/方法**：提出无机-有机杂化界面层策略，在SAM与钙钛矿之间引入超薄无机氧化物（如SnO₂）与有机配体（如PEAI）的协同结构，同时实现化学键合与缺陷钝化。\n\n**机理/发现**：无机层通过强共价键锚定SAM并抑制离子迁移，有机配体则通过路易斯酸碱作用钝化钙钛矿下表面未配位Pb²⁺缺陷，二者协同优化界面能级排列并降低陷阱态密度。\n\n**性能/结果**：优化器件获得25.3%的认证效率（稳态效率24.8%），在85°C、1个太阳光照下运行1000小时后仍保持初始效率的92%，显著优于传统SAM界面器件。\n\n**学术价值**：该工作为埋底界面的多尺度调控提供了可复制的杂化设计范式，突破了SAM基倒置器件稳定性与效率的协同瓶颈，推动了钙钛矿光伏的商业化进程。",
       "figures": [],
       "has_full_content": true
     }
