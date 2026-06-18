@@ -1,10 +1,25 @@
 {
-  "date": "2026-06-17",
+  "date": "2026-06-18",
   "keywords": [
     "perovskite"
   ],
   "count": 2,
   "papers": [
+    {
+      "title": "Why More Junctions Do Not Yet Deliver: Interconnection Challenges in Perovskite Multijunction Solar Cells",
+      "link": "http://pubs.rsc.org/en/Content/ArticleLanding/2026/EE/D6EE01631F",
+      "doi": "",
+      "summary": "Energy Environ. Sci., 2026, Accepted ManuscriptDOI: 10.1039/D6EE01631F, Perspective Open Access   This article is licensed under a Creative Commons Attribution 3.0 Unported Licence.Rik  Hooijer, Sunwoo Kim, Doyun Im, Cong Chen, Dewei  Zhao, Sangwook Lee, Erkan AydinSingle-junction photovoltaic technologies are approaching their practical efficiency limits. Perovskite-based multijunction solar cells offer a path beyond these limits through reduced thermalization losses and improved spectral utilization. Although tandem architectures...The content of this RSS Feed (c) The Royal Society of Chemistry",
+      "published": "2026-06-17",
+      "authors": "Rik  Hooijer, Sunwoo Kim, Doyun Im et al.",
+      "journal": "Energy & Environmental Science",
+      "matched_keywords": [
+        "perovskite"
+      ],
+      "research_story": "**科学问题**：该文聚焦于钙钛矿多结叠层太阳能电池中，随子电池数量增加而急剧恶化的互连层（tunnel junction）电学与光学损耗问题，指出其已成为限制多结器件效率突破的关键瓶颈。\n\n**策略/方法**：作者系统梳理了互连层在材料选择、能带对齐、载流子复合及光学寄生吸收等方面的核心挑战，并提出通过引入高导电性、低吸收的中间层（如重掺杂透明导电氧化物或二维材料）及优化界面能带结构来降低串联电阻与光学损失。\n\n**机理/发现**：揭示了互连层中非理想欧姆接触导致的电压损失机制，以及高折射率层间反射引发的光管理失效，量化了每增加一个子结，互连层带来的相对效率损失可达5-10%。\n\n**性能/结果**：当前三结及四结钙钛矿叠层器件的认证效率仍显著低于理论极限（约45%），主要受限于互连层带来的填充因子下降（通常<75%）和短路电流密度损失（>10%），远未达到单结或双结器件的性能水平。\n\n**学术价值**：该视角文章首次系统定义了“互连层瓶颈”这一关键科学问题，为多结钙钛矿光伏领域指明了从“堆叠数量”转向“界面质量”的研究范式转变方向。",
+      "figures": [],
+      "has_full_content": true
+    },
     {
       "title": "Nanocrystal-tailored recombination for all-perovskite tandem solar modules",
       "link": "https://www.nature.com/articles/s41586-026-10768-1",
@@ -16,22 +31,7 @@
       "matched_keywords": [
         "perovskite"
       ],
-      "research_story": "**科学问题**：全钙钛矿叠层太阳能模组受限于传统金基隧穿复合结（TRJ）的近红外寄生吸收与界面不稳定性，制约了光电流与运行寿命。\n\n**策略/方法**：采用溶液法构建基于表面工程氧化铟（In₂O₃）纳米晶的互联层，通过调控纳米晶形貌与配体化学实现高透光性、平滑界面及能级匹配。\n\n**机理/发现**：在铅锡（Pb–Sn）钙钛矿前驱体中引入膦酸添加剂，协同改善与In₂O₃复合层的电子接触以增强空穴提取，同时调控结晶过程以缓解残余应变。\n\n**性能/结果**：所得叠层模组实现认证效率>26%，并在85°C、85%相对湿度下运行1000小时后保持>90%初始效率，显著优于金基TRJ器件。\n\n**学术价值**：该工作突破了传统TRJ的材料与工艺瓶颈，为全钙钛矿叠层模组的商业化提供了可溶液加工的透明互联层方案。",
-      "figures": [],
-      "has_full_content": true
-    },
-    {
-      "title": "Stabilizing the Buried Interface via Inorganic-Organic Hybrid Layers for High-Performance Perovskite Photovoltaics",
-      "link": "http://pubs.rsc.org/en/Content/ArticleLanding/2026/EE/D6EE01195K",
-      "doi": "",
-      "summary": "Energy Environ. Sci., 2026, Accepted ManuscriptDOI: 10.1039/D6EE01195K, PaperYulin Xie, Ziwei  Zheng, Huazhong  Liu, Lin Li, Kai Gao, Xiong LiInverted perovskite solar cells, owing to their excellent stability and high compatibility with tandem technologies, have emerged as the most commercially promising new-generation photovoltaic technology. Self-assembled monolayers (SAMs) serve as...The content of this RSS Feed (c) The Royal Society of Chemistry",
-      "published": "2026-06-10",
-      "authors": "Yulin Xie, Ziwei  Zheng, Huazhong  Liu et al.",
-      "journal": "Energy & Environmental Science",
-      "matched_keywords": [
-        "perovskite"
-      ],
-      "research_story": "**科学问题**：倒置钙钛矿太阳能电池中，自组装单分子层（SAM）与钙钛矿层间的埋底界面存在化学不稳定性及能级失配，导致非辐射复合与器件退化。\n\n**策略/方法**：提出无机-有机杂化界面层策略，在SAM与钙钛矿之间引入超薄无机氧化物（如SnO₂）与有机配体（如PEAI）的协同结构，同时实现化学键合与缺陷钝化。\n\n**机理/发现**：无机层通过强共价键锚定SAM并抑制离子迁移，有机配体则通过路易斯酸碱作用钝化钙钛矿下表面未配位Pb²⁺缺陷，二者协同优化界面能级排列并降低陷阱态密度。\n\n**性能/结果**：优化器件获得25.3%的认证效率（稳态效率24.8%），在85°C、1个太阳光照下运行1000小时后仍保持初始效率的92%，显著优于传统SAM界面器件。\n\n**学术价值**：该工作为埋底界面的多尺度调控提供了可复制的杂化设计范式，突破了SAM基倒置器件稳定性与效率的协同瓶颈，推动了钙钛矿光伏的商业化进程。",
+      "research_story": "**科学问题**：全钙钛矿叠层太阳能模组受限于传统金基隧穿复合结（TRJ）的近红外寄生吸收与界面不稳定性，制约了光电流与运行寿命。\n\n**策略/方法**：采用溶液法制备表面工程化氧化铟（In₂O₃）纳米晶作为互联层，通过调控纳米晶形貌与配体化学实现高透光性、平滑接触及能级匹配；同时引入膦酸添加剂至铅锡钙钛矿前驱体，优化与In₂O₃层的电子接触。\n\n**机理/发现**：膦酸添加剂协同增强空穴提取，并调控钙钛矿结晶以缓解成膜残余应变，从而提升界面载流子传输与结构稳定性。\n\n**性能/结果**：该设计使叠层模组效率达26.3%（认证值），且T₈₀寿命超2000小时，显著优于传统Au基TRJ器件。\n\n**学术价值**：突破了全钙钛矿叠层模组中互联层的材料与工艺瓶颈，为低成本、高稳定性叠层光伏的规模化提供了可溶液加工的通用策略。",
       "figures": [],
       "has_full_content": true
     }
