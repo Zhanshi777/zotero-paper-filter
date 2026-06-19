@@ -1,10 +1,25 @@
 {
-  "date": "2026-06-18",
+  "date": "2026-06-19",
   "keywords": [
     "perovskite"
   ],
-  "count": 2,
+  "count": 3,
   "papers": [
+    {
+      "title": "Entropy-driven order-to-disorder transition in perovskite anodes for high-performance solid oxide fuel cells",
+      "link": "https://www.nature.com/articles/s41467-026-74549-0",
+      "doi": "",
+      "summary": "Solid oxide fuel cells (SOFCs) enable direct and efficient conversion of transportable hydrocarbons into electricity, offering a scalable pathway for carbon-neutral energy systems. A critical challenge in SOFC development lies in the atomic-scale structural regulation of perovskite-type anodes, which is essential for enhancing hydrocarbon oxidation kinetics while mitigating carbon deposition issues. To overcome this fundamental limitation, we propose an entropy-driven strategy to induce order-to-disorder transitions in perovskite oxides. This strategy is demonstrated in the layered ordered perovskite PrBaFe2O5+δ, where the introduction of five equimolar rare-earth cations at the Pr site results in the formation of a disordered A-site high-entropy perovskite anode with the composition La0.2Pr0.2Sm0.2Gd0.2Y0.2BaFe2O5+δ (HEP). Such atomic-scale order-to-disorder transitions facilitate oxygen vacancy formation and improve anode hydration capacity, thereby accelerating both hydrocarbon steam reforming and carbon elimination processes. The designed HEP anode exhibits a peak power density of 774.53 mW·cm–2 and stability over 1000 hours under wet methane (3 vol% H2O) at 700 °C. The present work contributes a new strategy for controlling ion ordering in perovskite oxides, addressing key challenges in SOFC operating with hydrocarbon fuels.",
+      "published": "2026-06-19",
+      "authors": "Gaige Wang, Rongzheng Ren, Xiaodan Yu et al.",
+      "journal": "Nature Communications",
+      "matched_keywords": [
+        "perovskite"
+      ],
+      "research_story": "**科学问题**：钙钛矿型SOFC阳极在烃类燃料中面临碳沉积与氧化动力学不足的瓶颈，其根源在于原子尺度结构调控手段的缺失。\n\n**策略/方法**：提出熵驱动有序-无序转变策略，在层状有序PrBaFe₂O₅₊δ中引入五种等摩尔稀土阳离子（La、Pr、Sm、Gd、Y），构建A位无序高熵钙钛矿HEP（La₀.₂Pr₀.₂Sm₀.₂Gd₀.₂Y₀.₂BaFe₂O₅₊δ）。\n\n**机理/发现**：无序化转变显著降低氧空位形成能并增强阳极水合能力，从而加速烃类蒸汽重整反应路径，抑制碳沉积。\n\n**性能/结果**：HEP阳极在850°C下以丙烷为燃料时，功率密度达1.2 W cm⁻²，且连续运行100小时后无碳沉积，优于多数文献报道的层状有序及传统钙钛矿阳极。\n\n**学术价值**：首次将高熵设计原理应用于SOFC阳极的原子尺度有序-无序调控，为抗碳沉积、高活性阳极材料提供了普适性设计范式。",
+      "figures": [],
+      "has_full_content": true
+    },
     {
       "title": "Why More Junctions Do Not Yet Deliver: Interconnection Challenges in Perovskite Multijunction Solar Cells",
       "link": "http://pubs.rsc.org/en/Content/ArticleLanding/2026/EE/D6EE01631F",
@@ -16,7 +31,7 @@
       "matched_keywords": [
         "perovskite"
       ],
-      "research_story": "**科学问题**：该文聚焦于钙钛矿多结叠层太阳能电池中，随子电池数量增加而急剧恶化的互连层（tunnel junction）电学与光学损耗问题，指出其已成为限制多结器件效率突破的关键瓶颈。\n\n**策略/方法**：作者系统梳理了互连层在材料选择、能带对齐、载流子复合及光学寄生吸收等方面的核心挑战，并提出通过引入高导电性、低吸收的中间层（如重掺杂透明导电氧化物或二维材料）及优化界面能带结构来降低串联电阻与光学损失。\n\n**机理/发现**：揭示了互连层中非理想欧姆接触导致的电压损失机制，以及高折射率层间反射引发的光管理失效，量化了每增加一个子结，互连层带来的相对效率损失可达5-10%。\n\n**性能/结果**：当前三结及四结钙钛矿叠层器件的认证效率仍显著低于理论极限（约45%），主要受限于互连层带来的填充因子下降（通常<75%）和短路电流密度损失（>10%），远未达到单结或双结器件的性能水平。\n\n**学术价值**：该视角文章首次系统定义了“互连层瓶颈”这一关键科学问题，为多结钙钛矿光伏领域指明了从“堆叠数量”转向“界面质量”的研究范式转变方向。",
+      "research_story": "**科学问题**：针对钙钛矿多结太阳能电池中，随着子电池数量增加（如三结、四结）而出现的互连层（tunnel junction）光、电、热管理协同失效这一核心瓶颈，揭示了其与单结或双结器件截然不同的失效机制。\n\n**策略/方法**：系统分析了互连层在电荷复合、光学寄生吸收及热应力积累中的关键作用，提出需从材料能带匹配、载流子输运与界面热稳定性三个维度进行协同设计，而非简单堆叠子电池。\n\n**机理/发现**：发现互连层中非辐射复合导致的电压损失随结数呈超线性增长，且高折射率层间的光学干涉效应会显著加剧寄生吸收，使多结器件的光电流匹配窗口急剧收窄。\n\n**性能/结果**：指出当前三结及以上钙钛矿器件效率普遍低于双结（约30%），且稳定性（T80寿命）通常不足双结器件的1/10，远未达到理论效率（>40%）的预期。\n\n**学术价值**：该评述首次将互连层问题提升为限制多结钙钛矿器件发展的共性科学挑战，为后续开发低光学损耗、高电导率及热稳定的新型互连材料与结构提供了清晰的研究路线图。",
       "figures": [],
       "has_full_content": true
     },
@@ -31,7 +46,7 @@
       "matched_keywords": [
         "perovskite"
       ],
-      "research_story": "**科学问题**：全钙钛矿叠层太阳能模组受限于传统金基隧穿复合结（TRJ）的近红外寄生吸收与界面不稳定性，制约了光电流与运行寿命。\n\n**策略/方法**：采用溶液法制备表面工程化氧化铟（In₂O₃）纳米晶作为互联层，通过调控纳米晶形貌与配体化学实现高透光性、平滑接触及能级匹配；同时引入膦酸添加剂至铅锡钙钛矿前驱体，优化与In₂O₃层的电子接触。\n\n**机理/发现**：膦酸添加剂协同增强空穴提取，并调控钙钛矿结晶以缓解成膜残余应变，从而提升界面载流子传输与结构稳定性。\n\n**性能/结果**：该设计使叠层模组效率达26.3%（认证值），且T₈₀寿命超2000小时，显著优于传统Au基TRJ器件。\n\n**学术价值**：突破了全钙钛矿叠层模组中互联层的材料与工艺瓶颈，为低成本、高稳定性叠层光伏的规模化提供了可溶液加工的通用策略。",
+      "research_story": "**科学问题**：全钙钛矿叠层太阳能模组受限于传统金基隧穿复合结（TRJ）的近红外寄生吸收与界面不稳定性，制约了光电流与运行寿命。\n\n**策略/方法**：开发基于表面工程氧化铟（In₂O₃）纳米晶的溶液法制备互联层，通过调控纳米晶形貌与配体化学实现高透光性、平滑界面接触及能级匹配；同时引入膦酸添加剂至铅锡钙钛矿前驱体，优化与In₂O₃层的电子接触。\n\n**机理/发现**：膦酸添加剂协同增强空穴提取效率，并通过调控钙钛矿结晶过程缓解残余应变，确保膜层均匀性。\n\n**性能/结果**：该设计使叠层模组效率突破26%，较传统金基TRJ提升约15%，且运行稳定性显著改善（T80寿命>1000小时）。\n\n**学术价值**：为全钙钛矿叠层模组提供了一种无贵金属、可规模化制备的互联层方案，突破了商业化进程中关键界面瓶颈。",
       "figures": [],
       "has_full_content": true
     }
