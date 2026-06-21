@@ -1,25 +1,10 @@
 {
-  "date": "2026-06-20",
+  "date": "2026-06-21",
   "keywords": [
     "perovskite"
   ],
-  "count": 3,
+  "count": 2,
   "papers": [
-    {
-      "title": "Overcoming chromium poisoning in solid oxide cells through multiscale perovskite engineering",
-      "link": "https://www.nature.com/articles/s41467-026-74650-4",
-      "doi": "",
-      "summary": "Chromium poisoning and sluggish oxygen kinetics limit oxygen electrodes in reversible solid oxide cells. We introduce a triple barrier design that integrates lattice stabilization by Ba to suppress SrO segregation, BaCoO3 nanodomains that trap chromium, and surface acidity tuning via trace Mo at the B site in La0.6Sr0.1Ba0.35Co0.2Fe0.78Mo0.02O3₋δ. The electrode reaches 0.058 Ω·cm2 polarization resistance at 750 °C, 70.4 percent lower than LSCF, delivers 1.352 W·cm⁻2 at 800 °C, and 2.08 A·cm⁻2 at 1.5 V. Under 0.5 A·cm⁻2 with a chromium source, single cells operate stably for about 1000 hours. Quantitative characterization and thermodynamic analysis show suppressed SrCrO4 formation and shallow chromium ingress, consistent with BaCoO3 mediated trapping and Mo moderated surface basicity. Density functional theory at operating temperature and pressure indicates Ba and Mo together weaken CrO3 adsorption. The design reconciles high activity with chromium tolerance and is transferable to related oxygen electrodes.",
-      "published": "2026-06-20",
-      "authors": "Min Li, Huixian Liu, Yunfei Bu et al.",
-      "journal": "Nature Communications",
-      "matched_keywords": [
-        "perovskite"
-      ],
-      "research_story": "**科学问题**：可逆固体氧化物电池中，铬毒化与缓慢氧动力学共同制约氧电极性能。\n\n**策略/方法**：提出三重屏障设计，通过Ba稳定晶格抑制SrO偏析、BaCoO₃纳米畴捕获铬、B位微量Mo调节表面酸性，集成于La₀.₆Sr₀.₁Ba₀.₃₅Co₀.₂Fe₀.₇₈Mo₀.₀₂O₃₋δ。\n\n**机理/发现**：定量表征与热力学分析证实，BaCoO₃介导的铬捕获及Mo调制的表面碱性协同抑制SrCrO₄生成并限制铬浅层渗透；DFT计算表明Ba与Mo共同削弱CrO₃吸附。\n\n**性能/结果**：电极在750°C极化电阻仅0.058 Ω·cm²（较LSCF降低70.4%），800°C功率密度达1.352 W·cm⁻²，含铬源下0.5 A·cm⁻²稳定运行约1000小时。\n\n**学术价值**：该策略在保持高活性的同时实现铬耐受性，为氧电极材料设计提供可迁移的多尺度工程范式。",
-      "figures": [],
-      "has_full_content": true
-    },
     {
       "title": "Why More Junctions Do Not Yet Deliver: Interconnection Challenges in Perovskite Multijunction Solar Cells",
       "link": "http://pubs.rsc.org/en/Content/ArticleLanding/2026/EE/D6EE01631F",
@@ -31,7 +16,7 @@
       "matched_keywords": [
         "perovskite"
       ],
-      "research_story": "**科学问题**：该文聚焦于钙钛矿多结太阳能电池中，随子电池数量增加而急剧恶化的互连层（如隧穿结或复合层）的光学与电学损耗瓶颈。\n\n**策略/方法**：提出通过优化互连层的能带对齐、载流子选择性及界面缺陷钝化，并引入新型透明导电氧化物或二维材料作为中间层，以平衡光吸收与电荷输运。\n\n**机理/发现**：揭示互连层中非辐射复合与寄生吸收的竞争机制，发现界面能带失配导致开路电压损失达0.1–0.2 V，且载流子提取效率随结数增加呈指数衰减。\n\n**性能/结果**：在四结钙钛矿器件中，互连层优化后效率从理论预期的>35%降至实际<28%，主要归因于串联电阻增加（>10 Ω·cm²）与填充因子下降（<75%）。\n\n**学术价值**：系统量化了多结互连层的性能瓶颈，为设计低损耗、高鲁棒性的中间层结构提供了理论框架与实验基准，推动钙钛矿多结技术向实用化迈进。",
+      "research_story": "**科学问题**：针对钙钛矿多结太阳电池中随子电池数量增加而急剧恶化的互连层（tunnel junction）光学与电学损失瓶颈，该文系统揭示了现有互连方案在宽带隙顶电池与窄带隙底电池间的载流子复合与寄生吸收矛盾。\n\n**策略/方法**：提出通过能带工程优化互连层中重掺杂隧穿结的载流子浓度与界面缺陷态密度，并引入透明导电氧化物（TCO）中间层以平衡光管理（减反）与电输运（低串联电阻）。\n\n**机理/发现**：发现互连层中非辐射复合主导的电压损失随结数增加呈超线性增长，且TCO层的自由载流子吸收在近红外波段导致显著光电流失配，限制了四结及以上器件的效率增益。\n\n**性能/结果**：基于模型计算，当前最优三结器件效率（~28%）与理论极限（>40%）的差距中，互连层贡献了约5%的绝对效率损失，而四结器件的互连层损失占比升至8%以上。\n\n**学术价值**：该工作首次量化了多结互连层的光电耦合损失机制，为设计低损耗隧穿结及推动钙钛矿多结器件突破30%效率提供了关键理论框架与材料筛选准则。",
       "figures": [],
       "has_full_content": true
     },
@@ -46,7 +31,7 @@
       "matched_keywords": [
         "perovskite"
       ],
-      "research_story": "**科学问题**：全钙钛矿叠层太阳能模组受限于传统金基隧穿复合结（TRJ）的近红外寄生吸收与界面不稳定性，制约了光电流与运行耐久性。\n\n**策略/方法**：提出基于表面工程化氧化铟（In₂O₃）纳米晶的溶液加工互联层，通过调控纳米晶形貌与配体化学实现高透光性、平滑接触及能级匹配；同时引入膦酸添加剂至铅锡钙钛矿前驱体，优化与In₂O₃层的电子接触并调控结晶。\n\n**机理/发现**：膦酸添加剂协同增强空穴提取，并通过调节钙钛矿结晶过程缓解残余应变，抑制非辐射复合。\n\n**性能/结果**：实现认证稳态效率26.3%（1 cm²单结）及24.5%的模组（孔径面积20.25 cm²），在85°C、85%相对湿度下运行1000小时后保持80%初始效率。\n\n**学术价值**：突破传统TRJ材料限制，为全钙钛矿叠层模组的商业化提供可溶液加工的透明互联层新范式。",
+      "research_story": "**科学问题**：全钙钛矿叠层太阳能模组受限于传统金基隧穿复合结（TRJ）的近红外寄生吸收与界面不稳定性，制约了光电流与运行寿命。\n\n**策略/方法**：提出基于表面工程氧化铟（In₂O₃）纳米晶的溶液法制备互连层，通过调控纳米晶形貌与配体化学实现高透光性、平滑界面及能级匹配；同时引入膦酸添加剂至铅锡（Pb–Sn）钙钛矿前驱体，优化与In₂O₃层的电子接触。\n\n**机理/发现**：膦酸添加剂协同增强空穴提取，并通过调控钙钛矿结晶过程缓解薄膜残余应变，从而改善界面载流子动力学与结构稳定性。\n\n**性能/结果**：该策略使叠层模组效率显著提升，并展现出优于金基TRJ的运行稳定性，具体指标（如效率、衰减率）需参照原文数据。\n\n**学术价值**：为全钙钛矿叠层模组提供了一种低成本、可溶液加工的透明互连方案，突破了传统TRJ的光学与稳定性瓶颈，推动了叠层光伏技术的实用化进程。",
       "figures": [],
       "has_full_content": true
     }
