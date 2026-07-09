@@ -1,23 +1,49 @@
 {
-  "date": "2026-07-08",
+  "date": "2026-07-09",
   "keywords": [
     "perovskite"
   ],
   "count": 1,
   "papers": [
     {
-      "title": "Electrodeposited self-assembled molecules for perovskite photovoltaics",
-      "link": "https://www.nature.com/articles/s41586-026-10844-6",
+      "title": "Dynamic anionic sublattice engineering in perovskite heterostructures for perovskite–silicon tandem solar cells",
+      "link": "https://www.nature.com/articles/s44160-026-01111-7",
       "doi": "",
-      "summary": "Preventing the detachment of self-assembled molecules (SAMs) and enhancing their passivation effect on perovskites are critical challenges for improving the performance and stability of perovskite solar cells (PSCs)1–3. Electrodeposited SAMs provide a route to improve coverage uniformity and anchoring robustness on conductive substrates beyond the limitations of conventional solution processing. Here, we use potential-cycled electrodeposition to promote molecular rearrangement and re-anchoring of SAMs, resulting in a uniform and dense layer on an indium tin oxide (ITO) substrate with enhanced anchoring capability. Building on this base SAM, functional units are grown via electrochemical oxidative coupling to form tailored coupled carbazole phosphonic SAMs, yielding power conversion efficiencies of 26.8% for lab-scale solar cells and 21.3% for solar modules (65 cm2).",
-      "published": "2026-07-02",
-      "authors": "Zhihui Xiong, Xuanang Luo, Fushen Tang et al.",
-      "journal": "Nature",
+      "summary": "Wide-bandgap perovskite top cells for tandem photovoltaics are constrained by voltage deficit and non-radiative losses. Here we design a series of perovskite derivatives featuring dynamically disordered cyanate anions and demonstrate that the dynamic anionic sublattice engineering alters crystallization kinetics, directing the epitaxial growth of a coherent bulk heterojunction with large-grained morphology. The cyanate anions provide chemical and electronic passivation at grain boundaries and interfaces, neutralizing deep-level traps and suppressing non-radiative recombination. The single-junction wide-bandgap perovskite solar cell fabricated with this method has a power conversion efficiency of 24.35%. When integrated as the top cell in a monolithic perovskite–silicon tandem, a power conversion efficiency of 34.79% (certified 34.29%) is achieved. Exceptional operational stability is demonstrated, with 95% initial performance retained after 1,100 hours of continuous illumination under the ISOS-L-1 protocol. Extended real-world testing over 1,300 hours under the ISOS-O-2 protocol further demonstrates its enhanced stability. This work establishes the rational design of perovskite anionic synthesis chemistry as a powerful route to overcome the intrinsic stability–performance trade-off in perovskite–silicon tandem cells.",
+      "published": "2026-07-09",
+      "authors": "Qiaoyan Ma, Yousheng Wang, Meng Li et al.",
+      "journal": "Nature Synthesis",
       "matched_keywords": [
         "perovskite"
       ],
-      "research_story": "**科学问题**：自组装分子（SAMs）在导电基底上的脱附及对钙钛矿钝化不足，是制约钙钛矿太阳能电池（PSCs）性能与稳定性的关键瓶颈。\n\n**策略/方法**：本研究采用电位循环电沉积法，通过促进SAMs分子重排与再锚定，在ITO基底上形成均匀致密且锚定增强的SAM层，并进一步通过电化学氧化偶联生长功能化咔唑膦酸SAMs。\n\n**机理/发现**：电位循环诱导分子构象调整与多点锚定，显著提升SAM覆盖均匀性与界面结合强度；电化学偶联引入额外钝化基团，增强对钙钛矿缺陷的化学钝化。\n\n**性能/结果**：实验室小面积器件效率达26.8%（认证值），65 cm²模组效率21.3%，均优于传统溶液法制备SAMs的对照组，且稳定性显著提升。\n\n**学术价值**：该工作为SAMs在光电器件中的可控电化学沉积提供了通用策略，突破了溶液法在均匀性与锚固性上的固有局限，推动了PSCs向高效、稳定、可规模化方向发展。",
-      "figures": [],
+      "research_story": "**科学问题**：宽禁带钙钛矿顶电池因电压亏损与非辐射复合损失严重，制约了钙钛矿-硅叠层器件的效率提升。\n\n**策略/方法**：本文提出动态阴离子亚晶格工程，通过引入动态无序的氰酸根阴离子，调控结晶动力学，引导相干体异质结的外延生长，形成大晶粒形貌。\n\n**机理/发现**：氰酸根阴离子在晶界与界面处提供化学与电子钝化，中和深能级陷阱态，抑制非辐射复合，同时其动态无序特性优化了晶体生长路径。\n\n**性能/结果**：单结宽禁带钙钛矿电池效率达24.35%，单片钙钛矿-硅叠层器件效率达34.79%（认证34.29%），并在1100小时连续光照下保持95%初始性能。\n\n**学术价值**：该工作通过阴离子亚晶格动态工程，为宽禁带钙钛矿的缺陷钝化与结晶调控提供了新范式，显著推动了叠层光伏器件的效率与稳定性边界。",
+      "figures": [
+        {
+          "number": "1",
+          "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs44160-026-01111-7/MediaObjects/44160_2026_1111_Figa_HTML.png",
+          "caption": "Figure 1"
+        },
+        {
+          "number": "2",
+          "url": "https://media.springernature.com/m312/springer-static/image/art%3A10.1038%2Fs44160-026-01111-7/MediaObjects/44160_2026_1111_Fig1_HTML.png",
+          "caption": "Fig. 1: Structural and electronic characteristics of single-crystal RbPbI2OCN...."
+        },
+        {
+          "number": "3",
+          "url": "https://media.springernature.com/m312/springer-static/image/art%3A10.1038%2Fs44160-026-01111-7/MediaObjects/44160_2026_1111_Fig2_HTML.png",
+          "caption": "Fig. 2: Crystallization kinetics for the formation of perovskite bulk heterojunctions...."
+        },
+        {
+          "number": "4",
+          "url": "https://media.springernature.com/m312/springer-static/image/art%3A10.1038%2Fs44160-026-01111-7/MediaObjects/44160_2026_1111_Fig3_HTML.png",
+          "caption": "Fig. 3: Device configuration and photovoltaic performance of single-junction perovskite solar cells...."
+        },
+        {
+          "number": "5",
+          "url": "https://media.springernature.com/m312/springer-static/image/art%3A10.1038%2Fs44160-026-01111-7/MediaObjects/44160_2026_1111_Fig4_HTML.png",
+          "caption": "Fig. 4: Device performance of TSCs...."
+        }
+      ],
       "has_full_content": true
     }
   ]
