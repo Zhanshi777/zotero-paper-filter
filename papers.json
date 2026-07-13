@@ -1,25 +1,10 @@
 {
-  "date": "2026-07-12",
+  "date": "2026-07-13",
   "keywords": [
     "perovskite"
   ],
-  "count": 2,
+  "count": 1,
   "papers": [
-    {
-      "title": "Mesoscale ordered assembly of Er3+-doped quantum dots enables efficient 1.55 µm electroluminescence",
-      "link": "https://www.nature.com/articles/s41467-026-75429-3",
-      "doi": "",
-      "summary": "Efficient, electrically driven 1.55 µm light sources are highly desirable for telecom-band emission, on-chip optical sensing, and integrated near-infrared photonics, yet their realization remains a grand challenge. Direct integration of Er3+ into semiconducting perovskite quantum dots (QDs) offers superior potential by enabling intrinsic charge transport, but this pathway is stifled by kinetic barriers that yield polydisperse nanocrystals and random packing, collectively inducing leakage and quenching. Here, we report mesoscale ordering of Er3+-doped CsPbCl3 QDs with efficient 1.55 µm electroluminescence by coupling kinetically controlled synthesis with hydrogen-bonding-directed assembly. Using myristoyl chloride as a slow-release chloride source, we synthesize monodisperse QDs while in-situ generating amide ligands that form interdot N–H···O = C hydrogen-bonding networks. These networks direct assembly into mesoscale ordered assemblies with preferential {100} face-to-face orientation. The resulting architecture yields a record EQE of 3.75% and maximum radiance of 323.31 mW sr−1 m−2, ~10 times higher than the disordered controls, with an operational stability of 197 minutes (~7-fold improvement). This establishes hierarchically ordered semiconductor assemblies as promising candidate for telecom-band optoelectronics.",
-      "published": "2026-07-11",
-      "authors": "Hua-Hui Li, Jia-Lin Pan, Ying-Ying Pan et al.",
-      "journal": "Nature Communications",
-      "matched_keywords": [
-        "perovskite"
-      ],
-      "research_story": "**科学问题**：稀土离子（Er³⁺）掺杂钙钛矿量子点（QD）在实现1.55 µm电致发光时，面临动力学障碍导致的纳米晶多分散性与随机堆积，引发漏电流与发光猝灭。\n\n**策略/方法**：提出动力学控制合成与氢键导向组装耦合策略，以肉豆蔻酰氯作为缓释氯源合成单分散QD，并原位生成酰胺配体，构建跨QD的N–H···O=C氢键网络。\n\n**机理/发现**：氢键网络驱动QD形成介观有序组装体，实现{100}面面对面择优取向，抑制了非辐射复合路径并提升载流子注入效率。\n\n**性能/结果**：该组装体在1.55 µm处实现高效电致发光，外量子效率与发光强度显著优于随机堆积的对照样品，接近电信波段应用需求。\n\n**学术价值**：首次将分子间弱相互作用引入稀土掺杂QD的介观有序组装，为克服纳米晶多分散性与无序堆积导致的性能瓶颈提供了普适性策略。",
-      "figures": [],
-      "has_full_content": true
-    },
     {
       "title": "Dynamic anionic sublattice engineering in perovskite heterostructures for perovskite–silicon tandem solar cells",
       "link": "https://www.nature.com/articles/s44160-026-01111-7",
@@ -31,7 +16,7 @@
       "matched_keywords": [
         "perovskite"
       ],
-      "research_story": "**科学问题**：宽禁带钙钛矿顶电池在叠层光伏中受限于开路电压亏损与非辐射复合，制约效率提升。\n\n**策略/方法**：本文设计含动态无序氰酸根阴离子的钙钛矿衍生物，通过动态阴离子亚晶格工程调控结晶动力学，引导相干体异质结的外延生长，形成大晶粒形貌。\n\n**机理/发现**：氰酸根阴离子在晶界与界面提供化学与电子钝化，中和深能级陷阱态，抑制非辐射复合，同时动态无序特性优化了晶体取向与界面能级匹配。\n\n**性能/结果**：单结宽禁带钙钛矿电池效率达24.35%；单片钙钛矿-硅叠层电池效率达34.79%（认证34.29%），并在1100小时连续光照下保持95%初始性能。\n\n**学术价值**：该工作提出一种基于阴离子亚晶格动态调控的普适性策略，为宽禁带钙钛矿的缺陷钝化与结晶工程提供了新范式，显著推进了高效稳定叠层器件的实用化进程。",
+      "research_story": "**科学问题**：宽禁带钙钛矿顶电池在叠层光伏中受限于开路电压亏损与非辐射复合，制约了器件效率与稳定性。\n\n**策略/方法**：本文提出动态阴离子亚晶格工程，通过引入动态无序氰酸根阴离子，调控钙钛矿结晶动力学，诱导外延生长形成具有大晶粒形貌的相干体异质结。\n\n**机理/发现**：氰酸根阴离子在晶界与界面提供化学与电子钝化，中和深能级陷阱态，有效抑制非辐射复合，同时动态亚晶格结构促进结晶取向一致性。\n\n**性能/结果**：单结宽禁带钙钛矿电池效率达24.35%；单片钙钛矿-硅叠层电池效率达34.79%（认证34.29%），并在1100小时连续光照下保持95%初始性能。\n\n**学术价值**：该工作通过亚晶格动态工程协同实现结晶调控与缺陷钝化，为宽禁带钙钛矿及叠层器件的效率与稳定性突破提供了可推广的异质结构设计范式。",
       "figures": [
         {
           "number": "1",
