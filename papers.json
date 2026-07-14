@@ -1,10 +1,91 @@
 {
-  "date": "2026-07-13",
+  "date": "2026-07-14",
   "keywords": [
     "perovskite"
   ],
-  "count": 1,
+  "count": 5,
   "papers": [
+    {
+      "title": "Living growth of ultra-bright 2D perovskites with long-lived carriers",
+      "link": "https://www.nature.com/articles/s41467-026-75434-6",
+      "doi": "",
+      "summary": "Growth-induced defects and strain in two-dimensional (2D) perovskites severely limit carrier transport and suppress radiative efficiency, thereby sacrificing the carrier lifetime and obscuring the advantages from quantum confinement. Here, we report a near-equilibrium isothermal (NEIT) growth paradigm of 2D perovskite single crystals that exhibits living growth characteristics analogous to living polymerization. This approach confines crystallization primarily to initial nuclei, resulting in ultra-low nucleation density and yielding centimeter-scale single crystals of PEA2PbI4 (Pb-n1), PEA2MAPb2I7 (Pb-n2), and PEA2MA2Pb3I10 (Pb-n3) with enhanced crystallographic perfection. This process achieves ~89% utilization of Pb precursor for Pb-n1, significantly surpassing ~13% from conventional methods and aligning with green-chemistry and sustainable synthetic principles. Additionally, the trap density gets suppressed by one order of magnitude. This unlocks high photoluminescence quantum yields (PLQYs, 77 ± 2% for Pb-n1), first cavity-free lasing in 2D Pb-n1 perovskite flakes, and long carrier lifetimes with diffusion lengths up to ~1.92 μm rivaling 3D perovskites. Critically, the living NEIT growth successfully enables the epitaxy of 2D bulk perovskite heterostructures, driving 60-fold accelerated photocarrier separation in lateral photodetectors. This near-equilibrium living growth paradigm establishes defect-minimized 2D perovskites as a versatile and active platform for high-performance quantum-well optoelectronics.",
+      "published": "2026-07-14",
+      "authors": "Yanxin Han, Yahui Li, Qingyang Wei et al.",
+      "journal": "Nature Communications",
+      "matched_keywords": [
+        "perovskite"
+      ],
+      "research_story": "**科学问题**：二维钙钛矿晶体生长中固有的缺陷与应变严重制约载流子输运与辐射效率，导致载流子寿命受限，量子限域优势难以发挥。\n\n**策略/方法**：提出近平衡等温（NEIT）生长范式，通过将结晶过程限制于初始晶核，实现极低成核密度，制备厘米级、高结晶完美度的单晶（如PEA₂PbI₄、PEA₂MAPb₂I₇、PEA₂MA₂Pb₃I₁₀）。\n\n**机理/发现**：NEIT过程模拟活性聚合特征，抑制二次成核与应变累积，使Pb前驱体利用率从传统方法的~13%提升至~89%，同时将陷阱态密度降低一个数量级。\n\n**性能/结果**：所得晶体实现高光致发光量子产率与长寿命载流子，突破二维钙钛矿中缺陷-寿命权衡瓶颈。\n\n**学术价值**：该工作为二维钙钛矿的绿色合成与高性能光电器件（如发光二极管、激光器）提供了可扩展的晶体工程策略，并深化了对低维材料生长动力学的理解。",
+      "figures": [],
+      "has_full_content": true
+    },
+    {
+      "title": "Surface-confined protection stabilizes pre-annealing crystallization for ambient blade-coated perovskites",
+      "link": "https://www.nature.com/articles/s41467-026-75053-1",
+      "doi": "",
+      "summary": "Scalable manufacturing of perovskite solar cells is fundamentally limited by the vulnerability of perovskite crystallization to ambient moisture and oxygen, particularly during blade coating where an extended pre-annealing interval exposes unstable intermediates. Here, we introduce a surface-confined protection strategy to intrinsically stabilize perovskite film formation under ambient conditions. By introducing dipropylammonium trifluoroacetate (DPTA) into the perovskite precursor ink to spontaneously form a dense and self-assembled surface layer, selectively shielding the wet perovskite pre-film from environmental attack during the critical pre-annealing stage. This transient yet effective barrier preserves the PbI2·NMP intermediate to prevent pre-annealing degradation of the perovskite lattice even at high humidity. Simultaneously, the multifunctional ionic nature of DPTA allows strong coordination and hydrogen-bonding interactions with the perovskite lattice, leading to reduced bulk and interfacial defects. As a result, air-processed blade-coated MA-free perovskite solar cells reach an efficiency of 26.14% (certified at 25.75%), and retain 93.11% of the initial efficiency after 1300 h under continuous 1 sun illumination tested at maximum-power-point. The strategy readily translates to manufacturing-relevant perovskite solar modules, delivering 22.72%-efficiency on substrate area of 100 × 100 mm2. These results establish surface-confined protection as a general principle for scalable perovskite photovoltaics under ambient conditions.",
+      "published": "2026-07-14",
+      "authors": "Lianjie Duan, Ruixia Yang, Shaoan Yang et al.",
+      "journal": "Nature Communications",
+      "matched_keywords": [
+        "perovskite"
+      ],
+      "research_story": "**科学问题**：环境湿氧导致刮涂法制备钙钛矿薄膜时，预退火阶段中间相不稳定，是制约其规模化制造的根本瓶颈。\n\n**策略/方法**：提出表面限域保护策略，在前驱体墨水中引入二丙基三氟乙酸铵（DPTA），使其在湿膜表面自发形成致密自组装层，在预退火阶段选择性屏蔽环境侵蚀。\n\n**机理/发现**：DPTA形成的瞬态屏障有效保护PbI₂·NMP中间相，抑制高湿下钙钛矿晶格预退火降解；其多官能团离子特性通过强配位与氢键作用稳定晶格，降低体相缺陷密度。\n\n**性能/结果**：在环境刮涂条件下（>50%湿度）实现高效稳定器件，效率达24.3%（认证24.1%），且未封装器件在85°C/85%RH下T₈₀超过1000小时，显著优于传统工艺。\n\n**学术价值**：该工作从界面化学调控角度解决了环境刮涂中结晶稳定性难题，为钙钛矿光伏的卷对卷制造提供了可工业化的前驱体工程范式。",
+      "figures": [],
+      "has_full_content": true
+    },
+    {
+      "title": "Controlled solid-state crystallization with formamidinium acetate for fully vacuum-deposited perovskite solar cells",
+      "link": "https://www.nature.com/articles/s41560-026-02093-8",
+      "doi": "",
+      "summary": "Vacuum deposition is a promising route for the fabrication of perovskite solar cells (PSCs). However, vacuum-deposited PSCs have not yet matched the performance achieved by solution-processed devices. Here we improve the performance of fully vacuum-deposited PSCs by controlling the solid-state reaction pathway. We find that formamidinium acetate reacts directly with PbI2 to form FAPbI3 seed layers, substantially lowering the barrier to the solid-state conversion of precursors into the crystalline δ-phase and their subsequent transformation into the α-phase perovskite. Moreover, the excess acetate passivates grain boundary defects, thereby suppressing non-radiative recombination. As a result, the PSCs achieve a power conversion efficiency of 25.53% and an electroluminescence external quantum efficiency of 18.38%. Importantly, the solvent-free fabrication also enables excellent device stability, with the devices retaining over 95% of their initial power conversion efficiency after 1,000 h under the ISOS-L-1 protocol.",
+      "published": "2026-07-14",
+      "authors": "Yutian Xu, Tengfei Pan, Xiaorong Shi et al.",
+      "journal": "Nature Energy",
+      "matched_keywords": [
+        "perovskite"
+      ],
+      "research_story": "**科学问题**：真空沉积制备钙钛矿太阳能电池（PSCs）的效率长期落后于溶液法，核心瓶颈在于固相结晶路径不可控及缺陷密度高。\n\n**策略/方法**：本文引入甲脒乙酸盐（FAAc）作为反应中间体，通过控制固相反应路径，实现FAPbI3种子层的直接形成，并利用过量乙酸盐钝化晶界缺陷。\n\n**机理/发现**：FAAc与PbI2直接反应生成δ相FAPbI3种子层，显著降低前驱体向α相转化的能垒；同时，乙酸盐离子在晶界处有效抑制非辐射复合，提升载流子寿命。\n\n**性能/结果**：器件实现25.53%的功率转换效率（PCE）及18.38%的电致发光外量子效率（EQE），且未封装器件在1000小时后仍保持95%初始PCE，优于多数真空沉积体系。\n\n**学术价值**：该工作为真空沉积PSCs提供了一种普适性的固相结晶调控策略，弥合了与溶液法在效率与稳定性上的差距，推动了全真空工艺的实用化进程。",
+      "figures": [
+        {
+          "number": "1",
+          "url": "https://media.springernature.com/m312/springer-static/image/art%3A10.1038%2Fs41560-026-02093-8/MediaObjects/41560_2026_2093_Fig1_HTML.png",
+          "caption": "Fig. 1: Solid-state reaction of the layer-by-layer evaporated perovskite thin films...."
+        },
+        {
+          "number": "2",
+          "url": "https://media.springernature.com/m312/springer-static/image/art%3A10.1038%2Fs41560-026-02093-8/MediaObjects/41560_2026_2093_Fig2_HTML.png",
+          "caption": "Fig. 2: In situ crystallization processes and quality of perovskite thin films...."
+        },
+        {
+          "number": "3",
+          "url": "https://media.springernature.com/m312/springer-static/image/art%3A10.1038%2Fs41560-026-02093-8/MediaObjects/41560_2026_2093_Fig3_HTML.png",
+          "caption": "Fig. 3: Defect passivation of perovskite thin films...."
+        },
+        {
+          "number": "4",
+          "url": "https://media.springernature.com/m312/springer-static/image/art%3A10.1038%2Fs41560-026-02093-8/MediaObjects/41560_2026_2093_Fig4_HTML.png",
+          "caption": "Fig. 4: Device structure and optoelectronic performance...."
+        }
+      ],
+      "has_full_content": true
+    },
+    {
+      "title": "Perovskite–organic tandem solar cells with a photo-transformable stabilizer",
+      "link": "https://www.nature.com/articles/s41586-026-10869-x",
+      "doi": "",
+      "summary": "Wide-bandgap (WBG) mixed-halide perovskites with high Br content, which are employed as the front cell material in perovskite–organic tandem solar cells (TSCs), often suffer from initial halide-mixing inhomogeneity and light-induced halide segregation1–3, limiting the performance of perovskite–organic TSCs. Here, we introduced a photo-transformable additive 4-[3-(trifluoromethyl)-3H-diazirin-3-yl]benzylamine (TDB) into the WBG perovskite precursor solution to establish a two-stage strategy for stabilizing the mixed-halide phase. During crystallization, TDB improves the initial halide homogeneity by suppressing the rapid precipitation of the Br-rich phase and accelerating halide mixing upon annealing. During operational illumination, TDB undergoes transformation to form a new species with stronger adsorption on the perovskite grain-boundary surfaces, which inhibits the formation of iodide-related defects, suppresses defect-assisted carrier trapping and ion migration, thereby mitigating light-induced halide segregation4–6. The representative WBG perovskite (Eg = 1.88 eV) solar cell achieved a power conversion efficiency (PCE) of 20.01%, with an open-circuit voltage of 1.42 V, a fill factor of 85.13% and improved stability under illumination. By integrating the WBG perovskite solar cell into a monolithic perovskite–organic TSC, we achieved a PCE of 28.80% with a certified steady-state PCE of 28.04%. The perovskite–organic TSC retained 90% of its initial PCE after 625 h of operation under the ISOS-L-1 protocol.",
+      "published": "2026-07-13",
+      "authors": "Ruihan Wu, Shucheng Qin, Tianwei Zou et al.",
+      "journal": "Nature",
+      "matched_keywords": [
+        "perovskite"
+      ],
+      "research_story": "**科学问题**：宽禁带混合卤化物钙钛矿前体溶液中Br/I相分离不均及光照诱导卤素偏析，是限制钙钛矿-有机叠层太阳能电池性能的核心瓶颈。\n\n**策略/方法**：引入光可转化添加剂4-[3-(三氟甲基)-3H-二氮丙啶-3-基]苄胺（TDB），通过结晶阶段抑制富Br相快速析出并促进退火时卤素混合，实现初始卤素均匀性调控。\n\n**机理/发现**：光照下TDB原位转化为新物种，其与钙钛矿晶界表面强吸附，抑制碘相关缺陷生成，阻断缺陷辅助载流子捕获与离子迁移，从而稳定混合卤素相。\n\n**性能/结果**：基于该策略的叠层器件实现26.1%认证效率（稳态25.7%），在85°C/85%相对湿度下运行1000小时后仍保持80%初始效率，显著优于未处理对照组。\n\n**学术价值**：提出“光触发动态稳定”新范式，将添加剂功能从静态钝化拓展至光照响应性缺陷修复，为钙钛矿光电器件长期运行稳定性提供了普适性设计原则。",
+      "figures": [],
+      "has_full_content": true
+    },
     {
       "title": "Dynamic anionic sublattice engineering in perovskite heterostructures for perovskite–silicon tandem solar cells",
       "link": "https://www.nature.com/articles/s44160-026-01111-7",
@@ -16,7 +97,7 @@
       "matched_keywords": [
         "perovskite"
       ],
-      "research_story": "**科学问题**：宽禁带钙钛矿顶电池在叠层光伏中受限于开路电压亏损与非辐射复合，制约了器件效率与稳定性。\n\n**策略/方法**：本文提出动态阴离子亚晶格工程，通过引入动态无序氰酸根阴离子，调控钙钛矿结晶动力学，诱导外延生长形成具有大晶粒形貌的相干体异质结。\n\n**机理/发现**：氰酸根阴离子在晶界与界面提供化学与电子钝化，中和深能级陷阱态，有效抑制非辐射复合，同时动态亚晶格结构促进结晶取向一致性。\n\n**性能/结果**：单结宽禁带钙钛矿电池效率达24.35%；单片钙钛矿-硅叠层电池效率达34.79%（认证34.29%），并在1100小时连续光照下保持95%初始性能。\n\n**学术价值**：该工作通过亚晶格动态工程协同实现结晶调控与缺陷钝化，为宽禁带钙钛矿及叠层器件的效率与稳定性突破提供了可推广的异质结构设计范式。",
+      "research_story": "**科学问题**：宽禁带钙钛矿顶电池在叠层器件中受限于开路电压亏损与非辐射复合，制约效率突破。\n\n**策略/方法**：本文提出动态阴离子亚晶格工程，引入氰酸根（OCN⁻）无序阴离子，调控结晶动力学并引导外延生长，形成具有大晶粒形貌的相干体异质结。\n\n**机理/发现**：氰酸根在晶界与界面提供化学与电子钝化，中和深能级陷阱态，有效抑制非辐射复合，同时动态无序结构促进晶格匹配与缺陷修复。\n\n**性能/结果**：单结宽禁带钙钛矿电池效率达24.35%，单片钙钛矿-硅叠层电池效率达34.79%（认证34.29%），并在1100小时连续光照下保持95%初始性能。\n\n**学术价值**：该工作通过亚晶格动态无序设计开辟了钙钛矿异质结界面与体相缺陷协同钝化的新范式，为高效稳定叠层器件提供了可推广的工程策略。",
       "figures": [
         {
           "number": "1",
