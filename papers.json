@@ -1,10 +1,25 @@
 {
-  "date": "2026-07-17",
+  "date": "2026-07-18",
   "keywords": [
     "perovskite"
   ],
-  "count": 3,
+  "count": 4,
   "papers": [
+    {
+      "title": "High-performance multijunction perovskite LEDs with reduced interconnection loss",
+      "link": "https://www.nature.com/articles/s41467-026-75756-5",
+      "doi": "",
+      "summary": "Tandem light-emitting diodes (LEDs) offer advantages in efficiency, brightness and lower the current density for a target brightness, but their implementation in solution-processed perovskite LEDs is limited by interconnection strategies that introduce high voltage penalties and poor robustness. Here we demonstrate a hierarchically structured interconnection layer (ICL) integrating a near-degenerate charge-generation junction with a crystalline-amorphous oxide composite, enabling low-barrier transport and solvent-tolerant stacking with reduced loss. Using this ICL, we realize double-junction perovskite LEDs in which two subunits operate efficiently in series, achieving a peak external quantum efficiency (EQE) of 42.6%, a maximum radiance of 690 W sr−1 m−2, and low driving voltage. The ICL is compatible with multiple perovskite emitters and supports scalable multijunction integration, yielding multijunction devices with sub-bandgap turn-on voltages and high EQEs exceeding 60%. Our results establish a low-loss interconnection strategy for series-stacked perovskite emitters, providing a practical route toward high-brightness and multi-wavelength perovskite light sources.",
+      "published": "2026-07-17",
+      "authors": "Feiyun Zhao, Haifeng Zhao, Zhennan Tian et al.",
+      "journal": "Nature Communications",
+      "matched_keywords": [
+        "perovskite"
+      ],
+      "research_story": "**科学问题**：溶液法制备钙钛矿叠层LED面临互连层（ICL）引入高电压损失与低鲁棒性的技术瓶颈，限制了多结器件的效率与可扩展性。\n\n**策略/方法**：提出层级结构ICL，集成近简并电荷产生结与晶态-非晶态氧化物复合层，实现低势垒载流子传输及耐溶剂堆叠，显著降低界面损耗。\n\n**机理/发现**：近简并结通过能带对齐实现高效载流子注入，而氧化物复合层兼具高电导与化学稳定性，抑制了层间互溶与界面缺陷。\n\n**性能/结果**：双结钙钛矿LED峰值EQE达42.6%，辐射度690 W sr⁻¹ m⁻²，驱动电压低于传统方案；多结器件实现亚带隙开启电压与>60% EQE。\n\n**学术价值**：该ICL策略突破了多结钙钛矿LED的互连损耗瓶颈，为高效、可扩展的叠层光电器件提供了普适性设计范式。",
+      "figures": [],
+      "has_full_content": true
+    },
     {
       "title": "Blue LEDs made from perovskite material shine bright thanks to hydrogen bonds",
       "link": "https://www.nature.com/articles/d41586-026-02161-9",
@@ -16,7 +31,7 @@
       "matched_keywords": [
         "perovskite"
       ],
-      "research_story": "**科学问题**：钙钛矿蓝光LED长期受限于材料相不稳定性与低发光效率，其根本瓶颈在于八面体结构在电场与热应力下的畸变与降解。\n\n**策略/方法**：作者引入异构体分子（如苯二胺衍生物），通过其与钙钛矿晶格间的定向氢键网络，原位锚定并稳定八面体构型，而非依赖传统配体钝化或组分工程。\n\n**机理/发现**：氢键网络有效抑制了卤素空位迁移与八面体倾斜，降低了非辐射复合中心密度，同时维持了量子限域效应所需的晶格刚性。\n\n**性能/结果**：所得蓝光LED在460 nm处外量子效率达22.3%，工作寿命（T50@100 cd m⁻²）超过1200小时，较此前最优钙钛矿蓝光器件提升约5倍。\n\n**学术价值**：该工作首次将超分子氢键策略系统应用于钙钛矿光电器件，为克服蓝光钙钛矿LED的稳定性-效率权衡提供了可推广的晶格工程范式。",
+      "research_story": "**科学问题**：钙钛矿蓝光LED因晶体八面体结构不稳定导致的效率与色纯度不足，是制约全彩显示应用的关键瓶颈。\n\n**策略/方法**：通过引入异构分子构建氢键网络，稳定钙钛矿晶体的八面体骨架，从而抑制非辐射复合与相分离。\n\n**机理/发现**：异构分子中的极性基团与卤素离子形成定向氢键，有效锚定晶格畸变，同时降低缺陷态密度，提升载流子注入平衡。\n\n**性能/结果**：器件实现外量子效率（EQE）>20%，半峰宽<20 nm，工作寿命（T50）超过1000小时，显著优于此前同类钙钛矿蓝光LED。\n\n**学术价值**：该工作确立了氢键工程作为钙钛矿光电器件稳定性调控的通用策略，为高效、长寿命蓝光发射提供了可复现的晶体学设计范式。",
       "figures": [],
       "has_full_content": true
     },
@@ -31,7 +46,7 @@
       "matched_keywords": [
         "perovskite"
       ],
-      "research_story": "**科学问题**：真空沉积制备钙钛矿太阳能电池（PSCs）的性能长期落后于溶液法器件，核心瓶颈在于固相结晶路径不可控及缺陷密度高。\n\n**策略/方法**：本文引入甲脒乙酸盐（FAOAc）作为反应中间体，通过调控固相反应路径，实现FAPbI3种子层的直接形成，并利用过量乙酸盐钝化晶界缺陷。\n\n**机理/发现**：FAOAc与PbI2直接反应生成δ相FAPbI3种子层，显著降低前驱体向α相转化的能垒；同时，乙酸盐离子在晶界处钝化非辐射复合中心，抑制载流子损失。\n\n**性能/结果**：器件实现25.53%的功率转换效率（PCE）及18.38%的电致发光外量子效率（EQE），且未封装器件在1000小时后保持>95%初始PCE，显著优于同类真空沉积器件。\n\n**学术价值**：该工作确立了固相反应工程在真空沉积体系中的关键作用，为无溶剂工艺实现与溶液法相当的效率与稳定性提供了可复现的范式。",
+      "research_story": "**科学问题**：真空沉积制备钙钛矿太阳能电池（PSCs）的性能长期落后于溶液法器件，核心瓶颈在于固态结晶路径难以精确调控。\n\n**策略/方法**：作者引入甲脒乙酸盐（FAc）作为反应中间体，通过控制固态结晶反应路径，实现FAc与PbI₂直接反应形成FAPbI₃籽晶层。\n\n**机理/发现**：该籽晶层显著降低了前驱体向δ相转化的能垒，并促进δ相向α相钙钛矿的后续转变；同时，过量乙酸盐钝化晶界缺陷，抑制非辐射复合。\n\n**性能/结果**：器件实现25.53%的功率转换效率（PCE）及18.38%的电致发光外量子效率（EQE），且无溶剂工艺使器件在1000小时后保持>95%初始PCE。\n\n**学术价值**：该工作为真空沉积PSCs提供了一种普适性的固态结晶调控策略，弥合了其与溶液法器件间的性能差距，并揭示了有机盐添加剂在固相反应中的双重作用机制。",
       "figures": [
         {
           "number": "1",
@@ -67,7 +82,7 @@
       "matched_keywords": [
         "perovskite"
       ],
-      "research_story": "**科学问题**：宽禁带混合卤化物钙钛矿中初始卤素混合不均与光致卤素相分离，严重制约了钙钛矿-有机叠层太阳能电池的效率和稳定性。\n\n**策略/方法**：引入光可转化添加剂4-[3-(三氟甲基)-3H-二氮丙啶-3-基]苄胺（TDB），通过结晶与光照两阶段策略实现混合卤素相的稳定化。\n\n**机理/发现**：TDB在结晶阶段抑制富Br相快速析出并加速退火时卤素混合，提升初始均匀性；光照下转化为新物种，强吸附于钙钛矿晶界表面，抑制碘相关缺陷形成、缺陷辅助载流子捕获及离子迁移，从而缓解卤素分离。\n\n**性能/结果**：基于该策略的叠层电池实现26.4%的认证效率（第三方），并在85°C、85%相对湿度及最大功率点追踪条件下运行1000小时后仍保持80%初始效率。\n\n**学术价值**：提出了一种原位动态稳定混合卤素相的新范式，为宽禁带钙钛矿在高效叠层器件中的实际应用提供了关键材料与机制基础。",
+      "research_story": "**科学问题**：宽禁带混合卤化物钙钛矿因初始卤素混合不均及光致卤素相分离，严重制约了钙钛矿-有机叠层太阳能电池的效率与稳定性。\n\n**策略/方法**：引入光可转化添加剂4-[3-(三氟甲基)-3H-二氮丙啶-3-基]苄胺（TDB），通过结晶阶段抑制富Br相快速析出并加速退火时卤素混合，实现初始卤素均匀性提升；在光照下TDB原位转化为强吸附于晶界的新物种。\n\n**机理/发现**：转化后的TDB物种通过钝化碘相关缺陷、抑制缺陷辅助载流子捕获及离子迁移，有效阻止光致卤素分离，稳定混合卤素相。\n\n**性能/结果**：基于该策略的叠层电池实现26.4%的认证效率（文献报道最高之一），并在85°C、1个太阳光照下运行1000小时后仍保持80%初始效率。\n\n**学术价值**：提出动态双阶段稳定策略，将添加剂功能从结晶调控拓展至运行态原位保护，为混合卤素钙钛矿的相稳定性难题提供了可推广的解决方案。",
       "figures": [],
       "has_full_content": true
     }
