@@ -1,22 +1,22 @@
 {
-  "date": "2026-07-20",
+  "date": "2026-07-21",
   "keywords": [
     "perovskite"
   ],
-  "count": 3,
+  "count": 2,
   "papers": [
     {
-      "title": "Enhanced energy storage in tungsten bronze-based ferroelectrics and MLCCs via a multi-coating engineering",
-      "link": "https://www.nature.com/articles/s41467-026-75708-z",
+      "title": "Enhancing Phonon Group Velocities and Interfacial Heat Conduction for Efficient and Stable Perovskite Solar Cells",
+      "link": "https://www.nature.com/articles/s41467-026-75825-9",
       "doi": "",
-      "summary": "High-power pulsed systems demand dielectric capacitors with high energy density and efficiency. Although perovskite ceramics dominate this field, simultaneously achieving high performance and fatigue endurance remains a significant challenge. Our study addresses this aim by incorporating a Ba1-xSrxTiO3 second phase into tungsten bronze-type Ba1-xSrxNb2-yTayO6 matrix, followed by chemical coating with a SiO₂ layer. The prepared ceramics achieve an energy density of 21.1 J/cm³ with an efficiency of 84.5%. Furthermore, by combining a rational multilayer ceramic capacitor design with the thickness effect, an energy density of 23.2 ± 1.2 J/cm³ and an improved efficiency of 92.8 ± 0.4% are attained, representing a record energy density for tungsten bronze-based ceramics and capacitors. The dual-core-shell structure and compositional gradients induce lattice mismatch, boosting polarization and breakdown strength. The fabricated devices also demonstrate remarkable stability under varying frequency, temperature, and fatigue cycling conditions.",
-      "published": "2026-07-20",
-      "authors": "Limin Guo, Jiaming Liu, Menghan Li et al.",
+      "summary": "The inherently low thermal conductivity of conventional hole-transport layers (HTLs) in inverted perovskite solar cells (PSCs) introduces a substantial discrepancy in interlayer heat-transfer dynamics, leading to detrimental heat accumulation and nonradiative recombination. Herein, we develop a spinel-type semiconductor of CuBi2O4, and integrate it into a composite HTL architecture to regulate heat conduction for the first time. Leveraging enhanced phonon group velocities, the CuBi2O4-based composite HTL achieves exceptional thermal compatibility with the perovskite absorber, demonstrating enhanced heat conduction and optimal thermal-expansion coefficient alignment. These synergistic effects significantly delay hot-carrier relaxation and reduce excess energy dissipation by approximately 10-fold. Consequently, we obtain high-quality perovskite films with ordered orientation and released residual strain, yielding an impressive power conversion efficiency (PCE) of 27.18% (certified 26.83%). Remarkably, these phonon-engineered devices maintain 90.1%, 82.3%, 85.6% and 93.7% of their initial PCEs under ISOS-D-2Ⅰ, ISOS-D-3, ISOS-T-1 and ISOS-L-1 conditions for 2000 h, respectively.",
+      "published": "2026-07-21",
+      "authors": "Xing Wu, Yu Chen, Yang Shen et al.",
       "journal": "Nature Communications",
       "matched_keywords": [
         "perovskite"
       ],
-      "research_story": "**科学问题**：钨青铜基铁电陶瓷虽具高极化潜力，但受限于击穿场强与疲劳寿命的协同优化难题，难以满足脉冲功率系统对高能量密度与高效率的双重需求。\n\n**策略/方法**：提出多涂层工程策略，在钨青铜型Ba₁₋ₓSrₓNb₂₋ᵧTaᵧO₆基体中引入Ba₁₋ₓSrₓTiO₃第二相，并包覆SiO₂层，构建双核-壳结构。\n\n**机理/发现**：双核-壳界面与组分梯度诱发晶格失配，增强极化响应并抑制载流子迁移，协同提升击穿场强；SiO₂层进一步降低漏电流与介电损耗。\n\n**性能/结果**：陶瓷实现21.1 J/cm³能量密度与84.5%效率；结合多层陶瓷电容器（MLCC）设计与厚度效应，达23.2±1.2 J/cm³及92.8±0.4%效率，创钨青铜体系纪录。\n\n**学术价值**：该工作突破了钨青铜基材料在储能领域的性能瓶颈，为高功率电容器设计提供了可扩展的界面工程范式。",
+      "research_story": "**科学问题**：倒置钙钛矿太阳能电池中传统空穴传输层热导率低，导致层间热传导失配、热积累及非辐射复合加剧。\n\n**策略/方法**：首次引入尖晶石型半导体CuBi₂O₄构建复合空穴传输层，通过增强声子群速度优化热传导路径。\n\n**机理/发现**：CuBi₂O₄复合层实现与钙钛矿吸收层的热膨胀系数匹配及高效热传导，将热载流子弛豫延迟约10倍，减少多余能量耗散。\n\n**性能/结果**：获得取向有序、残余应力释放的高质量钙钛矿薄膜，器件效率达27.18%（认证26.83%），显著优于传统HTL体系。\n\n**学术价值**：揭示了热管理对抑制非辐射复合的关键作用，为通过声子工程提升光伏器件稳定性与效率提供了新范式。",
       "figures": [],
       "has_full_content": true
     },
@@ -31,44 +31,8 @@
       "matched_keywords": [
         "perovskite"
       ],
-      "research_story": "**科学问题**：钙钛矿蓝光LED因晶体八面体结构不稳定，导致发光效率低、色纯度差及工作寿命短，成为全彩显示应用的核心瓶颈。\n\n**策略/方法**：引入异构体分子（如苯二胺衍生物）构建氢键网络，通过分子间相互作用稳定钙钛矿晶格，抑制卤素空位迁移与相分离。\n\n**机理/发现**：氢键网络锚定有机阳离子并限制八面体畸变，降低非辐射复合速率；异构体分子取向调控能级对齐，促进载流子注入平衡。\n\n**性能/结果**：器件外量子效率（EQE）达18.5%，半峰宽（FWHM）<20 nm，在初始亮度100 cd/m²下T50寿命超过1000小时，显著优于此前报道的钙钛矿蓝光LED。\n\n**学术价值**：首次将氢键工程系统应用于钙钛矿蓝光发射层，为同时实现高色纯度、高效率与长稳定性提供了可推广的分子设计范式。",
+      "research_story": "**科学问题**：钙钛矿蓝光LED因晶体八面体结构不稳定导致的效率衰减和色纯度不足，是制约全彩显示应用的关键瓶颈。\n\n**策略/方法**：通过引入异构分子构建氢键网络，稳定钙钛矿晶体的八面体骨架，抑制非辐射复合路径。\n\n**机理/发现**：氢键网络通过锚定卤素离子与有机阳离子，增强晶格刚性，降低缺陷态密度，同时维持量子限域效应。\n\n**性能/结果**：器件实现外量子效率（EQE）>18%，半峰宽<20 nm，工作寿命（T50）超过1000小时，优于同类钙钛矿蓝光LED。\n\n**学术价值**：首次将分子间弱相互作用（氢键）系统应用于钙钛矿晶格稳定性调控，为高效稳定蓝光发射提供了普适性设计原则。",
       "figures": [],
-      "has_full_content": true
-    },
-    {
-      "title": "Controlled solid-state crystallization with formamidinium acetate for fully vacuum-deposited perovskite solar cells",
-      "link": "https://www.nature.com/articles/s41560-026-02093-8",
-      "doi": "",
-      "summary": "Vacuum deposition is a promising route for the fabrication of perovskite solar cells (PSCs). However, vacuum-deposited PSCs have not yet matched the performance achieved by solution-processed devices. Here we improve the performance of fully vacuum-deposited PSCs by controlling the solid-state reaction pathway. We find that formamidinium acetate reacts directly with PbI2 to form FAPbI3 seed layers, substantially lowering the barrier to the solid-state conversion of precursors into the crystalline δ-phase and their subsequent transformation into the α-phase perovskite. Moreover, the excess acetate passivates grain boundary defects, thereby suppressing non-radiative recombination. As a result, the PSCs achieve a power conversion efficiency of 25.53% and an electroluminescence external quantum efficiency of 18.38%. Importantly, the solvent-free fabrication also enables excellent device stability, with the devices retaining over 95% of their initial power conversion efficiency after 1,000 h under the ISOS-L-1 protocol.",
-      "published": "2026-07-14",
-      "authors": "Yutian Xu, Tengfei Pan, Xiaorong Shi et al.",
-      "journal": "Nature Energy",
-      "matched_keywords": [
-        "perovskite"
-      ],
-      "research_story": "**科学问题**：全真空沉积钙钛矿太阳能电池（PSCs）的效率长期落后于溶液法器件，核心瓶颈在于固相结晶路径不可控及缺陷密度高。\n\n**策略/方法**：作者引入甲脒乙酸盐（FAOAc）作为反应介质，通过调控固相反应路径，实现FAOAc与PbI₂直接反应生成FAPbI₃种子层，降低δ相至α相转变能垒。\n\n**机理/发现**：FAOAc不仅催化前驱体固相转化为δ相并促进其向α相转变，其过量组分还通过钝化晶界缺陷抑制非辐射复合，揭示了乙酸盐在固相结晶中的双重功能。\n\n**性能/结果**：器件实现25.53%的功率转换效率（PCE）与18.38%的电致发光外量子效率（EQE），且在1000小时运行后保持>95%初始PCE，显著优于此前真空沉积PSCs。\n\n**学术价值**：该工作为真空沉积技术提供了可推广的固相结晶调控策略，弥合了其与溶液法在效率与稳定性间的差距，推动全真空工艺迈向实用化。",
-      "figures": [
-        {
-          "number": "1",
-          "url": "https://media.springernature.com/m312/springer-static/image/art%3A10.1038%2Fs41560-026-02093-8/MediaObjects/41560_2026_2093_Fig1_HTML.png",
-          "caption": "Fig. 1: Solid-state reaction of the layer-by-layer evaporated perovskite thin films...."
-        },
-        {
-          "number": "2",
-          "url": "https://media.springernature.com/m312/springer-static/image/art%3A10.1038%2Fs41560-026-02093-8/MediaObjects/41560_2026_2093_Fig2_HTML.png",
-          "caption": "Fig. 2: In situ crystallization processes and quality of perovskite thin films...."
-        },
-        {
-          "number": "3",
-          "url": "https://media.springernature.com/m312/springer-static/image/art%3A10.1038%2Fs41560-026-02093-8/MediaObjects/41560_2026_2093_Fig3_HTML.png",
-          "caption": "Fig. 3: Defect passivation of perovskite thin films...."
-        },
-        {
-          "number": "4",
-          "url": "https://media.springernature.com/m312/springer-static/image/art%3A10.1038%2Fs41560-026-02093-8/MediaObjects/41560_2026_2093_Fig4_HTML.png",
-          "caption": "Fig. 4: Device structure and optoelectronic performance...."
-        }
-      ],
       "has_full_content": true
     }
   ]
