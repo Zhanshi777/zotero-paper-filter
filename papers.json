@@ -1,39 +1,8 @@
 {
-  "date": "2026-07-21",
+  "date": "2026-07-22",
   "keywords": [
     "perovskite"
   ],
-  "count": 2,
-  "papers": [
-    {
-      "title": "Enhancing Phonon Group Velocities and Interfacial Heat Conduction for Efficient and Stable Perovskite Solar Cells",
-      "link": "https://www.nature.com/articles/s41467-026-75825-9",
-      "doi": "",
-      "summary": "The inherently low thermal conductivity of conventional hole-transport layers (HTLs) in inverted perovskite solar cells (PSCs) introduces a substantial discrepancy in interlayer heat-transfer dynamics, leading to detrimental heat accumulation and nonradiative recombination. Herein, we develop a spinel-type semiconductor of CuBi2O4, and integrate it into a composite HTL architecture to regulate heat conduction for the first time. Leveraging enhanced phonon group velocities, the CuBi2O4-based composite HTL achieves exceptional thermal compatibility with the perovskite absorber, demonstrating enhanced heat conduction and optimal thermal-expansion coefficient alignment. These synergistic effects significantly delay hot-carrier relaxation and reduce excess energy dissipation by approximately 10-fold. Consequently, we obtain high-quality perovskite films with ordered orientation and released residual strain, yielding an impressive power conversion efficiency (PCE) of 27.18% (certified 26.83%). Remarkably, these phonon-engineered devices maintain 90.1%, 82.3%, 85.6% and 93.7% of their initial PCEs under ISOS-D-2Ⅰ, ISOS-D-3, ISOS-T-1 and ISOS-L-1 conditions for 2000 h, respectively.",
-      "published": "2026-07-21",
-      "authors": "Xing Wu, Yu Chen, Yang Shen et al.",
-      "journal": "Nature Communications",
-      "matched_keywords": [
-        "perovskite"
-      ],
-      "research_story": "**科学问题**：倒置钙钛矿太阳能电池中传统空穴传输层热导率低，导致层间热传导失配、热积累及非辐射复合加剧。\n\n**策略/方法**：首次引入尖晶石型半导体CuBi₂O₄构建复合空穴传输层，通过增强声子群速度优化热传导路径。\n\n**机理/发现**：CuBi₂O₄复合层实现与钙钛矿吸收层的热膨胀系数匹配及高效热传导，将热载流子弛豫延迟约10倍，减少多余能量耗散。\n\n**性能/结果**：获得取向有序、残余应力释放的高质量钙钛矿薄膜，器件效率达27.18%（认证26.83%），显著优于传统HTL体系。\n\n**学术价值**：揭示了热管理对抑制非辐射复合的关键作用，为通过声子工程提升光伏器件稳定性与效率提供了新范式。",
-      "figures": [],
-      "has_full_content": true
-    },
-    {
-      "title": "Blue LEDs made from perovskite material shine bright thanks to hydrogen bonds",
-      "link": "https://www.nature.com/articles/d41586-026-02161-9",
-      "doi": "",
-      "summary": "Nature, Published online: 15 July 2026; doi:10.1038/d41586-026-02161-9Blue light-emitting diodes (LEDs) are needed for high-definition displays with wide colour range. Efficient, stable and colour-saturated blue LEDs containing emitters made of perovskites have now been fabricated by adding isomeric molecules that generate a network of hydrogen bonds, stabilizing the octahedral structure of the perovskite crystal.",
-      "published": "2026-07-15",
-      "authors": "Unknown",
-      "journal": "Nature",
-      "matched_keywords": [
-        "perovskite"
-      ],
-      "research_story": "**科学问题**：钙钛矿蓝光LED因晶体八面体结构不稳定导致的效率衰减和色纯度不足，是制约全彩显示应用的关键瓶颈。\n\n**策略/方法**：通过引入异构分子构建氢键网络，稳定钙钛矿晶体的八面体骨架，抑制非辐射复合路径。\n\n**机理/发现**：氢键网络通过锚定卤素离子与有机阳离子，增强晶格刚性，降低缺陷态密度，同时维持量子限域效应。\n\n**性能/结果**：器件实现外量子效率（EQE）>18%，半峰宽<20 nm，工作寿命（T50）超过1000小时，优于同类钙钛矿蓝光LED。\n\n**学术价值**：首次将分子间弱相互作用（氢键）系统应用于钙钛矿晶格稳定性调控，为高效稳定蓝光发射提供了普适性设计原则。",
-      "figures": [],
-      "has_full_content": true
-    }
-  ]
+  "count": 0,
+  "papers": []
 }
