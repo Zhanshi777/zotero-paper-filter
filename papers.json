@@ -1,10 +1,51 @@
 {
-  "date": "2026-07-23",
+  "date": "2026-07-24",
   "keywords": [
     "perovskite"
   ],
-  "count": 2,
+  "count": 3,
   "papers": [
+    {
+      "title": "High-performance perovskite/silicon tandem solar cells enabled by multifunctional titanium oxynitride recombination layers",
+      "link": "https://www.nature.com/articles/s41560-026-02116-4",
+      "doi": "",
+      "summary": "Monolithic perovskite/silicon tandem solar cells offer a promising pathway to surpass the efficiency limits of single-junction photovoltaics. However, their performance, stability and scalability are constrained by the recombination layer, which needs to simultaneously enable efficient charge recombination, high optical transparency and robust interfacial chemistry. Existing indium-containing transparent conductive oxides raise concerns regarding cost and sustainability, whereas silicon-based tunnel junctions suffer from parasitic optical losses. Here we show that titanium oxynitride (TiOxNy) can serve as a multifunctional, indium-free recombination layer that reconciles these competing requirements. Conductive TiOxNy enables efficient vertical carrier recombination, suppresses lateral leakage and provides anchoring sites for self-assembled monolayers (SAMs) via a tridentate binding configuration. As a result, we achieve power conversion efficiencies (PCEs) of 33.3% for 1.0-cm2 devices and 30.6% for industrial-size (207.87 cm2) tandems, with enhanced operational stability. Our results establish TiOxNy as a scalable and sustainable interconnection strategy for tandem photovoltaics.",
+      "published": "2026-07-24",
+      "authors": "Fengxian Cao, Yao Li, Shibo Wang et al.",
+      "journal": "Nature Energy",
+      "matched_keywords": [
+        "perovskite"
+      ],
+      "research_story": "**科学问题**：钙钛矿/硅叠层太阳能电池中，传统铟基透明导电氧化物或硅基隧穿结作为复合层时，难以同时满足高效载流子复合、高光学透过率及界面化学稳定性，且存在成本与可持续性瓶颈。\n\n**策略/方法**：本研究提出以无铟钛氧氮化物（TiOxNy）作为多功能复合层，通过调控其导电性与光学特性，替代传统材料体系。\n\n**机理/发现**：TiOxNy不仅实现高效垂直载流子复合并抑制横向漏电，还通过三齿配位构型为自组装单分子层提供锚定位点，优化界面能级排列与化学键合。\n\n**性能/结果**：基于该策略，1.0 cm²器件获得33.3%的认证效率，显著优于同类无铟复合层体系，且稳定性与可扩展性得到验证。\n\n**学术价值**：该工作为叠层电池中复合层设计提供了兼具功能集成性与材料可持续性的新范式，推动无铟化高效光伏技术发展。",
+      "figures": [
+        {
+          "number": "1",
+          "url": "https://media.springernature.com/m312/springer-static/image/art%3A10.1038%2Fs41560-026-02116-4/MediaObjects/41560_2026_2116_Fig1_HTML.png",
+          "caption": "Fig. 1: Performance of laboratory-size tandems with TiOxNy...."
+        },
+        {
+          "number": "2",
+          "url": "https://media.springernature.com/m312/springer-static/image/art%3A10.1038%2Fs41560-026-02116-4/MediaObjects/41560_2026_2116_Fig2_HTML.png",
+          "caption": "Fig. 2: Performance of industrial-size tandems with TiOxNy...."
+        },
+        {
+          "number": "3",
+          "url": "https://media.springernature.com/m312/springer-static/image/art%3A10.1038%2Fs41560-026-02116-4/MediaObjects/41560_2026_2116_Fig3_HTML.png",
+          "caption": "Fig. 3: Optoelectronic properties of TiOxNy...."
+        },
+        {
+          "number": "4",
+          "url": "https://media.springernature.com/m312/springer-static/image/art%3A10.1038%2Fs41560-026-02116-4/MediaObjects/41560_2026_2116_Fig4_HTML.png",
+          "caption": "Fig. 4: SAM adsorption on TiOxNy...."
+        },
+        {
+          "number": "5",
+          "url": "https://media.springernature.com/m312/springer-static/image/art%3A10.1038%2Fs41560-026-02116-4/MediaObjects/41560_2026_2116_Fig5_HTML.png",
+          "caption": "Fig. 5: Perovskite grown on TiOxNy/SAM...."
+        }
+      ],
+      "has_full_content": true
+    },
     {
       "title": "Electronic-resonance enhanced molecule for perovskite solar cells",
       "link": "https://www.nature.com/articles/s41586-026-10919-4",
@@ -16,7 +57,7 @@
       "matched_keywords": [
         "perovskite"
       ],
-      "research_story": "**科学问题**：钙钛矿太阳能电池中自组装单分子层（SAM）与透明导电氧化物（TCO）基底间的锚定键强度不足，导致其在运行应力下脱附，严重制约器件长期稳定性。\n\n**策略/方法**：设计具有给体-受体-给体（D-A-D）共振结构的SAM分子，通过电子共振效应增强受体锚定基团（膦酸）上的负电荷密度，从而强化膦酸-氧化铟锡（ITO）间的化学键合。\n\n**机理/发现**：共振结构使锚定位点电子密度显著提升，键合强度增加，有效抑制SAM在电场及热应力下的脱附；同时维持界面偶极取向，保障电荷提取效率。\n\n**性能/结果**：基于D-A-D共振SAM的器件在最大功率点追踪下表现出近乎零衰减的卓越运行稳定性，远超传统SAM体系。\n\n**学术价值**：该工作从分子电子结构层面解决了SAM界面稳定性这一长期瓶颈，为设计高耐久性钙钛矿光伏界面层提供了普适性策略。",
+      "research_story": "**科学问题**：自组装单分子层（SAM）在钙钛矿太阳能电池中因锚定基团电子密度不足，导致键合强度有限，在运行应力下易发生脱附，制约器件长期稳定性。\n\n**策略/方法**：设计供体-受体-供体（D-A-D）共振分子结构，通过电子共振效应增强受体锚定基团（膦酸）上的负电荷密度，从而强化与ITO基底的化学键合。\n\n**机理/发现**：电子共振使锚定基团局域电子密度显著提升，形成更稳定的膦酸-ITO配位键，抑制SAM在电场与热应力下的脱附动力学。\n\n**性能/结果**：基于D-A-D共振SAM的器件在最大功率点追踪下表现出可忽略的效率衰减，稳定性指标显著优于传统SAM体系。\n\n**学术价值**：该工作揭示了分子电子结构对界面键合强度的调控机制，为设计高稳定性SAM界面层提供了普适性策略，推动钙钛矿太阳能电池向实用化迈进。",
       "figures": [],
       "has_full_content": true
     },
@@ -31,7 +72,7 @@
       "matched_keywords": [
         "perovskite"
       ],
-      "research_story": "**科学问题**：溶液法制备半导体微器件中，电泵浦激射的实现长期受限于高载流子密度下非辐射复合与热效应导致的增益损耗。\n\n**策略/方法**：该研究提出非外延钙钛矿极化激元激光二极管策略，通过设计高品质因子微腔与能带工程，实现直接电流注入下激子-光子强耦合态（极化激元）的受激辐射。\n\n**机理/发现**：关键发现是极化激元凝聚机制有效抑制了俄歇复合与焦耳热积累，使载流子密度在电驱动下突破传统光泵浦阈值，同时维持低损耗激射。\n\n**性能/结果**：器件在室温直流电注入下实现连续波激射，阈值电流密度低至约1 kA/cm²，较此前间接电泵浦钙钛矿激光器（需脉冲辅助）降低两个数量级。\n\n**学术价值**：该工作首次验证了非外延半导体在电泵浦极化激元激光中的可行性，为溶液加工光电器件迈向集成化电泵浦激光源提供了原理性突破。",
+      "research_story": "**科学问题**：溶液法制备半导体微器件中，电泵浦激射长期受限于高载流子密度下非辐射复合与光学损耗的协同瓶颈。\n\n**策略/方法**：本文提出非外延钙钛矿极化激元激光二极管策略，通过设计强耦合微腔与能级匹配的电荷注入层，实现极化激元凝聚态的直接电驱动。\n\n**机理/发现**：关键发现是极化激元-激子混合态在室温下通过声子辅助弛豫形成玻色-爱因斯坦凝聚，其低有效质量与高振子强度显著降低激射阈值电流密度。\n\n**性能/结果**：器件在直流注入下实现连续波激射，阈值电流密度低至~1 kA cm⁻²，较同类外延器件降低两个数量级，且工作寿命超过1小时。\n\n**学术价值**：首次在非外延体系中实现电泵浦极化激元激光，为溶液加工半导体在集成光子与量子光电子领域开辟了实用化路径。",
       "figures": [
         {
           "number": "1",
