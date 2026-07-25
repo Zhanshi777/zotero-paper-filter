@@ -1,10 +1,70 @@
 {
-  "date": "2026-07-24",
+  "date": "2026-07-25",
   "keywords": [
     "perovskite"
   ],
-  "count": 3,
+  "count": 35,
   "papers": [
+    {
+      "title": "Diffusion‐Dominated Crystallization in Microchannels for 2D RP Perovskite Microwire Arrays With Pure n Values",
+      "link": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.77332?af=R",
+      "doi": "10.1002/adfm.77332",
+      "summary": "Advanced Functional Materials, EarlyView.",
+      "published": "2026-07-25",
+      "authors": "Qiling Xu, \nFeifei Qin, \nXiaozong Hu, \nJiamin Liu, \nYiqiang Zhang, \nZhenzhen Wang, \nSihui Peng, \nShiyuan Liu, \nPengwei Li, \nYanlin Song, \nQi Pan",
+      "journal": "Advanced Functional Materials",
+      "matched_keywords": [
+        "perovskite"
+      ],
+      "research_story": "（AI解析失败）",
+      "figures": [],
+      "has_full_content": true
+    },
+    {
+      "title": "Multi‐Bonding Molecular Interface Bridges Enable Synergistic Defect Passivation, Strain Relaxation, and Accelerated Electron Extraction in Perovskite Solar Cells",
+      "link": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.77373?af=R",
+      "doi": "10.1002/adfm.77373",
+      "summary": "Advanced Functional Materials, EarlyView.",
+      "published": "2026-07-25",
+      "authors": "Dingwei Wang, \nWeiyuan Chen, \nWeidan Gu, \nLin Wang, \nYongxia Kang, \nJinwen Liu, \nYuxin Zhang, \nQingshan Li, \nZhipeng Zhang, \nLin Song, \nBin Du",
+      "journal": "Advanced Functional Materials",
+      "matched_keywords": [
+        "perovskite"
+      ],
+      "research_story": "（AI解析失败）",
+      "figures": [],
+      "has_full_content": true
+    },
+    {
+      "title": "Amphoteric Anion‐Mediated Crystallization and Universal Defect Passivation for High‐Efficiency and Stable Perovskite Solar Cells",
+      "link": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.77378?af=R",
+      "doi": "10.1002/adfm.77378",
+      "summary": "Advanced Functional Materials, EarlyView.",
+      "published": "2026-07-25",
+      "authors": "Aamir Saeed, \nXiaowei Xu, \nNan Li, \nPing‐Ping Sun, \nHao Xu, \nQin Hu, \nZulqarnain Haider, \nQingqing Miao, \nTahir Imran, \nYang Bai, \nBaomin Xu, \nAung Ko Ko Kyaw",
+      "journal": "Advanced Functional Materials",
+      "matched_keywords": [
+        "perovskite"
+      ],
+      "research_story": "（AI解析失败）",
+      "figures": [],
+      "has_full_content": true
+    },
+    {
+      "title": "All‐Optical Nonlinear Weights with Tunable Decay Exponents from Dual‐Mode Long‐Afterglow@Perovskite Emitter",
+      "link": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202528610?af=R",
+      "doi": "10.1002/adfm.202528610",
+      "summary": "Advanced Functional Materials, EarlyView.",
+      "published": "2026-07-25",
+      "authors": "Zexi Lin, \nWenxiao Zhao, \nChenhui Xu, \nJiaqi Gao, \nXingke Zheng, \nEnguo Chen, \nYun Ye",
+      "journal": "Advanced Functional Materials",
+      "matched_keywords": [
+        "perovskite"
+      ],
+      "research_story": "（AI解析失败）",
+      "figures": [],
+      "has_full_content": true
+    },
     {
       "title": "High-performance perovskite/silicon tandem solar cells enabled by multifunctional titanium oxynitride recombination layers",
       "link": "https://www.nature.com/articles/s41560-026-02116-4",
@@ -16,7 +76,7 @@
       "matched_keywords": [
         "perovskite"
       ],
-      "research_story": "**科学问题**：钙钛矿/硅叠层太阳能电池中，传统铟基透明导电氧化物或硅基隧穿结作为复合层时，难以同时满足高效载流子复合、高光学透过率及界面化学稳定性，且存在成本与可持续性瓶颈。\n\n**策略/方法**：本研究提出以无铟钛氧氮化物（TiOxNy）作为多功能复合层，通过调控其导电性与光学特性，替代传统材料体系。\n\n**机理/发现**：TiOxNy不仅实现高效垂直载流子复合并抑制横向漏电，还通过三齿配位构型为自组装单分子层提供锚定位点，优化界面能级排列与化学键合。\n\n**性能/结果**：基于该策略，1.0 cm²器件获得33.3%的认证效率，显著优于同类无铟复合层体系，且稳定性与可扩展性得到验证。\n\n**学术价值**：该工作为叠层电池中复合层设计提供了兼具功能集成性与材料可持续性的新范式，推动无铟化高效光伏技术发展。",
+      "research_story": "（AI解析失败）",
       "figures": [
         {
           "number": "1",
@@ -47,6 +107,261 @@
       "has_full_content": true
     },
     {
+      "title": "Precise Iodide‐Trap Strategy for Photothermally Stable Spiro‐OMeTAD‐Based Perovskite Solar Cells",
+      "link": "https://onlinelibrary.wiley.com/doi/10.1002/anie.2924886?af=R",
+      "doi": "10.1002/anie.2924886",
+      "summary": "Angewandte Chemie International Edition, EarlyView.",
+      "published": "2026-07-24",
+      "authors": "Zeyang Deng, \nYikun Liu, \nHongbo Zhou, \nZhipeng Ye, \nLicheng Tan, \nYiwang Chen",
+      "journal": "Angewandte Chemie",
+      "matched_keywords": [
+        "perovskite"
+      ],
+      "research_story": "（AI解析失败）",
+      "figures": [],
+      "has_full_content": true
+    },
+    {
+      "title": "Self‐Assembled Ag/NiO‐Perovskite Multiphase Composite Catalyst for Enhanced Oxygen Evolution Catalysis",
+      "link": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/aenm.71331?af=R",
+      "doi": "10.1002/aenm.71331",
+      "summary": "Advanced Energy Materials, EarlyView.",
+      "published": "2026-07-24",
+      "authors": "Ziwei Huo, \nXiaozhang Yao, \nYanpeng Zhang, \nTianci Wu, \nAsmat Ullah, \nDongsheng Geng, \nXueliang Sun",
+      "journal": "Advanced Energy Materials",
+      "matched_keywords": [
+        "perovskite"
+      ],
+      "research_story": "（AI解析失败）",
+      "figures": [],
+      "has_full_content": true
+    },
+    {
+      "title": "Modulating Buried Interfaces via Co‐Assembled Monolayers With Siloxane‐Mediated Intermolecular Interactions for Perovskite/Silicon Tandem Solar Cells",
+      "link": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/aenm.71107?af=R",
+      "doi": "10.1002/aenm.71107",
+      "summary": "Advanced Energy Materials, Volume 16, Issue 28, 22 July 2026.",
+      "published": "2026-07-24",
+      "authors": "Jinli Yang, \nSinuo Chen, \nLichun Wang, \nShumao Wang, \nZixin Lei, \nYong Wang, \nTong Jin, \nXiaowei Li, \nXixi Huang, \nSu Zhou, \nWenjing Wang, \nLei Zhao, \nZijia Li, \nWenping Yin, \nYuhua Zuo, \nChunlan Zhou",
+      "journal": "Advanced Energy Materials",
+      "matched_keywords": [
+        "perovskite"
+      ],
+      "research_story": "（AI解析失败）",
+      "figures": [],
+      "has_full_content": true
+    },
+    {
+      "title": "Overcoming the Voltage Deficit in Hybrid‐Processed Wide‐Bandgap Perovskite Solar Cells",
+      "link": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/aenm.71123?af=R",
+      "doi": "10.1002/aenm.71123",
+      "summary": "Advanced Energy Materials, Volume 16, Issue 28, 22 July 2026.",
+      "published": "2026-07-24",
+      "authors": "Ling Li, \nHerlina Arianita Dewi, \nJoseph Chakar, \nDarrell Jun jie Tay, \nYao Jing, \nYue Tang, \nDaniela De Luca, \nRiyas Ahmad, \nJean‐Baptiste Puel, \nYvan Bonnassieux, \nNripan Mathews, \nSubodh Mhaisalkar, \nAnnalisa Bruno",
+      "journal": "Advanced Energy Materials",
+      "matched_keywords": [
+        "perovskite"
+      ],
+      "research_story": "（AI解析失败）",
+      "figures": [],
+      "has_full_content": true
+    },
+    {
+      "title": "Regulation of Crystallization Kinetics via Zwitterionic Additive for Efficient and Operationally Stable Formamidinium Perovskite Solar Cells",
+      "link": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/aenm.71105?af=R",
+      "doi": "10.1002/aenm.71105",
+      "summary": "Advanced Energy Materials, Volume 16, Issue 28, 22 July 2026.",
+      "published": "2026-07-24",
+      "authors": "Shuai Li, \nBohong Chang, \nJianqiu Gong, \nXianglang Sun, \nFrancesco Vanin, \nChunlei Zhang, \nZexin Yu, \nNing Wang, \nDong Zhang, \nBaoze Liu, \nLiangchen Qian, \nXinhui Lu, \nHaipeng Lu, \nMingjie Li, \nDanpeng Gao, \nBo Li, \nZonglong Zhu",
+      "journal": "Advanced Energy Materials",
+      "matched_keywords": [
+        "perovskite"
+      ],
+      "research_story": "（AI解析失败）",
+      "figures": [],
+      "has_full_content": true
+    },
+    {
+      "title": "Constructing an Ultra‐Efficient Carrier Transport Pathway Through Dual‐Targeted Anchoring for High‐Performance Perovskite Solar Cells",
+      "link": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/aenm.71111?af=R",
+      "doi": "10.1002/aenm.71111",
+      "summary": "Advanced Energy Materials, Volume 16, Issue 28, 22 July 2026.",
+      "published": "2026-07-24",
+      "authors": "Di Wang, \nYouchao Wei, \nLicheng Yu, \nZhiye Lin, \nZhengye Wang, \nXing Yang, \nYongsheng Liu, \nMaochun Hong",
+      "journal": "Advanced Energy Materials",
+      "matched_keywords": [
+        "perovskite"
+      ],
+      "research_story": "（AI解析失败）",
+      "figures": [],
+      "has_full_content": true
+    },
+    {
+      "title": "Hydrogen Bond‐Mediated Molecule‐Cation Passivation Pair for Efficient Perovskite Solar Cells",
+      "link": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/aenm.71112?af=R",
+      "doi": "10.1002/aenm.71112",
+      "summary": "Advanced Energy Materials, Volume 16, Issue 28, 22 July 2026.",
+      "published": "2026-07-24",
+      "authors": "Yi Lu, \nMin Wang, \nYi Suo, \nHao Huang, \nQiang Zhang, \nZhineng Lan, \nWenyuan Xiao, \nYanling Chen, \nGuanzheng Zhang, \nYa Wu, \nPeng Cui, \nMeicheng Li",
+      "journal": "Advanced Energy Materials",
+      "matched_keywords": [
+        "perovskite"
+      ],
+      "research_story": "（AI解析失败）",
+      "figures": [],
+      "has_full_content": true
+    },
+    {
+      "title": "A Coordination‐Regulated Anti‐Solvent‐Free Strategy by Sulfolane for High‐Performance Perovskite Solar Cells",
+      "link": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/aenm.71113?af=R",
+      "doi": "10.1002/aenm.71113",
+      "summary": "Advanced Energy Materials, Volume 16, Issue 28, 22 July 2026.",
+      "published": "2026-07-24",
+      "authors": "Yifang Qi, \nSaroj Upreti, \nAmy Coronado, \nSancenia Johnson, \nJordan Glover, \nNihar R. Pradhan, \nParesh Chandra Ray, \nXiaodan Gu, \nDerek Patton, \nQilin Dai",
+      "journal": "Advanced Energy Materials",
+      "matched_keywords": [
+        "perovskite"
+      ],
+      "research_story": "（AI解析失败）",
+      "figures": [],
+      "has_full_content": true
+    },
+    {
+      "title": "Enhancing Perovskite/Organic Tandem Solar Cell Efficiencies via Gradient‐Regulated Crystallization of Mixed‐Halide Perovskites",
+      "link": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/aenm.71115?af=R",
+      "doi": "10.1002/aenm.71115",
+      "summary": "Advanced Energy Materials, Volume 16, Issue 28, 22 July 2026.",
+      "published": "2026-07-24",
+      "authors": "Jiangfeng Wang, \nZonglong Song, \nJiang He, \nHu Shen, \nShichu Peng, \nJiasheng Zou, \nZhixin Liu, \nYintai Xu, \nWenbo Peng, \nPeide Zhu, \nDeng Wang, \nJie Zeng, \nZhiwei Lei, \nTing Xue, \nYulong Lv, \nYuqi Bao, \nYong Zhang, \nLei Yan, \nKazuma Nakajima, \nKenjiro Fukuda, \nXingzhu Wang, \nBaomin Xu",
+      "journal": "Advanced Energy Materials",
+      "matched_keywords": [
+        "perovskite"
+      ],
+      "research_story": "（AI解析失败）",
+      "figures": [],
+      "has_full_content": true
+    },
+    {
+      "title": "Halide Perovskite Integrated Photovoltaic Cathodes Incorporating Pt on ZIF‐8‐Derived Carbon for Solar Hydrogen Production",
+      "link": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.77308?af=R",
+      "doi": "10.1002/adfm.77308",
+      "summary": "Advanced Functional Materials, EarlyView.",
+      "published": "2026-07-24",
+      "authors": "Na Yeong Oh, \nWoo Jin Mun, \nKamran Dastafkan, \nMatyas Daboczi, \nHongki Kim, \nHumza Bhatti, \nEunyoung Hong, \nMinzhi Chen, \nYongqi Huang, \nJin Hyuk Kim, \nNicola Gasparini, \nJong Hak Kim, \nSalvador Eslava",
+      "journal": "Advanced Functional Materials",
+      "matched_keywords": [
+        "perovskite"
+      ],
+      "research_story": "（AI解析失败）",
+      "figures": [],
+      "has_full_content": true
+    },
+    {
+      "title": "Organic Synaptic Perovskite Transistors Based on Patternable Fluorinated Block Copolymers for Reconfigurable Neuromorphic Computing and Logic Operations",
+      "link": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.77292?af=R",
+      "doi": "10.1002/adfm.77292",
+      "summary": "Advanced Functional Materials, EarlyView.",
+      "published": "2026-07-24",
+      "authors": "Tangjun Zhang, \nTao Liu, \nDesheng Zhan, \nHongyi Tang, \nXiaofei Qian, \nHai Deng",
+      "journal": "Advanced Functional Materials",
+      "matched_keywords": [
+        "perovskite"
+      ],
+      "research_story": "（AI解析失败）",
+      "figures": [],
+      "has_full_content": true
+    },
+    {
+      "title": "Spin Injection Of Exciton–Polaritons With Halide Perovskites At Room Temperature",
+      "link": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202532019?af=R",
+      "doi": "10.1002/adfm.202532019",
+      "summary": "Advanced Functional Materials, EarlyView.",
+      "published": "2026-07-24",
+      "authors": "Elena Sendarrubias Arias‐Camisón, \nMaksim Lednev, \nJorge Cuadra, \nRaúl Gago, \nLuis Viña, \nFrancisco José García Vidal, \nJohannes Feist, \nFerry Prins, \nCarlos Antón Solanas",
+      "journal": "Advanced Functional Materials",
+      "matched_keywords": [
+        "perovskite"
+      ],
+      "research_story": "（AI解析失败）",
+      "figures": [],
+      "has_full_content": true
+    },
+    {
+      "title": "Synergistic Effect of Chirality and Symmetry Reduction Enables Metal‐Free Perovskite Single Crystal With Stable Self‐Driven X‐ray Detection",
+      "link": "https://onlinelibrary.wiley.com/doi/10.1002/anie.6443941?af=R",
+      "doi": "10.1002/anie.6443941",
+      "summary": "Angewandte Chemie International Edition, EarlyView.",
+      "published": "2026-07-23",
+      "authors": "Zhizai Li, \nGuoqiang Peng, \nChang Shi, \nHang Xie, \nZhenHua Li, \nZhiwen Jin",
+      "journal": "Angewandte Chemie",
+      "matched_keywords": [
+        "perovskite"
+      ],
+      "research_story": "（AI解析失败）",
+      "figures": [],
+      "has_full_content": true
+    },
+    {
+      "title": "Dynamic Strain Regulation Via Photoresponsive Fullerenes Enables High‐Performance and UV‐Robust Perovskite Solar Cells",
+      "link": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.74220?af=R",
+      "doi": "10.1002/adma.74220",
+      "summary": "Advanced Materials, EarlyView.",
+      "published": "2026-07-23",
+      "authors": "Jianfei Yang, \nHan Wang, \nYunxuan Xu, \nXuanyu Wang, \nZiling Zhang, \nJinxian Lee, \nJiazheng Su, \nYuxiang Zhu, \nYizhou Wu, \nSheng Li, \nZhiping Wang, \nHong Lin",
+      "journal": "Advanced Materials",
+      "matched_keywords": [
+        "perovskite"
+      ],
+      "research_story": "（AI解析失败）",
+      "figures": [],
+      "has_full_content": true
+    },
+    {
+      "title": "Sulfur‐Substituted SAMs Induce Pb─S Antibonding Hybridization for Efficient and Durable Perovskite‐Silicon Tandems",
+      "link": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.73700?af=R",
+      "doi": "10.1002/adma.73700",
+      "summary": "Advanced Materials, Volume 38, Issue 41, 22 July 2026.",
+      "published": "2026-07-23",
+      "authors": "Meijie Cui, \nBitao Dong, \nXinyu Liu, \nJunjie Zhao, \nYanbiao Ran, \nYingguo Yang, \nQunping Fan, \nWei Ma, \nChao Liang, \nBing Yang, \nBo Cai, \nLong Jiang, \nWenping Yin, \nJie Kong, \nZijia Li, \nYuhang Liu",
+      "journal": "Advanced Materials",
+      "matched_keywords": [
+        "perovskite"
+      ],
+      "research_story": "（AI解析失败）",
+      "figures": [],
+      "has_full_content": true
+    },
+    {
+      "title": "Unlocking 27.3% Perovskite Solar Cells and Ultra‐Stable Flexible Modules via Multidentate Molecular‐Mediated Buried‐Interface Reconstruction",
+      "link": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.73807?af=R",
+      "doi": "10.1002/adma.73807",
+      "summary": "Advanced Materials, Volume 38, Issue 41, 22 July 2026.",
+      "published": "2026-07-23",
+      "authors": "Bojun Li, \nJike Ding, \nZuolin Zhang, \nMengjia Li, \nChao Li, \nWeiyu Wu, \nMenghan Lu, \nHao Liu, \nZedong Lin, \nThierry Pauport, \nCong Chen",
+      "journal": "Advanced Materials",
+      "matched_keywords": [
+        "perovskite"
+      ],
+      "research_story": "（AI解析失败）",
+      "figures": [],
+      "has_full_content": true
+    },
+    {
+      "title": "Molecularly Engineered Self‐Healing Scaffold With Customized Dynamic Bonds Enable Stable and Scalable Flexible Perovskite Solar Cells and Modules",
+      "link": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.73855?af=R",
+      "doi": "10.1002/adma.73855",
+      "summary": "Advanced Materials, Volume 38, Issue 41, 22 July 2026.",
+      "published": "2026-07-23",
+      "authors": "Shuaizhen Huang, \nZhaojin Wang, \nYe Lan, \nWeifu Zhang, \nXiaowei Xu, \nJiahan Xie, \nZihao Li, \nChang Liu, \nYang Bai, \nWei Song, \nZiyi Ge",
+      "journal": "Advanced Materials",
+      "matched_keywords": [
+        "perovskite"
+      ],
+      "research_story": "（AI解析失败）",
+      "figures": [],
+      "has_full_content": true
+    },
+    {
       "title": "Electronic-resonance enhanced molecule for perovskite solar cells",
       "link": "https://www.nature.com/articles/s41586-026-10919-4",
       "doi": "",
@@ -57,7 +372,7 @@
       "matched_keywords": [
         "perovskite"
       ],
-      "research_story": "**科学问题**：自组装单分子层（SAM）在钙钛矿太阳能电池中因锚定基团电子密度不足，导致键合强度有限，在运行应力下易发生脱附，制约器件长期稳定性。\n\n**策略/方法**：设计供体-受体-供体（D-A-D）共振分子结构，通过电子共振效应增强受体锚定基团（膦酸）上的负电荷密度，从而强化与ITO基底的化学键合。\n\n**机理/发现**：电子共振使锚定基团局域电子密度显著提升，形成更稳定的膦酸-ITO配位键，抑制SAM在电场与热应力下的脱附动力学。\n\n**性能/结果**：基于D-A-D共振SAM的器件在最大功率点追踪下表现出可忽略的效率衰减，稳定性指标显著优于传统SAM体系。\n\n**学术价值**：该工作揭示了分子电子结构对界面键合强度的调控机制，为设计高稳定性SAM界面层提供了普适性策略，推动钙钛矿太阳能电池向实用化迈进。",
+      "research_story": "（AI解析失败）",
       "figures": [],
       "has_full_content": true
     },
@@ -72,7 +387,7 @@
       "matched_keywords": [
         "perovskite"
       ],
-      "research_story": "**科学问题**：溶液法制备半导体微器件中，电泵浦激射长期受限于高载流子密度下非辐射复合与光学损耗的协同瓶颈。\n\n**策略/方法**：本文提出非外延钙钛矿极化激元激光二极管策略，通过设计强耦合微腔与能级匹配的电荷注入层，实现极化激元凝聚态的直接电驱动。\n\n**机理/发现**：关键发现是极化激元-激子混合态在室温下通过声子辅助弛豫形成玻色-爱因斯坦凝聚，其低有效质量与高振子强度显著降低激射阈值电流密度。\n\n**性能/结果**：器件在直流注入下实现连续波激射，阈值电流密度低至~1 kA cm⁻²，较同类外延器件降低两个数量级，且工作寿命超过1小时。\n\n**学术价值**：首次在非外延体系中实现电泵浦极化激元激光，为溶液加工半导体在集成光子与量子光电子领域开辟了实用化路径。",
+      "research_story": "（AI解析失败）",
       "figures": [
         {
           "number": "1",
@@ -95,6 +410,171 @@
           "caption": "Fig. 4: Polariton lasing and temperature dependence of the emission spectrum...."
         }
       ],
+      "has_full_content": true
+    },
+    {
+      "title": "A Multisite Molecular Salt Enables Surface Passivation and Energetics Management for Efficient Inverted Perovskite Solar Cells",
+      "link": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/aenm.71305?af=R",
+      "doi": "10.1002/aenm.71305",
+      "summary": "Advanced Energy Materials, EarlyView.",
+      "published": "2026-07-22",
+      "authors": "Xueni Shang, \nJike Ding, \nTaoran Geng, \nWeiyu Wu, \nZhiheng Wang, \nHao Liu, \nCong Chen",
+      "journal": "Advanced Energy Materials",
+      "matched_keywords": [
+        "perovskite"
+      ],
+      "research_story": "（AI解析失败）",
+      "figures": [],
+      "has_full_content": true
+    },
+    {
+      "title": "Synergistic Hole Extraction and Defect Passivation via Co‐Assembled Monolayers for Efficient Wide‐Bandgap Perovskite and Tandem Solar Cells",
+      "link": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.76643?af=R",
+      "doi": "10.1002/adfm.76643",
+      "summary": "Advanced Functional Materials, Volume 36, Issue 58, 20 July 2026.",
+      "published": "2026-07-21",
+      "authors": "Lu‐Yao Chen, \nHaiyan Li, \nTingting Shi, \nKoucheng Chen, \nZhen Jia, \nYa‐Ping Duan, \nQin Zhang, \nLing‐Bo Wang, \nRun Wang, \nHe Huang, \nQi Sun, \nZijia Li, \nLin‐Song Cui, \nShuit‐Tong Lee, \nMan‐Keung Fung, \nYue‐Min Xie",
+      "journal": "Advanced Functional Materials",
+      "matched_keywords": [
+        "perovskite"
+      ],
+      "research_story": "（AI解析失败）",
+      "figures": [],
+      "has_full_content": true
+    },
+    {
+      "title": "Arc‐plated Graphene Enables Perovskite Surface Passivation for Durable and Efficient Solar Cells",
+      "link": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.76677?af=R",
+      "doi": "10.1002/adfm.76677",
+      "summary": "Advanced Functional Materials, Volume 36, Issue 58, 20 July 2026.",
+      "published": "2026-07-21",
+      "authors": "Zhenhua Xu, \nYihan Chen, \nXuan Zhang, \nNingbo Zhang, \nZhenghui Ge, \nMin Li, \nChi Huey Ng, \nSiow Hwa Teo, \nHai‐Qiao Wang",
+      "journal": "Advanced Functional Materials",
+      "matched_keywords": [
+        "perovskite"
+      ],
+      "research_story": "（AI解析失败）",
+      "figures": [],
+      "has_full_content": true
+    },
+    {
+      "title": "Ultra‐Planar Polymer Hole Transport Materials via Bridging‐Atom Engineered Noncovalent Conformational Locking for High‐Performance Perovskite Photodetectors and Neuromorphic Computing",
+      "link": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.76712?af=R",
+      "doi": "10.1002/adfm.76712",
+      "summary": "Advanced Functional Materials, Volume 36, Issue 58, 20 July 2026.",
+      "published": "2026-07-21",
+      "authors": "Longni Chen, \nHuiqing Hou, \nJiahao Cui, \nZewang He, \nRan Yang, \nXiaojie Zhang, \nShougen Yin, \nZhiqiang Jiao, \nYan Lu, \nXiaoming Wu",
+      "journal": "Advanced Functional Materials",
+      "matched_keywords": [
+        "perovskite"
+      ],
+      "research_story": "（AI解析失败）",
+      "figures": [],
+      "has_full_content": true
+    },
+    {
+      "title": "An n‐Type Polythiophene Derivative as Electron Transport Layer for Stable and Efficient Dion–Jacobson Perovskite Solar Cells",
+      "link": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.76728?af=R",
+      "doi": "10.1002/adfm.76728",
+      "summary": "Advanced Functional Materials, Volume 36, Issue 58, 20 July 2026.",
+      "published": "2026-07-21",
+      "authors": "Hui Zhang, \nMeng Tian, \nSihui Deng, \nMingyu Ma, \nJunli Hu, \nJian Liu, \nShuyan Shao, \nJun Liu, \nZhen Li",
+      "journal": "Advanced Functional Materials",
+      "matched_keywords": [
+        "perovskite"
+      ],
+      "research_story": "（AI解析失败）",
+      "figures": [],
+      "has_full_content": true
+    },
+    {
+      "title": "Vapor‐Phase Grain‐Boundary Anchoring Enables Molecular Toughening and Record Bending Endurance in Pilot‐Scale Roll‐to‐Roll‐Printed Flexible Perovskite Modules",
+      "link": "https://onlinelibrary.wiley.com/doi/10.1002/anie.7292679?af=R",
+      "doi": "10.1002/anie.7292679",
+      "summary": "Angewandte Chemie International Edition, Volume 65, Issue 30, 20 July 2026.",
+      "published": "2026-07-20",
+      "authors": "Lirong Dong, \nViktor Rehm, \nShudi Qiu, \nZexian Han, \nNaveen Harindu Hemasiri, \nMichael Wurmshuber, \nMichael Wagner, \nCindy‐Ly Tavera‐Méndez, \nDorothea Wisser, \nChaohui Li, \nRobin Basu, \nLeopold Lahn, \nOlga Kasian, \nSarmad Feroze, \nWolfgang Heiss, \nAndreas Distler, \nHans‐Joachim Egelhaaf, \nFu Yang, \nChristoph J. Brabec",
+      "journal": "Angewandte Chemie",
+      "matched_keywords": [
+        "perovskite"
+      ],
+      "research_story": "（AI解析失败）",
+      "figures": [],
+      "has_full_content": true
+    },
+    {
+      "title": "Mesoporous Anti‐Perovskite CuNi3N for Sustainable Formate Electrosynthesis from Complete Electrooxidation of Biomass Glucose",
+      "link": "https://onlinelibrary.wiley.com/doi/10.1002/anie.7507967?af=R",
+      "doi": "10.1002/anie.7507967",
+      "summary": "Angewandte Chemie International Edition, Volume 65, Issue 30, 20 July 2026.",
+      "published": "2026-07-20",
+      "authors": "Pengfei Liu, \nDeqing Tang, \nShu Han, \nZhen‐An Qiao, \nBen Liu",
+      "journal": "Angewandte Chemie",
+      "matched_keywords": [
+        "perovskite"
+      ],
+      "research_story": "（AI解析失败）",
+      "figures": [],
+      "has_full_content": true
+    },
+    {
+      "title": "Highly Emissive and Stable Ge(II)‐ and Sn(II)‐Based Vacancy‐Ordered Iodide Double Perovskites",
+      "link": "https://onlinelibrary.wiley.com/doi/10.1002/anie.7126664?af=R",
+      "doi": "10.1002/anie.7126664",
+      "summary": "Angewandte Chemie International Edition, Volume 65, Issue 30, 20 July 2026.",
+      "published": "2026-07-20",
+      "authors": "Le Ye, \nYarou Duan, \nJun Luo, \nYutong Lin, \nMengqiu Cai, \nLingling Mao",
+      "journal": "Angewandte Chemie",
+      "matched_keywords": [
+        "perovskite"
+      ],
+      "research_story": "（AI解析失败）",
+      "figures": [],
+      "has_full_content": true
+    },
+    {
+      "title": "Sr/Pb Alloying Stabilizes Wide‐Bandgap Perovskites for Durable Fully‐Textured Perovskite/Silicon Tandem Solar Cells",
+      "link": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/aenm.71317?af=R",
+      "doi": "10.1002/aenm.71317",
+      "summary": "Advanced Energy Materials, EarlyView.",
+      "published": "2026-07-20",
+      "authors": "Pengfei Liu, \nXiaoyong Wu, \nShuyi Lin, \nMinghao Shi, \nYusheng Li, \nBiao Shi, \nZetong Sunli, \nXianzhao Wang, \nYuan Luo, \nYing Liu, \nRui Kong, \nGuanlan Chen, \nZhi Zhang, \nPengcheng Du, \nYongcai He, \nShengzhi Xu, \nXiaona Du, \nJun Yin, \nBo He, \nShibin Deng, \nXuewen Fu, \nYing Zhao, \nXiaodan Zhang",
+      "journal": "Advanced Energy Materials",
+      "matched_keywords": [
+        "perovskite"
+      ],
+      "research_story": "（AI解析失败）",
+      "figures": [],
+      "has_full_content": true
+    },
+    {
+      "title": "Constructing Robust Buried Interfaces of Inverted Perovskite Solar Cells by Bridge‐Anchored Co‐SAMs",
+      "link": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.76655?af=R",
+      "doi": "10.1002/adfm.76655",
+      "summary": "Advanced Functional Materials, Volume 36, Issue 57, 16 July 2026.",
+      "published": "2026-07-20",
+      "authors": "Ke Guo, \nLijin Han, \nXiaosong Qiu, \nZexin Zhu, \nJunmin Xia, \nAijie Zhou, \nGuichuan Xing, \nRunfeng Chen, \nGuangbao Wu",
+      "journal": "Advanced Functional Materials",
+      "matched_keywords": [
+        "perovskite"
+      ],
+      "research_story": "（AI解析失败）",
+      "figures": [],
+      "has_full_content": true
+    },
+    {
+      "title": "Surface Hydrogen‐Bond Network Construction in Perovskite Quantum Dots for Bright and Stable Near‐Infrared Light‐Emitting Diodes",
+      "link": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.76696?af=R",
+      "doi": "10.1002/adfm.76696",
+      "summary": "Advanced Functional Materials, Volume 36, Issue 57, 16 July 2026.",
+      "published": "2026-07-20",
+      "authors": "Jiawei Chen, \nGuoxin Lu, \nChenyang Ye, \nYalong Shen, \nDanlei Zhu, \nWenyu Gu, \nHaifeng Zhao, \nJinxin Yang, \nYan Zhu, \nBoning Han, \nShulin Chen, \nHaibo Zeng",
+      "journal": "Advanced Functional Materials",
+      "matched_keywords": [
+        "perovskite"
+      ],
+      "research_story": "（AI解析失败）",
+      "figures": [],
       "has_full_content": true
     }
   ]
