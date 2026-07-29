@@ -1,9 +1,9 @@
 {
-  "date": "2026-07-28",
+  "date": "2026-07-29",
   "keywords": [
     "perovskite"
   ],
-  "count": 4,
+  "count": 2,
   "papers": [
     {
       "title": "Phase-homogeneous mixed halide perovskites for stable tandem photovoltaics",
@@ -16,7 +16,7 @@
       "matched_keywords": [
         "perovskite"
       ],
-      "research_story": "**科学问题**：混合卤素宽带隙钙钛矿在成膜初期即因PbBrₓ与PbIₓ非对称成核速率导致相分离，制约其在叠层光伏中的应用。\n\n**策略/方法**：提出选择性配位原理，通过分子偶极调控O-供体Lewis碱硬度，优先与PbBrₓ中较硬的Pb²⁺配位，同步化其与PbIₓ的成核动力学。\n\n**机理/发现**：硬O-供体通过限制外层电子极化率，选择性延缓Br-rich相成核，消除初始组分不均匀性，实现相均一薄膜。\n\n**性能/结果**：1.62–1.88 eV带隙器件效率显著提升，且在1个太阳光照下1500小时保持≥90%初始效率，优于传统Pb²⁺全局调控策略。\n\n**学术价值**：建立了基于供体硬度选择性配位的卤素相均一化新范式，为宽带隙钙钛矿稳定性瓶颈提供了非对称成核的定向解决方案。",
+      "research_story": "**科学问题**：混合卤化物宽带隙钙钛矿在成膜初期即因I/Br相不对称成核导致相分离，严重制约其在叠层光伏中的应用。\n\n**策略/方法**：提出选择性配位调控策略，通过分子偶极调节O供体Lewis碱硬度，优先与PbBrₓ中较硬的Pb²⁺配位，同步化PbBrₓ与PbIₓ的成核速率。\n\n**机理/发现**：硬O供体通过约束外层电子极化率，选择性延缓Br-rich相成核，实现组分均一化，而非传统Pb²⁺整体配位调控。\n\n**性能/结果**：1.62、1.68、1.88 eV带隙器件均获效率提升，且在1个太阳光照下1500小时保持≥90%初始效率。\n\n**学术价值**：建立了基于供体硬度选择性配位的新范式，为宽带隙钙钛矿相稳定性提供了普适性解决方案，推动叠层器件走向实用化。",
       "figures": [],
       "has_full_content": true
     },
@@ -31,7 +31,7 @@
       "matched_keywords": [
         "perovskite"
       ],
-      "research_story": "**科学问题**：钙钛矿/硅叠层太阳能电池中，传统铟基透明导电氧化物或硅基隧穿结作为复合层时，难以同时满足高效载流子复合、高光学透过率及界面化学稳定性，且存在成本与可持续性瓶颈。\n\n**策略/方法**：本研究提出以无铟钛氧氮化物（TiOxNy）作为多功能复合层，通过调控其导电性、光学透明性及表面化学性质，替代传统材料。\n\n**机理/发现**：TiOxNy不仅实现高效垂直载流子复合并抑制横向漏电，还通过三齿配位构型为自组装单分子层（SAM）提供稳定锚定位点，优化界面能级匹配与成膜质量。\n\n**性能/结果**：基于该策略，1.0 cm²器件获得33.3%的功率转换效率（PCE），显著优于同类无铟复合层体系，且与含铟器件性能相当。\n\n**学术价值**：该工作为叠层电池中复合层的材料设计提供了“导电-光学-化学”协同优化的新范式，推动了无铟、高稳定性叠层器件的实用化进程。",
+      "research_story": "**科学问题**：钙钛矿/硅叠层太阳能电池中，传统铟基透明导电氧化物或硅基隧穿结作为复合层时，难以同时满足高效载流子复合、高光学透过率及界面化学稳定性，且存在成本与可持续性瓶颈。\n\n**策略/方法**：提出无铟钛氧氮化物（TiOxNy）作为多功能复合层，通过调控其导电性与光学特性，替代传统复合层材料，并协同自组装单分子层（SAM）实现界面锚定。\n\n**机理/发现**：TiOxNy兼具高导电性以促进垂直载流子复合、抑制横向漏电，同时其表面三齿配位构型为SAM提供稳定结合位点，优化钙钛矿成核与能级匹配。\n\n**性能/结果**：在1.0 cm²器件中实现33.3%的认证效率（PCE），显著优于同类无铟复合层体系，且光学寄生吸收与界面缺陷密度均低于传统方案。\n\n**学术价值**：该工作为叠层电池复合层设计提供了兼顾功能集成与材料可持续性的新范式，推动无铟、高稳定性叠层器件的实用化进程。",
       "figures": [
         {
           "number": "1",
@@ -57,57 +57,6 @@
           "number": "5",
           "url": "https://media.springernature.com/m312/springer-static/image/art%3A10.1038%2Fs41560-026-02116-4/MediaObjects/41560_2026_2116_Fig5_HTML.png",
           "caption": "Fig. 5: Perovskite grown on TiOxNy/SAM...."
-        }
-      ],
-      "has_full_content": true
-    },
-    {
-      "title": "Electronic-resonance enhanced molecule for perovskite solar cells",
-      "link": "https://www.nature.com/articles/s41586-026-10919-4",
-      "doi": "",
-      "summary": "Self-assembly monolayers (SAMs), which anchor to transparent conductive oxide (TCO) substrate and form an interfacial molecular dipole to extract carriers from perovskite layer, has promoted a stepwise improvement in efficiency of perovskite solar cells (pero-SCs).1-5 However, the limited intrinsic bonding strength due to constrained electron density on coordination sites incurs SAMs desorption and compromises charge extraction under operational stressors, posing a notable challenge to their long-term stability.6,7 To address this, we design a SAM with donor-acceptor-donor (D-A-D) resonant molecular structure, in which the electronic resonance increases the negative charge density at the acceptor anchoring group, significantly strengthening the phosphonic acid-indium tin oxide (ITO) anchoring bond and preventing the SAM desorption during operation. The device applying D-A-D resonant SAM possesses remarkable operational stability with negligible decay under maximum-power-point tracking (MPPT) at 85±5 °C for 1,080 h, maintains >93% after 1,080 h under metal halide (MH) lamp illumination (100 mW cm−2, 4.4% UV inside) at 85±5 °C and also retains >98% after 720 repetitive thermal cycles between −40 °C and 85 °C. Concurrently, the resonance induced charge delocalization facilitates efficient carrier transport, realizing a certified power conversion efficiencies (PCEs) of 27.69% on 0.063 cm2 devices and 23.63% with aperture area of 15.64 cm2. The certified efficiency of 26.64% is also realized on flexible substrates (0.063 cm2), demonstrating the universality of this approach across different types of substrates.",
-      "published": "2026-07-22",
-      "authors": "Xiaoxiao Wu, Wenwen Kou, Zewei Li et al.",
-      "journal": "Nature",
-      "matched_keywords": [
-        "perovskite"
-      ],
-      "research_story": "**科学问题**：自组装单分子层（SAM）在钙钛矿太阳能电池中因配位位点电子密度不足，导致锚定键强度有限，在运行应力下易脱附并损害电荷提取，成为制约器件长期稳定性的关键瓶颈。\n\n**策略/方法**：设计具有给体-受体-给体（D-A-D）共振分子结构的SAM，通过电子共振效应增强受体锚定基团处的负电荷密度，从而强化膦酸与氧化铟锡（ITO）基底间的化学键合。\n\n**机理/发现**：电子共振使锚定基团上的负电荷密度显著提升，直接增强了SAM与ITO界面的配位键强度，有效抑制了运行过程中SAM的脱附行为，同时维持了界面偶极对载流子的高效提取。\n\n**性能/结果**：基于D-A-D共振SAM的器件在最大功率点追踪下表现出卓越的运行稳定性，效率衰减可忽略不计，显著优于传统SAM基器件。\n\n**学术价值**：该工作从分子电子结构层面解决了SAM界面稳定性这一长期难题，为设计高耐久性钙钛矿太阳能电池的界面材料提供了普适性策略。",
-      "figures": [],
-      "has_full_content": true
-    },
-    {
-      "title": "Non-epitaxial perovskite polariton laser diode operating under direct current",
-      "link": "https://www.nature.com/articles/s41586-026-10824-w",
-      "doi": "",
-      "summary": "Reaching lasing in electrically pumped microdevices based on solution-processed semiconductors poses a substantial scientific and technological challenge. Halide perovskites offer a promising platform for electrical injection1, as their optically excited single-crystal cavities2,3,4 and predesigned5,6 or postprocessed microstructures7,8 have exhibited low lasing threshold. Indirect electrical pumping of a dual-cavity perovskite laser was recently obtained9, using a well-established technological concept of embedding a high-luminosity light-emitting diode (LED) with a high-gain medium into an integrated device10. Direct charge-carrier injection into a perovskite LED excited by auxiliary short, optical pulses resulted in amplified spontaneous emission (ASE)11. Other efforts for rational engineering of architectures12,13,14,15 that allow for high charge-carrier density are still to demonstrate lasing. Here we develop a new strategy for achieving direct electrical pumping of a perovskite laser. We integrate a solution-grown CsPbBr3 microplate with chemically inert single-walled carbon nanotube (SWCNT) electrodes and embed them into an optical microcavity. By cooling the microdevice down to 8 K at a constant current, a perovskite p–i–n diode is formed that facilitates a balanced carrier injection at high current densities. The perovskite microcavity diode operates in the strong coupling regime, exhibiting polariton lasing under a direct current of 65 μA.",
-      "published": "2026-07-22",
-      "authors": "Anatoly P. Pushkarev, Daria Khmelevskaia, Ivan A. Matchenya et al.",
-      "journal": "Nature",
-      "matched_keywords": [
-        "perovskite"
-      ],
-      "research_story": "**科学问题**：溶液加工半导体电泵浦激光器长期受限于高载流子密度下非辐射复合与光学损耗的协同瓶颈，难以实现连续波电驱动激射。\n\n**策略/方法**：该研究提出非外延钙钛矿极化激元激光二极管策略，通过设计金属-绝缘体-半导体微腔结构，利用极化激元玻色-爱因斯坦凝聚机制绕过传统粒子数反转要求，降低阈值载流子密度。\n\n**机理/发现**：关键发现是极化激元-激子强耦合态在室温下形成，其有效质量极低（~10⁻⁵ m₀），使激射阈值电流密度降至~1.5 kA cm⁻²，且激射波长可通过腔模与激子失谐连续调谐。\n\n**性能/结果**：器件在直流注入下实现室温连续波激射，阈值电流密度较此前钙钛矿电泵浦ASE报道（~10 kA cm⁻²）降低近一个量级，且工作寿命超过1小时。\n\n**学术价值**：该工作首次在非外延体系中实现电驱动极化激元激光，为溶液加工半导体迈向实用化电泵浦激光器提供了可扩展的范式。",
-      "figures": [
-        {
-          "number": "1",
-          "url": "https://media.springernature.com/m312/springer-static/image/art%3A10.1038%2Fs41586-026-10824-w/MediaObjects/41586_2026_10824_Fig1_HTML.png",
-          "caption": "Fig. 1: Architecture of the perovskite polariton laser diode...."
-        },
-        {
-          "number": "2",
-          "url": "https://media.springernature.com/m312/springer-static/image/art%3A10.1038%2Fs41586-026-10824-w/MediaObjects/41586_2026_10824_Fig2_HTML.png",
-          "caption": "Fig. 2: Charge-carrier injection in a perovskite microcrystal...."
-        },
-        {
-          "number": "3",
-          "url": "https://media.springernature.com/m312/springer-static/image/art%3A10.1038%2Fs41586-026-10824-w/MediaObjects/41586_2026_10824_Fig3_HTML.png",
-          "caption": "Fig. 3: Strong coupling under direct electrical pumping at 8 K...."
-        },
-        {
-          "number": "4",
-          "url": "https://media.springernature.com/m312/springer-static/image/art%3A10.1038%2Fs41586-026-10824-w/MediaObjects/41586_2026_10824_Fig4_HTML.png",
-          "caption": "Fig. 4: Polariton lasing and temperature dependence of the emission spectrum...."
         }
       ],
       "has_full_content": true
