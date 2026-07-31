@@ -1,50 +1,8 @@
 {
-  "date": "2026-07-30",
+  "date": "2026-07-31",
   "keywords": [
     "perovskite"
   ],
-  "count": 1,
-  "papers": [
-    {
-      "title": "High-performance perovskite/silicon tandem solar cells enabled by multifunctional titanium oxynitride recombination layers",
-      "link": "https://www.nature.com/articles/s41560-026-02116-4",
-      "doi": "",
-      "summary": "Monolithic perovskite/silicon tandem solar cells offer a promising pathway to surpass the efficiency limits of single-junction photovoltaics. However, their performance, stability and scalability are constrained by the recombination layer, which needs to simultaneously enable efficient charge recombination, high optical transparency and robust interfacial chemistry. Existing indium-containing transparent conductive oxides raise concerns regarding cost and sustainability, whereas silicon-based tunnel junctions suffer from parasitic optical losses. Here we show that titanium oxynitride (TiOxNy) can serve as a multifunctional, indium-free recombination layer that reconciles these competing requirements. Conductive TiOxNy enables efficient vertical carrier recombination, suppresses lateral leakage and provides anchoring sites for self-assembled monolayers (SAMs) via a tridentate binding configuration. As a result, we achieve power conversion efficiencies (PCEs) of 33.3% for 1.0-cm2 devices and 30.6% for industrial-size (207.87 cm2) tandems, with enhanced operational stability. Our results establish TiOxNy as a scalable and sustainable interconnection strategy for tandem photovoltaics.",
-      "published": "2026-07-24",
-      "authors": "Fengxian Cao, Yao Li, Shibo Wang et al.",
-      "journal": "Nature Energy",
-      "matched_keywords": [
-        "perovskite"
-      ],
-      "research_story": "**科学问题**：钙钛矿/硅叠层太阳能电池中，传统铟基透明导电氧化物或硅基隧穿结作为复合层时，难以同时满足高效载流子复合、高光学透过率与界面化学稳定性，且存在成本与可持续性瓶颈。\n\n**策略/方法**：提出以无铟钛氧氮化物（TiOxNy）作为多功能复合层，通过调控其导电性、光学透明性及表面化学特性，替代传统材料。\n\n**机理/发现**：TiOxNy兼具高导电性（实现垂直载流子复合）与低横向漏电，其表面通过三齿配位构型为自组装单分子层（SAM）提供稳定锚定位点，增强界面结合与能级匹配。\n\n**性能/结果**：在1.0 cm²器件中实现33.3%的认证效率，显著优于同类铟基或硅基复合层器件，且无铟设计降低了材料依赖性与成本。\n\n**学术价值**：该工作为叠层电池复合层设计提供了兼具功能集成性与材料可持续性的新范式，推动了无铟高效叠层器件的实用化进程。",
-      "figures": [
-        {
-          "number": "1",
-          "url": "https://media.springernature.com/m312/springer-static/image/art%3A10.1038%2Fs41560-026-02116-4/MediaObjects/41560_2026_2116_Fig1_HTML.png",
-          "caption": "Fig. 1: Performance of laboratory-size tandems with TiOxNy...."
-        },
-        {
-          "number": "2",
-          "url": "https://media.springernature.com/m312/springer-static/image/art%3A10.1038%2Fs41560-026-02116-4/MediaObjects/41560_2026_2116_Fig2_HTML.png",
-          "caption": "Fig. 2: Performance of industrial-size tandems with TiOxNy...."
-        },
-        {
-          "number": "3",
-          "url": "https://media.springernature.com/m312/springer-static/image/art%3A10.1038%2Fs41560-026-02116-4/MediaObjects/41560_2026_2116_Fig3_HTML.png",
-          "caption": "Fig. 3: Optoelectronic properties of TiOxNy...."
-        },
-        {
-          "number": "4",
-          "url": "https://media.springernature.com/m312/springer-static/image/art%3A10.1038%2Fs41560-026-02116-4/MediaObjects/41560_2026_2116_Fig4_HTML.png",
-          "caption": "Fig. 4: SAM adsorption on TiOxNy...."
-        },
-        {
-          "number": "5",
-          "url": "https://media.springernature.com/m312/springer-static/image/art%3A10.1038%2Fs41560-026-02116-4/MediaObjects/41560_2026_2116_Fig5_HTML.png",
-          "caption": "Fig. 5: Perovskite grown on TiOxNy/SAM...."
-        }
-      ],
-      "has_full_content": true
-    }
-  ]
+  "count": 0,
+  "papers": []
 }
