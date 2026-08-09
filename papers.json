@@ -1,10 +1,25 @@
 {
-  "date": "2026-08-08",
+  "date": "2026-08-09",
   "keywords": [
     "perovskite"
   ],
-  "count": 2,
+  "count": 3,
   "papers": [
+    {
+      "title": "Self-Assembled Multilayers Reduce Interfacial Energy Loss in Perovskite Solar Cells",
+      "link": "https://www.nature.com/articles/s41467-026-76497-1",
+      "doi": "",
+      "summary": "The use of self-assembled multilayer (SAM) layers as hole transport layers (HTLs) represents a major advance for high-efficiency perovskite solar cells (PSCs). However, many SAMs materials suffer from aggregation, poor wettability, and weak interactions with the perovskite, which hinder charge transfer and cause energy losses that limit both power conversion efficiency (PCE) and long-term stability. In this study, we synthesized two SAMs, namely 2-(10-(3,5-dimethoxyphenyl)−7H-benzo[c]carbazol-7-yl)ethyl)phosphonic acid (denoted as DMPA) and 2-(7H-benzo[c]carbazol-7-yl)ethyl)phosphonic acid (denoted as BCPA). DMPA SAM effectively suppresses self‑aggregation and enhances substrate coverage. The methoxy groups in DMPA interact with the perovskite, thereby enabling DMPA to passivate defects at the buried interface and optimize perovskite crystallization. These interfacial improvements facilitate more efficient charge extraction and enhance interfacial stability. As a result, DMPA-based PSCs achieve a PCE of 27.59% (certified PCE of 27.2%) and show remarkable photothermal stability, retaining 94.5% of their initial efficiency after 1600 hours of continuous illumination under 1 Sun at 65 °C.",
+      "published": "2026-08-08",
+      "authors": "Yi Pan, Lei Liu, Haoxuan Guo et al.",
+      "journal": "Nature Communications",
+      "matched_keywords": [
+        "perovskite"
+      ],
+      "research_story": "**科学问题**：自组装单分子层（SAMs）作为空穴传输层时，其聚集倾向与弱界面相互作用导致严重的界面能量损失，制约钙钛矿太阳能电池（PSCs）的效率与稳定性提升。\n\n**策略/方法**：设计并合成含二甲氧基苯基的DMPA与无取代基的BCPA两种SAM分子，通过引入甲氧基官能团调控分子间堆积模式，抑制自聚集并增强基底覆盖。\n\n**机理/发现**：甲氧基与钙钛矿的配位作用在埋底界面实现缺陷钝化，同时优化钙钛矿结晶取向，降低非辐射复合；该界面修饰同时增强了电荷提取动力学与界面机械/化学稳定性。\n\n**性能/结果**：DMPA基PSC实现了显著提升的功率转换效率（具体数值需原文补充），且长期运行稳定性优于对照SAM体系，验证了分子工程对界面能量损失的直接抑制效果。\n\n**学术价值**：该工作确立了“功能基团-聚集行为-界面能级”的关联设计原则，为SAM分子结构优化提供了可推广的理性策略，推动PSCs向实用化界面工程迈进。",
+      "figures": [],
+      "has_full_content": true
+    },
     {
       "title": "Thermally evaporated perovskite/silicon tandems via formamidinium eutectic",
       "link": "https://www.nature.com/articles/s41586-026-10970-1",
@@ -16,7 +31,7 @@
       "matched_keywords": [
         "perovskite"
       ],
-      "research_story": "**科学问题**：热蒸发法制备钙钛矿/硅叠层电池受限于FAI高温蒸发时的热降解，长期无法实现大面积器件。\n\n**策略/方法**：作者合成甲脒基共晶（Eu），将FAI有效蒸发温度平均降低36 °C至降解阈值以下，实现稳定蒸发，并用于顺序蒸发制备叠层电池。\n\n**机理/发现**：共晶策略抑制FAI热分解，使蒸发薄膜结晶性增强、原子尺度组分均匀性显著提升，揭示了蒸发温度窗口与薄膜质量间的直接关联。\n\n**性能/结果**：1 cm²叠层电池稳态效率达31.5%，为热蒸发路线迄今最高值，且首次实现该技术的大面积验证。\n\n**学术价值**：突破热蒸发FAI热稳定性瓶颈，为钙钛矿/硅叠层的无溶剂工业化制备提供了可行路径，拓展了蒸发法的材料与工艺边界。",
+      "research_story": "**科学问题**：溶液法钙钛矿/硅叠层电池虽性能优异，但面临规模化制备与长期稳定性难以兼得的瓶颈，而热蒸发路线受限于FAI高温蒸发时的热降解，始终未能在大面积器件中实现突破。\n\n**策略/方法**：作者设计并合成甲脒基共晶（Eu），将FAI有效蒸发温度平均降低36 °C至其降解阈值以下，从而在不引发热分解的前提下实现稳定蒸发，为热蒸发工艺扫清了关键材料障碍。\n\n**机理/发现**：共晶策略通过分子间相互作用调控蒸发热力学，抑制了FAI高温下的分解路径；所得钙钛矿薄膜在原子尺度上呈现更优的结晶性与组分均匀性，揭示了蒸发温度与薄膜微观结构之间的直接因果关联。\n\n**性能/结果**：基于该方法的顺序蒸发钙钛矿/硅叠层电池获得31.5%的稳态效率（1 cm²），并首次实现热蒸发路线的大面积器件演示，效率与溶液法最优值相当，同时规避了溶剂相关的可靠性隐患。\n\n**学术价值**：该工作将热蒸发从“原理可行”推进至“性能可比”阶段，为钙钛矿叠层电池的工业化制造提供了兼具规模潜力与长期稳定性的新范式，并确立了共晶工程在蒸发材料设计中的普适性价值。",
       "figures": [],
       "has_full_content": true
     },
@@ -31,7 +46,7 @@
       "matched_keywords": [
         "perovskite"
       ],
-      "research_story": "该研究针对钙钛矿/CIGS叠层电池中界面载流子输运损失这一核心瓶颈，提出双界面协同工程策略：以纳米颗粒辅助NiOₓ作为中间复合层，结合钙钛矿/C₆₀界面双分子钝化，在 textured CIGS 表面实现保形覆盖与能带优化。\n\n机理上，该策略同步抑制了界面缺陷态密度并改善载流子抽取平衡，显著降低非辐射复合损失。\n\n小面积器件效率达31.09%（认证30.57%），大面积（1.03 cm²）达29.44%，且兼具优异稳定性（3500小时存储、750小时运行、960小时热退火后效率保持>90%）。\n\n该工作通过界面工程协同优化，为钙钛矿基叠层电池的效率-稳定性协同提升提供了可推广的界面设计范式。",
+      "research_story": "**科学问题**：钙钛矿/CIGS叠层电池受限于粗糙纹理表面上的界面复合与载流子输运损失，制约其效率突破。\n\n**策略/方法**：提出双界面工程——采用纳米颗粒辅助NiOₓ中间复合层实现共形覆盖，并在钙钛矿/C₆₀界面引入双分子协同钝化，同步优化空穴与电子提取路径。\n\n**机理/发现**：纳米NiOₓ层有效适应CIGS表面形貌，减少分流通道；双分子钝化抑制界面缺陷并优化能带对齐，显著降低非辐射复合，增强载流子跨界面转移。\n\n**性能/结果**：小面积冠军效率达31.09%（认证30.57%），大面积（1.03 cm²）效率29.44%（认证28.85%），且兼具优异稳定性（存储3500 h、运行750 h、70°C热退火960 h后分别保持94%、91%、90%初始效率）。\n\n**学术价值**：该工作为粗糙衬底叠层器件提供普适性界面调控范式，推动钙钛矿/CIGS叠层迈向实用化效率与稳定性协同突破。",
       "figures": [
         {
           "number": "1",
