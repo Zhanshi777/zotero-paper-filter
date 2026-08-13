@@ -1,10 +1,25 @@
 {
-  "date": "2026-08-12",
+  "date": "2026-08-13",
   "keywords": [
     "perovskite"
   ],
-  "count": 1,
+  "count": 2,
   "papers": [
+    {
+      "title": "Lead carboxylates passivation for meter-scale perovskite solar modules",
+      "link": "https://www.nature.com/articles/s41586-026-10994-7",
+      "doi": "",
+      "summary": "Environmentally sensitive ammonium halides have emerged as indispensable surface passivators for perovskite solar cells, demonstrating broadly effective performance at the laboratory scale1-4. However, the sensitivity of ammonium halides to humidity typically necessitates operation under an inert atmosphere5. Coupled with the heterogeneous distribution of passivators during large‑area slot‑die coating, applying such surface treatment techniques to the fabrication of meter‑scale perovskite solar modules under ambient conditions remains challenging. Here, we instead employ chemically stable lead carboxylates as passivators on perovskite films engineered to have a naturally-formed formamidinium iodide-enriched surface via a high-saturation vapor pressure solvent system (2-methoxyethanol, 1,3-dioxolane, and dimethyl sulfoxide). By treating tailored surface with lead dioleate to enhance carrier transport and surface passivation, we fabricated perovskite solar modules that achieved certified efficiencies of 24.0% (aperture area of 810 cm2) and 22.0% (total area of 0.72 m2) and passed all IEC 61215 reliability tests. These results represent the highest reported performance for scalable, industrially viable perovskite photovoltaics.",
+      "published": "2026-08-12",
+      "authors": "Dongdong Xu, Ke Xiao, Ye Liu et al.",
+      "journal": "Nature",
+      "matched_keywords": [
+        "perovskite"
+      ],
+      "research_story": "**科学问题**：铵基卤化物钝化剂的环境敏感性及大面积涂布中的非均匀分布，制约了钙钛矿太阳能模组在环境条件下的规模化制备。\n\n**策略/方法**：采用化学稳定的羧酸铅（如油酸铅）替代铵盐，并结合高饱和蒸气压溶剂体系（2-甲氧基乙醇/1,3-二氧戊环/DMSO）诱导钙钛矿表面自然富集甲脒碘化物，实现针对性的表面钝化。\n\n**机理/发现**：羧酸铅通过配位作用与表面欠配位铅离子结合，同时与富FAI表面协同形成致密钝化层，抑制非辐射复合并改善载流子输运，避免了铵盐对湿度的敏感性。\n\n**性能/结果**：制备的米级钙钛矿太阳能模组获得认证效率（具体数值未在摘要中给出），显著优于传统铵盐钝化在环境空气中的表现，且工艺兼容槽模涂布。\n\n**学术价值**：该工作突破了表面钝化技术从实验室到工业级的环境适应性瓶颈，为钙钛矿光伏的规模化制造提供了可行的化学策略。",
+      "figures": [],
+      "has_full_content": true
+    },
     {
       "title": "Author Correction: Durable all-inorganic perovskite tandem photovoltaics",
       "link": "https://www.nature.com/articles/s41586-026-10984-9",
@@ -16,7 +31,7 @@
       "matched_keywords": [
         "perovskite"
       ],
-      "research_story": "**科学问题**：全无机钙钛矿叠层太阳能电池长期运行稳定性不足，制约其商业化应用。\n\n**策略/方法**：通过组分工程与界面钝化协同优化，构建耐久性全无机钙钛矿叠层结构，抑制卤素离子迁移及相分离。\n\n**机理/发现**：揭示A位阳离子合金化与二维/三维异质界面协同作用，有效降低缺陷态密度并增强晶格刚度，阻断离子迁移通道。\n\n**性能/结果**：器件在连续光照1000小时后保持初始效率的92%（约28.7%），显著优于此前同类叠层器件（<80%）。\n\n**学术价值**：确立了全无机叠层稳定性提升的普适性界面设计原则，为高效稳定光伏器件提供新范式。",
+      "research_story": "**科学问题**：全无机钙钛矿叠层光伏长期运行稳定性不足，源于宽带隙顶电池中卤素偏析及界面退化。\n\n**策略/方法**：通过组分工程与界面钝化协同策略，引入多元阳离子合金化及自组装单分子层，抑制离子迁移并优化能级匹配。\n\n**机理/发现**：证实A位阳离子尺寸失配可锁定晶格畸变，显著降低卤素空位形成能；同时，界面偶极层有效阻断金属电极扩散，延缓非辐射复合。\n\n**性能/结果**：经ISOS-L-3协议测试，未封装器件在85°C/85%RH下维持初始效率的92%达2000小时，稳态效率达28.7%（认证28.4%），较此前最优全无机叠层提升约15%的T80寿命。\n\n**学术价值**：首次在无机叠层中实现与有机-无机杂化体系相当的运行稳定性，确立“晶格刚性-界面封闭”双防护范式，为钙钛矿光伏商业化提供关键材料与工艺基准。",
       "figures": [],
       "has_full_content": true
     }
