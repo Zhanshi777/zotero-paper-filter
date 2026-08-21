@@ -1,9 +1,9 @@
 {
-  "date": "2026-08-20",
+  "date": "2026-08-21",
   "keywords": [
     "perovskite"
   ],
-  "count": 3,
+  "count": 2,
   "papers": [
     {
       "title": "Interface engineering towards high-efficiency perovskite/CIGS tandem solar cells",
@@ -16,7 +16,7 @@
       "matched_keywords": [
         "perovskite"
       ],
-      "research_story": "**科学问题**：钙钛矿/CIGS叠层电池效率受限于 textured CIGS 表面上的共形钙钛矿覆盖不足及载流子传输界面复合严重。\n\n**策略/方法**：提出双界面工程策略，在电子与空穴传输界面同步引入化学修饰层，实现 textured 表面的共形钙钛矿成膜并优化能级匹配。\n\n**机理/发现**：界面修饰层通过调控钙钛矿结晶动力学抑制缺陷态形成，同时降低传输层/钙钛矿界面势垒，显著增强载流子提取效率并抑制非辐射复合。\n\n**性能/结果**：单片钙钛矿/CIGS叠层电池效率突破30%，优于此前报道的同类器件（~27%），且未封装条件下表现出良好运行稳定性。\n\n**学术价值**：该工作为多晶叠层电池的界面工程提供了普适性设计准则，将钙钛矿/CIGS技术推进至与晶硅叠层竞争的水平，拓宽了高效薄膜光伏的实用化路径。",
+      "research_story": "**科学问题**：钙钛矿/CIGS叠层电池效率受限于 textured CIGS 表面上的共形钙钛矿覆盖困难及载流子传输界面复合严重。\n\n**策略/方法**：提出双界面工程策略，通过协同调控电子传输层与空穴传输层界面，实现钙钛矿在粗糙 CIGS 表面的共形成膜，并优化能级匹配与接触性能。\n\n**机理/发现**：界面修饰层有效钝化缺陷并抑制非辐射复合，同时改善钙钛矿结晶取向与界面载流子动力学，显著提升开路电压与填充因子。\n\n**性能/结果**：单片钙钛矿/CIGS叠层电池效率突破30%（>30%），且稳定性良好，优于此前报道的同类器件（通常<28%）。\n\n**学术价值**：该工作为多晶叠层电池的界面工程提供了普适性设计原则，推动钙钛矿/硫族化物叠层技术迈向实用化效率门槛。",
       "figures": [
         {
           "number": "1",
@@ -37,7 +37,7 @@
       "matched_keywords": [
         "perovskite"
       ],
-      "research_story": "**科学问题**：钙钛矿光伏规模化制备受限于经典配位溶剂（DMSO/NMP）在环境湿度下易吸水、退火时中间相难去除，导致薄膜微孔与杂相。\n\n**策略/方法**：提出焓–熵竞争策略，以N-丁基吡咯烷酮替代DMSO/NMP，利用其室温强配位（焓驱动）与加热易解离（熵驱动）的特性，实现湿度耐受的规模化印刷。\n\n**机理/发现**：N-丁基吡咯烷酮与PbI₂形成羰基配位中间相，低温稳定、高温快速释放，促进甲脒碘嵌入并保护中间相，避免残留与孔洞。\n\n**性能/结果**：100 cm²组件获认证效率23.97%，优于传统溶剂体系在同等条件下的稳定性与重复性。\n\n**学术价值**：为钙钛矿印刷提供一种普适的溶剂设计原则，突破湿度敏感性与规模化制备间的核心矛盾。",
+      "research_story": "**科学问题**：钙钛矿光伏规模化制备受限于经典配位溶剂（DMSO/NMP）在环境湿度下易吸水、退火时中间相难去除，导致薄膜微孔与杂相。\n\n**策略/方法**：提出焓–熵竞争策略，以N-丁基吡咯烷酮替代传统溶剂，利用其室温强配位（焓驱动）与加热易解离（熵驱动）的特性，实现湿度耐受的规模化印刷。\n\n**机理/发现**：N-丁基吡咯烷酮与PbI₂形成羰基配位中间相，在低温下热力学稳定，但升温时熵增促进配位键断裂，从而加速甲脒碘嵌入，避免残留相与孔洞形成。\n\n**性能/结果**：100 cm²组件获认证效率23.97%，显著优于传统溶剂体系在同类条件下的稳定性与效率。\n\n**学术价值**：该策略为钙钛矿湿法印刷提供了新的溶剂设计范式，突破了规模化制备中环境稳定性与结晶动力学的固有矛盾。",
       "figures": [
         {
           "number": "1",
@@ -65,21 +65,6 @@
           "caption": "Fig. 4: Photovoltaic performance and stability...."
         }
       ],
-      "has_full_content": true
-    },
-    {
-      "title": "Author Correction: High-performance perovskite/silicon tandem solar cells enabled by multifunctional titanium oxynitride recombination layers",
-      "link": "https://www.nature.com/articles/s41560-026-02137-z",
-      "doi": "",
-      "summary": "Nature Energy, Published online: 14 August 2026; doi:10.1038/s41560-026-02137-zAuthor Correction: High-performance perovskite/silicon tandem solar cells enabled by multifunctional titanium oxynitride recombination layers",
-      "published": "2026-08-14",
-      "authors": "Fengxian Cao, Yao Li, Shibo Wang et al.",
-      "journal": "Nature Energy",
-      "matched_keywords": [
-        "perovskite"
-      ],
-      "research_story": "该论文针对钙钛矿/硅叠层太阳能电池中传统复合层（如ITO）因溅射损伤和化学不稳定性导致的界面复合与电荷输运瓶颈，提出以多功能氮氧化钛（TiON）作为复合层材料。\n\n其创新点在于利用TiON兼具高导电性、优异光学透过性及化学钝化能力，通过调控N/O比例实现能级匹配与缺陷态抑制，从而同时优化载流子复合效率和界面稳定性。\n\n关键机理在于TiON层有效阻挡了溅射过程中高能粒子对钙钛矿层的损伤，并减少了金属离子扩散，显著降低了界面非辐射复合。\n\n实验结果显示，采用TiON复合层的叠层器件效率达到29.5%（认证值），较传统ITO复合层器件提升约1.5个百分点，且稳定性显著增强。\n\n该工作为叠层电池复合层设计提供了新的材料体系与界面工程思路，对推动高效稳定叠层器件的实用化具有重要参考价值。",
-      "figures": [],
       "has_full_content": true
     }
   ]
