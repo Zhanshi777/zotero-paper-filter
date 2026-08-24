@@ -1,71 +1,8 @@
 {
-  "date": "2026-08-23",
+  "date": "2026-08-24",
   "keywords": [
     "perovskite"
   ],
-  "count": 2,
-  "papers": [
-    {
-      "title": "Interface engineering towards high-efficiency perovskite/CIGS tandem solar cells",
-      "link": "https://www.nature.com/articles/s41560-026-02124-4",
-      "doi": "",
-      "summary": "Nature Energy, Published online: 17 August 2026; doi:10.1038/s41560-026-02124-4The efficiency of perovskite/Cu(In,Ga)Se2 (CIGS) tandem solar cells has been limited by interfacial challenges. Now, a dual-interface engineering strategy enables conformal perovskite coverage on textured CIGS bottom-cell surfaces while increasing carrier extraction at the electron‑ and hole‑transport interfaces. This strategy enables monolithic perovskite/CIGS tandems with a power conversion efficiency of >30% and good stability.",
-      "published": "2026-08-17",
-      "authors": "Unknown",
-      "journal": "Nature Energy",
-      "matched_keywords": [
-        "perovskite"
-      ],
-      "research_story": "**科学问题**：钙钛矿/CIGS叠层电池效率受限于 textured CIGS 表面上的共形钙钛矿成膜困难及载流子传输界面复合。\n\n**策略/方法**：提出双界面工程策略，通过协同调控电子传输层（ETL）与空穴传输层（HTL）的界面化学，实现钙钛矿在粗糙 CIGS 表面的共形覆盖，并优化能级匹配以增强载流子提取。\n\n**机理/发现**：界面修饰层有效钝化钙钛矿/传输层界面缺陷，降低非辐射复合；同时，共形生长消除了钙钛矿层内的裂缝与空隙，抑制了分流路径，从而提升开路电压与填充因子。\n\n**性能/结果**：单片钙钛矿/CIGS叠层电池实现>30%的功率转换效率（经认证），且未封装条件下在持续光照下保持良好稳定性，显著优于此前报道的同类器件（通常<28%）。\n\n**学术价值**：该工作为粗糙底电池表面的界面工程提供了普适性设计准则，将钙钛矿/CIGS叠层效率推至与钙钛矿/硅叠层相当的水平，拓宽了薄膜光伏叠层技术的材料选择空间。",
-      "figures": [
-        {
-          "number": "1",
-          "url": "https://media.springernature.com/m312/springer-static/image/art%3A10.1038%2Fs41560-026-02124-4/MediaObjects/41560_2026_2124_Fig1_HTML.png",
-          "caption": "Fig. 1: Dual‑interface carrier transport engineering strategy for efficient monolithic perovskite/CIGS tandems...."
-        }
-      ],
-      "has_full_content": true
-    },
-    {
-      "title": "An enthalpy–entropy competition strategy enables moisture-stable and scalable perovskite photovoltaics",
-      "link": "https://www.nature.com/articles/s44160-026-01142-0",
-      "doi": "",
-      "summary": "Scalable fabrication of perovskite solar modules is hindered by processing inconsistencies and moisture-induced degradation. Although classic coordination solvents form thermodynamically stable intermediate phases with lead iodide (PbI2) under inert gas atmospheres, they are highly hygroscopic in ambient conditions. Moreover, due to minimal entropy change, this phase is difficult to remove during annealing, leading to micropores and unwanted phases. Here we introduce an enthalpy–entropy competition strategy for scalable, humidity-tolerant perovskite printing, in which dimethyl sulfoxide/N-methylpyrrolidone is replaced by N-butylpyrrolidone. N-butylpyrrolidone forms strong carbonyl–PbI2 coordination at ambient temperatures (enthalpy-driven), yet readily dissociates on heating (entropy-driven), facilitating easier formamidinium iodide embedding and intermediate-phase protection. The strategy yields perovskite solar modules with certified power conversion efficiencies of 23.97% in a 100-cm2 rigid module and 19.71% in a flexible counterpart. Encapsulated devices retain 80% of initial performance after 1,440 hours under the double 85 condition (85 °C, 85% relative humidity), demonstrating outstanding operational durability.",
-      "published": "2026-08-17",
-      "authors": "Zhaoyang Chu, Junliang Li, Jiaju Gao et al.",
-      "journal": "Nature Synthesis",
-      "matched_keywords": [
-        "perovskite"
-      ],
-      "research_story": "**科学问题**：钙钛矿光伏规模化制备受限于经典配位溶剂（DMSO/NMP）在环境湿度下易吸湿、且其与PbI₂形成的中间相因熵变极小而难以热脱除，导致膜内微孔与杂相。\n\n**策略/方法**：提出焓–熵竞争策略，以N-丁基吡咯烷酮替代DMSO/NMP，利用其室温强羰基–PbI₂配位（焓驱动）与加热易解离（熵驱动）的特性，兼顾中间相稳定与高效去除。\n\n**机理/发现**：N-丁基吡咯烷酮在低温形成热力学稳定的配位中间相，抑制环境水汽侵入；升温时熵增主导促进配位键断裂，加速甲脒碘嵌入与中间相转化，避免残留相与孔洞。\n\n**性能/结果**：100 cm²钙钛矿组件获认证效率23.97%，显著优于DMSO/NMP体系在同类湿度条件下的可重复性与效率。\n\n**学术价值**：首次将焓–熵竞争机制引入配位溶剂设计，为湿度耐受型钙钛矿规模化印刷提供了热力学调控新范式。",
-      "figures": [
-        {
-          "number": "1",
-          "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs44160-026-01142-0/MediaObjects/44160_2026_1142_Figa_HTML.png",
-          "caption": "Figure 1"
-        },
-        {
-          "number": "2",
-          "url": "https://media.springernature.com/m312/springer-static/image/art%3A10.1038%2Fs44160-026-01142-0/MediaObjects/44160_2026_1142_Fig1_HTML.png",
-          "caption": "Fig. 1: Determination of enthalpy–entropy effects...."
-        },
-        {
-          "number": "3",
-          "url": "https://media.springernature.com/m312/springer-static/image/art%3A10.1038%2Fs44160-026-01142-0/MediaObjects/44160_2026_1142_Fig2_HTML.png",
-          "caption": "Fig. 2: Nucleation and crystallization regulation...."
-        },
-        {
-          "number": "4",
-          "url": "https://media.springernature.com/m312/springer-static/image/art%3A10.1038%2Fs44160-026-01142-0/MediaObjects/44160_2026_1142_Fig3_HTML.png",
-          "caption": "Fig. 3: Reduction of defect density and sites...."
-        },
-        {
-          "number": "5",
-          "url": "https://media.springernature.com/m312/springer-static/image/art%3A10.1038%2Fs44160-026-01142-0/MediaObjects/44160_2026_1142_Fig4_HTML.png",
-          "caption": "Fig. 4: Photovoltaic performance and stability...."
-        }
-      ],
-      "has_full_content": true
-    }
-  ]
+  "count": 0,
+  "papers": []
 }
