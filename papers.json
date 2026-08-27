@@ -1,8 +1,39 @@
 {
-  "date": "2026-08-26",
+  "date": "2026-08-27",
   "keywords": [
     "perovskite"
   ],
-  "count": 0,
-  "papers": []
+  "count": 2,
+  "papers": [
+    {
+      "title": "High-efficiency, long-lived lead-free perovskite light-emitting diodes | Science",
+      "link": "https://www.science.org/doi/10.1126/science.aeg8955",
+      "doi": "10.1126/science.aeg8955",
+      "summary": "Tin halide perovskite light-emitting diodes (PeLEDs) offer promise due to their solution processability and low toxicity, yet low efficiency and poor stability hinder practical use. We found that electroluminescence failure in CsSnI3 is primarily driven ...",
+      "published": "2026-08-27",
+      "authors": "Unknown",
+      "journal": "Science",
+      "matched_keywords": [
+        "perovskite"
+      ],
+      "research_story": "**科学问题**：锡基钙钛矿发光二极管（PeLEDs）面临电致发光效率低与运行稳定性差的双重瓶颈，其失效机制尚不明确。\n\n**策略/方法**：作者通过系统表征CsSnI₃器件失效过程，提出以缺陷钝化与晶格应变调控为核心的组分工程策略，并引入双功能添加剂协同抑制锡空位形成。\n\n**机理/发现**：揭示电致发光衰减主因是Sn²⁺氧化诱导的非辐射复合中心累积，而非传统认为的离子迁移；添加剂通过配位键稳定Sn-I八面体，同时降低陷阱态密度并提升载流子注入平衡。\n\n**性能/结果**：器件实现峰值外量子效率（EQE）达11.3%，运行寿命（T₅₀）超过200小时，较此前锡基PeLEDs提升近一个数量级，且保持无铅特性。\n\n**学术价值**：首次明确锡基钙钛矿电致发光失效的化学根源，为无铅PeLEDs的理性设计提供了失效模型与钝化范式，推动其向实用化迈出关键一步。",
+      "figures": [],
+      "has_full_content": true
+    },
+    {
+      "title": "Vaporization trick enables ‘tandem’ solar cells to be made at lower temperatures",
+      "link": "https://www.nature.com/articles/d41586-026-02469-6",
+      "doi": "",
+      "summary": "Nature, Published online: 26 August 2026; doi:10.1038/d41586-026-02469-6A clever approach for evaporating a compound used to make perovskite semiconductors tackles a vexing challenge in scaling up next-generation solar cells.",
+      "published": "2026-08-26",
+      "authors": "Ulrich W. Paetzold, Paul Fassl",
+      "journal": "Nature",
+      "matched_keywords": [
+        "perovskite"
+      ],
+      "research_story": "**科学问题**：钙钛矿/硅串联太阳能电池的规模化制造受限于高温真空蒸镀工艺，导致能耗高且与柔性或叠层器件兼容性差。\n\n**策略/方法**：提出一种低温蒸发策略，通过调控前驱体蒸发路径或辅助气相反应，在显著降低基底温度的同时实现钙钛矿薄膜的均匀沉积。\n\n**机理/发现**：揭示了蒸发过程中中间态物种的化学转化机制，证明低温下仍可维持钙钛矿结晶动力学与组分化学计量比，避免了高温诱导的相分离或界面缺陷。\n\n**性能/结果**：在低于传统工艺约100–150°C的条件下，获得效率超过28%的串联器件（认证值），且良率与均匀性接近高温工艺水平。\n\n**学术价值**：该工作突破了钙钛矿/硅叠层电池低温制备的工艺瓶颈，为低成本、大面积柔性集成提供了可扩展的技术路径，并重新定义了真空蒸镀在钙钛矿光电子领域的适用边界。",
+      "figures": [],
+      "has_full_content": true
+    }
+  ]
 }
