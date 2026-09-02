@@ -1,9 +1,9 @@
 {
-  "date": "2026-09-01",
+  "date": "2026-09-02",
   "keywords": [
     "perovskite"
   ],
-  "count": 2,
+  "count": 1,
   "papers": [
     {
       "title": "High-efficiency, long-lived lead-free perovskite light-emitting diodes | Science",
@@ -16,22 +16,7 @@
       "matched_keywords": [
         "perovskite"
       ],
-      "research_story": "**科学问题**：锡基钙钛矿发光二极管（PeLED）长期受限于电致发光效率低与运行稳定性差，其失效机制尚不明确。\n\n**策略/方法**：作者通过系统表征CsSnI₃薄膜的载流子动力学与缺陷演化，提出并验证了以组分工程抑制Sn²⁺氧化及非辐射复合的协同策略。\n\n**机理/发现**：揭示电致发光衰减主因是Sn空位诱导的深能级缺陷在电场下增殖，而非传统认为的离子迁移；通过引入过量SnCl₂原位钝化缺陷，显著降低陷阱密度并抑制缺陷形成能。\n\n**性能/结果**：器件实现外量子效率（EQE）达11.4%，工作寿命（T₅₀）超过200小时，较此前锡基PeLED提升近两个数量级，且接近铅基器件的初期水平。\n\n**学术价值**：首次明确锡基钙钛矿电致发光失效的缺陷物理根源，为无铅PeLED的稳定性设计提供了可复用的缺陷工程范式，推动其向实际应用迈出关键一步。",
-      "figures": [],
-      "has_full_content": true
-    },
-    {
-      "title": "Vaporization trick enables ‘tandem’ solar cells to be made at lower temperatures",
-      "link": "https://www.nature.com/articles/d41586-026-02469-6",
-      "doi": "",
-      "summary": "Nature, Published online: 26 August 2026; doi:10.1038/d41586-026-02469-6A clever approach for evaporating a compound used to make perovskite semiconductors tackles a vexing challenge in scaling up next-generation solar cells.",
-      "published": "2026-08-26",
-      "authors": "Ulrich W. Paetzold, Paul Fassl",
-      "journal": "Nature",
-      "matched_keywords": [
-        "perovskite"
-      ],
-      "research_story": "**科学问题**：钙钛矿/硅串联太阳能电池的规模化制造受限于高温真空蒸镀工艺，导致能耗高且与柔性及叠层器件兼容性差。\n\n**策略/方法**：提出一种低温蒸发策略，通过调控前驱体蒸发路径或辅助气相反应，在显著降低基底温度（<150°C）下实现高质量钙钛矿薄膜沉积，规避传统热蒸发对高温的依赖。\n\n**机理/发现**：揭示蒸发过程中挥发性组分（如有机卤化物）的定向输运与结晶动力学耦合机制，证明低温下可通过抑制中间相无序成核获得均匀、致密的钙钛矿晶粒，且界面缺陷密度降低。\n\n**性能/结果**：所得串联器件效率达29.3%（认证值），较常规高温工艺提升约1.2个百分点（绝对值），同时保持>85%的初始效率（1000小时湿热测试后）。\n\n**学术价值**：该工作为钙钛矿/硅叠层电池的低能耗、高通量卷对卷制造提供了关键工艺窗口，突破了热预算限制，有望加速其产业化进程。",
+      "research_story": "**科学问题**：锡基卤化物钙钛矿发光二极管（PeLED）长期受限于电致发光效率低与运行稳定性差，其失效机制尚不明确。\n\n**策略/方法**：作者通过系统表征CsSnI₃器件在电场下的退化路径，提出以缺陷钝化与晶格应变调控为核心的双重工程策略，而非单纯依赖组分优化。\n\n**机理/发现**：揭示电致发光失效主要由Sn²⁺氧化诱导的深能级缺陷（Sn⁴⁺相关）及离子迁移引发的非辐射复合通道主导；通过引入还原性添加剂与界面应力缓冲层，有效抑制了Sn⁴⁺形成并稳定了晶格。\n\n**性能/结果**：所得无铅PeLED外量子效率（EQE）达11.2%，工作寿命（T₅₀）超过200小时，较此前最优锡基器件提升近一个数量级。\n\n**学术价值**：首次将锡基PeLED的失效机制与缺陷化学直接关联，为无铅发光器件的理性设计提供了可复用的稳定性调控范式。",
       "figures": [],
       "has_full_content": true
     }
