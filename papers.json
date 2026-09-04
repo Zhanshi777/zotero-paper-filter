@@ -1,24 +1,8 @@
 {
-  "date": "2026-09-03",
+  "date": "2026-09-04",
   "keywords": [
     "perovskite"
   ],
-  "count": 1,
-  "papers": [
-    {
-      "title": "High-efficiency, long-lived lead-free perovskite light-emitting diodes | Science",
-      "link": "https://www.science.org/doi/10.1126/science.aeg8955",
-      "doi": "10.1126/science.aeg8955",
-      "summary": "Tin halide perovskite light-emitting diodes (PeLEDs) offer promise due to their solution processability and low toxicity, yet low efficiency and poor stability hinder practical use. We found that electroluminescence failure in CsSnI3 is primarily driven ...",
-      "published": "2026-08-27",
-      "authors": "Unknown",
-      "journal": "Science",
-      "matched_keywords": [
-        "perovskite"
-      ],
-      "research_story": "**科学问题**：锡基钙钛矿发光二极管（PeLED）长期受困于电致发光效率低与运行稳定性差，其失效机制尚不明确，制约了无铅化显示技术的实用化进程。\n\n**策略/方法**：作者针对CsSnI₃薄膜中缺陷诱导的非辐射复合与离子迁移问题，提出通过组分工程与界面钝化协同调控策略，结合瞬态电致发光表征揭示失效根源。\n\n**机理/发现**：关键发现是电致发光衰减主要由Sn²⁺氧化产生的深能级缺陷及电场驱动的卤素空位迁移共同导致，而非传统认为的载流子注入失衡；通过引入还原性添加剂与宽带隙界面层，有效抑制了Sn⁴⁺形成并稳定了晶格。\n\n**性能/结果**：优化后的器件实现了峰值外量子效率（EQE）达XX%（需原文数据，此处以“显著高于此前锡基PeLED报道值”替代），且在初始亮度XX cd/m²下工作寿命（T₅₀）延长至XX小时，首次接近铅基器件水平。\n\n**学术价值**：该工作厘清了锡基钙钛矿电致发光退化的核心物理机制，并提供了可复现的钝化范式，为无铅PeLED迈向高效长寿命应用奠定了关键材料与器件基础。",
-      "figures": [],
-      "has_full_content": true
-    }
-  ]
+  "count": 0,
+  "papers": []
 }
