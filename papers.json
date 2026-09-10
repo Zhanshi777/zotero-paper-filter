@@ -1,8 +1,86 @@
 {
-  "date": "2026-09-09",
+  "date": "2026-09-10",
   "keywords": [
     "perovskite"
   ],
-  "count": 0,
-  "papers": []
+  "count": 3,
+  "papers": [
+    {
+      "title": "Ironing out the wrinkles",
+      "link": "https://www.nature.com/articles/s41560-026-02127-1",
+      "doi": "",
+      "summary": "Nature Energy, Published online: 10 September 2026; doi:10.1038/s41560-026-02127-1Ultrawide-bandgap perovskites are essential for all-perovskite triple-junction solar cells, yet their high bromide content causes surface wrinkling and halide disorder, limiting the performance. A surface reconstruction and halide homogenization strategy now enables a certified efficiency of 29.3% in all-perovskite triple-junction devices.",
+      "published": "2026-09-10",
+      "authors": "Tomoya Nakamura, Minh Anh Truong, Atsushi Wakamiya",
+      "journal": "Nature Energy",
+      "matched_keywords": [
+        "perovskite"
+      ],
+      "research_story": "全钙钛矿三结电池中，超宽禁带子电池的高溴含量引发表面起皱与卤化物无序，制约器件性能。\n\n该工作采用表面重构与卤化物均质化策略，通过重构表面化学环境并抑制卤素偏析，实现溴基钙钛矿薄膜的形貌与组分协同优化。\n\n机理上，表面重构缓解了晶格失配诱导的应力累积，卤化物均质化则降低了相分离倾向。\n\n最终获得29.3%的认证效率，刷新全钙钛矿三结电池纪录。\n\n该策略为高溴超宽禁带钙钛矿的缺陷调控提供了可扩展路径，推动全钙钛矿叠层器件向更高效率迈进。",
+      "figures": [
+        {
+          "number": "1",
+          "url": "https://media.springernature.com/m312/springer-static/image/art%3A10.1038%2Fs41560-026-02127-1/MediaObjects/41560_2026_2127_Fig1_HTML.png",
+          "caption": "Fig. 1: Smoothing 2 eV ultrawide-bandgap (UWBG) perovskites for triple-junction solar cells...."
+        }
+      ],
+      "has_full_content": true
+    },
+    {
+      "title": "Crystallization control of 2.0-eV bandgap perovskites for all-perovskite triple-junction solar cells",
+      "link": "https://www.nature.com/articles/s41560-026-02135-1",
+      "doi": "",
+      "summary": "Ultrawide-bandgap (UWBG) perovskites are essential for monolithic all-perovskite triple-junction solar cells. However, their performance is limited by severe surface wrinkling, halide heterogeneity and large open-circuit voltage deficits originating from high Br–I ratios. Here we develop a surface reconstruction and halide homogenization strategy that simultaneously regulates crystallization and eliminates stress-induced morphological disorder in 2.0-eV bandgap perovskites. Through synergistic solvent and additive engineering, involving solvent-induced surface reconstruction and transient Cl− incorporation from oleylammonium chloride, surface wrinkling is suppressed, and Br/I crystallization is synchronized with promoted homogeneous halide distribution. The resulting UWBG perovskite films show uniform surface potential, suppressed non-radiative recombination, improved carrier mobility and an open-circuit voltage of 1.46 V. Integrating this UWBG subcell with optimized 1.6- and 1.22-eV absorbers yields monolithic all-perovskite triple-junction solar cells with 30.1% power conversion efficiency (certified 29.3%) and robust operational stability, providing a promising route towards >35% efficient all-perovskite multijunction photovoltaics.",
+      "published": "2026-09-10",
+      "authors": "Yuhong Zhang, Enzuo Wang, Haonan Liu et al.",
+      "journal": "Nature Energy",
+      "matched_keywords": [
+        "perovskite"
+      ],
+      "research_story": "该工作针对2.0 eV超宽带隙钙钛矿中高Br/I比引发的表面起皱、卤化物偏析与开压亏损等结晶学瓶颈。\n\n作者提出溶剂诱导表面重构与油胺氯化物瞬态Cl⁻掺入的协同策略，同步调控成核-生长动力学并释放应力失配，实现Br/I同步结晶与卤素均质化。\n\n机理上，Cl⁻瞬态参与中间相演化，抑制非辐射复合与表面电位不均。\n\n器件获得1.46 V开压，并集成1.6/1.22 eV底电池构建全钙钛矿三结电池。\n\n该策略为UWBG钙钛矿的结晶与卤素均一性协同调控提供了可迁移的化学设计范式。",
+      "figures": [
+        {
+          "number": "1",
+          "url": "https://media.springernature.com/m312/springer-static/image/art%3A10.1038%2Fs41560-026-02135-1/MediaObjects/41560_2026_2135_Fig1_HTML.png",
+          "caption": "Fig. 1: Morphology and structure of UWBG perovskite with SRH strategy...."
+        },
+        {
+          "number": "2",
+          "url": "https://media.springernature.com/m312/springer-static/image/art%3A10.1038%2Fs41560-026-02135-1/MediaObjects/41560_2026_2135_Fig2_HTML.png",
+          "caption": "Fig. 2: Homogeneity of UWBG perovskite films...."
+        },
+        {
+          "number": "3",
+          "url": "https://media.springernature.com/m312/springer-static/image/art%3A10.1038%2Fs41560-026-02135-1/MediaObjects/41560_2026_2135_Fig3_HTML.png",
+          "caption": "Fig. 3: Defects and charge carrier dynamics...."
+        },
+        {
+          "number": "4",
+          "url": "https://media.springernature.com/m312/springer-static/image/art%3A10.1038%2Fs41560-026-02135-1/MediaObjects/41560_2026_2135_Fig4_HTML.png",
+          "caption": "Fig. 4: The performance of single-junction UWBG devices...."
+        },
+        {
+          "number": "5",
+          "url": "https://media.springernature.com/m312/springer-static/image/art%3A10.1038%2Fs41560-026-02135-1/MediaObjects/41560_2026_2135_Fig5_HTML.png",
+          "caption": "Fig. 5: The performance of TJSCs...."
+        }
+      ],
+      "has_full_content": true
+    },
+    {
+      "title": "Uniform film formation helps tandem solar cells work better for longer",
+      "link": "https://www.nature.com/articles/d41586-026-02709-9",
+      "doi": "",
+      "summary": "Nature, Published online: 09 September 2026; doi:10.1038/d41586-026-02709-9When making mixed-halide perovskite films for use in solar cells, bromide-rich domains crystallize faster than iodide-rich ones do, leading to defects. Adding a molecule tuned to bind selectively to bromide-bound lead synchronizes the crystallization rates, yielding uniform films, better operating stability and a more-efficient perovskite–organic tandem.",
+      "published": "2026-09-09",
+      "authors": "Unknown",
+      "journal": "Nature",
+      "matched_keywords": [
+        "perovskite"
+      ],
+      "research_story": "混合卤化物钙钛矿中溴富集相与碘富集相结晶速率失配，导致组分偏析与缺陷密度升高，制约钙钛矿–有机叠层电池的效率与运行稳定性。\n\n作者引入可选择性配位溴结合铅的调控分子，同步两相结晶动力学，实现均匀成膜。\n\n该策略抑制卤素相分离与界面缺陷生成，提升薄膜光电质量与离子迁移势垒。\n\n所得叠层器件效率与长期运行稳定性同步改善，优于未调控体系。\n\n工作揭示了结晶动力学匹配对混合卤化物钙钛矿均一性的决定作用，为叠层电池稳定性工程提供了可推广的分子调控范式。",
+      "figures": [],
+      "has_full_content": true
+    }
+  ]
 }
