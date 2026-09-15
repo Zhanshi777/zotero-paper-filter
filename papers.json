@@ -1,9 +1,9 @@
 {
-  "date": "2026-09-14",
+  "date": "2026-09-15",
   "keywords": [
     "perovskite"
   ],
-  "count": 3,
+  "count": 2,
   "papers": [
     {
       "title": "Ironing out the wrinkles",
@@ -16,53 +16,12 @@
       "matched_keywords": [
         "perovskite"
       ],
-      "research_story": "该工作针对全钙钛矿三结电池中超宽禁带钙钛矿因高溴含量引发的表面起皱与卤化物无序问题。\n\n作者提出表面重构与卤化物均质化协同策略，通过调控表面化学环境抑制相分离并修复卤素空位。\n\n机理上，该策略缓解了晶格应变诱导的形貌失稳，恢复了卤化物分布的均匀性，从而降低非辐射复合。\n\n最终实现29.3%的认证效率，为全钙钛矿三结电池的最高报道值之一。\n\n该成果为高溴超宽禁带钙钛矿的缺陷与形貌协同调控提供了可行路径，推动了全钙钛矿多结叠层电池的效率边界。",
+      "research_story": "该工作针对全钙钛矿三结电池中超宽禁带钙钛矿因高溴含量引发的表面起皱与卤化物无序问题。\n\n作者提出表面重构与卤化物均质化协同策略，通过调控表面化学环境抑制晶格失配与相分离。\n\n机理上，该策略缓解了溴富集导致的局部应变与卤素分布不均，改善了载流子输运与界面稳定性。\n\n最终实现29.3%的认证效率，显著优于同类三结器件此前水平。\n\n该成果为高溴超宽禁带钙钛矿的缺陷调控提供了可行路径，推动全钙钛矿多结电池向更高效率迈进。",
       "figures": [
         {
           "number": "1",
           "url": "https://media.springernature.com/m312/springer-static/image/art%3A10.1038%2Fs41560-026-02127-1/MediaObjects/41560_2026_2127_Fig1_HTML.png",
           "caption": "Fig. 1: Smoothing 2 eV ultrawide-bandgap (UWBG) perovskites for triple-junction solar cells...."
-        }
-      ],
-      "has_full_content": true
-    },
-    {
-      "title": "Crystallization control of 2.0-eV bandgap perovskites for all-perovskite triple-junction solar cells",
-      "link": "https://www.nature.com/articles/s41560-026-02135-1",
-      "doi": "",
-      "summary": "Ultrawide-bandgap (UWBG) perovskites are essential for monolithic all-perovskite triple-junction solar cells. However, their performance is limited by severe surface wrinkling, halide heterogeneity and large open-circuit voltage deficits originating from high Br–I ratios. Here we develop a surface reconstruction and halide homogenization strategy that simultaneously regulates crystallization and eliminates stress-induced morphological disorder in 2.0-eV bandgap perovskites. Through synergistic solvent and additive engineering, involving solvent-induced surface reconstruction and transient Cl− incorporation from oleylammonium chloride, surface wrinkling is suppressed, and Br/I crystallization is synchronized with promoted homogeneous halide distribution. The resulting UWBG perovskite films show uniform surface potential, suppressed non-radiative recombination, improved carrier mobility and an open-circuit voltage of 1.46 V. Integrating this UWBG subcell with optimized 1.6- and 1.22-eV absorbers yields monolithic all-perovskite triple-junction solar cells with 30.1% power conversion efficiency (certified 29.3%) and robust operational stability, providing a promising route towards >35% efficient all-perovskite multijunction photovoltaics.",
-      "published": "2026-09-10",
-      "authors": "Yuhong Zhang, Enzuo Wang, Haonan Liu et al.",
-      "journal": "Nature Energy",
-      "matched_keywords": [
-        "perovskite"
-      ],
-      "research_story": "该工作针对2.0 eV超宽带隙钙钛矿中高Br/I比引发的表面起皱、卤化物偏析及开压亏损等瓶颈。\n\n作者提出溶剂诱导表面重构与油胺氯化物瞬态Cl⁻掺入的协同策略，同步调控结晶动力学并消除应力诱导形貌无序，实现Br/I同步结晶与卤素均质化。\n\n机理上，该策略均一化表面电势、抑制非辐射复合并提升载流子迁移率，获得1.46 V开压。\n\n将其作为顶电池构建全钙钛矿三结器件，为超宽带隙子电池的结晶与卤素调控提供了可迁移的范式。",
-      "figures": [
-        {
-          "number": "1",
-          "url": "https://media.springernature.com/m312/springer-static/image/art%3A10.1038%2Fs41560-026-02135-1/MediaObjects/41560_2026_2135_Fig1_HTML.png",
-          "caption": "Fig. 1: Morphology and structure of UWBG perovskite with SRH strategy...."
-        },
-        {
-          "number": "2",
-          "url": "https://media.springernature.com/m312/springer-static/image/art%3A10.1038%2Fs41560-026-02135-1/MediaObjects/41560_2026_2135_Fig2_HTML.png",
-          "caption": "Fig. 2: Homogeneity of UWBG perovskite films...."
-        },
-        {
-          "number": "3",
-          "url": "https://media.springernature.com/m312/springer-static/image/art%3A10.1038%2Fs41560-026-02135-1/MediaObjects/41560_2026_2135_Fig3_HTML.png",
-          "caption": "Fig. 3: Defects and charge carrier dynamics...."
-        },
-        {
-          "number": "4",
-          "url": "https://media.springernature.com/m312/springer-static/image/art%3A10.1038%2Fs41560-026-02135-1/MediaObjects/41560_2026_2135_Fig4_HTML.png",
-          "caption": "Fig. 4: The performance of single-junction UWBG devices...."
-        },
-        {
-          "number": "5",
-          "url": "https://media.springernature.com/m312/springer-static/image/art%3A10.1038%2Fs41560-026-02135-1/MediaObjects/41560_2026_2135_Fig5_HTML.png",
-          "caption": "Fig. 5: The performance of TJSCs...."
         }
       ],
       "has_full_content": true
@@ -78,7 +37,7 @@
       "matched_keywords": [
         "perovskite"
       ],
-      "research_story": "混合卤化物钙钛矿中溴富集相与碘富集相结晶速率失配，导致组分偏析与缺陷密度升高，制约钙钛矿–有机叠层电池的效率与运行稳定性。\n\n该工作引入可选择性配位溴结合铅的调控分子，同步两相结晶动力学，实现组分均匀的钙钛矿薄膜。\n\n其机制在于优先锚定溴位点以降低溴富集相的成核/生长速率，抑制卤素梯度与相分离。\n\n所得叠层器件在效率与长期运行稳定性上均优于未调控体系。\n\n该策略将结晶动力学匹配确立为混合卤素钙钛矿均一化的关键设计原则，为叠层光伏的稳定性瓶颈提供了可推广的分子工程路径。",
+      "research_story": "混合卤化物钙钛矿中溴富集相与碘富集相结晶动力学失配，导致组分偏析与缺陷密度升高，制约钙钛矿–有机叠层电池的效率与运行稳定性。\n\n作者引入可选择性配位溴结合铅的调控分子，同步两相结晶速率，实现组分均匀的钙钛矿薄膜。\n\n该策略抑制了卤素相分离与界面缺陷生成，显著提升薄膜光电质量及器件耐久性。\n\n所得叠层电池效率与运行稳定性同步优于未调控体系。\n\n工作揭示了结晶动力学协同对卤素均一性的决定作用，为混合卤化物钙钛矿的稳定化提供了可推广的分子设计范式。",
       "figures": [],
       "has_full_content": true
     }
