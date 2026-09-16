@@ -1,9 +1,9 @@
 {
-  "date": "2026-09-15",
+  "date": "2026-09-16",
   "keywords": [
     "perovskite"
   ],
-  "count": 2,
+  "count": 1,
   "papers": [
     {
       "title": "Ironing out the wrinkles",
@@ -16,7 +16,7 @@
       "matched_keywords": [
         "perovskite"
       ],
-      "research_story": "该工作针对全钙钛矿三结电池中超宽禁带钙钛矿因高溴含量引发的表面起皱与卤化物无序问题。\n\n作者提出表面重构与卤化物均质化协同策略，通过调控表面化学环境抑制晶格失配与相分离。\n\n机理上，该策略缓解了溴富集导致的局部应变与卤素分布不均，改善了载流子输运与界面稳定性。\n\n最终实现29.3%的认证效率，显著优于同类三结器件此前水平。\n\n该成果为高溴超宽禁带钙钛矿的缺陷调控提供了可行路径，推动全钙钛矿多结电池向更高效率迈进。",
+      "research_story": "该工作针对全钙钛矿三结电池中超宽禁带钙钛矿因高溴含量引发的表面起皱与卤化物无序问题。\n\n作者采用表面重构与卤化物均质化协同策略，通过调控表面化学环境抑制相分离并修复卤素分布不均。\n\n机理上，该策略缓解了晶格应变诱导的形貌退化，恢复了载流子传输与收集效率。\n\n最终器件获得29.3%的认证效率，显著优于同类三结钙钛矿电池此前水平。\n\n该结果验证了表面工程对高溴钙钛矿稳定性的关键作用，为多结叠层电池的界面调控提供了可行路径。",
       "figures": [
         {
           "number": "1",
@@ -24,21 +24,6 @@
           "caption": "Fig. 1: Smoothing 2 eV ultrawide-bandgap (UWBG) perovskites for triple-junction solar cells...."
         }
       ],
-      "has_full_content": true
-    },
-    {
-      "title": "Uniform film formation helps tandem solar cells work better for longer",
-      "link": "https://www.nature.com/articles/d41586-026-02709-9",
-      "doi": "",
-      "summary": "Nature, Published online: 09 September 2026; doi:10.1038/d41586-026-02709-9When making mixed-halide perovskite films for use in solar cells, bromide-rich domains crystallize faster than iodide-rich ones do, leading to defects. Adding a molecule tuned to bind selectively to bromide-bound lead synchronizes the crystallization rates, yielding uniform films, better operating stability and a more-efficient perovskite–organic tandem.",
-      "published": "2026-09-09",
-      "authors": "Unknown",
-      "journal": "Nature",
-      "matched_keywords": [
-        "perovskite"
-      ],
-      "research_story": "混合卤化物钙钛矿中溴富集相与碘富集相结晶动力学失配，导致组分偏析与缺陷密度升高，制约钙钛矿–有机叠层电池的效率与运行稳定性。\n\n作者引入可选择性配位溴结合铅的调控分子，同步两相结晶速率，实现组分均匀的钙钛矿薄膜。\n\n该策略抑制了卤素相分离与界面缺陷生成，显著提升薄膜光电质量及器件耐久性。\n\n所得叠层电池效率与运行稳定性同步优于未调控体系。\n\n工作揭示了结晶动力学协同对卤素均一性的决定作用，为混合卤化物钙钛矿的稳定化提供了可推广的分子设计范式。",
-      "figures": [],
       "has_full_content": true
     }
   ]
