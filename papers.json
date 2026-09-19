@@ -1,24 +1,8 @@
 {
-  "date": "2026-09-18",
+  "date": "2026-09-19",
   "keywords": [
     "perovskite"
   ],
-  "count": 1,
-  "papers": [
-    {
-      "title": "Large strain and high reversible dielectric tunability in Sm-modified PMN-PT ceramics",
-      "link": "https://www.nature.com/articles/s41467-026-77914-1",
-      "doi": "",
-      "summary": "Relaxor ferroelectrics offer dynamic polar responses desirable for adaptive electronics, yet they are fundamentally constrained by a long-standing trade-off: compositions that deliver large electric-field induced strain typically suffer from pronounced hysteresis, while highly tunable ferroelectrics exhibit limited actuation capability. Here, we demonstrate a crossover composition-tuning strategy that helps balance these competing functionalities within a single perovskite platform. Using qualitative first-principles calculations on selected local-approximant supercells, we examined how Ti substitution affects possible local polarization tendencies in Sm-doped Pb(Mg1/3Nb2/3)1-xTixO3, including predominantly 〈110〉-like, mixed multidirectional and 〈001〉-like orientations. Near the relaxor crossover region (x = 0.16), the composition exhibits a strain of 0.31% and the highest reversible dielectric tunability of 76.4% under 2 kV mm−1 with low remanent polarization and small irreversible tunability. Increasing the Ti content to x = 0.22 promotes a more stable polar state and yields a higher strain of 0.54%, but also increases remanent polarization and the irreversible tunability component, reducing the reversible dielectric tunability to 64.0%. Multiscale structural characterization supports composition-dependent evolution toward more spatially coherent local structural and polar responses with increasing Ti content. This work demonstrates composition tuning of local polar correlations near the relaxor crossover regime as an effective strategy for balancing high actuation, dielectric agility, and highly reversible field-induced response within a single compositionally tuned perovskite platform.",
-      "published": "2026-09-18",
-      "authors": "Hangfeng Zhang, Theo Graves Saunders, Haixue Yan et al.",
-      "journal": "Nature Communications",
-      "matched_keywords": [
-        "perovskite"
-      ],
-      "research_story": "该工作针对弛豫铁电体长期存在的电致应变与介电可调性难以兼得的瓶颈。\n\n作者采用跨组分调控策略，在Sm掺杂PMN-PT中通过Ti取代调节局域极化取向，借助第一性原理超胞计算揭示〈110〉、多向混合与〈001〉取向的演化规律。\n\n在弛豫 crossover 区（x=0.16）实现0.31%应变与76.4%可逆介电可调性（2 kV/mm）的协同，且剩余极化与不可逆调谐损耗低。\n\n该结果突破了传统应变-迟滞权衡，为单一钙钛矿平台集成高驱动与高调谐功能提供了组分设计范式。",
-      "figures": [],
-      "has_full_content": true
-    }
-  ]
+  "count": 0,
+  "papers": []
 }
