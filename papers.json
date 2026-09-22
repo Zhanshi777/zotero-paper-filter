@@ -1,39 +1,8 @@
 {
-  "date": "2026-09-21",
+  "date": "2026-09-22",
   "keywords": [
     "perovskite"
   ],
-  "count": 2,
-  "papers": [
-    {
-      "title": "Author Correction: Interfacial design strategies for stable and high-performance perovskite/silicon tandem solar cells on industrial silicon cells",
-      "link": "https://www.nature.com/articles/s41467-026-77840-2",
-      "doi": "",
-      "summary": "Nature Communications, Published online: 21 September 2026; doi:10.1038/s41467-026-77840-2Author Correction: Interfacial design strategies for stable and high-performance perovskite/silicon tandem solar cells on industrial silicon cells",
-      "published": "2026-09-21",
-      "authors": "Lingyi Fang, Ming Ren, Biwen Li et al.",
-      "journal": "Nature Communications",
-      "matched_keywords": [
-        "perovskite"
-      ],
-      "research_story": "该文针对钙钛矿/硅叠层电池在工业级硅底电池上界面稳定性差与效率损失并存的瓶颈，提出界面设计策略以协同优化载流子输运与化学稳定性。\n\n其创新在于针对工业硅表面形貌与钝化层特性定制界面修饰，抑制非辐射复合与离子迁移诱发的界面退化。\n\n机理上揭示了界面偶极调控与缺陷钝化的耦合作用对开路电压和填充因子的提升机制。\n\n器件在工业硅平台上实现了兼顾高效率与长期稳定性的叠层性能，优于同类界面方案。\n\n该工作为叠层电池产业化提供了可扩展的界面工程路径。",
-      "figures": [],
-      "has_full_content": true
-    },
-    {
-      "title": "Author Correction: Iceberg-like pyramids in industrially textured silicon enabled 33% efficient perovskite-silicon tandem solar cells",
-      "link": "https://www.nature.com/articles/s41467-026-77843-z",
-      "doi": "",
-      "summary": "Nature Communications, Published online: 21 September 2026; doi:10.1038/s41467-026-77843-zAuthor Correction: Iceberg-like pyramids in industrially textured silicon enabled 33% efficient perovskite-silicon tandem solar cells",
-      "published": "2026-09-21",
-      "authors": "Daoyong Zhang, Tao Wu, Biao Li et al.",
-      "journal": "Nature Communications",
-      "matched_keywords": [
-        "perovskite"
-      ],
-      "research_story": "该评述针对钙钛矿/硅叠层电池中工业级绒面硅表面金字塔尺寸过大导致钙钛矿保形覆盖困难、埋底界面缺陷密度高的瓶颈。\n\n作者提出“冰山状金字塔”织构策略，通过调控碱刻蚀动力学在微米级金字塔上形成亚微米级次级结构，兼顾陷光与钙钛矿溶液铺展。\n\n机理上，该形貌降低了钙钛矿成核势垒并抑制埋底孔洞与残余应力，提升界面载流子抽取效率。\n\n器件实现33%的认证效率，高于此前工业绒面叠层报道值。\n\n该工作证明了工业兼容织构下高效叠层的可行性，为规模化制备提供了界面工程范式。",
-      "figures": [],
-      "has_full_content": true
-    }
-  ]
+  "count": 0,
+  "papers": []
 }
