@@ -1,10 +1,25 @@
 {
-  "date": "2026-09-23",
+  "date": "2026-09-24",
   "keywords": [
     "perovskite"
   ],
-  "count": 1,
+  "count": 2,
   "papers": [
+    {
+      "title": "Efficient yet stable large perovskite solar modules made using surface treatment",
+      "link": "https://www.nature.com/articles/d41586-026-02937-z",
+      "doi": "",
+      "summary": "Nature, Published online: 23 September 2026; doi:10.1038/d41586-026-02937-zNon-uniformities in the layer of passivator molecules, which are used to fix defects and protect the surface of perovskite material in solar cells, can limit the durability of the resulting modules. Large modules treated instead with chemically stable lead carboxylate passivators were efficient, reliable and had a higher yield than did commercial silicon modules.",
+      "published": "2026-09-23",
+      "authors": "Unknown",
+      "journal": "Nature",
+      "matched_keywords": [
+        "perovskite"
+      ],
+      "research_story": "针对钙钛矿组件中钝化分子分布不均导致耐久性受限的瓶颈，该工作以化学稳定的羧酸铅替代常规钝化剂，通过表面处理实现大面积均匀钝化。\n\n机理上，羧酸铅与表面缺陷位点强配位并抑制离子迁移，提升了界面稳定性。\n\n所得大面积组件效率高、可靠性好，产率优于商用硅组件。\n\n该策略为可规模化、稳定的钙钛矿光伏表面工程提供了新范式。",
+      "figures": [],
+      "has_full_content": true
+    },
     {
       "title": "Crystallization control for narrow-linewidth perovskite LEDs",
       "link": "https://www.nature.com/articles/s44160-026-01157-7",
@@ -16,7 +31,7 @@
       "matched_keywords": [
         "perovskite"
       ],
-      "research_story": "该工作针对钙钛矿LED中结晶过程难以调控导致发射线宽展宽、制约高色纯度显示应用的核心瓶颈。\n\n作者通过精心选择底层材料并耦合简易薄膜处理工艺，构建受控结晶环境，实现晶粒尺寸与尺寸分布的协同优化。\n\n关键机制在于底层界面调控成核密度与晶体生长动力学，抑制非均匀展宽与缺陷态密度。\n\n所制备绿光和蓝光器件均实现超窄线宽发射，色纯度显著优于常规多晶薄膜器件。\n\n该策略为溶液法制备高色纯度钙钛矿发光器件提供了可扩展的界面结晶工程路径。",
+      "research_story": "该工作针对钙钛矿LED中结晶动力学难以调控导致发射线宽展宽、制约高色纯度显示应用的核心瓶颈。\n\n作者通过精心选择底层材料并耦合简易薄膜处理工艺，构建受控结晶环境以调控成核与生长动力学，抑制缺陷态与相不均一性。\n\n关键机制在于该策略优化晶体取向与尺寸分布，降低激子-声子耦合及非辐射复合，从而实现绿光与蓝光波段的超窄线宽发射。\n\n所获器件线宽显著优于常规多晶钙钛矿LED，色纯度接近窄发射极限。\n\n该研究为钙钛矿发光二极管的结晶工程提供了可扩展的界面调控范式，推动了高色域显示技术的实用化进程。",
       "figures": [
         {
           "number": "1",
